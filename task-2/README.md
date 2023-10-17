@@ -1,20 +1,21 @@
 # Description of your result
 
-You can describe your results in any language that is convenient for you, not just English.
+In this task we created statistic by machines for all ages when the company worked.
 
 ## Description
 
-[Describe what you have done]
+I created common list of data for all ages. After that I separated machines list for manipulating and remove the duplicates. The statistic was calculated by creating ages list and count one. 
 
 ## How to
 
-[Describe how to run your application if there are any issues]
+From console run dart bin/surf_dart_courses_template.dart
 
 ## Problems
 
-[Describe the problems you encountered]
+Add me to tg chat of course, please
+@ybunyaev
 
 ## More
 
-[Here you can brag about what you managed to implement or do something beyond the task]
+-
 

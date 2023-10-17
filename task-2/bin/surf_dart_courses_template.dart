@@ -165,13 +165,11 @@ void main() {
   //The task required just machines statistic, create machines Set to avoid duplicates
   Set<AgriculturalMachinery> allMachineries = {};
 
-  allTimeMap.forEach(
-    (key, value) {
-      for (var element in value) {
-        allMachineries.addAll(element.machineries);
-      }
-    },
-  );
+  for(final territory in allTimeMap.values) {
+    for (var element in territory) {
+      allMachineries.addAll(element.machineries);
+    }
+  }
 
   //Calculate list of ages, not just release dates
   List<int> ages = allMachineries

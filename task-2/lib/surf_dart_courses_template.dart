@@ -1,3 +1,3 @@
-int calculate() {
-  return 6 * 7;
+double getAverage(List<int> numbers) {
+  return numbers.reduce((value, element) => value += element) / numbers.length;
 }

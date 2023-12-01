@@ -1,20 +1,19 @@
 # Description of your result
-
-You can describe your results in any language that is convenient for you, not just English.
-
+Printing opponent's cards to console
 ## Description
 
-[Describe what you have done]
-
+Learn theory about functions. Analyze task code. Add Strategy type to complete task
 ## How to
 
-[Describe how to run your application if there are any issues]
+cd task-5
+
+dart bin/surf_dart_courses_template.dart
+
 
 ## Problems
 
-[Describe the problems you encountered]
+Add me to tg chat of course, please @ybunyaev
 
 ## More
 
-[Here you can brag about what you managed to implement or do something beyond the task]
-
+-

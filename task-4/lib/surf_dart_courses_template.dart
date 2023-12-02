@@ -1,4 +1,4 @@
-
+/*
 void takeClothes() {
 
   for(gym clothes) {
@@ -29,4 +29,4 @@ void takeToTheHome() {
       walk();
       break;
   }
-}
+}*/

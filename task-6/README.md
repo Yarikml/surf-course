@@ -1,20 +1,19 @@
 # Description of your result
-
-You can describe your results in any language that is convenient for you, not just English.
-
+Describing players of various sport in console
 ## Description
 
-[Describe what you have done]
-
+Learn theory about classes. Create nesting classes with interfaces
 ## How to
 
-[Describe how to run your application if there are any issues]
+cd task-6
+
+dart bin/surf_dart_courses_template.dart
+
 
 ## Problems
 
-[Describe the problems you encountered]
+Add me to tg chat of course, please @ybunyaev
 
 ## More
 
-[Here you can brag about what you managed to implement or do something beyond the task]
-
+-

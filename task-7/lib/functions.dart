@@ -1,4 +1,5 @@
-import '../bin/surf_dart_courses_template.dart';
+
+import 'classes.dart';
 
 void applyFilter(List<Product> products, Filter filterType) {
   final filteredProducts = products.where(filterType.apply).toList();

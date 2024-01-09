@@ -1,5 +1,5 @@
 /*
-import 'package:surf_dart_courses_template/surf_dart_courses_template.dart';
+import 'package:surf_dart_courses_template/main.dart';
 
 void main(List<String> arguments) {
   //Let's go the GYM!

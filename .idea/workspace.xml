@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7da22925-7deb-4c2c-8e02-244cc9c84704" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/task-9/assets/screen_record.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+=======
+>>>>>>> main
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/.filecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/app.dill" afterDir="false" />
@@ -35,7 +38,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
+<<<<<<< HEAD
     <option name="totalTimeSeconds" value="13420" />
+=======
+    <option name="totalTimeSeconds" value="11166" />
+>>>>>>> main
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,7 +54,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="task-8" />
+        <entry key="$PROJECT_DIR$" value="task-9" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

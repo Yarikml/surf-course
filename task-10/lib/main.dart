@@ -39,7 +39,6 @@ class _MainAppState extends State<MainApp> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     final maxWidth = MediaQuery.of(context).size.width - 60;
-    final maxHeight = MediaQuery.of(context).size.height - 60;
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(

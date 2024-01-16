@@ -1,23 +1,24 @@
 # Description of your result
 
-You can describe your results in any language that is convenient for you, not just English.
+Counter app with counting tap on buttons feature
 
 ## Description
 
-[Describe what you have done]
+Separate files in the suit dirs. Write counter app by the task
 
 ## How to
 
-[Describe how to run your application if there are any issues]
+cd task-9
+
+dart bin/main.dart
 
 ## Problems
 
-[Describe the problems you encountered]
-
+-
 ## More
 
-[Here you can brag about what you managed to implement or do something beyond the task]
+-
 
 ## Demo
 
-[Leave links to screencasts/screenshots here, you can use a GitHub repository or a separate cloud service]
+![screen_record](./assets/screen_record.gif)

@@ -14,7 +14,8 @@ dart bin/main.dart
 
 ## Problems
 
--
+See pubspec.yaml comment in font part
+
 ## More
 
 -

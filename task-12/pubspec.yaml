@@ -18,3 +18,11 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: Sora
+      fonts:
+        - asset: assets/fonts/Sora-VariableFont_wght.ttf
+  assets:
+    - assets/fonts/
+    - assets/icons/
+    - assets/images/

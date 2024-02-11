@@ -24,6 +24,18 @@
       <excludeFolder url="file://$MODULE_DIR$/task-8/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/task-8/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/task-8/build" />
+      <excludeFolder url="file://$MODULE_DIR$/task-12/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/task-12/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/task-12/build" />
+      <excludeFolder url="file://$MODULE_DIR$/task-10/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/task-10/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/task-10/build" />
+      <excludeFolder url="file://$MODULE_DIR$/task-11/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/task-11/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/task-11/build" />
+      <excludeFolder url="file://$MODULE_DIR$/task-9/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/task-9/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/task-9/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

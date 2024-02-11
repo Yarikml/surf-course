@@ -5,7 +5,17 @@ import '../text/text_extension.dart';
 
 abstract class AppThemeData {
   static final ThemeData themeData = ThemeData(
+    appBarTheme: AppBarTheme(
+      titleTextStyle: _textTheme.regular12,
+      iconTheme: IconThemeData(
+        color: _colorScheme.primary,
+      ),
+      backgroundColor: _colorScheme.background,
+      elevation: 0,
+    ),
+    dividerColor: _colorScheme.dividerColor,
     brightness: Brightness.light,
+    scaffoldBackgroundColor: _colorScheme.background,
     primaryColor: _colorScheme.primary,
     extensions: [_colorScheme, _textTheme],
   );

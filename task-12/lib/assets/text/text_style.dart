@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:surf_flutter_courses_template/assets/colors/color_pallete.dart';
 
 enum AppTextStyle {
   regular10(
@@ -18,16 +19,6 @@ enum AppTextStyle {
       fontWeight: FontWeight.normal,
     ),
   ),
-
-  regular12SaleNewPrice(
-    TextStyle(
-      fontSize: 12,
-      height: 2.0,
-      fontFamily: 'Sora',
-      color: Color(0xFFFF0000),
-      fontWeight: FontWeight.normal,
-    ),
-  ),
   regular12SaleOldPrice(
     TextStyle(
       fontSize: 12,
@@ -40,20 +31,42 @@ enum AppTextStyle {
   regular16(
     TextStyle(
       fontSize: 16,
-      height: 2.4,
       fontFamily: 'Sora',
       color: Color(0xFF252849),
       fontWeight: FontWeight.normal,
     ),
   ),
-
+  semiBold10(
+    TextStyle(
+      fontSize: 10,
+      fontFamily: 'Sora',
+      fontWeight: FontWeight.w600,
+      color: Color(0xFF60607B),
+    ),
+  ),
+  semiBold10Accent(
+    TextStyle(
+      fontSize: 10,
+      fontFamily: 'Sora',
+      fontWeight: FontWeight.w600,
+      color: ColorPalette.green,
+    ),
+  ),
   bold10(
     TextStyle(
       fontSize: 10,
       height: 1.6,
       fontFamily: 'Sora',
-      fontWeight: FontWeight.w600,
+      fontWeight: FontWeight.bold,
       color: Color(0xFF60607B),
+    ),
+  ),
+  bold12SaleNewPrice(
+    TextStyle(
+      fontSize: 12,
+      fontFamily: 'Sora',
+      color: Color(0xFFFF0000),
+      fontWeight: FontWeight.bold,
     ),
   ),
   bold12(

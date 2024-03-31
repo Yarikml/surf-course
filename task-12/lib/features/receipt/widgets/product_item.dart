@@ -1,69 +1,103 @@
 import 'package:flutter/material.dart';
 
 import '../../../assets/text/text_extension.dart';
+import '../model/product_entity.dart';
 
 class ProductItem extends StatelessWidget {
-  const ProductItem({super.key});
+  const ProductItem({
+    super.key,
+    required this.product,
+    required this.hasCategoryName,
+    required this.hasDivider,
+  });
+
+  final ProductEntity product;
+  final bool hasCategoryName;
+  final bool hasDivider;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 16),
-      height: 100,
-      child: Row(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(right: 8),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(8),
-              child: Image.network(
-                'https://images.unsplash.com/photo-1521223344201-d169129f7b7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80',
-                width: 68,
-                height: 68,
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
-          Expanded(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Сыр PRESIDENT Camembert с белой плесенью 45%, без змж, 125г',
-                  style: Theme.of(context).extension<AppTextTheme>()!.regular12,
-                  textAlign: TextAlign.start,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        hasCategoryName
+            ? Text(
+                product.category.name,
+                style: AppTextTheme.of(context).bold16,
+              )
+            : Container(),
+        Container(
+          height: 100,
+          padding: const EdgeInsets.symmetric(vertical: 16),
+          child: Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(right: 12),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8),
+                  child: Image.network(
+                    product.imageUrl,
+                    width: 68,
+                    height: 68,
+                    fit: BoxFit.cover,
+                  ),
                 ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+              ),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      '1 шт',
-                      style: Theme.of(context)
-                          .extension<AppTextTheme>()!
-                          .regular12,
+                      product.title,
+                      style: AppTextTheme.of(context).regular12,
+                      textAlign: TextAlign.start,
                     ),
-                    Spacer(),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8.0),
-                      child: Text(
-                        '1 158 руб',
-                        style: Theme.of(context)
-                            .extension<AppTextTheme>()!
-                            .regular12SaleOldPrice,
-                      ),
-                    ),
-                    Text(
-                      '858 руб',
-                      style:
-                          Theme.of(context).extension<AppTextTheme>()!.bold12,
-                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          '${product.amount.value} шт',
+                          style: AppTextTheme.of(context).regular12,
+                        ),
+                        Spacer(),
+                        product.hasSale
+                            ? Padding(
+                                padding: const EdgeInsets.only(right: 8.0),
+                                child: Text(
+                                  product.priceInRub,
+                                  style: AppTextTheme.of(context)
+                                      .regular12SaleOldPrice,
+                                ),
+                              )
+                            : Container(),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 8.0),
+                          child: Text(
+                            product.priceWithSaleInRub,
+                            style: product.hasSale
+                                ? AppTextTheme.of(context).bold12SaleNewPrice
+                                : AppTextTheme.of(context).bold12,
+                          ),
+                        ),
+                      ],
+                    )
                   ],
-                )
-              ],
-            ),
+                ),
+              ),
+            ],
           ),
-        ],
-      ),
+        ),
+        hasDivider
+            ? Padding(
+                padding: const EdgeInsets.only(bottom: 16.0),
+                child: Divider(
+                  thickness: 1,
+                ),
+              )
+            : Container(),
+      ],
     );
   }
 }

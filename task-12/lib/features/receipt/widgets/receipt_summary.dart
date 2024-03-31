@@ -3,7 +3,20 @@ import 'package:flutter/material.dart';
 import '../../../assets/text/text_extension.dart';
 
 class ReceiptSummary extends StatelessWidget {
-  const ReceiptSummary({super.key});
+  const ReceiptSummary({
+    super.key,
+    required this.salePercent,
+    required this.saleSummary,
+    required this.summaryPriceInRub,
+    required this.summaryPriceWithSaleInRub,
+    required this.productsAmount,
+  });
+
+  final int productsAmount;
+  final double summaryPriceInRub;
+  final int salePercent;
+  final double saleSummary;
+  final double summaryPriceWithSaleInRub;
 
   @override
   Widget build(BuildContext context) {
@@ -29,35 +42,40 @@ class ReceiptSummary extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  '10 товаров',
+                  '$productsAmount товаров',
                   style: Theme.of(context).extension<AppTextTheme>()!.regular12,
                 ),
                 Text(
-                  '7 842 руб',
+                  '${summaryPriceInRub} руб',
                   style: Theme.of(context).extension<AppTextTheme>()!.bold12,
                 ),
               ],
             ),
           ),
-          SliverPadding(
-            padding: const EdgeInsets.symmetric(vertical: 11),
-            sliver: SliverToBoxAdapter(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Скидка 5%',
-                    style:
-                        Theme.of(context).extension<AppTextTheme>()!.regular12,
+          saleSummary > 0
+              ? SliverPadding(
+                  padding: const EdgeInsets.symmetric(vertical: 11),
+                  sliver: SliverToBoxAdapter(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Скидка ${salePercent}%',
+                          style: Theme.of(context)
+                              .extension<AppTextTheme>()!
+                              .regular12,
+                        ),
+                        Text(
+                          '-${saleSummary} руб',
+                          style: Theme.of(context)
+                              .extension<AppTextTheme>()!
+                              .bold12,
+                        ),
+                      ],
+                    ),
                   ),
-                  Text(
-                    '-300 руб',
-                    style: Theme.of(context).extension<AppTextTheme>()!.bold12,
-                  ),
-                ],
-              ),
-            ),
-          ),
+                )
+              : Container(),
           SliverToBoxAdapter(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -67,7 +85,7 @@ class ReceiptSummary extends StatelessWidget {
                   style: Theme.of(context).extension<AppTextTheme>()!.bold16,
                 ),
                 Text(
-                  '7 542 руб',
+                  '${summaryPriceWithSaleInRub} руб',
                   style: Theme.of(context).extension<AppTextTheme>()!.bold16,
                 ),
               ],

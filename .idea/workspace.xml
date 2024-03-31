@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7da22925-7deb-4c2c-8e02-244cc9c84704" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_list.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_appbar.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_summary.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/assets/icons/bag_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/assets/icons/catalog_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/assets/icons/person_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/assets/icons/search_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/lib/assets/res/images.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/lib/assets/res/resources.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/lib/assets/res/svg_icons.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/lib/features/main/widgets/pages/main_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/logic/receipt_calculator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/logic/sorter.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/model/product_entity.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/sort_products_bottom_sheet.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/cupertino_radio_tile.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/lib/mock/product_list_mock.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/surf-course.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/surf-course.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_02_2024,_11_26_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_02_2024__11_26__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/991cb2da7bac4a8bfeae9979d4a628e0/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/991cb2da7bac4a8bfeae9979d4a628e0/.filecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/991cb2da7bac4a8bfeae9979d4a628e0/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/991cb2da7bac4a8bfeae9979d4a628e0/App.framework/App" afterDir="false" />
@@ -20,21 +30,38 @@
       <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/991cb2da7bac4a8bfeae9979d4a628e0/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/991cb2da7bac4a8bfeae9979d4a628e0/flutter_assets.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/991cb2da7bac4a8bfeae9979d4a628e0/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/991cb2da7bac4a8bfeae9979d4a628e0/kernel_snapshot.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/991cb2da7bac4a8bfeae9979d4a628e0/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/991cb2da7bac4a8bfeae9979d4a628e0/kernel_snapshot.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/package_config_subset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/App.framework/App" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/App.framework/flutter_assets/NOTICES.Z" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/App.framework/flutter_assets/NOTICES.Z" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/App" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/NOTICES.Z" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/NOTICES.Z" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Runner" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/embedded.mobileprovision" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/embedded.mobileprovision" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/App.framework/App" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/NOTICES.Z" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/NOTICES.Z" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Runner" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/embedded.mobileprovision" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/embedded.mobileprovision" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/assets/text/text_extension.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/assets/text/text_extension.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/assets/text/text_style.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/assets/text/text_style.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/app/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/app/app.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_item.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_list.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_summary.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_summary.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-7/lib/classes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-7/lib/classes.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +69,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="34133" />
+    <option name="totalTimeSeconds" value="95072" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -70,28 +97,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/Desktop/surf-course&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "task-12",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "/Users/yaroslav/Desktop/surf-course/task-12/lib/assets/res",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-12/lib/assets/res" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-12/assets/icons" />
       <recent name="$PROJECT_DIR$/task-12/assets/fonts" />
     </key>
   </component>
@@ -139,12 +171,39 @@
       <workItem from="1707292545780" duration="16532000" />
       <workItem from="1707396659387" duration="112000" />
       <workItem from="1707429216143" duration="571000" />
-      <workItem from="1707678471582" duration="6056000" />
+      <workItem from="1707678471582" duration="8971000" />
+      <workItem from="1708160556693" duration="18182000" />
+      <workItem from="1708686832315" duration="92000" />
+      <workItem from="1709458379782" duration="2881000" />
+      <workItem from="1709504457945" duration="3492000" />
+      <workItem from="1709578531579" duration="5158000" />
+      <workItem from="1709673439403" duration="5020000" />
+      <workItem from="1710103885683" duration="11118000" />
+      <workItem from="1710275142203" duration="5673000" />
+      <workItem from="1710420037433" duration="3835000" />
+      <workItem from="1710626997287" duration="14680000" />
+      <workItem from="1710773057226" duration="1619000" />
+      <workItem from="1710865777898" duration="15045000" />
+      <workItem from="1711298339879" duration="3734000" />
+      <workItem from="1711562958823" duration="6606000" />
+      <workItem from="1711654901606" duration="6320000" />
+      <workItem from="1711903047927" duration="6057000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

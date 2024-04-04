@@ -6,10 +6,10 @@ import '../../../assets/text/text_extension.dart';
 class ReceiptSummary extends StatelessWidget {
   const ReceiptSummary({
     super.key,
-    required this.receiptCalculator,
+    required this.summaryCalculator,
   });
 
-  final ReceiptCalculator receiptCalculator;
+  final ReceiptCalculator summaryCalculator;
 
   @override
   Widget build(BuildContext context) {
@@ -35,17 +35,17 @@ class ReceiptSummary extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  '${receiptCalculator.products.length} товаров',
+                  '${summaryCalculator.products.length} товаров',
                   style: Theme.of(context).extension<AppTextTheme>()!.regular12,
                 ),
                 Text(
-                  '${receiptCalculator.pricesSummaryInRub} руб',
+                  '${summaryCalculator.pricesSummaryInRub} руб',
                   style: Theme.of(context).extension<AppTextTheme>()!.bold12,
                 ),
               ],
             ),
           ),
-          receiptCalculator.sale > 0
+          summaryCalculator.sale > 0
               ? SliverPadding(
                   padding: const EdgeInsets.symmetric(vertical: 11),
                   sliver: SliverToBoxAdapter(
@@ -53,13 +53,13 @@ class ReceiptSummary extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          'Скидка ${receiptCalculator.salePercent}%',
+                          'Скидка ${summaryCalculator.salePercent}%',
                           style: Theme.of(context)
                               .extension<AppTextTheme>()!
                               .regular12,
                         ),
                         Text(
-                          '-${receiptCalculator.saleInRub} руб',
+                          '-${summaryCalculator.saleInRub} руб',
                           style: Theme.of(context)
                               .extension<AppTextTheme>()!
                               .bold12,
@@ -78,7 +78,7 @@ class ReceiptSummary extends StatelessWidget {
                   style: Theme.of(context).extension<AppTextTheme>()!.bold16,
                 ),
                 Text(
-                  '${receiptCalculator.priceSummaryWithSaleInRub} руб',
+                  '${summaryCalculator.priceSummaryWithSaleInRub} руб',
                   style: Theme.of(context).extension<AppTextTheme>()!.bold16,
                 ),
               ],

@@ -8,11 +8,9 @@ class SortProductsBottomSheet extends StatefulWidget {
   const SortProductsBottomSheet({
     super.key,
     required this.currentSortType,
-    required this.onSubmitSortType,
   });
 
   final SortType currentSortType;
-  final Function(SortType? value) onSubmitSortType;
 
   @override
   State<SortProductsBottomSheet> createState() =>
@@ -34,12 +32,11 @@ class _SortProductsBottomSheetState extends State<SortProductsBottomSheet> {
     });
   }
 
-  ///TODO https://howtoflutter.dev/how-to-change-update-the-state-inside-bottom-sheet-in-flutter/
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 500,
-      padding: EdgeInsets.all(20),
+      height: 520,
+      padding: const EdgeInsets.all(20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -50,7 +47,10 @@ class _SortProductsBottomSheetState extends State<SortProductsBottomSheet> {
                 'Сортировка',
                 style: AppTextTheme.of(context).bold18,
               ),
-              Icon(Icons.close),
+              GestureDetector(
+                onTap: () => Navigator.of(context).pop(currentSortType),
+                child: const Icon(Icons.close),
+              ),
             ],
           ),
           CupertinoRadioTile<SortType>(
@@ -59,7 +59,7 @@ class _SortProductsBottomSheetState extends State<SortProductsBottomSheet> {
             label: SortType.idle.value,
             onChanged: onSortTypeChanged,
           ),
-          Divider(
+          const Divider(
             thickness: 1,
           ),
           Text(
@@ -78,7 +78,7 @@ class _SortProductsBottomSheetState extends State<SortProductsBottomSheet> {
             label: SortType.byNameFromZToA.value,
             onChanged: onSortTypeChanged,
           ),
-          Divider(
+          const Divider(
             thickness: 1,
           ),
           Text(
@@ -97,7 +97,7 @@ class _SortProductsBottomSheetState extends State<SortProductsBottomSheet> {
             label: SortType.byPriceDecrease.value,
             onChanged: onSortTypeChanged,
           ),
-          Divider(
+          const Divider(
             thickness: 1,
           ),
           Text(
@@ -125,13 +125,12 @@ class _SortProductsBottomSheetState extends State<SortProductsBottomSheet> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
-                minimumSize: Size.fromHeight(48),
+                minimumSize: const Size.fromHeight(48),
               ),
               onPressed: () {
-                widget.onSubmitSortType(currentSortType);
-                Navigator.of(context).pop();
+                Navigator.of(context).pop(currentSortType);
               },
-              child: Text('Готово'),
+              child: const Text('Готово'),
             ),
           ),
         ],

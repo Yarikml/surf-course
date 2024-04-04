@@ -37,6 +37,8 @@ class ProductEntity {
   /// Требуется высчитать самостоятельно итоговую цену товара.
   final double sale;
 
+  final formatter = NumberFormat("#,###");
+
   ProductEntity({
     required this.title,
     required this.price,
@@ -50,14 +52,27 @@ class ProductEntity {
 
   int get priceWithSale => hasSale ? (price * (sale / 100)).round() : price;
 
-  String get priceWithSaleInRub {
-    var formatter = NumberFormat("#,###");
-    return formatter.format(priceWithSale / 100).replaceAll(',', ' ');
+  String get priceWithSaleInRub =>
+      formatter.format(priceWithSale / 100).replaceAll(',', ' ');
+
+  String get priceInRub => formatter.format(price / 100).replaceAll(',', ' ');
+
+  String get formattedAmount {
+    switch (amount) {
+      case Grams():
+        return (amount.value / 1000).toString();
+      case Quantity():
+        return amount.value.toString();
+    }
   }
 
-  String get priceInRub {
-    var formatter = NumberFormat("#,###");
-    return formatter.format(price / 100).replaceAll(',', ' ');
+  String get amountCaption {
+    switch (amount) {
+      case Grams():
+        return 'кг';
+      case Quantity():
+        return 'шт';
+    }
   }
 }
 

@@ -67,7 +67,7 @@ class ProductItem extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text(
-                          '${product.amount.value} шт',
+                          '${product.formattedAmount} ${product.amountCaption}',
                           style: AppTextTheme.of(context).regular12,
                         ),
                         Spacer(),

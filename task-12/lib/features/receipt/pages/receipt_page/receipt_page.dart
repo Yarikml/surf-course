@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/text_extension.dart';
@@ -7,7 +5,6 @@ import 'package:surf_flutter_courses_template/features/receipt/logic/receipt_cal
 import 'package:surf_flutter_courses_template/features/receipt/logic/sorter.dart';
 import 'package:surf_flutter_courses_template/features/receipt/model/product_entity.dart';
 import 'package:surf_flutter_courses_template/features/receipt/pages/receipt_page/sort_products_bottom_sheet.dart';
-import 'package:surf_flutter_courses_template/features/receipt/widgets/product_list.dart';
 import 'package:surf_flutter_courses_template/features/receipt/widgets/receipt_appbar.dart';
 import 'package:surf_flutter_courses_template/features/receipt/widgets/receipt_summary.dart';
 import 'package:surf_flutter_courses_template/mock/product_list_mock.dart';
@@ -43,27 +40,24 @@ class ReceiptPage extends StatefulWidget {
 class _ReceiptPageState extends State<ReceiptPage> {
   late final List<ProductEntity> products;
   late List<ProductEntity> filteredProducts;
-  late final ReceiptCalculator receiptCalc;
-  SortStatus sortStatus = SortStatus.idle;
+  late final ReceiptCalculator summaryCalculator;
 
-  ValueNotifier<SortType> currentSortType =
-      ValueNotifier<SortType>(SortType.idle);
+  SortStatus sortStatus = SortStatus.idle;
+  SortType currentSortType = SortType.idle;
 
   @override
   void initState() {
     products = ProductListMock.dataForStudents;
     filteredProducts = products;
-    receiptCalc = ReceiptCalculator(products: products);
-    currentSortType.addListener(() async {
-      filteredProducts = await products.sortByRule(currentSortType.value);
-    });
+    summaryCalculator = ReceiptCalculator(products: products);
+
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: ReceiptAppbar(),
+        appBar: const ReceiptAppbar(),
         body: SafeArea(
           child: CustomScrollView(
             slivers: [
@@ -72,7 +66,7 @@ class _ReceiptPageState extends State<ReceiptPage> {
                   left: 20,
                   right: 20,
                   top: 24,
-                  bottom: 16.0,
+                  bottom: 16,
                 ),
                 sliver: SliverToBoxAdapter(
                   child: Row(
@@ -87,6 +81,7 @@ class _ReceiptPageState extends State<ReceiptPage> {
                       InkWell(
                         onTap: () => showModalBottomSheet(
                           isScrollControlled: true,
+                          isDismissible: false,
                           shape: const RoundedRectangleBorder(
                               borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(30),
@@ -94,16 +89,26 @@ class _ReceiptPageState extends State<ReceiptPage> {
                           )),
                           context: context,
                           builder: (context) => SortProductsBottomSheet(
-                            currentSortType: currentSortType.value,
-                            onSubmitSortType: (SortType? value) {
-                              currentSortType.value = value!;
-                            },
+                            currentSortType: currentSortType,
                           ),
-                        ),
+                        ).then((value) async {
+                          if (value != currentSortType) {
+                            setState(() {
+                              currentSortType = value;
+                              sortStatus = SortStatus.loading;
+                            });
+                            filteredProducts =
+                                await products.sortByRule(currentSortType);
+                            await Future.delayed(const Duration(seconds: 1));
+                            setState(() {
+                              sortStatus = SortStatus.idle;
+                            });
+                          }
+                        }),
                         child: Stack(
                           children: [
                             Container(
-                              padding: EdgeInsets.all(4),
+                              padding: const EdgeInsets.all(4),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(6),
                                 color: Theme.of(context)
@@ -118,26 +123,20 @@ class _ReceiptPageState extends State<ReceiptPage> {
                                     .secondary,
                               ),
                             ),
-                            ValueListenableBuilder(
-                              valueListenable: currentSortType,
-                              builder: (BuildContext context, SortType value,
-                                      Widget? child) =>
-                                  value != SortType.idle
-                                      ? Positioned(
-                                          right: 4,
-                                          bottom: 4,
-                                          child: Container(
-                                            width: 8,
-                                            height: 8,
-                                            decoration: BoxDecoration(
-                                              color: AppColorScheme.of(context)
-                                                  .primary,
-                                              borderRadius:
-                                                  BorderRadius.circular(16),
-                                            ),
-                                          ))
-                                      : Container(),
-                            ),
+                            currentSortType != SortType.idle
+                                ? Positioned(
+                                    right: 4,
+                                    bottom: 4,
+                                    child: Container(
+                                      width: 8,
+                                      height: 8,
+                                      decoration: BoxDecoration(
+                                        color:
+                                            AppColorScheme.of(context).primary,
+                                        borderRadius: BorderRadius.circular(16),
+                                      ),
+                                    ))
+                                : Container(),
                           ],
                         ),
                       ),
@@ -148,23 +147,22 @@ class _ReceiptPageState extends State<ReceiptPage> {
               sortStatus == SortStatus.idle
                   ? SliverPadding(
                       padding: const EdgeInsets.symmetric(horizontal: 20),
-                      sliver: ValueListenableBuilder(
-                        valueListenable: currentSortType,
-                        builder: (context, value, _) => SliverList.builder(
-                          itemBuilder: (BuildContext context, int index) =>
-                              ProductItem(
-                            product: filteredProducts[index],
-                            hasCategoryName: value == SortType.byTypeFromAToZ &&
-                                (index == 0 ||
-                                    filteredProducts[index - 1].category !=
-                                        filteredProducts[index].category),
-                            hasDivider: value == SortType.byTypeFromAToZ &&
-                                (index == filteredProducts.length - 1 ||
-                                    filteredProducts[index + 1].category !=
-                                        filteredProducts[index].category),
-                          ),
-                          itemCount: filteredProducts.length,
+                      sliver: SliverList.builder(
+                        itemBuilder: (BuildContext context, int index) =>
+                            ProductItem(
+                          product: filteredProducts[index],
+                          hasCategoryName:
+                              currentSortType == SortType.byTypeFromAToZ &&
+                                  (index == 0 ||
+                                      filteredProducts[index - 1].category !=
+                                          filteredProducts[index].category),
+                          hasDivider:
+                              currentSortType == SortType.byTypeFromAToZ &&
+                                  (index == filteredProducts.length - 1 ||
+                                      filteredProducts[index + 1].category !=
+                                          filteredProducts[index].category),
                         ),
+                        itemCount: filteredProducts.length,
                       ))
                   : SliverFillRemaining(
                       child: Container(
@@ -179,7 +177,7 @@ class _ReceiptPageState extends State<ReceiptPage> {
                         ),
                       ),
                     ),
-              SliverToBoxAdapter(
+              const SliverToBoxAdapter(
                 child: Divider(
                   height: 1,
                   indent: 20,
@@ -188,7 +186,7 @@ class _ReceiptPageState extends State<ReceiptPage> {
                 ),
               ),
               ReceiptSummary(
-                receiptCalculator: receiptCalc,
+                summaryCalculator: summaryCalculator,
               ),
             ],
           ),

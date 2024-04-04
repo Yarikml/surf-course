@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
+import 'package:surf_flutter_courses_template/assets/res/resources.dart';
+import 'package:surf_flutter_courses_template/features/receipt/widgets/product_photo_shimmer.dart';
 
 import '../../../assets/text/text_extension.dart';
 import '../model/product_entity.dart';
@@ -38,6 +42,11 @@ class ProductItem extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8),
                   child: Image.network(
                     product.imageUrl,
+                    loadingBuilder: (BuildContext context, Widget child,
+                            ImageChunkEvent? loadingProgress) =>
+                        loadingProgress == null
+                            ? child
+                            : const ProductPhotoShimmer(),
                     width: 68,
                     height: 68,
                     fit: BoxFit.cover,
@@ -66,20 +75,17 @@ class ProductItem extends StatelessWidget {
                             ? Padding(
                                 padding: const EdgeInsets.only(right: 8.0),
                                 child: Text(
-                                  product.priceInRub,
+                                  '${product.priceInRub} руб',
                                   style: AppTextTheme.of(context)
                                       .regular12SaleOldPrice,
                                 ),
                               )
                             : Container(),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 8.0),
-                          child: Text(
-                            product.priceWithSaleInRub,
-                            style: product.hasSale
-                                ? AppTextTheme.of(context).bold12SaleNewPrice
-                                : AppTextTheme.of(context).bold12,
-                          ),
+                        Text(
+                          '${product.priceWithSaleInRub} руб',
+                          style: product.hasSale
+                              ? AppTextTheme.of(context).bold12SaleNewPrice
+                              : AppTextTheme.of(context).bold12,
                         ),
                       ],
                     )

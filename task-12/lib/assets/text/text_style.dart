@@ -16,6 +16,7 @@ enum AppTextStyle {
       fontSize: 12,
       fontFamily: 'Sora',
       color: Color(0xFF252849),
+      height: 1.6,
       fontWeight: FontWeight.normal,
     ),
   ),

@@ -1,3 +1,5 @@
+import 'package:intl/intl.dart';
+
 import '../model/product_entity.dart';
 
 class ReceiptCalculator {
@@ -6,6 +8,8 @@ class ReceiptCalculator {
   late List<int> prices;
   late List<int> pricesWithSale;
 
+  final NumberFormat formatter = NumberFormat("#,###");
+
   ReceiptCalculator({
     required this.products,
   })  : prices = products.map((item) => item.price).toList(),
@@ -13,16 +17,18 @@ class ReceiptCalculator {
 
   int get pricesSummary => prices.reduce((value, element) => value += element);
 
-  double get pricesSummaryInRub => pricesSummary / 100;
+  String get pricesSummaryInRub =>
+      formatter.format(pricesSummary / 100).replaceAll(',', ' ');
 
   int get priceSummaryWithSale =>
       pricesWithSale.reduce((value, element) => value += element);
 
-  double get priceSummaryWithSaleInRub => priceSummaryWithSale / 100;
+  String get priceSummaryWithSaleInRub =>
+      formatter.format(priceSummaryWithSale / 100).replaceAll(',', ' ');
 
   int get sale => pricesSummary - priceSummaryWithSale;
 
-  double get saleInRub => sale / 100;
+  String get saleInRub => formatter.format(sale / 100).replaceAll(',', ' ');
 
   int get salePercent => (((sale * 100) / pricesSummary) * 100).truncate();
 }

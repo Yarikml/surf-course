@@ -26,7 +26,6 @@ enum SortType {
   final String value;
 
   const SortType(this.value);
-  
 }
 
 enum SortStatus {
@@ -88,7 +87,7 @@ class _ReceiptPageState extends State<ReceiptPage> {
                       InkWell(
                         onTap: () => showModalBottomSheet(
                           isScrollControlled: true,
-                          shape: RoundedRectangleBorder(
+                          shape: const RoundedRectangleBorder(
                               borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(30),
                             topRight: Radius.circular(30),
@@ -189,12 +188,7 @@ class _ReceiptPageState extends State<ReceiptPage> {
                 ),
               ),
               ReceiptSummary(
-                salePercent: receiptCalc.salePercent,
-                saleSummary: receiptCalc.saleInRub,
-                summaryPriceInRub: receiptCalc.pricesSummaryInRub,
-                summaryPriceWithSaleInRub:
-                    receiptCalc.priceSummaryWithSaleInRub,
-                productsAmount: products.length,
+                receiptCalculator: receiptCalc,
               ),
             ],
           ),

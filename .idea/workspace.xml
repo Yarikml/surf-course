@@ -7,11 +7,11 @@
     <list default="true" id="7da22925-7deb-4c2c-8e02-244cc9c84704" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/logic/receipt_calculator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/logic/receipt_calculator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/logic/sorter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/logic/sorter.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/model/product_entity.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/model/product_entity.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/sort_products_bottom_sheet.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/sort_products_bottom_sheet.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_item.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_summary.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_summary.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/mock/product_list_mock.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/mock/product_list_mock.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +139,8 @@
       <workItem from="1711654901606" duration="6320000" />
       <workItem from="1711903047927" duration="7469000" />
       <workItem from="1712081880035" duration="1884000" />
-      <workItem from="1712146533710" duration="21076000" />
+      <workItem from="1712146533710" duration="23644000" />
+      <workItem from="1712304904186" duration="2056000" />
     </task>
     <servers />
   </component>

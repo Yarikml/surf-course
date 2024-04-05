@@ -21,6 +21,7 @@ abstract class ProductListMock {
       amount: Quantity(1),
       imageUrl:
           'https://images.unsplash.com/photo-1509281373149-e957c6296406?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1328&q=80',
+      sale: 30,
     ),
     ProductEntity(
       title: 'Крем для загара',
@@ -49,7 +50,7 @@ abstract class ProductListMock {
     ),
     ProductEntity(
       title: 'Миксер',
-      price: 25000000,
+      price: 25000,
       category: Category.tech,
       amount: Quantity(1),
       imageUrl:

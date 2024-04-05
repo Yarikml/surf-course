@@ -71,7 +71,28 @@ extension Sorter on List<ProductEntity> {
         }
         break;
       case SortType.byTypeFromZToA:
-        {}
+        {
+          final categorizedProducts = <Category, List<ProductEntity>>{};
+          for (final product in sortedList) {
+            if (categorizedProducts.containsKey(product.category)) {
+              categorizedProducts[product.category]?.add(product);
+            } else {
+              categorizedProducts.addAll({
+                product.category: [product]
+              });
+            }
+          }
+          for (final categoryKey in categorizedProducts.keys) {
+            categorizedProducts[categoryKey]?.sort(
+              (a, b) => b.title.compareTo(a.title),
+            );
+          }
+          final result = <ProductEntity>[];
+          for (final productsList in categorizedProducts.values) {
+            result.addAll(productsList);
+          }
+          sortedList = result;
+        }
         break;
       default:
     }

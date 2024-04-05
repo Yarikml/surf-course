@@ -50,7 +50,6 @@ class _ReceiptPageState extends State<ReceiptPage> {
     products = ProductListMock.dataForStudents;
     filteredProducts = products;
     summaryCalculator = ReceiptCalculator(products: products);
-
     super.initState();
   }
 
@@ -151,19 +150,22 @@ class _ReceiptPageState extends State<ReceiptPage> {
                         itemBuilder: (BuildContext context, int index) =>
                             ProductItem(
                           product: filteredProducts[index],
-                          hasCategoryName:
-                              currentSortType == SortType.byTypeFromAToZ &&
-                                  (index == 0 ||
-                                      filteredProducts[index - 1].category !=
-                                          filteredProducts[index].category),
-                          hasDivider:
-                              currentSortType == SortType.byTypeFromAToZ &&
-                                  (index == filteredProducts.length - 1 ||
-                                      filteredProducts[index + 1].category !=
-                                          filteredProducts[index].category),
+                          hasCategoryName: (currentSortType ==
+                                      SortType.byTypeFromAToZ ||
+                                  currentSortType == SortType.byTypeFromZToA) &&
+                              (index == 0 ||
+                                  filteredProducts[index - 1].category !=
+                                      filteredProducts[index].category),
+                          hasDivider: (currentSortType ==
+                                      SortType.byTypeFromAToZ ||
+                                  currentSortType == SortType.byTypeFromZToA) &&
+                              (index == filteredProducts.length - 1 ||
+                                  filteredProducts[index + 1].category !=
+                                      filteredProducts[index].category),
                         ),
                         itemCount: filteredProducts.length,
-                      ))
+                      ),
+                    )
                   : SliverFillRemaining(
                       child: Container(
                         alignment: Alignment.center,

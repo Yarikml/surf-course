@@ -30,5 +30,5 @@ class ReceiptCalculator {
 
   String get saleInRub => formatter.format(sale / 100).replaceAll(',', ' ');
 
-  int get salePercent => (((sale * 100) / pricesSummary) * 100).truncate();
+  int get salePercent => (sale * 100) ~/ pricesSummary;
 }

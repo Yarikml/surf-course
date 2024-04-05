@@ -50,7 +50,8 @@ class ProductEntity {
 
   bool get hasSale => sale > 0;
 
-  int get priceWithSale => hasSale ? (price * (sale / 100)).round() : price;
+  int get priceWithSale =>
+      hasSale ? (price - (price * (sale / 100))).round() : price;
 
   String get priceWithSaleInRub =>
       formatter.format(priceWithSale / 100).replaceAll(',', ' ');

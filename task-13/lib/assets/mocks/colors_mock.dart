@@ -1,5 +1,5 @@
 class ColorsMock {
-    final static String = '''{
+  static const String data = '''{
         "colors": [
           {
             "name": "Burnt Sienna",
@@ -59,5 +59,5 @@ class ColorsMock {
             "value": "#49FDF0"
           }
         ]
-      }'''
+      }''';
 }

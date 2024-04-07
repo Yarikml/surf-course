@@ -1,48 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:surf_flutter_courses_template/assets/svg_icons.dart';
 import 'package:surf_flutter_courses_template/core/extensions.dart';
 import 'package:surf_flutter_courses_template/feature/main/model/color_entity/color_entity.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/pages/color_details_page.dart';
 import 'package:surf_flutter_courses_template/uikit/text/app_text_scheme.dart';
 
-class ColorBoxItem extends StatefulWidget {
+class ColorBoxItem extends StatelessWidget {
   const ColorBoxItem({
     super.key,
     required this.color,
+    required this.bufferedColor,
+    required this.onAddColorToBuffer,
   });
 
   final ColorEntity color;
-
-  @override
-  State<ColorBoxItem> createState() => _ColorBoxItemState();
-}
-
-class _ColorBoxItemState extends State<ColorBoxItem> {
-  void onLongPress() async {
-    await Clipboard.setData(ClipboardData(text: widget.color.value!));
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        width: 173,
-        padding: EdgeInsets.all(24),
-        behavior: SnackBarBehavior.floating,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(16),
-          ),
-        ),
-        content: Text('Hex  скопирован'),
-      ),
-    );
-  }
-
+  final ColorEntity? bufferedColor;
+  final Function(ColorEntity color) onAddColorToBuffer;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onLongPress: onLongPress,
+      onLongPress: () => onAddColorToBuffer(color),
       onTap: () => Navigator.of(context).push(
         MaterialPageRoute(
           builder: (context) => ColorDetailsPage(
-            color: widget.color,
+            color: color,
           ),
         ),
       ),
@@ -54,19 +37,32 @@ class _ColorBoxItemState extends State<ColorBoxItem> {
             margin: EdgeInsets.only(bottom: 8),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
-              color: widget.color.toColor,
+              color: color.toColor,
             ),
           ),
           Padding(
             padding: const EdgeInsets.only(bottom: 4),
             child: Text(
-              widget.color.name,
+              color.name,
               style: AppTextScheme.of(context).regular12,
             ),
           ),
-          Text(
-            widget.color.value.toString(),
-            style: AppTextScheme.of(context).regular12,
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                color.value.toString(),
+                style: AppTextScheme.of(context).regular12,
+              ),
+              color == bufferedColor
+                  ? Padding(
+                      padding: const EdgeInsets.only(left: 4),
+                      child: SvgPicture.asset(
+                        SvgIcons.copyIcon,
+                      ),
+                    )
+                  : Container(),
+            ],
           ),
         ],
       ),

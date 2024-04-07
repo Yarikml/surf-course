@@ -20,6 +20,8 @@ class ColorEntity {
 
   Map<String, dynamic> toJson() => _$ColorEntityToJson(this);
 
+  String get hexCode => value!.replaceAll('#', '');
+
   Color get toColor {
     final buffer = StringBuffer();
     if (value!.length == 6 || value!.length == 7) buffer.write('ff');

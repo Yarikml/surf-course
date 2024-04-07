@@ -6,10 +6,14 @@ import 'package:surf_flutter_courses_template/uikit/text/app_text_scheme.dart';
 abstract class AppThemeData {
   /// Light theme configuration.
   static final lightTheme = ThemeData(
-    fontFamily: GoogleFonts.ubuntu().fontFamily,
-    extensions: [_textScheme],
-    brightness: Brightness.light,
-  );
+      fontFamily: GoogleFonts.ubuntu().fontFamily,
+      scaffoldBackgroundColor: Colors.white,
+      extensions: [_textScheme],
+      brightness: Brightness.light,
+      appBarTheme: AppBarTheme(
+        elevation: 0,
+        color: Colors.white,
+      ));
 
   static final _textScheme = AppTextScheme.base();
 }

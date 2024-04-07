@@ -4,6 +4,7 @@ import 'package:surf_flutter_courses_template/feature/main/data/datasources/mock
 import 'package:surf_flutter_courses_template/feature/main/data/repositories/main_repository.dart';
 import 'package:surf_flutter_courses_template/feature/main/model/color_entity/color_entity.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/color_box_item.dart';
+import 'package:surf_flutter_courses_template/uikit/text/app_text_scheme.dart';
 
 class MainPage extends StatefulWidget {
   MainPage({super.key});
@@ -36,8 +37,11 @@ class _MainPageState extends State<MainPage> {
           padding: const EdgeInsets.all(16),
           child: CustomScrollView(
             slivers: [
-              const SliverToBoxAdapter(
-                child: Text('Эксклюзивная палитра «Colored Box»'),
+              SliverToBoxAdapter(
+                child: Text(
+                  'Эксклюзивная палитра «Colored Box»',
+                  style: AppTextScheme.of(context).bold30,
+                ),
               ),
               FutureBuilder(
                 future: colors,

@@ -37,10 +37,13 @@ class _MainPageState extends State<MainPage> {
           padding: const EdgeInsets.all(16),
           child: CustomScrollView(
             slivers: [
-              SliverToBoxAdapter(
-                child: Text(
-                  'Эксклюзивная палитра «Colored Box»',
-                  style: AppTextScheme.of(context).bold30,
+              SliverPadding(
+                padding: EdgeInsets.only(bottom: 42),
+                sliver: SliverToBoxAdapter(
+                  child: Text(
+                    'Эксклюзивная палитра «Colored Box»',
+                    style: AppTextScheme.of(context).bold30,
+                  ),
                 ),
               ),
               FutureBuilder(

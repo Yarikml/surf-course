@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:json_annotation/json_annotation.dart';
 
 part 'color_entity.g.dart';
@@ -17,4 +19,11 @@ class ColorEntity {
       _$ColorEntityFromJson(json);
 
   Map<String, dynamic> toJson() => _$ColorEntityToJson(this);
+
+  Color get toColor {
+    final buffer = StringBuffer();
+    if (value!.length == 6 || value!.length == 7) buffer.write('ff');
+    buffer.write(value!.replaceFirst('#', ''));
+    return Color(int.parse(buffer.toString(), radix: 16));
+  }
 }

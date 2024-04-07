@@ -8,12 +8,19 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
   /// Use headings.
   final TextStyle bold30;
 
+  /// Text style with a size of 12/16.
+  /// Use for subtitle.
+  final TextStyle regular12;
+
   const AppTextScheme._({
+    required this.regular12,
     required this.bold30,
   });
 
   /// Base app text theme.
-  AppTextScheme.base() : bold30 = AppTextStyle.bold30.value;
+  AppTextScheme.base()
+      : regular12 = AppTextStyle.regular12.value,
+        bold30 = AppTextStyle.bold30.value;
 
   @override
   ThemeExtension<AppTextScheme> lerp(
@@ -25,6 +32,7 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
     }
 
     return AppTextScheme._(
+      regular12: TextStyle.lerp(regular12, other.regular12, t)!,
       bold30: TextStyle.lerp(bold30, other.bold30, t)!,
     );
   }
@@ -38,9 +46,11 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
   /// @nodoc.
   @override
   AppTextScheme copyWith({
+    TextStyle? regular12,
     TextStyle? bold30,
   }) {
     return AppTextScheme._(
+      regular12: regular12 ?? this.regular12,
       bold30: bold30 ?? this.bold30,
     );
   }

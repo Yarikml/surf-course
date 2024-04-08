@@ -8,16 +8,28 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
   /// Can be used as an accent color for buttons, switches, labels, icons, etc.
   final Color primary;
 
+  /// The color of the text on [primary].
   final Color onPrimary;
 
+  /// Secondary branding color for the app.
+  ///
+  /// Can be used as an accent color for buttons, switches, labels, icons, etc.
+  ///
+  /// Complements [primary] color.
   final Color secondary;
 
+  /// Background color.
+  ///
+  /// Usually refers to the general background of the screen.
   final Color background;
 
+  /// The color of the text on [background].
   final Color onBackground;
 
+  /// The color of the text on [background].
   final Color dividerColor;
 
+  /// Base color theme version.
   const AppColorScheme()
       : primary = ColorPalette.green,
         onPrimary = ColorPalette.white,

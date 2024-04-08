@@ -6,16 +6,14 @@ enum AppTextStyle {
     TextStyle(
       fontSize: 10,
       height: 1.6,
-      fontFamily: 'Sora',
       fontWeight: FontWeight.normal,
-      color: Color(0xFF60607B),
+      color: ColorPalette.darkBlue,
     ),
   ),
   regular12(
     TextStyle(
       fontSize: 12,
-      fontFamily: 'Sora',
-      color: Color(0xFF252849),
+      color: ColorPalette.spaceCadet,
       height: 1.6,
       fontWeight: FontWeight.normal,
     ),
@@ -23,8 +21,7 @@ enum AppTextStyle {
   regular12SaleOldPrice(
     TextStyle(
       fontSize: 12,
-      fontFamily: 'Sora',
-      color: Color(0xFFB5B5B5),
+      color: ColorPalette.philippineSilver,
       decoration: TextDecoration.lineThrough,
       fontWeight: FontWeight.normal,
     ),
@@ -32,23 +29,20 @@ enum AppTextStyle {
   regular16(
     TextStyle(
       fontSize: 16,
-      fontFamily: 'Sora',
-      color: Color(0xFF252849),
+      color: ColorPalette.spaceCadet,
       fontWeight: FontWeight.normal,
     ),
   ),
   semiBold10(
     TextStyle(
       fontSize: 10,
-      fontFamily: 'Sora',
       fontWeight: FontWeight.w600,
-      color: Color(0xFF60607B),
+      color: ColorPalette.darkBlue,
     ),
   ),
   semiBold10Accent(
     TextStyle(
       fontSize: 10,
-      fontFamily: 'Sora',
       fontWeight: FontWeight.w600,
       color: ColorPalette.green,
     ),
@@ -57,41 +51,36 @@ enum AppTextStyle {
     TextStyle(
       fontSize: 10,
       height: 1.6,
-      fontFamily: 'Sora',
       fontWeight: FontWeight.bold,
-      color: Color(0xFF60607B),
+      color: ColorPalette.darkBlue,
     ),
   ),
   bold12SaleNewPrice(
     TextStyle(
       fontSize: 12,
-      fontFamily: 'Sora',
-      color: Color(0xFFFF0000),
+      color: ColorPalette.red,
       fontWeight: FontWeight.bold,
     ),
   ),
   bold12(
     TextStyle(
       fontSize: 12,
-      fontFamily: 'Sora',
       fontWeight: FontWeight.bold,
-      color: Color(0xFF252849),
+      color: ColorPalette.spaceCadet,
     ),
   ),
   bold16(
     TextStyle(
       fontSize: 16,
-      fontFamily: 'Sora',
       fontWeight: FontWeight.bold,
-      color: Color(0xFF252849),
+      color: ColorPalette.spaceCadet,
     ),
   ),
   bold18(
     TextStyle(
       fontSize: 18,
       height: 2.4,
-      fontFamily: 'Sora',
-      color: Color(0xFF252849),
+      color: ColorPalette.spaceCadet,
       fontWeight: FontWeight.bold,
     ),
   );

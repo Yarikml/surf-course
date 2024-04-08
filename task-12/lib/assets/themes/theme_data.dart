@@ -5,7 +5,9 @@ import '../text/text_extension.dart';
 
 abstract class AppThemeData {
   static final ThemeData themeData = ThemeData(
+    fontFamily: 'Sora',
     appBarTheme: AppBarTheme(
+
       titleTextStyle: _textTheme.regular12,
       iconTheme: IconThemeData(
         color: _colorScheme.primary,

@@ -45,6 +45,10 @@ class _ReceiptPageState extends State<ReceiptPage> {
   SortStatus sortStatus = SortStatus.idle;
   SortType currentSortType = SortType.idle;
 
+
+
+
+
   @override
   void initState() {
     products = ProductListMock.dataForStudents;
@@ -159,7 +163,7 @@ class _ReceiptPageState extends State<ReceiptPage> {
                           hasDivider: (currentSortType ==
                                       SortType.byTypeFromAToZ ||
                                   currentSortType == SortType.byTypeFromZToA) &&
-                              (index == filteredProducts.length - 1 ||
+                              (index < filteredProducts.length - 1 &&
                                   filteredProducts[index + 1].category !=
                                       filteredProducts[index].category),
                         ),

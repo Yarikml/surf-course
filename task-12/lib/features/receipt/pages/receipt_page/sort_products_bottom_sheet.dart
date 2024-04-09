@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/text_extension.dart';
+
 import 'package:surf_flutter_courses_template/features/receipt/pages/receipt_page/receipt_page.dart';
-import 'package:surf_flutter_courses_template/features/receipt/widgets/cupertino_radio_tile.dart';
+
+import '../../widgets/cupertino_radio_tile.dart';
+
 
 class SortProductsBottomSheet extends StatefulWidget {
   const SortProductsBottomSheet({

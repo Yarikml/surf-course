@@ -5,51 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7da22925-7deb-4c2c-8e02-244cc9c84704" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2024,_11_37_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2024,_11_37_[Changes]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2024__11_37__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/.filecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/App.framework/App" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/app.dill" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/debug_ios_bundle_flutter_assets.stamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/debug_universal_framework.stamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/debug_unpack_ios.stamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/flutter_assets.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/gen_dart_plugin_registrant.stamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/gen_localizations.stamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.stamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/outputs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/logic/repositories/receipt_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/model/receipt_entity.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/.last_build_id" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/.last_build_id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/App.framework/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Flutter.framework/Flutter" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Flutter.framework/Flutter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/Runner" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/embedded.mobileprovision" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/Debug-iphoneos/Runner.app/embedded.mobileprovision" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/Runner" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/embedded.mobileprovision" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/build/ios/iphoneos/Runner.app/embedded.mobileprovision" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/debug_ios_bundle_flutter_assets.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/debug_ios_bundle_flutter_assets.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/flutter_assets.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/lib/assets/colors/color_pallete.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/assets/colors/color_pallete.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/lib/assets/colors/color_scheme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/assets/colors/color_scheme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/lib/assets/text/text_style.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/assets/text/text_style.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/lib/assets/themes/theme_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/assets/themes/theme_data.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/main/widgets/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/main/widgets/pages/main_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/logic/sorter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/logic/sorter.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/sort_products_bottom_sheet.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/sort_products_bottom_sheet.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_item.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_list.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_appbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_appbar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_summary.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_summary.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/mock/product_list_mock.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/mock/product_list_mock.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/runner.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/runner.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +74,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   }

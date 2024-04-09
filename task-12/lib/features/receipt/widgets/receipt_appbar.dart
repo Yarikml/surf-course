@@ -8,7 +8,7 @@ class ReceiptAppbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      leading: BackButton(),
+      leading: const BackButton(),
       centerTitle: true,
       title: Column(
         mainAxisSize: MainAxisSize.min,

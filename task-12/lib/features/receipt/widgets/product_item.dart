@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
-import 'package:surf_flutter_courses_template/assets/res/resources.dart';
 import 'package:surf_flutter_courses_template/features/receipt/widgets/product_photo_shimmer.dart';
 
 import '../../../assets/text/text_extension.dart';

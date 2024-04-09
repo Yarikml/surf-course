@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:surf_flutter_courses_template/features/receipt/logic/receipt_calculator.dart';
 
 import '../../../assets/text/text_extension.dart';
+import '../logic/receipt_calculator.dart';
 
 class ReceiptSummary extends StatelessWidget {
   const ReceiptSummary({

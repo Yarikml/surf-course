@@ -3,7 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/res/resources.dart';
 import 'package:surf_flutter_courses_template/assets/text/text_extension.dart';
-import 'package:surf_flutter_courses_template/features/receipt/pages/receipt_page/receipt_page.dart';
+
+import '../../../receipt/pages/receipt_page/receipt_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -31,7 +32,7 @@ class _MainPageState extends State<MainPage> {
         'В разработке',
       ),
     ),
-    ReceiptPage(),
+    ReceiptPage(id: 1,),
   ];
 
   void _onItemTapped(int index) {

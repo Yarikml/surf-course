@@ -23,13 +23,13 @@ abstract class ColorPalette {
 
   /// Space Cadet
   ///
-  /// https://www.color-name.com/hex/252849.
-  static const Color spaceCadet = Color(0xFFF1F1F1);
+  /// https://www.color-name.com/hex/F1F1F1.
+  static const Color spaceCadet = Color(0xFF252849);
 
 
   /// Philippine Silver
   ///
-  /// https://www.color-name.com/hex/252849.
+  /// https://www.color-name.com/hex/B5B5B5.
   static const Color philippineSilver = Color(0xFFB5B5B5);
 
   /// Red

@@ -1,4 +1,5 @@
 
+import 'package:intl/intl.dart';
 import 'package:surf_flutter_courses_template/features/receipt/model/product_entity.dart';
 
 class ReceiptEntity {
@@ -11,5 +12,6 @@ class ReceiptEntity {
     required this.date,
     required this.products,
   });
+
 }
 

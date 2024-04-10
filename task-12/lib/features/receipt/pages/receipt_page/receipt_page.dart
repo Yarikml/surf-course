@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/text_extension.dart';
+import 'package:surf_flutter_courses_template/utils/extensions/sorter.dart';
 
 import 'package:surf_flutter_courses_template/features/receipt/pages/receipt_page/sort_products_bottom_sheet.dart';
 import 'package:surf_flutter_courses_template/features/receipt/widgets/product_list.dart';
@@ -44,10 +45,10 @@ enum SortSubType {
 class ReceiptPage extends StatefulWidget {
   const ReceiptPage({
     super.key,
-    required this.id,
+    required this.receipt,
   });
 
-  final int id;
+  final ReceiptEntity receipt;
 
   @override
   State<ReceiptPage> createState() => _ReceiptPageState();
@@ -58,23 +59,13 @@ class _ReceiptPageState extends State<ReceiptPage> {
 
   SortSubType currentSortSubType = SortSubType.idle;
 
-  Future<ReceiptEntity>? _data;
-
-  Future<void> _loadReceipt() async {
-    _data = receiptRepository.getReceipt(id: widget.id);
-  }
-
-  @override
-  void initState() {
-    _loadReceipt();
-
-    super.initState();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: const ReceiptAppbar(),
+        appBar: ReceiptAppbar(
+          receiptId: widget.receipt.id,
+          datetime: widget.receipt.date,
+        ),
         body: SafeArea(
           child: CustomScrollView(
             slivers: [
@@ -158,33 +149,11 @@ class _ReceiptPageState extends State<ReceiptPage> {
                   ),
                 ),
               ),
-              FutureBuilder(
-                  future: _data,
-                  builder: (_, snapshot) {
-                    if (snapshot.connectionState == ConnectionState.done) {
-                      if (snapshot.hasError) {
-                        return Text('error');
-                      } else if (snapshot.hasData) {
-                        return ProductList(
-                          productList: snapshot.data!.products,
-                          currentSortSubType: currentSortSubType,
-                        );
-                      }
-                    }
-                    return SliverFillRemaining(
-                      child: Container(
-                        alignment: Alignment.center,
-                        child: SizedBox(
-                          width: 128,
-                          height: 128,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 3,
-                            color: AppColorScheme.of(context).primary,
-                          ),
-                        ),
-                      ),
-                    );
-                  }),
+              ProductList(
+                productList:
+                    widget.receipt.products.sortByRule(currentSortSubType),
+                currentSortSubType: currentSortSubType,
+              ),
               /*         ReceiptSummary(
                 summaryCalculator: summaryCalculator,
               ),*/

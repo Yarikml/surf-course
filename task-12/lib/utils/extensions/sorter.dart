@@ -1,21 +1,10 @@
 import 'dart:core';
 
-import '../model/product_entity.dart';
-import '../pages/receipt_page/receipt_page.dart';
-
-class IncreasePriceRule implements Comparable<ProductEntity> {
-  final ProductEntity value;
-
-  IncreasePriceRule({
-    required this.value,
-  });
-
-  @override
-  int compareTo(ProductEntity other) => value.price.compareTo(other.price);
-}
+import '../../features/receipt/model/product_entity.dart';
+import '../../features/receipt/pages/receipt_page/receipt_page.dart';
 
 extension Sorter on List<ProductEntity> {
-  Future<List<ProductEntity>> sortByRule(SortSubType type) {
+  List<ProductEntity> sortByRule(SortSubType type) {
     List<ProductEntity> sortedList = List.from(this);
     switch (type) {
       case SortSubType.byPriceIncrease:
@@ -96,6 +85,6 @@ extension Sorter on List<ProductEntity> {
         break;
       default:
     }
-    return Future.value(sortedList);
+    return sortedList;
   }
 }

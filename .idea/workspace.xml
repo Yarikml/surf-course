@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7da22925-7deb-4c2c-8e02-244cc9c84704" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page_flow.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-12/lib/utils/extensions/date_time_x.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/.filecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/app.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/debug_ios_bundle_flutter_assets.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/debug_ios_bundle_flutter_assets.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/flutter_assets.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/main/widgets/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/main/widgets/pages/main_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/logic/sorter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/logic/sorter.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/model/receipt_entity.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/model/receipt_entity.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_list.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_appbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_appbar.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -6,14 +6,13 @@ import 'package:surf_flutter_courses_template/features/receipt/pages/receipt_pag
 
 import '../../widgets/cupertino_radio_tile.dart';
 
-
 class SortProductsBottomSheet extends StatefulWidget {
   const SortProductsBottomSheet({
     super.key,
-    required this.currentSortType,
+    required this.currentSortSubType,
   });
 
-  final SortType currentSortType;
+  final SortSubType currentSortSubType;
 
   @override
   State<SortProductsBottomSheet> createState() =>
@@ -21,24 +20,24 @@ class SortProductsBottomSheet extends StatefulWidget {
 }
 
 class _SortProductsBottomSheetState extends State<SortProductsBottomSheet> {
-  late SortType currentSortType;
+  late SortSubType currentSortSubType;
 
   @override
   void initState() {
-    currentSortType = widget.currentSortType;
+    currentSortSubType = widget.currentSortSubType;
     super.initState();
   }
 
-  void onSortTypeChanged(SortType? value) {
+  void onSortTypeChanged(SortSubType? value) {
     setState(() {
-      currentSortType = value!;
+      currentSortSubType = value!;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 520,
+      height: 550,
       padding: const EdgeInsets.all(20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,73 +50,46 @@ class _SortProductsBottomSheetState extends State<SortProductsBottomSheet> {
                 style: AppTextTheme.of(context).bold18,
               ),
               GestureDetector(
-                onTap: () => Navigator.of(context).pop(currentSortType),
+                onTap: () => Navigator.of(context).pop(currentSortSubType),
                 child: const Icon(Icons.close),
               ),
             ],
           ),
-          CupertinoRadioTile<SortType>(
-            value: SortType.idle,
-            groupValue: currentSortType,
-            label: SortType.idle.value,
-            onChanged: onSortTypeChanged,
-          ),
-          const Divider(
-            thickness: 1,
-          ),
-          Text(
-            'По имени',
-            style: AppTextTheme.of(context).regular12,
-          ),
-          CupertinoRadioTile<SortType>(
-            value: SortType.byNameFromAToZ,
-            groupValue: currentSortType,
-            label: SortType.byNameFromAToZ.value,
-            onChanged: onSortTypeChanged,
-          ),
-          CupertinoRadioTile<SortType>(
-            value: SortType.byNameFromZToA,
-            groupValue: currentSortType,
-            label: SortType.byNameFromZToA.value,
-            onChanged: onSortTypeChanged,
-          ),
-          const Divider(
-            thickness: 1,
-          ),
-          Text(
-            'По цене',
-            style: AppTextTheme.of(context).regular12,
-          ),
-          CupertinoRadioTile<SortType>(
-            value: SortType.byPriceIncrease,
-            groupValue: currentSortType,
-            label: SortType.byPriceIncrease.value,
-            onChanged: onSortTypeChanged,
-          ),
-          CupertinoRadioTile<SortType>(
-            value: SortType.byPriceDecrease,
-            groupValue: currentSortType,
-            label: SortType.byPriceDecrease.value,
-            onChanged: onSortTypeChanged,
-          ),
-          const Divider(
-            thickness: 1,
-          ),
-          Text(
-            'По типу',
-            style: AppTextTheme.of(context).regular12,
-          ),
-          CupertinoRadioTile<SortType>(
-            value: SortType.byTypeFromAToZ,
-            groupValue: currentSortType,
-            label: SortType.byTypeFromAToZ.value,
-            onChanged: onSortTypeChanged,
-          ),
-          CupertinoRadioTile<SortType>(
-            value: SortType.byTypeFromZToA,
-            groupValue: currentSortType,
-            label: SortType.byTypeFromZToA.value,
-            onChanged: onSortTypeChanged,
+          ListView.builder(
+            shrinkWrap: true,
+            itemBuilder: (context, index) {
+              final categoryName = SortType.values[index].value;
+              final categoryItems = SortSubType.values
+                  .where((element) => element.type == SortType.values[index]);
+              return Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  index > 0
+                      ? Text(
+                          categoryName,
+                          style: AppTextTheme.of(context).regular12,
+                        )
+                      : Container(),
+                  ...categoryItems
+                      .map(
+                        (item) => CupertinoRadioTile<SortSubType>(
+                          value: item,
+                          groupValue: currentSortSubType,
+                          label: item.name,
+                          onChanged: onSortTypeChanged,
+                        ),
+                      )
+                      .toList(),
+                  index < SortType.values.length - 1
+                      ? Divider(
+                          thickness: 1,
+                        )
+                      : Container(),
+                ],
+              );
+            },
+            itemCount: SortType.values.length,
           ),
           Padding(
             padding: const EdgeInsets.only(top: 24.0),
@@ -131,7 +103,7 @@ class _SortProductsBottomSheetState extends State<SortProductsBottomSheet> {
                 minimumSize: const Size.fromHeight(48),
               ),
               onPressed: () {
-                Navigator.of(context).pop(currentSortType);
+                Navigator.of(context).pop(currentSortSubType);
               },
               child: const Text('Готово'),
             ),

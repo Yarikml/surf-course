@@ -36,7 +36,7 @@ class CupertinoRadioTile<T> extends StatelessWidget {
           Text(
             label,
             style: AppTextTheme.of(context).regular16,
-          )
+          ),
         ],
       ),
     );

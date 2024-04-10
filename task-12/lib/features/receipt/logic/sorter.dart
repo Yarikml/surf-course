@@ -3,8 +3,6 @@ import 'dart:core';
 import '../model/product_entity.dart';
 import '../pages/receipt_page/receipt_page.dart';
 
-
-
 class IncreasePriceRule implements Comparable<ProductEntity> {
   final ProductEntity value;
 
@@ -17,38 +15,38 @@ class IncreasePriceRule implements Comparable<ProductEntity> {
 }
 
 extension Sorter on List<ProductEntity> {
-  Future<List<ProductEntity>> sortByRule(SortType type) {
+  Future<List<ProductEntity>> sortByRule(SortSubType type) {
     List<ProductEntity> sortedList = List.from(this);
     switch (type) {
-      case SortType.byPriceIncrease:
+      case SortSubType.byPriceIncrease:
         {
           sortedList.sort(
             (a, b) => a.priceWithSale.compareTo(b.priceWithSale),
           );
         }
         break;
-      case SortType.byPriceDecrease:
+      case SortSubType.byPriceDecrease:
         {
           sortedList.sort(
             (a, b) => b.priceWithSale.compareTo(a.priceWithSale),
           );
         }
         break;
-      case SortType.byNameFromAToZ:
+      case SortSubType.byNameFromAToZ:
         {
           sortedList.sort(
             (a, b) => a.title.compareTo(b.title),
           );
         }
         break;
-      case SortType.byNameFromZToA:
+      case SortSubType.byNameFromZToA:
         {
           sortedList.sort(
             (a, b) => b.title.compareTo(a.title),
           );
         }
         break;
-      case SortType.byTypeFromAToZ:
+      case SortSubType.byTypeFromAToZ:
         {
           final categorizedProducts = <Category, List<ProductEntity>>{};
           for (final product in sortedList) {
@@ -72,7 +70,7 @@ extension Sorter on List<ProductEntity> {
           sortedList = result;
         }
         break;
-      case SortType.byTypeFromZToA:
+      case SortSubType.byTypeFromZToA:
         {
           final categorizedProducts = <Category, List<ProductEntity>>{};
           for (final product in sortedList) {

@@ -13,16 +13,31 @@ import '../../widgets/product_item.dart';
 
 enum SortType {
   idle('Без сортировки'),
-  byNameFromAToZ('По имени  от А до Я'),
-  byNameFromZToA('По имени  от Я до А'),
-  byPriceIncrease('По возрастанию'),
-  byPriceDecrease('По убыванию'),
-  byTypeFromAToZ('По типу от А до Я'),
-  byTypeFromZToA('По типу от Я до А');
+  byName('По имени'),
+  byPrice('По цене'),
+  byType('По типу');
 
   final String value;
 
   const SortType(this.value);
+}
+
+enum SortSubType {
+  idle(type: SortType.idle, name: 'Без сортировки'),
+  byNameFromAToZ(type: SortType.byName, name: 'По имени  от А до Я'),
+  byNameFromZToA(type: SortType.byName, name: 'По имени  от Я до А'),
+  byPriceIncrease(type: SortType.byPrice, name: 'По возрастанию'),
+  byPriceDecrease(type: SortType.byPrice, name: 'По убыванию'),
+  byTypeFromAToZ(type: SortType.byType, name: 'По типу от А до Я'),
+  byTypeFromZToA(type: SortType.byType, name: 'По типу от Я до А');
+
+  final String name;
+  final SortType type;
+
+  const SortSubType({
+    required this.name,
+    required this.type,
+  });
 }
 
 class ReceiptPage extends StatefulWidget {
@@ -40,7 +55,7 @@ class ReceiptPage extends StatefulWidget {
 class _ReceiptPageState extends State<ReceiptPage> {
   late final ReceiptCalculator summaryCalculator;
 
-  SortType currentSortType = SortType.idle;
+  SortSubType currentSortSubType = SortSubType.idle;
 
   Future<ReceiptEntity>? _data;
 
@@ -81,7 +96,8 @@ class _ReceiptPageState extends State<ReceiptPage> {
                       ),
                       InkWell(
                         onTap: () async {
-                          final SortType? result = await showModalBottomSheet(
+                          final SortSubType? result =
+                              await showModalBottomSheet<SortSubType>(
                             isScrollControlled: true,
                             isDismissible: false,
                             shape: const RoundedRectangleBorder(
@@ -91,12 +107,12 @@ class _ReceiptPageState extends State<ReceiptPage> {
                             )),
                             context: context,
                             builder: (context) => SortProductsBottomSheet(
-                              currentSortType: currentSortType,
+                              currentSortSubType: currentSortSubType,
                             ),
                           );
                           if (result != null) {
                             setState(() {
-                              currentSortType = result;
+                              currentSortSubType = result;
                             });
 
                             await Future.delayed(const Duration(seconds: 1));
@@ -120,7 +136,7 @@ class _ReceiptPageState extends State<ReceiptPage> {
                                     .secondary,
                               ),
                             ),
-                            currentSortType != SortType.idle
+                            currentSortSubType != SortSubType.idle
                                 ? Positioned(
                                     right: 4,
                                     bottom: 4,
@@ -154,19 +170,19 @@ class _ReceiptPageState extends State<ReceiptPage> {
                             itemBuilder: (BuildContext context, int index) =>
                                 ProductItem(
                               product: snapshot.data!.products[index],
-                              hasCategoryName:
-                                  (currentSortType == SortType.byTypeFromAToZ ||
-                                          currentSortType ==
-                                              SortType.byTypeFromZToA) &&
-                                      (index == 0 ||
-                                          snapshot.data!.products[index - 1]
-                                                  .category !=
-                                              snapshot.data!.products[index]
-                                                  .category),
-                              hasDivider: (currentSortType ==
-                                          SortType.byTypeFromAToZ ||
-                                      currentSortType ==
-                                          SortType.byTypeFromZToA) &&
+                              hasCategoryName: (currentSortSubType ==
+                                          SortSubType.byTypeFromAToZ ||
+                                      currentSortSubType ==
+                                          SortSubType.byTypeFromZToA) &&
+                                  (index == 0 ||
+                                      snapshot.data!.products[index - 1]
+                                              .category !=
+                                          snapshot
+                                              .data!.products[index].category),
+                              hasDivider: (currentSortSubType ==
+                                          SortSubType.byTypeFromAToZ ||
+                                      currentSortSubType ==
+                                          SortSubType.byTypeFromZToA) &&
                                   (index ==
                                           snapshot.data!.products.length - 1 ||
                                       snapshot.data!.products[index + 1]

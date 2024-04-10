@@ -3,6 +3,7 @@ import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/text_extension.dart';
 
 import 'package:surf_flutter_courses_template/features/receipt/pages/receipt_page/sort_products_bottom_sheet.dart';
+import 'package:surf_flutter_courses_template/features/receipt/widgets/product_list.dart';
 import 'package:surf_flutter_courses_template/features/receipt/widgets/receipt_appbar.dart';
 import 'package:surf_flutter_courses_template/features/receipt/widgets/receipt_summary.dart';
 
@@ -164,34 +165,9 @@ class _ReceiptPageState extends State<ReceiptPage> {
                       if (snapshot.hasError) {
                         return Text('error');
                       } else if (snapshot.hasData) {
-                        return SliverPadding(
-                          padding: const EdgeInsets.symmetric(horizontal: 20),
-                          sliver: SliverList.builder(
-                            itemBuilder: (BuildContext context, int index) =>
-                                ProductItem(
-                              product: snapshot.data!.products[index],
-                              hasCategoryName: (currentSortSubType ==
-                                          SortSubType.byTypeFromAToZ ||
-                                      currentSortSubType ==
-                                          SortSubType.byTypeFromZToA) &&
-                                  (index == 0 ||
-                                      snapshot.data!.products[index - 1]
-                                              .category !=
-                                          snapshot
-                                              .data!.products[index].category),
-                              hasDivider: (currentSortSubType ==
-                                          SortSubType.byTypeFromAToZ ||
-                                      currentSortSubType ==
-                                          SortSubType.byTypeFromZToA) &&
-                                  (index ==
-                                          snapshot.data!.products.length - 1 ||
-                                      snapshot.data!.products[index + 1]
-                                              .category !=
-                                          snapshot
-                                              .data!.products[index].category),
-                            ),
-                            itemCount: snapshot.data!.products.length,
-                          ),
+                        return ProductList(
+                          productList: snapshot.data!.products,
+                          currentSortSubType: currentSortSubType,
                         );
                       }
                     }

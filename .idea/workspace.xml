@@ -12,10 +12,8 @@
       <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/flutter_assets.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/logic/sorter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/logic/sorter.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/sort_products_bottom_sheet.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/sort_products_bottom_sheet.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/cupertino_radio_tile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/cupertino_radio_tile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_list.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

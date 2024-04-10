@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7da22925-7deb-4c2c-8e02-244cc9c84704" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page_flow.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-12/lib/utils/extensions/date_time_x.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-12/lib/features/main/widgets/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/main/widgets/pages/main_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/logic/sorter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/logic/sorter.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/model/receipt_entity.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/model/receipt_entity.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_appbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_appbar.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +59,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-12/lib/utils/extensions" />
+    </key>
+  </component>
   <component name="RunManager" selected="Flutter.main.dart">
     <configuration name="surf_dart_courses_template.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/task-6/bin/surf_dart_courses_template.dart" />

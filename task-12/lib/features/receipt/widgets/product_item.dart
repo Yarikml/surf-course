@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/features/receipt/widgets/product_photo_shimmer.dart';
+import 'package:surf_flutter_courses_template/utils/extensions/decimal_x.dart';
 
 import '../../../assets/text/text_extension.dart';
 import '../model/product_entity.dart';
@@ -72,14 +73,14 @@ class ProductItem extends StatelessWidget {
                             ? Padding(
                                 padding: const EdgeInsets.only(right: 8.0),
                                 child: Text(
-                                  '${product.priceInRub} руб',
+                                  product.decimalPrice.toFormattedCurrency(),
                                   style: AppTextTheme.of(context)
                                       .regular12SaleOldPrice,
                                 ),
                               )
                             : Container(),
                         Text(
-                          '${product.priceWithSaleInRub} руб',
+                          product.decimalPriceWithSale.toFormattedCurrency(),
                           style: product.hasSale
                               ? AppTextTheme.of(context).bold12SaleNewPrice
                               : AppTextTheme.of(context).bold12,

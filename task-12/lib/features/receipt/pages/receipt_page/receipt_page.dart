@@ -55,7 +55,7 @@ class ReceiptPage extends StatefulWidget {
 }
 
 class _ReceiptPageState extends State<ReceiptPage> {
-  late final ReceiptCalculator summaryCalculator;
+  // late final ReceiptCalculator summaryCalculator;
 
   SortSubType currentSortSubType = SortSubType.idle;
 
@@ -154,9 +154,9 @@ class _ReceiptPageState extends State<ReceiptPage> {
                     widget.receipt.products.sortByRule(currentSortSubType),
                 currentSortSubType: currentSortSubType,
               ),
-              /*         ReceiptSummary(
-                summaryCalculator: summaryCalculator,
-              ),*/
+              ReceiptSummary(
+                products: widget.receipt.products,
+              ),
             ],
           ),
         ));

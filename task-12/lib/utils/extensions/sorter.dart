@@ -10,14 +10,14 @@ extension Sorter on List<ProductEntity> {
       case SortSubType.byPriceIncrease:
         {
           sortedList.sort(
-            (a, b) => a.priceWithSale.compareTo(b.priceWithSale),
+            (a, b) => a.decimalPriceWithSale.compareTo(b.decimalPriceWithSale),
           );
         }
         break;
       case SortSubType.byPriceDecrease:
         {
           sortedList.sort(
-            (a, b) => b.priceWithSale.compareTo(a.priceWithSale),
+            (a, b) => b.decimalPriceWithSale.compareTo(a.decimalPriceWithSale),
           );
         }
         break;

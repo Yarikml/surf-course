@@ -1,3 +1,4 @@
+import 'package:decimal/decimal.dart';
 import 'package:intl/intl.dart';
 
 /// Модель продукта.
@@ -37,8 +38,6 @@ class ProductEntity {
   /// Требуется высчитать самостоятельно итоговую цену товара.
   final double sale;
 
-  final formatter = NumberFormat("#,###");
-
   ProductEntity({
     required this.title,
     required this.price,
@@ -50,13 +49,20 @@ class ProductEntity {
 
   bool get hasSale => sale > 0;
 
-  int get priceWithSale =>
-      hasSale ? (price - (price * (sale / 100))).round() : price;
+  Decimal get decimalPriceWithSale =>
+      hasSale ? _toDecimalPriceWithSale(price, sale) : _toDecimalPrice(price);
 
-  String get priceWithSaleInRub =>
-      formatter.format(priceWithSale / 100).replaceAll(',', ' ');
+  Decimal get decimalPrice => _toDecimalPrice(price);
 
-  String get priceInRub => formatter.format(price / 100).replaceAll(',', ' ');
+  Decimal _toDecimalPrice(int price) {
+    final priceString = (price / 100).toStringAsFixed(2);
+    return Decimal.parse(priceString);
+  }
+
+  Decimal _toDecimalPriceWithSale(int price, double sale) {
+    final priceString = ((price - (price * (sale / 100))) / 100).toStringAsFixed(2);
+    return Decimal.parse(priceString);
+  }
 
   String get formattedAmount {
     switch (amount) {

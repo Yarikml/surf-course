@@ -1,15 +1,31 @@
+import 'package:decimal/decimal.dart';
 import 'package:flutter/material.dart';
+import 'package:surf_flutter_courses_template/utils/extensions/decimal_x.dart';
 
 import '../../../assets/text/text_extension.dart';
 import '../logic/receipt_calculator.dart';
+import '../model/product_entity.dart';
 
-class ReceiptSummary extends StatelessWidget {
+class ReceiptSummary extends StatefulWidget {
   const ReceiptSummary({
     super.key,
-    required this.summaryCalculator,
+    required this.products,
   });
 
-  final ReceiptCalculator summaryCalculator;
+  final List<ProductEntity> products;
+
+  @override
+  State<ReceiptSummary> createState() => _ReceiptSummaryState();
+}
+
+class _ReceiptSummaryState extends State<ReceiptSummary> {
+  late ReceiptCalculator receiptCalculator;
+
+  @override
+  void initState() {
+    receiptCalculator = ReceiptCalculator(products: widget.products);
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -35,17 +51,17 @@ class ReceiptSummary extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  '${summaryCalculator.products.length} товаров',
+                  '${widget.products.length} товаров',
                   style: Theme.of(context).extension<AppTextTheme>()!.regular12,
                 ),
                 Text(
-                  '${summaryCalculator.pricesSummaryInRub} руб',
+                  receiptCalculator.pricesSummary.toFormattedCurrency(),
                   style: Theme.of(context).extension<AppTextTheme>()!.bold12,
                 ),
               ],
             ),
           ),
-          summaryCalculator.sale > 0
+          receiptCalculator.salePercent > 0
               ? SliverPadding(
                   padding: const EdgeInsets.symmetric(vertical: 11),
                   sliver: SliverToBoxAdapter(
@@ -53,13 +69,13 @@ class ReceiptSummary extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          'Скидка ${summaryCalculator.salePercent}%',
+                          'Скидка ${receiptCalculator.salePercent}%',
                           style: Theme.of(context)
                               .extension<AppTextTheme>()!
                               .regular12,
                         ),
                         Text(
-                          '-${summaryCalculator.saleInRub} руб',
+                          '- ${receiptCalculator.saleAmount.toFormattedCurrency()}',
                           style: Theme.of(context)
                               .extension<AppTextTheme>()!
                               .bold12,
@@ -78,7 +94,7 @@ class ReceiptSummary extends StatelessWidget {
                   style: Theme.of(context).extension<AppTextTheme>()!.bold16,
                 ),
                 Text(
-                  '${summaryCalculator.priceSummaryWithSaleInRub} руб',
+                  receiptCalculator.priceSummaryWithSale.toFormattedCurrency(),
                   style: Theme.of(context).extension<AppTextTheme>()!.bold16,
                 ),
               ],

@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7da22925-7deb-4c2c-8e02-244cc9c84704" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_12_2023,_00_47_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/surf-course.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/surf-course.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-4/bin/surf_dart_courses_template.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-4/bin/surf_dart_courses_template.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="9337" />
+    <option name="totalTimeSeconds" value="11166" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="task-6" />
+        <entry key="$PROJECT_DIR$" value="task-9" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,7 +79,8 @@
       <updated>1699373833462</updated>
       <workItem from="1699373835178" duration="5966000" />
       <workItem from="1703627202663" duration="1358000" />
-      <workItem from="1704841899512" duration="402000" />
+      <workItem from="1704841899512" duration="2078000" />
+      <workItem from="1705001341319" duration="328000" />
     </task>
     <servers />
   </component>

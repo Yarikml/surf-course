@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:surf_flutter_courses_template/assets/app_strings/app_strings.dart';
 import 'package:surf_flutter_courses_template/utils/extensions/date_time_x.dart';
 
 import '../../../assets/text/text_extension.dart';
@@ -22,11 +23,16 @@ class ReceiptAppbar extends StatelessWidget implements PreferredSizeWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            'Чек № $receiptId',
+            AppStrings.receiptNumber(
+              receiptId.toString(),
+            ),
             style: Theme.of(context).extension<AppTextTheme>()!.bold18,
           ),
           Text(
-            '${datetime.formattedDate} в ${datetime.formattedTime}',
+            AppStrings.receiptDateTime(
+              datetime.formattedDate,
+              datetime.formattedTime,
+            ),
             style: Theme.of(context).extension<AppTextTheme>()!.regular10,
           ),
         ],

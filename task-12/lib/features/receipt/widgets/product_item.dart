@@ -69,7 +69,7 @@ class ProductItem extends StatelessWidget {
                           '${product.amount.toFormattedString} ${product.amount.caption}',
                           style: AppTextTheme.of(context).regular12,
                         ),
-                        Spacer(),
+                        const Spacer(),
                         product.hasSale
                             ? Padding(
                                 padding: const EdgeInsets.only(right: 8.0),
@@ -95,8 +95,8 @@ class ProductItem extends StatelessWidget {
           ),
         ),
         hasDivider
-            ? Padding(
-                padding: const EdgeInsets.only(bottom: 16.0),
+            ? const Padding(
+                padding: EdgeInsets.only(bottom: 16.0),
                 child: Divider(
                   thickness: 1,
                 ),

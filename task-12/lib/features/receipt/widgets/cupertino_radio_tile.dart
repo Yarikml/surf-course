@@ -20,24 +20,27 @@ class CupertinoRadioTile<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
-      child: Row(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(right: 16.0),
-            child: CupertinoRadio<T>(
-              activeColor: AppColorScheme.of(context).primary,
-              value: value,
-              groupValue: groupValue,
-              onChanged: onChanged,
+    return GestureDetector(
+      onTap: () => onChanged(value),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8.0),
+        child: Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(right: 16.0),
+              child: CupertinoRadio<T>(
+                activeColor: AppColorScheme.of(context).primary,
+                value: value,
+                groupValue: groupValue,
+                onChanged: onChanged,
+              ),
             ),
-          ),
-          Text(
-            label,
-            style: AppTextTheme.of(context).regular16,
-          ),
-        ],
+            Text(
+              label,
+              style: AppTextTheme.of(context).regular16,
+            ),
+          ],
+        ),
       ),
     );
   }

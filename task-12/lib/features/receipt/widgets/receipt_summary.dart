@@ -1,6 +1,6 @@
-import 'package:decimal/decimal.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:surf_flutter_courses_template/assets/app_strings/app_strings.dart';
 import 'package:surf_flutter_courses_template/utils/extensions/decimal_x.dart';
 
 import '../../../assets/text/text_extension.dart';
@@ -55,7 +55,7 @@ class _ReceiptSummaryState extends State<ReceiptSummary> {
             padding: const EdgeInsets.only(bottom: 8),
             sliver: SliverToBoxAdapter(
               child: Text(
-                'В вашей покупке',
+                AppStrings.inYourTrash,
                 style: AppTextTheme.of(context).bold16,
               ),
             ),
@@ -83,13 +83,14 @@ class _ReceiptSummaryState extends State<ReceiptSummary> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          'Скидка ${receiptCalculator.salePercent}%',
+                          AppStrings.salePercent(receiptCalculator.salePercent),
                           style: Theme.of(context)
                               .extension<AppTextTheme>()!
                               .regular12,
                         ),
                         Text(
-                          '- ${receiptCalculator.saleAmount.toFormattedCurrency()}',
+                          AppStrings.saleAmount(receiptCalculator.saleAmount
+                              .toFormattedCurrency()),
                           style: Theme.of(context)
                               .extension<AppTextTheme>()!
                               .bold12,
@@ -106,7 +107,7 @@ class _ReceiptSummaryState extends State<ReceiptSummary> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'Итого',
+                  AppStrings.finallyPrice,
                   style: Theme.of(context).extension<AppTextTheme>()!.bold16,
                 ),
                 Text(

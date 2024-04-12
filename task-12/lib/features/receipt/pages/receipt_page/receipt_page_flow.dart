@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:surf_flutter_courses_template/assets/app_strings/app_strings.dart';
 import 'package:surf_flutter_courses_template/features/receipt/pages/receipt_page/receipt_page.dart';
 
 import '../../../../assets/colors/color_scheme.dart';
@@ -36,7 +37,7 @@ class _ReceiptPageFlowState extends State<ReceiptPageFlow> {
         builder: (_, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
             if (snapshot.hasError) {
-              return Text('error');
+              return Text(AppStrings.error);
             } else if (snapshot.hasData) {
               return ReceiptPage(receipt: snapshot.data!);
             }

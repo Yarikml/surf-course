@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:surf_flutter_courses_template/assets/app_strings/app_strings.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/text_extension.dart';
 import 'package:surf_flutter_courses_template/utils/extensions/sorter.dart';
@@ -7,11 +8,7 @@ import 'package:surf_flutter_courses_template/features/receipt/pages/receipt_pag
 import 'package:surf_flutter_courses_template/features/receipt/widgets/product_list.dart';
 import 'package:surf_flutter_courses_template/features/receipt/widgets/receipt_appbar.dart';
 import 'package:surf_flutter_courses_template/features/receipt/widgets/receipt_summary.dart';
-
-import '../../../../runner.dart';
-import '../../../../utils/receipt_calculator.dart';
 import '../../model/receipt_entity.dart';
-import '../../widgets/product_item.dart';
 
 enum SortType {
   idle('Без сортировки'),
@@ -55,8 +52,6 @@ class ReceiptPage extends StatefulWidget {
 }
 
 class _ReceiptPageState extends State<ReceiptPage> {
-  // late final ReceiptCalculator summaryCalculator;
-
   SortSubType currentSortSubType = SortSubType.idle;
 
   @override
@@ -82,7 +77,7 @@ class _ReceiptPageState extends State<ReceiptPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Список покупок',
+                        AppStrings.productList,
                         style:
                             Theme.of(context).extension<AppTextTheme>()!.bold18,
                       ),
@@ -106,8 +101,6 @@ class _ReceiptPageState extends State<ReceiptPage> {
                             setState(() {
                               currentSortSubType = result;
                             });
-
-                            await Future.delayed(const Duration(seconds: 1));
                           }
                         },
                         child: Stack(

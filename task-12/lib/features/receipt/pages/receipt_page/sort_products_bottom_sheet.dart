@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:surf_flutter_courses_template/assets/app_strings/app_strings.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/text_extension.dart';
 
@@ -46,7 +47,7 @@ class _SortProductsBottomSheetState extends State<SortProductsBottomSheet> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'Сортировка',
+                AppStrings.sorting,
                 style: AppTextTheme.of(context).bold18,
               ),
               GestureDetector(
@@ -82,7 +83,7 @@ class _SortProductsBottomSheetState extends State<SortProductsBottomSheet> {
                       )
                       .toList(),
                   index < SortType.values.length - 1
-                      ? Divider(
+                      ? const Divider(
                           thickness: 1,
                         )
                       : Container(),
@@ -105,7 +106,7 @@ class _SortProductsBottomSheetState extends State<SortProductsBottomSheet> {
               onPressed: () {
                 Navigator.of(context).pop(currentSortSubType);
               },
-              child: const Text('Готово'),
+              child: Text(AppStrings.done),
             ),
           ),
         ],

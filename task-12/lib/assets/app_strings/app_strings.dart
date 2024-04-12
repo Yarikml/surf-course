@@ -1,3 +1,4 @@
+///Примитивная реализация локализации
 class AppStrings {
   static String get inWork => 'В разработке';
 

@@ -1,6 +1,6 @@
 import 'package:surf_flutter_courses_template/features/receipt/model/product_entity.dart';
 
-import '../features/receipt/model/amount.dart';
+import 'package:surf_flutter_courses_template/features/receipt/model/amount.dart';
 
 /// Список продуктов.
 ///

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/app_strings/app_strings.dart';
 import 'package:surf_flutter_courses_template/utils/extensions/date_time_x.dart';
 
-import '../../../assets/text/text_extension.dart';
+import 'package:surf_flutter_courses_template/assets/text/text_extension.dart';
 
 class ReceiptAppbar extends StatelessWidget implements PreferredSizeWidget {
   const ReceiptAppbar({

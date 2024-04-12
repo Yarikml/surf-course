@@ -17,7 +17,7 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0;
 
-  final List<Widget> _widgetOptions = <Widget>[
+  final List<Widget> tabs = <Widget>[
     Center(
       child: Text(
         AppStrings.inWork,
@@ -49,7 +49,7 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       body: IndexedStack(
         index: _selectedIndex,
-        children: _widgetOptions,
+        children: tabs,
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: AppColorScheme.of(context).background,

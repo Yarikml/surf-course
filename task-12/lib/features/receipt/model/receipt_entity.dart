@@ -1,7 +1,7 @@
 
-import 'package:intl/intl.dart';
 import 'package:surf_flutter_courses_template/features/receipt/model/product_entity.dart';
 
+/// Описание сущности чека
 class ReceiptEntity {
   final int id;
   final DateTime date;

@@ -1,6 +1,6 @@
 import 'package:decimal/decimal.dart';
 
-import 'amount.dart';
+import 'package:surf_flutter_courses_template/features/receipt/model/amount.dart';
 
 /// Модель продукта.
 ///
@@ -55,19 +55,19 @@ class ProductEntity {
 
   Decimal get decimalPrice => _toDecimalPrice(price);
 
+  ///Метод перевода цены в Decimal тип для корректного выполнения дальнейших операций
   Decimal _toDecimalPrice(int price) {
     final priceString = (price / 100).toStringAsFixed(2);
     return Decimal.parse(priceString);
   }
 
+  ///Метод перевода цены со скидкой в Decimal тип для корректного выполнения дальнейших операций
   Decimal _toDecimalPriceWithSale(int price, double sale) {
-    final priceString = ((price - (price * (sale / 100))) / 100).toStringAsFixed(2);
+    final priceString =
+        ((price - (price * (sale / 100))) / 100).toStringAsFixed(2);
     return Decimal.parse(priceString);
   }
-
-
 }
-
 
 /// Категория товара.
 enum Category {

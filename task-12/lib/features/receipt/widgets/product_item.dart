@@ -3,8 +3,8 @@ import 'package:surf_flutter_courses_template/features/receipt/widgets/product_p
 import 'package:surf_flutter_courses_template/utils/extensions/amount_x.dart';
 import 'package:surf_flutter_courses_template/utils/extensions/decimal_x.dart';
 
-import '../../../assets/text/text_extension.dart';
-import '../model/product_entity.dart';
+import 'package:surf_flutter_courses_template/assets/text/text_extension.dart';
+import 'package:surf_flutter_courses_template/features/receipt/model/product_entity.dart';
 
 class ProductItem extends StatelessWidget {
   const ProductItem({

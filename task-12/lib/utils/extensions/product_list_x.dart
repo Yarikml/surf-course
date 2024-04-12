@@ -1,7 +1,7 @@
 import 'dart:core';
 
-import '../../features/receipt/model/product_entity.dart';
-import '../../features/receipt/pages/receipt_page/receipt_page.dart';
+import 'package:surf_flutter_courses_template/features/receipt/model/product_entity.dart';
+import 'package:surf_flutter_courses_template/features/receipt/pages/receipt_page/receipt_page.dart';
 
 extension ProductListX on List<ProductEntity> {
   List<ProductEntity> sortBySubType(SortSubType type) {

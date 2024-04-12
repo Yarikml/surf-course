@@ -1,5 +1,6 @@
 part of 'resources.dart';
 
+/// Набор вектор иконок приложения
 class SvgIcons {
   SvgIcons._();
 

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 
-import '../text/text_extension.dart';
+import 'package:surf_flutter_courses_template/assets/text/text_extension.dart';
 
+///Тема приложения
 abstract class AppThemeData {
   static final ThemeData themeData = ThemeData(
     fontFamily: 'Sora',

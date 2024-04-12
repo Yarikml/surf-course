@@ -1,7 +1,6 @@
 import 'package:decimal/decimal.dart';
-import 'package:intl/intl.dart';
 
-import '../features/receipt/model/product_entity.dart';
+import 'package:surf_flutter_courses_template/features/receipt/model/product_entity.dart';
 
 class ReceiptCalculator {
   final List<ProductEntity> products;

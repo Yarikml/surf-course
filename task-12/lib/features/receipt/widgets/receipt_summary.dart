@@ -3,9 +3,9 @@ import 'package:intl/intl.dart';
 import 'package:surf_flutter_courses_template/assets/app_strings/app_strings.dart';
 import 'package:surf_flutter_courses_template/utils/extensions/decimal_x.dart';
 
-import '../../../assets/text/text_extension.dart';
-import '../../../utils/receipt_calculator.dart';
-import '../model/product_entity.dart';
+import 'package:surf_flutter_courses_template/assets/text/text_extension.dart';
+import 'package:surf_flutter_courses_template/utils/receipt_calculator.dart';
+import 'package:surf_flutter_courses_template/features/receipt/model/product_entity.dart';
 
 class ReceiptSummary extends StatefulWidget {
   const ReceiptSummary({
@@ -28,6 +28,7 @@ class _ReceiptSummaryState extends State<ReceiptSummary> {
     super.initState();
   }
 
+  ///Склонение для слова "Товар"
   String getSuitProductTitle(int quantity) {
     return Intl.plural(
       quantity,

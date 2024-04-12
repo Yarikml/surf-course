@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_pallete.dart';
 
+/// Цветовая схема приложения
 @immutable
 class AppColorScheme extends ThemeExtension<AppColorScheme> {
   /// Base branding color for the app.

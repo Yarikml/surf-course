@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../assets/colors/color_scheme.dart';
-import '../../../assets/res/resources.dart';
+import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
+import 'package:surf_flutter_courses_template/assets/res/resources.dart';
 
 class ProductPhotoShimmer extends StatelessWidget {
   const ProductPhotoShimmer({super.key});

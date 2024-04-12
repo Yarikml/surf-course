@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/text/text_style.dart';
 
+/// Текстовая схема приложения
 class AppTextTheme extends ThemeExtension<AppTextTheme> {
   final TextStyle regular10;
   final TextStyle regular12;

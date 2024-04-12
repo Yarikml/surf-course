@@ -8,8 +8,9 @@ import 'package:surf_flutter_courses_template/features/receipt/pages/receipt_pag
 import 'package:surf_flutter_courses_template/features/receipt/widgets/product_list.dart';
 import 'package:surf_flutter_courses_template/features/receipt/widgets/receipt_appbar.dart';
 import 'package:surf_flutter_courses_template/features/receipt/widgets/receipt_summary.dart';
-import '../../model/receipt_entity.dart';
+import 'package:surf_flutter_courses_template/features/receipt/model/receipt_entity.dart';
 
+///Типы сортировок
 enum SortType {
   idle('Без сортировки'),
   byName('По имени'),
@@ -21,6 +22,7 @@ enum SortType {
   const SortType(this.value);
 }
 
+/// Подтипы сортировок с привязкой к типам
 enum SortSubType {
   idle(type: SortType.idle, name: 'Без сортировки'),
   byNameFromAToZ(type: SortType.byName, name: 'По имени  от А до Я'),
@@ -133,7 +135,8 @@ class _ReceiptPageState extends State<ReceiptPage> {
                                             AppColorScheme.of(context).primary,
                                         borderRadius: BorderRadius.circular(16),
                                       ),
-                                    ))
+                                    ),
+                                  )
                                 : Container(),
                           ],
                         ),

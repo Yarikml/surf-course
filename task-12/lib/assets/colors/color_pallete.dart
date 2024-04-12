@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+///Набор цетов приложения
 abstract class ColorPalette {
   /// Alien Armpit
   ///

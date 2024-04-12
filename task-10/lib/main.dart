@@ -30,6 +30,10 @@ class _MainAppState extends State<MainApp> with TickerProviderStateMixin {
     curve: Curves.elasticOut,
   );
 
+  void setNewColor() => setState(() {
+        color = generatedColor;
+      });
+
   @override
   void dispose() {
     _controller.dispose();
@@ -38,7 +42,7 @@ class _MainAppState extends State<MainApp> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    final maxWidth = MediaQuery.of(context).size.width - 60;
+    final maxWidth = MediaQuery.of(context).size.width - 64;
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
@@ -66,11 +70,7 @@ class _MainAppState extends State<MainApp> with TickerProviderStateMixin {
                   )),
               Positioned.fill(
                 child: GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      color = generatedColor;
-                    });
-                  },
+                  onTap: setNewColor,
                   onLongPress: () {
                     _controller.forward(from: 0.0);
                   },

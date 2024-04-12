@@ -6,8 +6,7 @@ enum AppTextStyle {
   regular10(
     TextStyle(
       fontSize: 10,
-      height: 1.6,
-      fontWeight: FontWeight.normal,
+      fontWeight: FontWeight.w400,
       color: ColorPalette.darkBlue,
     ),
   ),
@@ -80,9 +79,8 @@ enum AppTextStyle {
   bold18(
     TextStyle(
       fontSize: 18,
-      height: 2.4,
       color: ColorPalette.spaceCadet,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.w800,
     ),
   );
 

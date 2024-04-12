@@ -43,18 +43,23 @@ class _SortProductsBottomSheetState extends State<SortProductsBottomSheet> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                AppStrings.sorting,
-                style: AppTextTheme.of(context).bold18,
-              ),
-              GestureDetector(
-                onTap: () => Navigator.of(context).pop(currentSortSubType),
-                child: const Icon(Icons.close),
-              ),
-            ],
+          Padding(
+            padding: const EdgeInsets.only(
+              bottom: 16,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  AppStrings.sorting,
+                  style: AppTextTheme.of(context).bold18,
+                ),
+                GestureDetector(
+                  onTap: () => Navigator.of(context).pop(currentSortSubType),
+                  child: const Icon(Icons.close),
+                ),
+              ],
+            ),
           ),
           ListView.builder(
             shrinkWrap: true,

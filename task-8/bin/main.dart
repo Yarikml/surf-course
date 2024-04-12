@@ -1,4 +1,3 @@
-
 import 'package:surf_dart_courses_template/classes.dart';
 
 void main(List<String> arguments) {
@@ -143,23 +142,26 @@ void main(List<String> arguments) {
 
   //Filter expired and empty products
   final filteredProducts = productList.where(
-          (element) => element.expirationDate.isAfter(now) && element.qty > 0);
+      (element) => element.expirationDate.isAfter(now) && element.qty > 0);
 
-  Map<String, Map<String, List<String>>> categories = {};
+  final categories = <String, Map<String, List<String>>>{};
 
-  for (RawProductItem product in filteredProducts) {
+  for (var product in filteredProducts) {
     //Check productCategory exist in categories list
     if (categories.containsKey(product.categoryName)) {
       //Check productSubCategory exist in category
-      if(categories[product.categoryName]!.containsKey(product.subcategoryName)) {
+      if (categories[product.categoryName]!
+          .containsKey(product.subcategoryName)) {
         //Check productName exist in product names list
-        if (categories[product.categoryName]![product.subcategoryName]!.contains(product.name)) {
-          continue;
-        } else {
-          categories[product.categoryName]![product.subcategoryName]!.add(product.name);
+        if (!categories[product.categoryName]![product.subcategoryName]!
+            .contains(product.name)) {
+          categories[product.categoryName]![product.subcategoryName]!
+              .add(product.name);
         }
       } else {
-        categories[product.categoryName]!.addAll({product.subcategoryName: [product.name]});
+        categories[product.categoryName]!.addAll({
+          product.subcategoryName: [product.name]
+        });
       }
     } else {
       categories.addAll({

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/features/receipt/widgets/product_photo_shimmer.dart';
+import 'package:surf_flutter_courses_template/utils/extensions/amount_x.dart';
 import 'package:surf_flutter_courses_template/utils/extensions/decimal_x.dart';
 
 import '../../../assets/text/text_extension.dart';
@@ -65,7 +66,7 @@ class ProductItem extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text(
-                          '${product.formattedAmount} ${product.amountCaption}',
+                          '${product.amount.toFormattedString} ${product.amount.caption}',
                           style: AppTextTheme.of(context).regular12,
                         ),
                         Spacer(),

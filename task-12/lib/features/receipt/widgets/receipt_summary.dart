@@ -1,9 +1,10 @@
 import 'package:decimal/decimal.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:surf_flutter_courses_template/utils/extensions/decimal_x.dart';
 
 import '../../../assets/text/text_extension.dart';
-import '../logic/receipt_calculator.dart';
+import '../../../utils/receipt_calculator.dart';
 import '../model/product_entity.dart';
 
 class ReceiptSummary extends StatefulWidget {
@@ -27,6 +28,18 @@ class _ReceiptSummaryState extends State<ReceiptSummary> {
     super.initState();
   }
 
+  String getSuitProductTitle(int quantity) {
+    return Intl.plural(
+      quantity,
+      one: '$quantity товар',
+      other: '$quantity товаров',
+      name: "товар",
+      args: [quantity],
+      examples: const {'quantity': 4},
+      desc: "Food quantity to order from cart",
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return SliverPadding(
@@ -34,6 +47,7 @@ class _ReceiptSummaryState extends State<ReceiptSummary> {
         left: 20,
         right: 20,
         top: 24,
+        bottom: 40,
       ),
       sliver: SliverMainAxisGroup(
         slivers: [
@@ -51,7 +65,7 @@ class _ReceiptSummaryState extends State<ReceiptSummary> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  '${widget.products.length} товаров',
+                  getSuitProductTitle(widget.products.length),
                   style: Theme.of(context).extension<AppTextTheme>()!.regular12,
                 ),
                 Text(
@@ -84,7 +98,9 @@ class _ReceiptSummaryState extends State<ReceiptSummary> {
                     ),
                   ),
                 )
-              : Container(),
+              : SliverToBoxAdapter(
+                  child: Container(),
+                ),
           SliverToBoxAdapter(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -1,5 +1,6 @@
 import 'package:decimal/decimal.dart';
-import 'package:intl/intl.dart';
+
+import 'amount.dart';
 
 /// Модель продукта.
 ///
@@ -64,43 +65,9 @@ class ProductEntity {
     return Decimal.parse(priceString);
   }
 
-  String get formattedAmount {
-    switch (amount) {
-      case Grams():
-        return (amount.value / 1000).toString();
-      case Quantity():
-        return amount.value.toString();
-    }
-  }
 
-  String get amountCaption {
-    switch (amount) {
-      case Grams():
-        return 'кг';
-      case Quantity():
-        return 'шт';
-    }
-  }
 }
 
-/// Класс, описывающий количество товара.
-sealed class Amount {
-  int get value;
-}
-
-/// Класс, описывающий количество товара в граммах.
-class Grams implements Amount {
-  @override
-  final int value;
-  Grams(this.value);
-}
-
-/// Класс, описывающий количество товара в штуках.
-class Quantity implements Amount {
-  @override
-  final int value;
-  Quantity(this.value);
-}
 
 /// Категория товара.
 enum Category {

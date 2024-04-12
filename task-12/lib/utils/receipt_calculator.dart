@@ -1,7 +1,7 @@
 import 'package:decimal/decimal.dart';
 import 'package:intl/intl.dart';
 
-import '../model/product_entity.dart';
+import '../features/receipt/model/product_entity.dart';
 
 class ReceiptCalculator {
   final List<ProductEntity> products;

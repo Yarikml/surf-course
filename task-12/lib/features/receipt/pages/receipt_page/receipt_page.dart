@@ -9,7 +9,7 @@ import 'package:surf_flutter_courses_template/features/receipt/widgets/receipt_a
 import 'package:surf_flutter_courses_template/features/receipt/widgets/receipt_summary.dart';
 
 import '../../../../runner.dart';
-import '../../logic/receipt_calculator.dart';
+import '../../../../utils/receipt_calculator.dart';
 import '../../model/receipt_entity.dart';
 import '../../widgets/product_item.dart';
 

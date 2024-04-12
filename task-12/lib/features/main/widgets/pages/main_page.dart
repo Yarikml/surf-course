@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:surf_flutter_courses_template/assets/app_strings/app_strings.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/res/resources.dart';
 import 'package:surf_flutter_courses_template/assets/text/text_extension.dart';
 import 'package:surf_flutter_courses_template/features/receipt/pages/receipt_page/receipt_page_flow.dart';
 
-import '../../../receipt/pages/receipt_page/receipt_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -17,23 +17,23 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0;
 
-  static const List<Widget> _widgetOptions = <Widget>[
+  final List<Widget> _widgetOptions = <Widget>[
     Center(
       child: Text(
-        'В разработке',
+        AppStrings.inWork,
       ),
     ),
     Center(
       child: Text(
-        'В разработке',
+        AppStrings.inWork,
       ),
     ),
     Center(
       child: Text(
-        'В разработке',
+        AppStrings.inWork,
       ),
     ),
-    ReceiptPageFlow(
+    const ReceiptPageFlow(
       id: 1,
     ),
   ];
@@ -64,7 +64,7 @@ class _MainPageState extends State<MainPage> {
                     : null,
               ),
             ),
-            label: 'Каталог',
+            label: AppStrings.catalog,
           ),
           BottomNavigationBarItem(
             icon: Padding(
@@ -76,7 +76,7 @@ class _MainPageState extends State<MainPage> {
                     : null,
               ),
             ),
-            label: 'Поиск',
+            label: AppStrings.search,
           ),
           BottomNavigationBarItem(
             icon: Padding(
@@ -88,7 +88,7 @@ class _MainPageState extends State<MainPage> {
                     : null,
               ),
             ),
-            label: 'Корзина',
+            label: AppStrings.trash,
           ),
           BottomNavigationBarItem(
             icon: Padding(
@@ -100,7 +100,7 @@ class _MainPageState extends State<MainPage> {
                     : null,
               ),
             ),
-            label: 'Личное',
+            label: AppStrings.cabinet,
           ),
         ],
         currentIndex: _selectedIndex,

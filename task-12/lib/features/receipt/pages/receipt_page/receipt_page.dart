@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/app_strings/app_strings.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/text_extension.dart';
-import 'package:surf_flutter_courses_template/utils/extensions/sorter.dart';
+import 'package:surf_flutter_courses_template/utils/extensions/product_list_x.dart';
 
 import 'package:surf_flutter_courses_template/features/receipt/pages/receipt_page/sort_products_bottom_sheet.dart';
 import 'package:surf_flutter_courses_template/features/receipt/widgets/product_list.dart';
@@ -144,7 +144,7 @@ class _ReceiptPageState extends State<ReceiptPage> {
               ),
               ProductList(
                 productList:
-                    widget.receipt.products.sortByRule(currentSortSubType),
+                    widget.receipt.products.sortBySubType(currentSortSubType),
                 currentSortSubType: currentSortSubType,
               ),
               ReceiptSummary(

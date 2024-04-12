@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7da22925-7deb-4c2c-8e02-244cc9c84704" name="Changes" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/task-9/assets/screen_record.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+=======
+>>>>>>> main
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/.filecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/app.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/kernel_snapshot.d" afterDir="false" />
@@ -28,6 +35,27 @@
       <change beforePath="$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Runner" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-10/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/lib/main.dart" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/kernel_snapshot.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/kernel_snapshot.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Runner" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Runner" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
+>>>>>>> main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +63,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
+<<<<<<< HEAD
     <option name="totalTimeSeconds" value="16947" />
+=======
+<<<<<<< HEAD
+    <option name="totalTimeSeconds" value="13420" />
+=======
+    <option name="totalTimeSeconds" value="11166" />
+>>>>>>> main
+>>>>>>> main
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,6 +99,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -84,6 +121,28 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/task-10/assets" />
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/Desktop/surf-course&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-9/assets" />
+>>>>>>> main
     </key>
   </component>
   <component name="RunManager" selected="Flutter.main.dart">
@@ -93,6 +152,7 @@
       <method v="2" />
     </configuration>
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+<<<<<<< HEAD
       <option name="filePath" value="$PROJECT_DIR$/task-10/lib/main.dart" />
       <method v="2" />
     </configuration>
@@ -100,6 +160,11 @@
       <item itemvalue="Dart Command Line App.surf_dart_courses_template.dart" />
       <item itemvalue="Flutter.main.dart" />
     </list>
+=======
+      <option name="filePath" value="$PROJECT_DIR$/task-9/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+>>>>>>> main
     <recent_temporary>
       <list>
         <item itemvalue="Flutter.main.dart" />
@@ -118,7 +183,8 @@
       <workItem from="1699373835178" duration="5966000" />
       <workItem from="1703627202663" duration="1358000" />
       <workItem from="1704841899512" duration="2078000" />
-      <workItem from="1705001341319" duration="328000" />
+      <workItem from="1705001341319" duration="2639000" />
+      <workItem from="1705353584189" duration="817000" />
     </task>
     <servers />
   </component>

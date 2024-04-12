@@ -1,20 +1,19 @@
 # Description of your result
-
-You can describe your results in any language that is convenient for you, not just English.
-
+Filtering product list by categories
 ## Description
 
-[Describe what you have done]
-
+Learn theory about Iterable methods. Write sort algorithm;
 ## How to
 
-[Describe how to run your application if there are any issues]
+cd task-8
+
+dart bin/main.dart
+
 
 ## Problems
 
-[Describe the problems you encountered]
+-
 
 ## More
 
-[Here you can brag about what you managed to implement or do something beyond the task]
-
+Hello. How to improve sort algorithm?

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:surf_flutter_courses_template/features/receipt/widgets/pages/receipt_page/receipt_page.dart';
 import 'package:surf_flutter_courses_template/features/receipt/widgets/product_item.dart';
 import 'package:surf_flutter_courses_template/features/receipt/model/product_entity.dart';
-import 'package:surf_flutter_courses_template/features/receipt/pages/receipt_page/receipt_page.dart';
 
 class ProductList extends StatelessWidget {
   const ProductList({

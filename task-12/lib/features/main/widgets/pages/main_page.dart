@@ -4,7 +4,8 @@ import 'package:surf_flutter_courses_template/assets/app_strings/app_strings.dar
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/res/resources.dart';
 import 'package:surf_flutter_courses_template/assets/text/text_extension.dart';
-import 'package:surf_flutter_courses_template/features/receipt/pages/receipt_page/receipt_page_flow.dart';
+
+import '../../../receipt/widgets/pages/receipt_page/receipt_page_flow.dart';
 
 
 class MainPage extends StatefulWidget {

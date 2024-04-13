@@ -1,0 +1,147 @@
+Index: .idea/libraries/Dart_Packages.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><component name=\"libraryTable\">\n  <library name=\"Dart Packages\" type=\"DartPackagesLibraryType\">\n    <properties>\n      <option name=\"packageNameToDirsMap\">\n        <entry key=\"_fe_analyzer_shared\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-54.0.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"analyzer\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/analyzer-5.6.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"args\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"async\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/async-2.11.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"boolean_selector\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"characters\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/characters-1.3.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"clock\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/clock-1.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"collection\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/collection-1.17.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"convert\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/convert-3.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"coverage\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/coverage-1.6.3/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"crypto\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/crypto-3.0.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"fake_async\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/fake_async-1.3.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"file\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/file-6.1.4/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"flutter\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/Developer/flutter/packages/flutter/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"flutter_lints\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"flutter_test\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/Developer/flutter/packages/flutter_test/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"frontend_server_client\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/frontend_server_client-3.2.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"glob\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/glob-2.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"http_multi_server\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"http_parser\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/http_parser-4.0.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"io\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/io-1.0.4/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"js\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/js-0.6.5/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"lints\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.0.1/lib\" />\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"logging\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/logging-1.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"matcher\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/matcher-0.12.16/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"material_color_utilities\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/material_color_utilities-0.5.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"meta\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/meta-1.9.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"mime\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/mime-1.0.4/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"node_preamble\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/node_preamble-2.0.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"package_config\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/package_config-2.1.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"path\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/path-1.8.3/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"pool\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/pool-1.5.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"pub_semver\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/pub_semver-2.1.4/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"shelf\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/shelf-1.4.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"shelf_packages_handler\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_packages_handler-3.0.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"shelf_static\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_static-1.1.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"shelf_web_socket\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_web_socket-1.0.4/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"sky_engine\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/Developer/flutter/bin/cache/pkg/sky_engine/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"source_map_stack_trace\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/source_map_stack_trace-2.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"source_maps\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/source_maps-0.10.12/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"source_span\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/source_span-1.10.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"stack_trace\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/stack_trace-1.11.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"stream_channel\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/stream_channel-2.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"string_scanner\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/string_scanner-1.2.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"term_glyph\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/term_glyph-1.2.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"test\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/test-1.24.3/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"test_api\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/test_api-0.6.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"test_core\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/test_core-0.5.3/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"typed_data\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/typed_data-1.3.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"vector_math\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"vm_service\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/vm_service-11.2.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"watcher\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/watcher-1.0.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"web\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/web-0.1.4-beta/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"web_socket_channel\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"webkit_inspection_protocol\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/webkit_inspection_protocol-1.2.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"yaml\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/yaml-3.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n      </option>\n    </properties>\n    <CLASSES>\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-54.0.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/analyzer-5.6.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/async-2.11.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/characters-1.3.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/clock-1.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/collection-1.17.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/convert-3.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/coverage-1.6.3/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/crypto-3.0.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/fake_async-1.3.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/file-6.1.4/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/frontend_server_client-3.2.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/glob-2.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/http_parser-4.0.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/io-1.0.4/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/js-0.6.5/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.0.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/logging-1.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/matcher-0.12.16/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/material_color_utilities-0.5.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/meta-1.9.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/mime-1.0.4/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/node_preamble-2.0.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/package_config-2.1.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/path-1.8.3/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/pool-1.5.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/pub_semver-2.1.4/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/shelf-1.4.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_packages_handler-3.0.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_static-1.1.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_web_socket-1.0.4/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/source_map_stack_trace-2.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/source_maps-0.10.12/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/source_span-1.10.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/stack_trace-1.11.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/stream_channel-2.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/string_scanner-1.2.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/term_glyph-1.2.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/test-1.24.3/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/test_api-0.6.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/test_core-0.5.3/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/typed_data-1.3.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/vm_service-11.2.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/watcher-1.0.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/web-0.1.4-beta/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/webkit_inspection_protocol-1.2.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/yaml-3.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/Developer/flutter/bin/cache/pkg/sky_engine/lib\" />\n      <root url=\"file://$USER_HOME$/Developer/flutter/packages/flutter/lib\" />\n      <root url=\"file://$USER_HOME$/Developer/flutter/packages/flutter_test/lib\" />\n    </CLASSES>\n    <JAVADOC />\n    <SOURCES />\n  </library>\n</component>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Dart_Packages.xml b/.idea/libraries/Dart_Packages.xml
+--- a/.idea/libraries/Dart_Packages.xml	(revision 3e9ba5843527a0b98c9c6c7142d7c8a772d30dc5)
++++ b/.idea/libraries/Dart_Packages.xml	(date 1713027575674)
+@@ -20,6 +20,7 @@
+           <value>
+             <list>
+               <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.1/lib" />
++              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.2/lib" />
+             </list>
+           </value>
+         </entry>
+@@ -104,6 +105,13 @@
+           <value>
+             <list>
+               <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="flutter_svg">
++          <value>
++            <list>
++              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_svg-2.0.9/lib" />
+             </list>
+           </value>
+         </entry>
+@@ -159,8 +167,8 @@
+         <entry key="lints">
+           <value>
+             <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.0.1/lib" />
+               <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.1.1/lib" />
++              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.0.1/lib" />
+             </list>
+           </value>
+         </entry>
+@@ -220,6 +228,20 @@
+             </list>
+           </value>
+         </entry>
++        <entry key="path_parsing">
++          <value>
++            <list>
++              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/path_parsing-1.0.1/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="petitparser">
++          <value>
++            <list>
++              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/petitparser-5.4.0/lib" />
++            </list>
++          </value>
++        </entry>
+         <entry key="pool">
+           <value>
+             <list>
+@@ -346,6 +368,27 @@
+             </list>
+           </value>
+         </entry>
++        <entry key="vector_graphics">
++          <value>
++            <list>
++              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics-1.1.9+2/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="vector_graphics_codec">
++          <value>
++            <list>
++              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics_codec-1.1.9+2/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="vector_graphics_compiler">
++          <value>
++            <list>
++              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics_compiler-1.1.9+2/lib" />
++            </list>
++          </value>
++        </entry>
+         <entry key="vector_math">
+           <value>
+             <list>
+@@ -388,6 +431,13 @@
+             </list>
+           </value>
+         </entry>
++        <entry key="xml">
++          <value>
++            <list>
++              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/xml-6.3.0/lib" />
++            </list>
++          </value>
++        </entry>
+         <entry key="yaml">
+           <value>
+             <list>
+@@ -401,6 +451,7 @@
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-54.0.0/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/analyzer-5.6.0/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.1/lib" />
++      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.2/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/async-2.11.0/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/characters-1.3.0/lib" />
+@@ -412,6 +463,7 @@
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/fake_async-1.3.1/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/file-6.1.4/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib" />
++      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_svg-2.0.9/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/frontend_server_client-3.2.0/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/glob-2.1.1/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1/lib" />
+@@ -428,6 +480,8 @@
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/node_preamble-2.0.2/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/package_config-2.1.0/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/path-1.8.3/lib" />
++      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/path_parsing-1.0.1/lib" />
++      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/petitparser-5.4.0/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/pool-1.5.1/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/pub_semver-2.1.4/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/shelf-1.4.1/lib" />
+@@ -445,12 +499,16 @@
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/test_api-0.6.0/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/test_core-0.5.3/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/typed_data-1.3.2/lib" />
++      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics-1.1.9+2/lib" />
++      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics_codec-1.1.9+2/lib" />
++      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics_compiler-1.1.9+2/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vm_service-11.2.0/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/watcher-1.0.2/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/web-0.1.4-beta/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/webkit_inspection_protocol-1.2.0/lib" />
++      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/xml-6.3.0/lib" />
+       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/yaml-3.1.1/lib" />
+       <root url="file://$USER_HOME$/Developer/flutter/bin/cache/pkg/sky_engine/lib" />
+       <root url="file://$USER_HOME$/Developer/flutter/packages/flutter/lib" />

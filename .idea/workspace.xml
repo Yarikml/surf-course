@@ -7,6 +7,22 @@
     <list default="true" id="7da22925-7deb-4c2c-8e02-244cc9c84704" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/debug_ios_bundle_flutter_assets.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/debug_ios_bundle_flutter_assets.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/flutter_assets.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/8f33010888d49aca0fec1a2ac29f5c07/kernel_snapshot.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/assets/app_strings/app_strings.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/assets/app_strings/app_strings.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/main/widgets/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/main/widgets/pages/main_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/pages/receipt_page/receipt_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/receipt_page_flow.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/pages/receipt_page/receipt_page_flow.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/pages/receipt_page/sort_products_bottom_sheet.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/pages/receipt_page/sort_products_bottom_sheet.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/product_list.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_appbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/features/receipt/widgets/receipt_appbar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/lib/utils/extensions/product_list_x.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/lib/utils/extensions/product_list_x.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-12/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="task-13" />
+        <entry key="$PROJECT_DIR$" value="task-11" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,26 +61,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "task-12",
-    "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "/Users/yaroslav/Desktop/surf-course",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;task-12&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/Desktop/surf-course&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-12/lib/features/receipt/widgets" />
       <recent name="$PROJECT_DIR$/task-12/lib/assets" />
       <recent name="$PROJECT_DIR$/task-12/lib/utils" />
       <recent name="$PROJECT_DIR$/task-12/lib/utils/extensions" />
@@ -88,6 +105,7 @@
       <list>
         <item itemvalue="Flutter.main.dart" />
         <item itemvalue="Dart Command Line App.surf_dart_courses_template.dart" />
+        <item itemvalue="Flutter.main.dart" />
         <item itemvalue="Dart Command Line App.surf_dart_courses_template.dart" />
         <item itemvalue="Dart Command Line App.surf_dart_courses_template.dart" />
       </list>

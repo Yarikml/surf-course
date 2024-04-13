@@ -1,6 +1,6 @@
 ///Примитивная реализация локализации
 class AppStrings {
-  static String get inWork => 'В разработке';
+  static String get inWork => 'Здесь пока ничего нет';
 
   static String get catalog => 'Каталог';
 

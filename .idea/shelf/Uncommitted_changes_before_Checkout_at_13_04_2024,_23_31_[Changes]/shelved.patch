@@ -1,0 +1,1194 @@
+Index: .idea/misc.xml
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+deleted file mode 100644
+--- a/.idea/misc.xml	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
++++ /dev/null	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_20" project-jdk-name="Android API 29 Platform" project-jdk-type="Android SDK">
+-    <output url="file://$PROJECT_DIR$/out" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_13_04_2024,_20_00_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_04_2024,_20_00_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_04_2024,_20_00_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_04_2024,_20_00_[Changes]/shelved.patch	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
++++ /dev/null	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
+@@ -1,147 +0,0 @@
+-Index: .idea/libraries/Dart_Packages.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><component name=\"libraryTable\">\n  <library name=\"Dart Packages\" type=\"DartPackagesLibraryType\">\n    <properties>\n      <option name=\"packageNameToDirsMap\">\n        <entry key=\"_fe_analyzer_shared\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-54.0.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"analyzer\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/analyzer-5.6.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"args\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"async\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/async-2.11.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"boolean_selector\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"characters\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/characters-1.3.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"clock\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/clock-1.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"collection\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/collection-1.17.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"convert\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/convert-3.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"coverage\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/coverage-1.6.3/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"crypto\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/crypto-3.0.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"fake_async\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/fake_async-1.3.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"file\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/file-6.1.4/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"flutter\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/Developer/flutter/packages/flutter/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"flutter_lints\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"flutter_test\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/Developer/flutter/packages/flutter_test/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"frontend_server_client\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/frontend_server_client-3.2.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"glob\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/glob-2.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"http_multi_server\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"http_parser\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/http_parser-4.0.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"io\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/io-1.0.4/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"js\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/js-0.6.5/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"lints\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.0.1/lib\" />\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"logging\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/logging-1.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"matcher\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/matcher-0.12.16/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"material_color_utilities\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/material_color_utilities-0.5.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"meta\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/meta-1.9.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"mime\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/mime-1.0.4/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"node_preamble\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/node_preamble-2.0.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"package_config\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/package_config-2.1.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"path\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/path-1.8.3/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"pool\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/pool-1.5.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"pub_semver\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/pub_semver-2.1.4/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"shelf\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/shelf-1.4.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"shelf_packages_handler\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_packages_handler-3.0.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"shelf_static\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_static-1.1.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"shelf_web_socket\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_web_socket-1.0.4/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"sky_engine\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/Developer/flutter/bin/cache/pkg/sky_engine/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"source_map_stack_trace\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/source_map_stack_trace-2.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"source_maps\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/source_maps-0.10.12/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"source_span\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/source_span-1.10.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"stack_trace\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/stack_trace-1.11.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"stream_channel\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/stream_channel-2.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"string_scanner\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/string_scanner-1.2.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"term_glyph\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/term_glyph-1.2.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"test\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/test-1.24.3/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"test_api\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/test_api-0.6.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"test_core\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/test_core-0.5.3/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"typed_data\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/typed_data-1.3.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"vector_math\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"vm_service\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/vm_service-11.2.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"watcher\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/watcher-1.0.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"web\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/web-0.1.4-beta/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"web_socket_channel\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"webkit_inspection_protocol\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/webkit_inspection_protocol-1.2.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"yaml\">\n          <value>\n            <list>\n              <option value=\"$USER_HOME$/.pub-cache/hosted/pub.dev/yaml-3.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n      </option>\n    </properties>\n    <CLASSES>\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-54.0.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/analyzer-5.6.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/async-2.11.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/characters-1.3.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/clock-1.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/collection-1.17.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/convert-3.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/coverage-1.6.3/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/crypto-3.0.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/fake_async-1.3.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/file-6.1.4/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/frontend_server_client-3.2.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/glob-2.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/http_parser-4.0.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/io-1.0.4/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/js-0.6.5/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.0.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/logging-1.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/matcher-0.12.16/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/material_color_utilities-0.5.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/meta-1.9.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/mime-1.0.4/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/node_preamble-2.0.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/package_config-2.1.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/path-1.8.3/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/pool-1.5.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/pub_semver-2.1.4/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/shelf-1.4.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_packages_handler-3.0.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_static-1.1.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_web_socket-1.0.4/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/source_map_stack_trace-2.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/source_maps-0.10.12/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/source_span-1.10.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/stack_trace-1.11.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/stream_channel-2.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/string_scanner-1.2.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/term_glyph-1.2.1/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/test-1.24.3/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/test_api-0.6.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/test_core-0.5.3/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/typed_data-1.3.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/vm_service-11.2.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/watcher-1.0.2/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/web-0.1.4-beta/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/webkit_inspection_protocol-1.2.0/lib\" />\n      <root url=\"file://$USER_HOME$/.pub-cache/hosted/pub.dev/yaml-3.1.1/lib\" />\n      <root url=\"file://$USER_HOME$/Developer/flutter/bin/cache/pkg/sky_engine/lib\" />\n      <root url=\"file://$USER_HOME$/Developer/flutter/packages/flutter/lib\" />\n      <root url=\"file://$USER_HOME$/Developer/flutter/packages/flutter_test/lib\" />\n    </CLASSES>\n    <JAVADOC />\n    <SOURCES />\n  </library>\n</component>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/libraries/Dart_Packages.xml b/.idea/libraries/Dart_Packages.xml
+---- a/.idea/libraries/Dart_Packages.xml	(revision 3e9ba5843527a0b98c9c6c7142d7c8a772d30dc5)
+-+++ b/.idea/libraries/Dart_Packages.xml	(date 1713027575674)
+-@@ -20,6 +20,7 @@
+-           <value>
+-             <list>
+-               <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.1/lib" />
+-+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.2/lib" />
+-             </list>
+-           </value>
+-         </entry>
+-@@ -104,6 +105,13 @@
+-           <value>
+-             <list>
+-               <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib" />
+-+            </list>
+-+          </value>
+-+        </entry>
+-+        <entry key="flutter_svg">
+-+          <value>
+-+            <list>
+-+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_svg-2.0.9/lib" />
+-             </list>
+-           </value>
+-         </entry>
+-@@ -159,8 +167,8 @@
+-         <entry key="lints">
+-           <value>
+-             <list>
+--              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.0.1/lib" />
+-               <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.1.1/lib" />
+-+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.0.1/lib" />
+-             </list>
+-           </value>
+-         </entry>
+-@@ -220,6 +228,20 @@
+-             </list>
+-           </value>
+-         </entry>
+-+        <entry key="path_parsing">
+-+          <value>
+-+            <list>
+-+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/path_parsing-1.0.1/lib" />
+-+            </list>
+-+          </value>
+-+        </entry>
+-+        <entry key="petitparser">
+-+          <value>
+-+            <list>
+-+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/petitparser-5.4.0/lib" />
+-+            </list>
+-+          </value>
+-+        </entry>
+-         <entry key="pool">
+-           <value>
+-             <list>
+-@@ -346,6 +368,27 @@
+-             </list>
+-           </value>
+-         </entry>
+-+        <entry key="vector_graphics">
+-+          <value>
+-+            <list>
+-+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics-1.1.9+2/lib" />
+-+            </list>
+-+          </value>
+-+        </entry>
+-+        <entry key="vector_graphics_codec">
+-+          <value>
+-+            <list>
+-+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics_codec-1.1.9+2/lib" />
+-+            </list>
+-+          </value>
+-+        </entry>
+-+        <entry key="vector_graphics_compiler">
+-+          <value>
+-+            <list>
+-+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics_compiler-1.1.9+2/lib" />
+-+            </list>
+-+          </value>
+-+        </entry>
+-         <entry key="vector_math">
+-           <value>
+-             <list>
+-@@ -388,6 +431,13 @@
+-             </list>
+-           </value>
+-         </entry>
+-+        <entry key="xml">
+-+          <value>
+-+            <list>
+-+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/xml-6.3.0/lib" />
+-+            </list>
+-+          </value>
+-+        </entry>
+-         <entry key="yaml">
+-           <value>
+-             <list>
+-@@ -401,6 +451,7 @@
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-54.0.0/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/analyzer-5.6.0/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.1/lib" />
+-+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.2/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/async-2.11.0/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/characters-1.3.0/lib" />
+-@@ -412,6 +463,7 @@
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/fake_async-1.3.1/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/file-6.1.4/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib" />
+-+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_svg-2.0.9/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/frontend_server_client-3.2.0/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/glob-2.1.1/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1/lib" />
+-@@ -428,6 +480,8 @@
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/node_preamble-2.0.2/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/package_config-2.1.0/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/path-1.8.3/lib" />
+-+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/path_parsing-1.0.1/lib" />
+-+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/petitparser-5.4.0/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/pool-1.5.1/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/pub_semver-2.1.4/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/shelf-1.4.1/lib" />
+-@@ -445,12 +499,16 @@
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/test_api-0.6.0/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/test_core-0.5.3/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/typed_data-1.3.2/lib" />
+-+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics-1.1.9+2/lib" />
+-+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics_codec-1.1.9+2/lib" />
+-+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics_compiler-1.1.9+2/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vm_service-11.2.0/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/watcher-1.0.2/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/web-0.1.4-beta/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/webkit_inspection_protocol-1.2.0/lib" />
+-+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/xml-6.3.0/lib" />
+-       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/yaml-3.1.1/lib" />
+-       <root url="file://$USER_HOME$/Developer/flutter/bin/cache/pkg/sky_engine/lib" />
+-       <root url="file://$USER_HOME$/Developer/flutter/packages/flutter/lib" />
+Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_13_04_2024__20_00__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_04_2024__20_00__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_04_2024__20_00__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_04_2024__20_00__Changes_.xml	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
++++ /dev/null	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Checkout_at_13_04_2024,_20_00_[Changes]" date="1713027652055" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_04_2024,_20_00_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 13.04.2024, 20:00 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+--- a/.idea/modules.xml	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
++++ /dev/null	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/surf-course.iml" filepath="$PROJECT_DIR$/.idea/surf-course.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/libraries/Dart_SDK.xml
+===================================================================
+diff --git a/.idea/libraries/Dart_SDK.xml b/.idea/libraries/Dart_SDK.xml
+deleted file mode 100644
+--- a/.idea/libraries/Dart_SDK.xml	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
++++ /dev/null	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
+@@ -1,29 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Dart SDK">
+-    <CLASSES>
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/async" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/cli" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/collection" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/convert" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/core" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/developer" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/ffi" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/html" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/indexed_db" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/io" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/isolate" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/js" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/js_interop" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/js_interop_unsafe" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/js_util" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/math" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/mirrors" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/svg" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/typed_data" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/web_audio" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/dart-sdk/lib/web_gl" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Dart_Packages.xml
+===================================================================
+diff --git a/.idea/libraries/Dart_Packages.xml b/.idea/libraries/Dart_Packages.xml
+deleted file mode 100644
+--- a/.idea/libraries/Dart_Packages.xml	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
++++ /dev/null	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
+@@ -1,571 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Dart Packages" type="DartPackagesLibraryType">
+-    <properties>
+-      <option name="packageNameToDirsMap">
+-        <entry key="_fe_analyzer_shared">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-54.0.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="analyzer">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/analyzer-5.6.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="args">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.2/lib" />
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="async">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/async-2.11.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="boolean_selector">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="characters">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/characters-1.3.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="clock">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/clock-1.1.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="collection">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/collection-1.17.2/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="convert">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/convert-3.1.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="coverage">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/coverage-1.6.3/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="crypto">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/crypto-3.0.2/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-<<<<<<< HEAD
+-        <entry key="decimal">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/decimal-2.3.3/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-=======
+->>>>>>> main
+-        <entry key="fake_async">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/fake_async-1.3.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="file">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/file-6.1.4/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="flutter">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/Developer/flutter/packages/flutter/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="flutter_lints">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-<<<<<<< HEAD
+-        <entry key="flutter_svg">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_svg-2.0.10+1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-=======
+->>>>>>> main
+-        <entry key="flutter_test">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/Developer/flutter/packages/flutter_test/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="frontend_server_client">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/frontend_server_client-3.2.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="glob">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/glob-2.1.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="http">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/http-1.1.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="http_multi_server">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="http_parser">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/http_parser-4.0.2/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="intl">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/intl-0.19.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="io">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/io-1.0.4/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="js">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/js-0.6.5/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="lints">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.1.1/lib" />
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.0.1/lib" />
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.1.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="logging">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/logging-1.1.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="matcher">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/matcher-0.12.16/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="material_color_utilities">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/material_color_utilities-0.5.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="meta">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/meta-1.9.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="mime">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/mime-1.0.4/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="node_preamble">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/node_preamble-2.0.2/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="package_config">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/package_config-2.1.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="path">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/path-1.8.3/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="path_parsing">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/path_parsing-1.0.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="petitparser">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/petitparser-5.4.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="pool">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/pool-1.5.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="pub_semver">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/pub_semver-2.1.4/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="rational">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/rational-2.2.2/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="shelf">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/shelf-1.4.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="shelf_packages_handler">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_packages_handler-3.0.2/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="shelf_static">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_static-1.1.2/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="shelf_web_socket">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_web_socket-1.0.4/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="sky_engine">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/Developer/flutter/bin/cache/pkg/sky_engine/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="source_map_stack_trace">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/source_map_stack_trace-2.1.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="source_maps">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/source_maps-0.10.12/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="source_span">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/source_span-1.10.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="stack_trace">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/stack_trace-1.11.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="stream_channel">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/stream_channel-2.1.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="string_scanner">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/string_scanner-1.2.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="term_glyph">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/term_glyph-1.2.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="test">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/test-1.24.3/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="test_api">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/test_api-0.6.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="test_core">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/test_core-0.5.3/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="typed_data">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/typed_data-1.3.2/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-<<<<<<< HEAD
+-        <entry key="vector_graphics">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics-1.1.11+1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="vector_graphics_codec">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics_codec-1.1.11+1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="vector_graphics_compiler">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics_compiler-1.1.11+1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-=======
+->>>>>>> main
+-        <entry key="vector_math">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="vm_service">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/vm_service-11.2.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="watcher">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/watcher-1.0.2/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="web">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/web-0.1.4-beta/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="web_socket_channel">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="webkit_inspection_protocol">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/webkit_inspection_protocol-1.2.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="xml">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/xml-6.3.0/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-        <entry key="yaml">
+-          <value>
+-            <list>
+-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/yaml-3.1.1/lib" />
+-            </list>
+-          </value>
+-        </entry>
+-      </option>
+-    </properties>
+-    <CLASSES>
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-54.0.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/analyzer-5.6.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/args-2.4.2/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/async-2.11.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/characters-1.3.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/clock-1.1.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/collection-1.17.2/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/convert-3.1.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/coverage-1.6.3/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/crypto-3.0.2/lib" />
+-<<<<<<< HEAD
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/decimal-2.3.3/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/fake_async-1.3.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/file-6.1.4/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_svg-2.0.10+1/lib" />
+-=======
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/fake_async-1.3.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/file-6.1.4/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib" />
+->>>>>>> main
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/frontend_server_client-3.2.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/glob-2.1.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/http-1.1.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/http_parser-4.0.2/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/intl-0.19.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/io-1.0.4/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/js-0.6.5/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.0.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/lints-2.1.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/logging-1.1.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/matcher-0.12.16/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/material_color_utilities-0.5.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/meta-1.9.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/mime-1.0.4/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/node_preamble-2.0.2/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/package_config-2.1.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/path-1.8.3/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/path_parsing-1.0.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/petitparser-5.4.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/pool-1.5.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/pub_semver-2.1.4/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/rational-2.2.2/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/shelf-1.4.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_packages_handler-3.0.2/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_static-1.1.2/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/shelf_web_socket-1.0.4/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/source_map_stack_trace-2.1.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/source_maps-0.10.12/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/source_span-1.10.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/stack_trace-1.11.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/stream_channel-2.1.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/string_scanner-1.2.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/term_glyph-1.2.1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/test-1.24.3/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/test_api-0.6.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/test_core-0.5.3/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/typed_data-1.3.2/lib" />
+-<<<<<<< HEAD
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics-1.1.11+1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics_codec-1.1.11+1/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vector_graphics_compiler-1.1.11+1/lib" />
+-=======
+->>>>>>> main
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vm_service-11.2.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/watcher-1.0.2/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/web-0.1.4-beta/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/webkit_inspection_protocol-1.2.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/xml-6.3.0/lib" />
+-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/yaml-3.1.1/lib" />
+-      <root url="file://$USER_HOME$/Developer/flutter/bin/cache/pkg/sky_engine/lib" />
+-      <root url="file://$USER_HOME$/Developer/flutter/packages/flutter/lib" />
+-      <root url="file://$USER_HOME$/Developer/flutter/packages/flutter_test/lib" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/vcs.xml
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+deleted file mode 100644
+--- a/.idea/vcs.xml	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
++++ /dev/null	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2024__11_37__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2024__11_37__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2024__11_37__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2024__11_37__Changes_.xml	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
++++ /dev/null	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Checkout_at_08_04_2024,_11_37_[Changes]" date="1712565479421" recycled="false" toDelete="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2024,_11_37_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 08.04.2024, 11:37 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/surf-course.iml
+===================================================================
+diff --git a/.idea/surf-course.iml b/.idea/surf-course.iml
+deleted file mode 100644
+--- a/.idea/surf-course.iml	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
++++ /dev/null	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
+@@ -1,51 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4">
+-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+-    <exclude-output />
+-    <content url="file://$MODULE_DIR$">
+-      <excludeFolder url="file://$MODULE_DIR$/task-2/.dart_tool" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-2/.pub" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-2/build" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-3/.dart_tool" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-3/.pub" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-3/build" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-4/.dart_tool" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-4/.pub" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-4/build" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-6/.dart_tool" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-6/.pub" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-6/build" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-5/.dart_tool" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-5/.pub" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-5/build" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-7/.dart_tool" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-7/.pub" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-7/build" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-8/.dart_tool" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-8/.pub" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-8/build" />
+-<<<<<<< HEAD
+-      <excludeFolder url="file://$MODULE_DIR$/task-12/.dart_tool" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-12/.pub" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-12/build" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-10/.dart_tool" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-10/.pub" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-10/build" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-11/.dart_tool" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-11/.pub" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-11/build" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-9/.dart_tool" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-9/.pub" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-9/build" />
+-=======
+-      <excludeFolder url="file://$MODULE_DIR$/task-10/.dart_tool" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-10/.pub" />
+-      <excludeFolder url="file://$MODULE_DIR$/task-10/build" />
+->>>>>>> main
+-    </content>
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-    <orderEntry type="library" name="Dart SDK" level="project" />
+-    <orderEntry type="library" name="Dart Packages" level="project" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2024,_11_37_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2024,_11_37_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2024,_11_37_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2024,_11_37_[Changes]/shelved.patch	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
++++ /dev/null	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
+@@ -1,29 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"7da22925-7deb-4c2c-8e02-244cc9c84704\" name=\"Changes\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"DarkyenusTimeTracker\">\n    <option name=\"totalTimeSeconds\" value=\"95701\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Dart File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <favorite-branches>\n      <branch-storage>\n        <map>\n          <entry type=\"LOCAL\">\n            <value>\n              <list>\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"task-12\" />\n              </list>\n            </value>\n          </entry>\n        </map>\n      </branch-storage>\n    </favorite-branches>\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"task-9\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"HighlightingSettingsPerFile\">\n    <setting file=\"file://$PROJECT_DIR$/task-4/bin/surf_dart_courses_template.dart\" root0=\"SKIP_HIGHLIGHTING\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2Xr4OePOUvjNaPca2DWYJkibXCj\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;task-12&quot;,\n    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/Desktop/surf-course/task-12/lib/assets/res&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,\n    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/task-12/lib/assets/res\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/task-12/assets/icons\" />\n      <recent name=\"$PROJECT_DIR$/task-12/assets/fonts\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Flutter.x6\">\n    <configuration name=\"surf_dart_courses_template.dart\" type=\"DartCommandLineRunConfigurationType\" factoryName=\"Dart Command Line Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/task-6/bin/surf_dart_courses_template.dart\" />\n      <option name=\"workingDirectory\" value=\"$PROJECT_DIR$/task-6\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"x6\" type=\"FlutterRunConfigurationType\" factoryName=\"Flutter\">\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/task-12/lib/main.dart\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"Unnamed\" type=\"docker-deploy\" factoryName=\"docker-compose.yml\" server-name=\"Docker\">\n      <deployment type=\"docker-compose.yml\">\n        <settings>\n          <option name=\"envFilePath\" value=\"\" />\n        </settings>\n      </deployment>\n      <method v=\"2\" />\n    </configuration>\n    <list>\n      <item itemvalue=\"Dart Command Line App.surf_dart_courses_template.dart\" />\n      <item itemvalue=\"Docker.Unnamed\" />\n      <item itemvalue=\"Flutter.x6\" />\n    </list>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Dart Command Line App.surf_dart_courses_template.dart\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"7da22925-7deb-4c2c-8e02-244cc9c84704\" name=\"Changes\" comment=\"\" />\n      <created>1699373833462</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1699373833462</updated>\n      <workItem from=\"1699373835178\" duration=\"5966000\" />\n      <workItem from=\"1703627202663\" duration=\"1358000\" />\n      <workItem from=\"1704841899512\" duration=\"2078000\" />\n      <workItem from=\"1705001341319\" duration=\"328000\" />\n      <workItem from=\"1707292545780\" duration=\"16532000\" />\n      <workItem from=\"1707396659387\" duration=\"112000\" />\n      <workItem from=\"1707429216143\" duration=\"571000\" />\n      <workItem from=\"1707678471582\" duration=\"8971000\" />\n      <workItem from=\"1708160556693\" duration=\"18182000\" />\n      <workItem from=\"1708686832315\" duration=\"92000\" />\n      <workItem from=\"1709458379782\" duration=\"2881000\" />\n      <workItem from=\"1709504457945\" duration=\"3492000\" />\n      <workItem from=\"1709578531579\" duration=\"5158000\" />\n      <workItem from=\"1709673439403\" duration=\"5020000\" />\n      <workItem from=\"1710103885683\" duration=\"11118000\" />\n      <workItem from=\"1710275142203\" duration=\"5673000\" />\n      <workItem from=\"1710420037433\" duration=\"3835000\" />\n      <workItem from=\"1710626997287\" duration=\"14680000\" />\n      <workItem from=\"1710773057226\" duration=\"1619000\" />\n      <workItem from=\"1710865777898\" duration=\"15045000\" />\n      <workItem from=\"1711298339879\" duration=\"3734000\" />\n      <workItem from=\"1711562958823\" duration=\"6606000\" />\n      <workItem from=\"1711654901606\" duration=\"6320000\" />\n      <workItem from=\"1711903047927\" duration=\"7469000\" />\n      <workItem from=\"1712081880035\" duration=\"1884000\" />\n      <workItem from=\"1712146533710\" duration=\"23644000\" />\n      <workItem from=\"1712304904186\" duration=\"3799000\" />\n      <workItem from=\"1712404934810\" duration=\"307000\" />\n      <workItem from=\"1712405267847\" duration=\"147000\" />\n      <workItem from=\"1712405819601\" duration=\"76000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"RECENT_FILTERS\">\n      <map>\n        <entry key=\"Branch\">\n          <value>\n            <list>\n              <RecentGroup>\n                <option name=\"FILTER_VALUES\">\n                  <option value=\"task-12\" />\n                </option>\n              </RecentGroup>\n            </list>\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"branch\">\n                    <value>\n                      <list>\n                        <option value=\"task-12\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	
+-+++ b/.idea/workspace.xml	
+-@@ -4,9 +4,7 @@
+-     <option name="autoReloadType" value="SELECTIVE" />
+-   </component>
+-   <component name="ChangeListManager">
+--    <list default="true" id="7da22925-7deb-4c2c-8e02-244cc9c84704" name="Changes" comment="">
+--      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+--    </list>
+-+    <list default="true" id="7da22925-7deb-4c2c-8e02-244cc9c84704" name="Changes" comment="" />
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-@@ -151,6 +149,7 @@
+-       <workItem from="1712404934810" duration="307000" />
+-       <workItem from="1712405267847" duration="147000" />
+-       <workItem from="1712405819601" duration="76000" />
+-+      <workItem from="1712564756842" duration="301000" />
+-     </task>
+-     <servers />
+-   </component>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"7da22925-7deb-4c2c-8e02-244cc9c84704\" name=\"Changes\" comment=\"\">\n<<<<<<< HEAD\n      <change afterPath=\"$PROJECT_DIR$/task-12/assets/docs/result.gif\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/.filecache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/.filecache\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/app.dill\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/app.dill\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/debug_ios_bundle_flutter_assets.stamp\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/debug_ios_bundle_flutter_assets.stamp\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/flutter_assets.d\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/flutter_assets.d\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/kernel_snapshot.d\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/kernel_snapshot.d\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/kernel_snapshot.stamp\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/kernel_snapshot.stamp\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-12/.dart_tool/package_config.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-12/.dart_tool/package_config.json\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-12/README.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-12/README.md\" afterDir=\"false\" />\n=======\n<<<<<<< HEAD\n      <change afterPath=\"$PROJECT_DIR$/task-9/assets/screen_record.gif\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/vcs.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\n=======\n>>>>>>> main\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n<<<<<<< HEAD\n      <change beforePath=\"$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/.filecache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/.filecache\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/app.dill\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/app.dill\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/kernel_snapshot.d\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/kernel_snapshot.d\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/kernel_snapshot.stamp\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/kernel_snapshot.stamp\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/.dart_tool/package_config.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/.dart_tool/package_config.json\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/App.framework/App\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/App.framework/App\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/App.framework/_CodeSignature/CodeResources\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/App.framework/_CodeSignature/CodeResources\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/App.framework/flutter_assets/kernel_blob.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/App.framework/flutter_assets/kernel_blob.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Runner\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Runner\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Runner\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Runner\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-10/lib/main.dart\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-10/lib/main.dart\" afterDir=\"false\" />\n=======\n      <change beforePath=\"$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/.filecache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/.filecache\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/app.dill\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/app.dill\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/kernel_snapshot.d\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/kernel_snapshot.d\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/kernel_snapshot.stamp\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/kernel_snapshot.stamp\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/README.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/README.md\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/App\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/App\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/_CodeSignature/CodeResources\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/_CodeSignature/CodeResources\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/flutter_assets/kernel_blob.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/flutter_assets/kernel_blob.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Runner\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Runner\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Runner\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Runner\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources\" afterDir=\"false\" />\n>>>>>>> main\n>>>>>>> main\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"DarkyenusTimeTracker\">\n<<<<<<< HEAD\n    <option name=\"totalTimeSeconds\" value=\"16947\" />\n=======\n<<<<<<< HEAD\n    <option name=\"totalTimeSeconds\" value=\"13420\" />\n=======\n    <option name=\"totalTimeSeconds\" value=\"11166\" />\n>>>>>>> main\n>>>>>>> main\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Dart File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"task-11\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"HighlightingSettingsPerFile\">\n    <setting file=\"file://$PROJECT_DIR$/task-4/bin/surf_dart_courses_template.dart\" root0=\"SKIP_HIGHLIGHTING\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2Xr4OePOUvjNaPca2DWYJkibXCj\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n<<<<<<< HEAD\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"dart.analysis.tool.window.visible\": \"false\",\n    \"git-widget-placeholder\": \"task-10\",\n    \"io.flutter.reload.alreadyRun\": \"true\",\n    \"last_opened_file_path\": \"/Users/yaroslav/Desktop/surf-course\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"settings.editor.selected.configurable\": \"AndroidSdkUpdater\",\n    \"show.migrate.to.gradle.popup\": \"false\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/task-10/assets\" />\n=======\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,\n<<<<<<< HEAD\n    &quot;git-widget-placeholder&quot;: &quot;task-12&quot;,\n=======\n>>>>>>> main\n    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/Desktop/surf-course&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,\n    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n<<<<<<< HEAD\n      <recent name=\"$PROJECT_DIR$/task-12/assets/docs\" />\n      <recent name=\"$PROJECT_DIR$/task-12/lib/features/receipt/widgets\" />\n      <recent name=\"$PROJECT_DIR$/task-12/lib/assets\" />\n      <recent name=\"$PROJECT_DIR$/task-12/lib/utils\" />\n      <recent name=\"$PROJECT_DIR$/task-12/lib/utils/extensions\" />\n=======\n      <recent name=\"$PROJECT_DIR$/task-9/assets\" />\n>>>>>>> main\n>>>>>>> main\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Flutter.main.dart\">\n    <configuration name=\"surf_dart_courses_template.dart\" type=\"DartCommandLineRunConfigurationType\" factoryName=\"Dart Command Line Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/task-6/bin/surf_dart_courses_template.dart\" />\n      <option name=\"workingDirectory\" value=\"$PROJECT_DIR$/task-6\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"main.dart\" type=\"FlutterRunConfigurationType\" factoryName=\"Flutter\" temporary=\"true\" nameIsGenerated=\"true\">\n<<<<<<< HEAD\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/task-12/lib/main.dart\" />\n=======\n<<<<<<< HEAD\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/task-10/lib/main.dart\" />\n>>>>>>> main\n      <method v=\"2\" />\n    </configuration>\n    <list>\n      <item itemvalue=\"Dart Command Line App.surf_dart_courses_template.dart\" />\n      <item itemvalue=\"Flutter.main.dart\" />\n    </list>\n<<<<<<< HEAD\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Flutter.main.dart\" />\n        <item itemvalue=\"Dart Command Line App.surf_dart_courses_template.dart\" />\n        <item itemvalue=\"Flutter.main.dart\" />\n        <item itemvalue=\"Dart Command Line App.surf_dart_courses_template.dart\" />\n=======\n=======\n      <option name=\"filePath\" value=\"$PROJECT_DIR$/task-9/lib/main.dart\" />\n      <method v=\"2\" />\n    </configuration>\n>>>>>>> main\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Flutter.main.dart\" />\n>>>>>>> main\n        <item itemvalue=\"Dart Command Line App.surf_dart_courses_template.dart\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"7da22925-7deb-4c2c-8e02-244cc9c84704\" name=\"Changes\" comment=\"\" />\n      <created>1699373833462</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1699373833462</updated>\n      <workItem from=\"1699373835178\" duration=\"5966000\" />\n      <workItem from=\"1703627202663\" duration=\"1358000\" />\n      <workItem from=\"1704841899512\" duration=\"2078000\" />\n      <workItem from=\"1705001341319\" duration=\"2639000\" />\n      <workItem from=\"1705353584189\" duration=\"817000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 009a953ffc7f50c027934fc0a9b97757be1ecd94)
++++ b/.idea/workspace.xml	(date 1713039982174)
+@@ -1,246 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="AutoImportSettings">
+-    <option name="autoReloadType" value="SELECTIVE" />
+-  </component>
+-  <component name="ChangeListManager">
+-    <list default="true" id="7da22925-7deb-4c2c-8e02-244cc9c84704" name="Changes" comment="">
+-<<<<<<< HEAD
+-      <change afterPath="$PROJECT_DIR$/task-12/assets/docs/result.gif" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/.filecache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/app.dill" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/debug_ios_bundle_flutter_assets.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/debug_ios_bundle_flutter_assets.stamp" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/flutter_assets.d" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/kernel_snapshot.d" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/flutter_build/dc2e404a761b31213e25d84c3794b43f/kernel_snapshot.stamp" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-12/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/.dart_tool/package_config.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-12/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/task-12/README.md" afterDir="false" />
+-=======
+-<<<<<<< HEAD
+-      <change afterPath="$PROJECT_DIR$/task-9/assets/screen_record.gif" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-=======
+->>>>>>> main
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-<<<<<<< HEAD
+-      <change beforePath="$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/.filecache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/app.dill" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/kernel_snapshot.d" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/.dart_tool/flutter_build/6231a52d00dbe932c1769fc5451a5a2e/kernel_snapshot.stamp" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/.dart_tool/package_config.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/App.framework/App" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/Runner" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/Runner" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-10/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-10/lib/main.dart" afterDir="false" />
+-=======
+-      <change beforePath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/.filecache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/app.dill" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/kernel_snapshot.d" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/.dart_tool/flutter_build/a4bb2a8b095605bf3d61bdaf14d9409e/kernel_snapshot.stamp" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/README.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/d6e28ee5533652a987d80685d56cc20a.cache.dill.track.dill" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/App" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/Runner" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/Runner" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/task-9/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
+->>>>>>> main
+->>>>>>> main
+-    </list>
+-    <option name="SHOW_DIALOG" value="false" />
+-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-    <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="DarkyenusTimeTracker">
+-<<<<<<< HEAD
+-    <option name="totalTimeSeconds" value="16947" />
+-=======
+-<<<<<<< HEAD
+-    <option name="totalTimeSeconds" value="13420" />
+-=======
+-    <option name="totalTimeSeconds" value="11166" />
+->>>>>>> main
+->>>>>>> main
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="Dart File" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="Git.Settings">
+-    <option name="RECENT_BRANCH_BY_REPOSITORY">
+-      <map>
+-        <entry key="$PROJECT_DIR$" value="task-11" />
+-      </map>
+-    </option>
+-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-  </component>
+-  <component name="HighlightingSettingsPerFile">
+-    <setting file="file://$PROJECT_DIR$/task-4/bin/surf_dart_courses_template.dart" root0="SKIP_HIGHLIGHTING" />
+-  </component>
+-  <component name="MarkdownSettingsMigration">
+-    <option name="stateVersion" value="1" />
+-  </component>
+-  <component name="ProblemsViewState">
+-    <option name="selectedTabId" value="CurrentFile" />
+-  </component>
+-  <component name="ProjectId" id="2Xr4OePOUvjNaPca2DWYJkibXCj" />
+-  <component name="ProjectViewState">
+-    <option name="hideEmptyMiddlePackages" value="true" />
+-    <option name="showLibraryContents" value="true" />
+-  </component>
+-<<<<<<< HEAD
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "dart.analysis.tool.window.visible": "false",
+-    "git-widget-placeholder": "task-10",
+-    "io.flutter.reload.alreadyRun": "true",
+-    "last_opened_file_path": "/Users/yaroslav/Desktop/surf-course",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+-    "show.migrate.to.gradle.popup": "false",
+-    "vue.rearranger.settings.migration": "true"
+-  }
+-}]]></component>
+-  <component name="RecentsManager">
+-    <key name="MoveFile.RECENT_KEYS">
+-      <recent name="$PROJECT_DIR$/task-10/assets" />
+-=======
+   <component name="PropertiesComponent">{
+   &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+-<<<<<<< HEAD
+-    &quot;git-widget-placeholder&quot;: &quot;task-12&quot;,
+-=======
+->>>>>>> main
+-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/Desktop/surf-course&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
+   }
+ }</component>
+-  <component name="RecentsManager">
+-    <key name="MoveFile.RECENT_KEYS">
+-<<<<<<< HEAD
+-      <recent name="$PROJECT_DIR$/task-12/assets/docs" />
+-      <recent name="$PROJECT_DIR$/task-12/lib/features/receipt/widgets" />
+-      <recent name="$PROJECT_DIR$/task-12/lib/assets" />
+-      <recent name="$PROJECT_DIR$/task-12/lib/utils" />
+-      <recent name="$PROJECT_DIR$/task-12/lib/utils/extensions" />
+-=======
+-      <recent name="$PROJECT_DIR$/task-9/assets" />
+->>>>>>> main
+->>>>>>> main
+-    </key>
+-  </component>
+-  <component name="RunManager" selected="Flutter.main.dart">
+-    <configuration name="surf_dart_courses_template.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+-      <option name="filePath" value="$PROJECT_DIR$/task-6/bin/surf_dart_courses_template.dart" />
+-      <option name="workingDirectory" value="$PROJECT_DIR$/task-6" />
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+-<<<<<<< HEAD
+-      <option name="filePath" value="$PROJECT_DIR$/task-12/lib/main.dart" />
+-=======
+-<<<<<<< HEAD
+-      <option name="filePath" value="$PROJECT_DIR$/task-10/lib/main.dart" />
+->>>>>>> main
+-      <method v="2" />
+-    </configuration>
+-    <list>
+-      <item itemvalue="Dart Command Line App.surf_dart_courses_template.dart" />
+-      <item itemvalue="Flutter.main.dart" />
+-    </list>
+-<<<<<<< HEAD
+-    <recent_temporary>
+-      <list>
+-        <item itemvalue="Flutter.main.dart" />
+-        <item itemvalue="Dart Command Line App.surf_dart_courses_template.dart" />
+-        <item itemvalue="Flutter.main.dart" />
+-        <item itemvalue="Dart Command Line App.surf_dart_courses_template.dart" />
+-=======
+-=======
+-      <option name="filePath" value="$PROJECT_DIR$/task-9/lib/main.dart" />
+-      <method v="2" />
+-    </configuration>
+->>>>>>> main
+-    <recent_temporary>
+-      <list>
+-        <item itemvalue="Flutter.main.dart" />
+->>>>>>> main
+-        <item itemvalue="Dart Command Line App.surf_dart_courses_template.dart" />
+-      </list>
+-    </recent_temporary>
+-  </component>
+-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+-  <component name="TaskManager">
+-    <task active="true" id="Default" summary="Default task">
+-      <changelist id="7da22925-7deb-4c2c-8e02-244cc9c84704" name="Changes" comment="" />
+-      <created>1699373833462</created>
+-      <option name="number" value="Default" />
+-      <option name="presentableId" value="Default" />
+-      <updated>1699373833462</updated>
+-      <workItem from="1699373835178" duration="5966000" />
+-      <workItem from="1703627202663" duration="1358000" />
+-      <workItem from="1704841899512" duration="2078000" />
+-      <workItem from="1705001341319" duration="2639000" />
+-      <workItem from="1705353584189" duration="817000" />
+-    </task>
+-    <servers />
+-  </component>
+-  <component name="TypeScriptGeneratedFilesManager">
+-    <option name="version" value="3" />
+-  </component>
+-  <component name="Vcs.Log.Tabs.Properties">
+-    <option name="TAB_STATES">
+-      <map>
+-        <entry key="MAIN">
+-          <value>
+-            <State />
+-          </value>
+-        </entry>
+-      </map>
+-    </option>
+-  </component>
+ </project>
+\ No newline at end of file
+diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2024,_11_37_[Changes]1/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_04_2024,_11_37_[Changes]1/shelved.patch
+deleted file mode 100644

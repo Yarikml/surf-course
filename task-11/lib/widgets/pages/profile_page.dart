@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:surf_flutter_courses_template/assets/app_assets.dart';
 import 'dart:math' as math;
+
+import 'package:surf_flutter_courses_template/assets/app_strings.dart';
+import 'package:surf_flutter_courses_template/assets/app_text_scheme.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -10,7 +14,7 @@ class ProfilePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Text('Профиль'),
+        title: Text(AppStrings.profile),
       ),
       body: SingleChildScrollView(
         child: SafeArea(
@@ -18,14 +22,14 @@ class ProfilePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Container(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16),
                 alignment: Alignment.center,
                 child: Stack(
                   clipBehavior: Clip.none,
                   children: [
-                    const CircleAvatar(
+                    CircleAvatar(
                       radius: 96,
-                      backgroundImage: AssetImage('./assets/avatar.jpeg'),
+                      backgroundImage: AssetImage(AppAssets.avatar),
                     ),
                     Positioned(
                       bottom: 0,
@@ -33,7 +37,7 @@ class ProfilePage extends StatelessWidget {
                       child: Transform.rotate(
                         angle: math.pi / 7,
                         child: SvgPicture.asset(
-                          './assets/curved_arrow.svg',
+                          AppAssets.curvedArrow,
                           height: 50,
                         ),
                       ),
@@ -43,87 +47,86 @@ class ProfilePage extends StatelessWidget {
                       left: -70,
                       child: Transform.rotate(
                         angle: math.pi / 10,
-                        child: const Text(
-                          '100% me',
-                          style: TextStyle(
-                              fontFamily: 'Residential',
-                              fontWeight: FontWeight.w700),
+                        child: Text(
+                          AppStrings.percent,
+                          style: AppTextScheme.of(context).residential700,
                         ),
                       ),
                     ),
                   ],
                 ),
               ),
-              const Align(
+              Align(
                 alignment: Alignment.topCenter,
                 child: Text(
-                  'Буняев Ярослав Андреевич',
-                  style: TextStyle(fontFamily: 'HealthyFood', fontSize: 20),
+                  AppStrings.fio,
+                  style: AppTextScheme.of(context).healthy400,
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(top: 16.0),
+                margin: const EdgeInsets.only(top: 16),
                 padding:
-                    const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                    const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 color: Theme.of(context).colorScheme.onBackground,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text('О себе'),
+                    Text(AppStrings.aboutMe),
                     SvgPicture.asset(
-                      './assets/about_me.svg',
+                      AppAssets.aboutMe,
                       height: 40,
                     )
                   ],
                 ),
               ),
-              const Padding(
-                padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
                 child: Text(
-                  'Всем привет. Меня зовут Ярослав и я хочу стать крутым программистом!',
+                  AppStrings.aboutMeText,
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(top: 16.0),
+                margin: const EdgeInsets.only(top: 16),
                 padding:
-                    const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                    const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 color: Theme.of(context).colorScheme.onBackground,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text('Увлечения'),
+                    Text(AppStrings.hobbies),
                     SvgPicture.asset(
-                      './assets/ball.svg',
+                      AppAssets.ball,
                       height: 40,
                     )
                   ],
                 ),
               ),
-              const Padding(
-                padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
-                child: Text(
-                    'Люблю поиграть в баскетбол, погулять с друзьями и почитать книги'),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                child: Text(AppStrings.hobbiesText),
               ),
               Container(
-                margin: const EdgeInsets.only(top: 16.0),
+                margin: const EdgeInsets.only(top: 16),
                 padding:
-                    const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                    const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                 color: Theme.of(context).colorScheme.onBackground,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text('Опыт в разработке'),
+                    Text(AppStrings.development),
                     SvgPicture.asset(
-                      './assets/development.svg',
+                      AppAssets.development,
                       height: 40,
                     )
                   ],
                 ),
               ),
-              const Padding(
-                padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
-                child: Text(
-                    'Во время практики в универе на 3 курсе пригласили на позицию front-end разработчика, пару лет занимался вебом на React, Vue. Затем подвернулся проект на React-Native, над которым я проработал около года и вот уже как 2 года пишу приложения на Flutter. Все постигалось кровью и потом. Сейчас на курсе устраняю пробелы в хард скиллах и ищу best practise'),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                child: Text(AppStrings.developmentText),
               ),
             ],
           ),

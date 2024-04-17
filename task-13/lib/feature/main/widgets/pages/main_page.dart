@@ -1,33 +1,43 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
 import 'package:surf_flutter_courses_template/core/extensions.dart';
 import 'package:surf_flutter_courses_template/feature/main/data/datasources/mock_datasource.dart';
 import 'package:surf_flutter_courses_template/feature/main/data/repositories/main_repository.dart';
 import 'package:surf_flutter_courses_template/feature/main/model/color_entity/color_entity.dart';
+import 'package:surf_flutter_courses_template/feature/main/state_manager/buffer_notifier.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/color_box_item.dart';
 import 'package:surf_flutter_courses_template/uikit/text/app_text_scheme.dart';
 
 class MainPage extends StatefulWidget {
-  MainPage({super.key});
+  const MainPage({super.key});
 
   @override
   State<MainPage> createState() => _MainPageState();
 }
 
 class _MainPageState extends State<MainPage> {
+  late final AppLifecycleListener _listener;
+
+  @override
+  void dispose() {
+    // Do not forget to dispose the listener
+    _listener.dispose();
+
+    super.dispose();
+  }
+
   final MainRepository mainRepository =
       MainRepositoryImpl(mockDatasource: MockDatasourceImpl());
 
   late final Future<List<ColorEntity>> colors;
 
-  ColorEntity? bufferedColor;
-
-  void onAddColorToBuffer(ColorEntity color) async {
-    await Clipboard.setData(ClipboardData(text: color.value!));
+  void onAddValueToBuffer(String value) async {
+    await Clipboard.setData(
+      ClipboardData(text: value),
+    );
     if (context.mounted) {
-      setState(() {
-        bufferedColor = color;
-      });
+      context.read<BufferNotifier>().setBufferText(value);
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           width: 173,
@@ -38,7 +48,7 @@ class _MainPageState extends State<MainPage> {
               Radius.circular(16),
             ),
           ),
-          content: Text('Hex  скопирован'),
+          content: Text('Hex скопирован'),
         ),
       );
     }
@@ -48,6 +58,18 @@ class _MainPageState extends State<MainPage> {
   void initState() {
     colors = mainRepository.getColors();
     super.initState();
+    // Initialize the AppLifecycleListener class and pass callbacks
+    _listener = AppLifecycleListener(
+      onResume: () async {
+        final clipboardData = await Clipboard.getData(Clipboard.kTextPlain);
+        if (context.mounted) {
+          final bufferedValue = context.read<BufferNotifier>().value;
+          if (clipboardData != null && clipboardData.text != bufferedValue) {
+            context.read<BufferNotifier>().setBufferText(clipboardData.text);
+          }
+        }
+      },
+    );
   }
 
   @override
@@ -87,8 +109,7 @@ class _MainPageState extends State<MainPage> {
                         ),
                         itemBuilder: (context, index) => ColorBoxItem(
                           color: snapshot.data!.filledColors[index],
-                          onAddColorToBuffer: onAddColorToBuffer,
-                          bufferedColor: bufferedColor,
+                          onAddColorToBuffer: onAddValueToBuffer,
                         ),
                         itemCount: snapshot.data!.filledColors.length,
                       )

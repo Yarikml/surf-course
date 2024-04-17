@@ -1,27 +1,30 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:provider/provider.dart';
 import 'package:surf_flutter_courses_template/assets/svg_icons.dart';
 import 'package:surf_flutter_courses_template/core/extensions.dart';
 import 'package:surf_flutter_courses_template/feature/main/model/color_entity/color_entity.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/pages/color_details_page.dart';
 import 'package:surf_flutter_courses_template/uikit/text/app_text_scheme.dart';
 
+import '../state_manager/buffer_notifier.dart';
+
 class ColorBoxItem extends StatelessWidget {
   const ColorBoxItem({
     super.key,
     required this.color,
-    required this.bufferedColor,
     required this.onAddColorToBuffer,
   });
 
   final ColorEntity color;
-  final ColorEntity? bufferedColor;
-  final Function(ColorEntity color) onAddColorToBuffer;
+  final Function(String color) onAddColorToBuffer;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onLongPress: () => onAddColorToBuffer(color),
+      onLongPress: () => onAddColorToBuffer(color.hexCode),
       onTap: () => Navigator.of(context).push(
         MaterialPageRoute(
           builder: (context) => ColorDetailsPage(
@@ -54,7 +57,7 @@ class ColorBoxItem extends StatelessWidget {
                 color.value.toString(),
                 style: AppTextScheme.of(context).regular12,
               ),
-              color == bufferedColor
+              context.watch<BufferNotifier>().value == color.hexCode
                   ? Padding(
                       padding: const EdgeInsets.only(left: 4),
                       child: SvgPicture.asset(

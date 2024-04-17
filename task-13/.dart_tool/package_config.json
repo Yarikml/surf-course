@@ -194,6 +194,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///Users/yaroslav/.pub-cache/hosted/pub.dev/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "package_config",
       "rootUri": "file:///Users/yaroslav/.pub-cache/hosted/pub.dev/package_config-2.1.0",
       "packageUri": "lib/",
@@ -264,6 +270,12 @@
       "rootUri": "file:///Users/yaroslav/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///Users/yaroslav/.pub-cache/hosted/pub.dev/provider-6.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "pub_semver",
@@ -404,7 +416,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-04-07T22:08:19.816924Z",
+  "generated": "2024-04-16T19:55:33.559887Z",
   "generator": "pub",
   "generatorVersion": "3.1.0"
 }

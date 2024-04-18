@@ -1,26 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
-import 'package:surf_flutter_courses_template/uikit/text/app_text_scheme.dart';
-
-import '../../../assets/svg_icons.dart';
-import '../state_manager/buffer_notifier.dart';
+import 'package:surf_flutter_courses_template/assets/resources/resources.dart';
+import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
+import 'package:surf_flutter_courses_template/feature/main/state_manager/buffer_notifier.dart';
 
 class ColorPartItem extends StatelessWidget {
   const ColorPartItem({
     super.key,
     required this.text,
     required this.code,
+    required this.onAddValueToBuffer,
   });
 
   final String text;
   final String code;
 
+  final Function(
+    String value, {
+    bool needSnackbar,
+  }) onAddValueToBuffer;
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: GestureDetector(
-        onTap: () => context.read<BufferNotifier>().setBufferText(code),
+        onTap: () => onAddValueToBuffer(
+          code,
+          needSnackbar: false,
+        ),
         child: Stack(
           children: [
             Card(

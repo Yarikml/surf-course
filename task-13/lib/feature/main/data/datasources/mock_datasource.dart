@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:surf_flutter_courses_template/assets/mocks/colors_mock.dart';
 import 'package:surf_flutter_courses_template/feature/main/model/color_entity/color_entity.dart';
 

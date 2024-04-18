@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'package:surf_flutter_courses_template/core/extensions.dart';
-
-import '../model/color_entity/color_entity.dart';
-import '../state_manager/buffer_notifier.dart';
-import 'color_box_item.dart';
+import 'package:surf_flutter_courses_template/util/extensions/extensions.dart';
+import 'package:surf_flutter_courses_template/feature/main/model/color_entity/color_entity.dart';
+import 'package:surf_flutter_courses_template/feature/main/state_manager/buffer_notifier.dart';
+import 'package:surf_flutter_courses_template/feature/main/widgets/color_box_item.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ColorBoxGrid extends StatefulWidget {
@@ -50,7 +49,7 @@ class _ColorBoxGridState extends State<ColorBoxGrid> {
         ),
         itemBuilder: (context, index) => ColorBoxItem(
           color: widget.colors.filledColors[index],
-          onAddColorToBuffer: onAddValueToBuffer,
+          onAddValueToBuffer: onAddValueToBuffer,
         ),
         itemCount: widget.colors.filledColors.length,
       ),
@@ -67,25 +66,23 @@ class _ColorBoxGridState extends State<ColorBoxGrid> {
     }
   }
 
-  void onAddValueToBuffer(String value) async {
+  void onAddValueToBuffer(
+    String value, {
+    bool needSnackbar = true,
+  }) async {
     await Clipboard.setData(
       ClipboardData(text: value),
     );
     if (context.mounted) {
       context.read<BufferNotifier>().setBufferText(value);
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          width: 173,
-          padding: const EdgeInsets.all(24),
-          behavior: SnackBarBehavior.floating,
-          shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(
-              Radius.circular(16),
-            ),
+      if (needSnackbar) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            padding: const EdgeInsets.all(24),
+            content: Text(AppLocalizations.of(context)!.snackBarTextHexCopied),
           ),
-          content: Text(AppLocalizations.of(context)!.snackBarTextHexCopied),
-        ),
-      );
+        );
+      }
     }
   }
 }

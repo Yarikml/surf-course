@@ -3,25 +3,25 @@ import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 import 'package:surf_flutter_courses_template/feature/main/model/color_entity/color_entity.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/color_part_item.dart';
-import 'package:surf_flutter_courses_template/uikit/text/app_text_scheme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:surf_flutter_courses_template/assets/resources/resources.dart';
+import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
+import 'package:surf_flutter_courses_template/feature/main/state_manager/buffer_notifier.dart';
 
-import '../../../../assets/svg_icons.dart';
-import '../../state_manager/buffer_notifier.dart';
-
-class ColorDetailsPage extends StatefulWidget {
+class ColorDetailsPage extends StatelessWidget {
   const ColorDetailsPage({
     super.key,
     required this.color,
+    required this.onAddValueToBuffer,
   });
+
+  final Function(
+    String value, {
+    bool needSnackbar,
+  }) onAddValueToBuffer;
 
   final ColorEntity color;
 
-  @override
-  State<ColorDetailsPage> createState() => _ColorDetailsPageState();
-}
-
-class _ColorDetailsPageState extends State<ColorDetailsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +32,7 @@ class _ColorDetailsPageState extends State<ColorDetailsPage> {
             elevation: 0,
             expandedHeight: 406,
             collapsedHeight: 56,
-            backgroundColor: widget.color.toColor,
+            backgroundColor: color.toColor,
           ),
         ],
         body: Padding(
@@ -43,14 +43,15 @@ class _ColorDetailsPageState extends State<ColorDetailsPage> {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: Text(
-                  widget.color.name,
+                  color.name,
                   style: AppTextScheme.of(context).bold30,
                 ),
               ),
               GestureDetector(
-                onTap: () => context
-                    .read<BufferNotifier>()
-                    .setBufferText(widget.color.hexCode),
+                onTap: () => onAddValueToBuffer(
+                  color.hexCode,
+                  needSnackbar: false,
+                ),
                 child: Card(
                   elevation: 3,
                   margin: const EdgeInsets.only(bottom: 16),
@@ -63,15 +64,18 @@ class _ColorDetailsPageState extends State<ColorDetailsPage> {
                     padding: const EdgeInsets.all(16),
                     child: Row(
                       children: [
-                        Text(AppLocalizations.of(context)!.hex),
+                        Text(
+                          AppLocalizations.of(context)!.hex,
+                          style: AppTextScheme.of(context).regular16,
+                        ),
                         const Spacer(),
                         Text(
-                          widget.color.hexCode,
+                          color.hexCode,
                           style: AppTextScheme.of(context).regular16,
                         ),
                         context
                                 .watch<BufferNotifier>()
-                                .isTextBuffered(widget.color.hexCode)
+                                .isTextBuffered(color.hexCode)
                             ? Padding(
                                 padding: const EdgeInsets.only(left: 8),
                                 child: SvgPicture.asset(
@@ -89,15 +93,18 @@ class _ColorDetailsPageState extends State<ColorDetailsPage> {
                 children: [
                   ColorPartItem(
                     text: AppLocalizations.of(context)!.red,
-                    code: widget.color.toColor.red.toString(),
+                    code: color.toColor.red.toString(),
+                    onAddValueToBuffer: onAddValueToBuffer,
                   ),
                   ColorPartItem(
                     text: AppLocalizations.of(context)!.green,
-                    code: widget.color.toColor.green.toString(),
+                    code: color.toColor.green.toString(),
+                    onAddValueToBuffer: onAddValueToBuffer,
                   ),
                   ColorPartItem(
                     text: AppLocalizations.of(context)!.blue,
-                    code: widget.color.toColor.blue.toString(),
+                    code: color.toColor.blue.toString(),
+                    onAddValueToBuffer: onAddValueToBuffer,
                   ),
                 ],
               ),

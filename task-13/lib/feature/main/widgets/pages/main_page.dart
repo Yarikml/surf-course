@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:surf_flutter_courses_template/feature/main/data/datasources/mock_datasource.dart';
-import 'package:surf_flutter_courses_template/feature/main/data/repositories/main_repository.dart';
 import 'package:surf_flutter_courses_template/feature/main/model/color_entity/color_entity.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/color_box_grid.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/error_placeholder.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/loading_placeholder.dart';
-import 'package:surf_flutter_courses_template/uikit/text/app_text_scheme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
+import 'package:surf_flutter_courses_template/main.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -16,8 +16,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  final IMainRepository mainRepository =
-      MainRepository(mockDatasource: MockDatasource());
+
 
   Future<List<ColorEntity>>? _data;
 

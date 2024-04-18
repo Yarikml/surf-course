@@ -3,12 +3,18 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:surf_flutter_courses_template/feature/main/state_manager/buffer_notifier.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/pages/main_page.dart';
-import 'package:surf_flutter_courses_template/uikit/themes/app_theme_data.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+import 'package:surf_flutter_courses_template/assets/themes/app_theme_data.dart';
+import 'package:surf_flutter_courses_template/feature/main/data/datasources/mock_datasource.dart';
+import 'package:surf_flutter_courses_template/feature/main/data/repositories/main_repository.dart';
 
 void main() {
   runApp(const MainApp());
 }
+
+final IMainRepository mainRepository =
+    MainRepository(mockDatasource: MockDatasource());
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});

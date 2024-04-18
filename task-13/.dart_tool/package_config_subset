@@ -90,6 +90,10 @@ http_parser
 2.12
 file:///Users/yaroslav/.pub-cache/hosted/pub.dev/http_parser-4.0.2/
 file:///Users/yaroslav/.pub-cache/hosted/pub.dev/http_parser-4.0.2/lib/
+intl
+2.12
+file:///Users/yaroslav/.pub-cache/hosted/pub.dev/intl-0.18.1/
+file:///Users/yaroslav/.pub-cache/hosted/pub.dev/intl-0.18.1/lib/
 json_annotation
 2.19
 file:///Users/yaroslav/.pub-cache/hosted/pub.dev/json_annotation-4.8.1/
@@ -270,6 +274,10 @@ flutter
 3.0
 file:///Users/yaroslav/Developer/flutter/packages/flutter/
 file:///Users/yaroslav/Developer/flutter/packages/flutter/lib/
+flutter_localizations
+3.0
+file:///Users/yaroslav/Developer/flutter/packages/flutter_localizations/
+file:///Users/yaroslav/Developer/flutter/packages/flutter_localizations/lib/
 flutter_test
 3.0
 file:///Users/yaroslav/Developer/flutter/packages/flutter_test/

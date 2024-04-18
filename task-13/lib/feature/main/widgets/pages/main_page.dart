@@ -6,6 +6,7 @@ import 'package:surf_flutter_courses_template/feature/main/widgets/color_box_gri
 import 'package:surf_flutter_courses_template/feature/main/widgets/error_placeholder.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/loading_placeholder.dart';
 import 'package:surf_flutter_courses_template/uikit/text/app_text_scheme.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -44,7 +45,7 @@ class _MainPageState extends State<MainPage> {
                 padding: const EdgeInsets.all(16),
                 alignment: Alignment.bottomLeft,
                 child: Text(
-                  'Эксклюзивная палитра «Colored Box»',
+                  AppLocalizations.of(context)!.mainPageAppBar,
                   style: AppTextScheme.of(context).bold30,
                   maxLines: 2,
                 ),

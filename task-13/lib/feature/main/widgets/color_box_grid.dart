@@ -6,6 +6,7 @@ import 'package:surf_flutter_courses_template/core/extensions.dart';
 import '../model/color_entity/color_entity.dart';
 import '../state_manager/buffer_notifier.dart';
 import 'color_box_item.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ColorBoxGrid extends StatefulWidget {
   const ColorBoxGrid({
@@ -73,16 +74,16 @@ class _ColorBoxGridState extends State<ColorBoxGrid> {
     if (context.mounted) {
       context.read<BufferNotifier>().setBufferText(value);
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
+        SnackBar(
           width: 173,
-          padding: EdgeInsets.all(24),
+          padding: const EdgeInsets.all(24),
           behavior: SnackBarBehavior.floating,
-          shape: RoundedRectangleBorder(
+          shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(
               Radius.circular(16),
             ),
           ),
-          content: Text('Hex скопирован'),
+          content: Text(AppLocalizations.of(context)!.snackBarTextHexCopied),
         ),
       );
     }

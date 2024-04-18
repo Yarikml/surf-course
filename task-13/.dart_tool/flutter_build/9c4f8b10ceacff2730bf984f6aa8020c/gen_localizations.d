@@ -1,0 +1,1 @@
+ /Users/yaroslav/Desktop/surf-course/task-13/.dart_tool/flutter_gen/gen_l10n/app_localizations_ru.dart /Users/yaroslav/Desktop/surf-course/task-13/.dart_tool/flutter_gen/gen_l10n/app_localizations.dart:  /Users/yaroslav/Desktop/surf-course/task-13/l10n.yaml /Users/yaroslav/Desktop/surf-course/task-13/lib/l10n/app_ru.arb

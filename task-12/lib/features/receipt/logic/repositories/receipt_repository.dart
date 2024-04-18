@@ -1,0 +1,25 @@
+import 'package:surf_flutter_courses_template/assets/mock/product_list_mock.dart';
+import 'package:surf_flutter_courses_template/features/receipt/model/receipt_entity.dart';
+
+/// Абстракция для репозитория
+abstract interface class IReceiptRepository {
+  Future<ReceiptEntity> getReceipt({
+    required final int id,
+  });
+}
+
+///Реализация репозитория для получения чека
+class ReceiptRepository implements IReceiptRepository {
+  @override
+  Future<ReceiptEntity> getReceipt({
+    required final int id,
+  }) async {
+    return Future.value(
+      ReceiptEntity(
+        id: 1,
+        date: DateTime(2024, 4, 8, 16, 54),
+        products: dataForStudents,
+      ),
+    );
+  }
+}

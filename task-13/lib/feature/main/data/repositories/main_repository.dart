@@ -1,6 +1,7 @@
 import 'package:surf_flutter_courses_template/feature/main/data/datasources/mock_datasource.dart';
 import 'package:surf_flutter_courses_template/feature/main/model/color_entity/color_entity.dart';
 
+///Mock repository
 abstract interface class IMainRepository {
   Future<List<ColorEntity>> getColors();
 }

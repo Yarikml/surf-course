@@ -56,6 +56,7 @@ class _ColorBoxGridState extends State<ColorBoxGrid> {
     );
   }
 
+  ///Write buffer change to state if value were resumed
   void onResume() async {
     final clipboardData = await Clipboard.getData(Clipboard.kTextPlain);
     if (context.mounted) {
@@ -66,6 +67,7 @@ class _ColorBoxGridState extends State<ColorBoxGrid> {
     }
   }
 
+  ///Add value to buffer
   void onAddValueToBuffer(
     String value, {
     bool needSnackbar = true,

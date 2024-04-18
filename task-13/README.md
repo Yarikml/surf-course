@@ -1,23 +1,16 @@
 # Description of your result
 
-You can describe your results in any language that is convenient for you, not just English.
-
+Color palette with buffering hex color, include buffer change when app is hide
 ## Description
 
-[Describe what you have done]
+Create layout from figma. Create data layer for mock loading data from server. Create simple state manager for managing state through pages using context. Create read and write buffer logic.
 
 ## How to
 
-[Describe how to run your application if there are any issues]
+cd task-13
 
-## Problems
-
-[Describe the problems you encountered]
-
-## More
-
-[Here you can brag about what you managed to implement or do something beyond the task]
+dart bin/main.dart
 
 ## Demo
 
-[Leave links to screencasts/screenshots here, you can use a GitHub repository or a separate cloud service]
+![result.gif](assets/docs/result.gif)

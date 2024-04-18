@@ -4,9 +4,9 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'color_entity.g.dart';
 
+///Color entity which includes info about color
 @JsonSerializable()
 class ColorEntity {
-  /// The generated code assumes these values exist in JSON.
   final String name;
   final String? value;
 

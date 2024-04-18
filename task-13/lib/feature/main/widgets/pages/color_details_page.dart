@@ -24,6 +24,8 @@ class ColorDetailsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = AppTextScheme.of(context);
+    final localization = AppLocalizations.of(context)!;
     return Scaffold(
       body: NestedScrollView(
         headerSliverBuilder: (context, innerBoxIsScrolled) => [
@@ -44,7 +46,7 @@ class ColorDetailsPage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: Text(
                   color.name,
-                  style: AppTextScheme.of(context).bold30,
+                  style: textTheme.bold30,
                 ),
               ),
               GestureDetector(
@@ -65,25 +67,28 @@ class ColorDetailsPage extends StatelessWidget {
                     child: Row(
                       children: [
                         Text(
-                          AppLocalizations.of(context)!.hex,
-                          style: AppTextScheme.of(context).regular16,
+                          localization.hex,
+                          style: textTheme.regular16,
                         ),
                         const Spacer(),
                         Text(
                           color.hexCode,
-                          style: AppTextScheme.of(context).regular16,
+                          style: textTheme.regular16,
                         ),
-                        context
-                                .watch<BufferNotifier>()
-                                .isTextBuffered(color.hexCode)
-                            ? Padding(
-                                padding: const EdgeInsets.only(left: 8),
-                                child: SvgPicture.asset(
-                                  SvgIcons.copyIcon,
-                                  width: 16,
-                                ),
-                              )
-                            : Container(),
+                        AnimatedSwitcher(
+                          duration: const Duration(milliseconds: 200),
+                          child: context
+                                  .watch<BufferNotifier>()
+                                  .isTextBuffered(color.hexCode)
+                              ? Padding(
+                                  padding: const EdgeInsets.only(left: 8),
+                                  child: SvgPicture.asset(
+                                    SvgIcons.copyIcon,
+                                    width: 16,
+                                  ),
+                                )
+                              : Container(),
+                        ),
                       ],
                     ),
                   ),
@@ -92,17 +97,17 @@ class ColorDetailsPage extends StatelessWidget {
               Row(
                 children: [
                   ColorPartItem(
-                    text: AppLocalizations.of(context)!.red,
+                    text: localization.red,
                     code: color.toColor.red.toString(),
                     onAddValueToBuffer: onAddValueToBuffer,
                   ),
                   ColorPartItem(
-                    text: AppLocalizations.of(context)!.green,
+                    text: localization.green,
                     code: color.toColor.green.toString(),
                     onAddValueToBuffer: onAddValueToBuffer,
                   ),
                   ColorPartItem(
-                    text: AppLocalizations.of(context)!.blue,
+                    text: localization.blue,
                     code: color.toColor.blue.toString(),
                     onAddValueToBuffer: onAddValueToBuffer,
                   ),

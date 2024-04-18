@@ -23,6 +23,7 @@ class ColorBoxItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = AppTextScheme.of(context);
     return GestureDetector(
       onLongPress: () => onAddValueToBuffer(
         color.hexCode,
@@ -50,7 +51,7 @@ class ColorBoxItem extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 4),
             child: Text(
               color.name,
-              style: AppTextScheme.of(context).regular12,
+              style: textTheme.regular12,
             ),
           ),
           Row(
@@ -58,16 +59,19 @@ class ColorBoxItem extends StatelessWidget {
             children: [
               Text(
                 color.value.toString(),
-                style: AppTextScheme.of(context).regular12,
+                style: textTheme.regular12,
               ),
-              context.watch<BufferNotifier>().value == color.hexCode
-                  ? Padding(
-                      padding: const EdgeInsets.only(left: 4),
-                      child: SvgPicture.asset(
-                        SvgIcons.copyIcon,
-                      ),
-                    )
-                  : Container(),
+              AnimatedSwitcher(
+                duration: const Duration(milliseconds: 200),
+                child: context.watch<BufferNotifier>().value == color.hexCode
+                    ? Padding(
+                        padding: const EdgeInsets.only(left: 4),
+                        child: SvgPicture.asset(
+                          SvgIcons.copyIcon,
+                        ),
+                      )
+                    : Container(),
+              ),
             ],
           ),
         ],

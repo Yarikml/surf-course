@@ -23,6 +23,8 @@ class ColorPartItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = AppTextScheme.of(context);
+
     return Expanded(
       child: GestureDetector(
         onTap: () => onAddValueToBuffer(
@@ -46,25 +48,28 @@ class ColorPartItem extends StatelessWidget {
                   children: [
                     Text(
                       text,
-                      style: AppTextScheme.of(context).regular16,
+                      style: textTheme.regular16,
                     ),
                     Text(
                       code,
-                      style: AppTextScheme.of(context).regular16,
+                      style: textTheme.regular16,
                     ),
                   ],
                 ),
               ),
             ),
-            context.watch<BufferNotifier>().isTextBuffered(code)
-                ? Positioned(
-                    bottom: 8,
-                    right: 10,
-                    child: SvgPicture.asset(
-                      SvgIcons.copyIcon,
-                    ),
-                  )
-                : Container(),
+            Positioned(
+              bottom: 8,
+              right: 10,
+              child: AnimatedSwitcher(
+                duration: const Duration(milliseconds: 200),
+                child: context.watch<BufferNotifier>().isTextBuffered(code)
+                    ? SvgPicture.asset(
+                        SvgIcons.copyIcon,
+                      )
+                    : Container(),
+              ),
+            )
           ],
         ),
       ),

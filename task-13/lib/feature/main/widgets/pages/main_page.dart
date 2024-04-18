@@ -6,7 +6,7 @@ import 'package:surf_flutter_courses_template/feature/main/widgets/loading_place
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
-import 'package:surf_flutter_courses_template/main.dart';
+import 'package:surf_flutter_courses_template/runner.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -16,8 +16,6 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-
-
   Future<List<ColorEntity>>? _data;
 
   Future<void> _loadColors() async {
@@ -58,7 +56,7 @@ class _MainPageState extends State<MainPage> {
               ) {
                 if (snapshot.connectionState == ConnectionState.done) {
                   if (snapshot.hasError) {
-                    return ErrorPlaceholder();
+                    return const ErrorPlaceholder();
                   } else if (snapshot.hasData) {
                     return ColorBoxGrid(colors: snapshot.data!);
                   }

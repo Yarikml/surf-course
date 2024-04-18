@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7da22925-7deb-4c2c-8e02-244cc9c84704" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/task-13/lib/feature/app/app.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-13/lib/runner.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/surf-course.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/surf-course.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-13/lib/feature/main/widgets/color_box_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-13/lib/feature/main/widgets/color_box_item.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-13/lib/feature/main/widgets/color_part_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-13/lib/feature/main/widgets/color_part_item.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-13/lib/feature/main/widgets/pages/color_details_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-13/lib/feature/main/widgets/pages/color_details_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-13/lib/feature/main/widgets/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-13/lib/feature/main/widgets/pages/main_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-13/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-13/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="task-9" />
+        <entry key="$PROJECT_DIR$" value="task-12" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,6 +57,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;task-13&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/Desktop/surf-course&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -57,14 +70,27 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-13/lib/assets/resources" />
+      <recent name="$PROJECT_DIR$/task-13/lib/assets" />
+      <recent name="$PROJECT_DIR$/task-13/lib/util/extensions" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flutter.main.dart">
     <configuration name="surf_dart_courses_template.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/task-6/bin/surf_dart_courses_template.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/task-6" />
       <method v="2" />
     </configuration>
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/task-13/lib/main.dart" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Flutter.main.dart" />
+        <item itemvalue="Dart Command Line App.surf_dart_courses_template.dart" />
         <item itemvalue="Dart Command Line App.surf_dart_courses_template.dart" />
       </list>
     </recent_temporary>
@@ -81,6 +107,10 @@
       <workItem from="1703627202663" duration="1358000" />
       <workItem from="1704841899512" duration="2078000" />
       <workItem from="1705001341319" duration="328000" />
+      <workItem from="1713281666699" duration="4565000" />
+      <workItem from="1713335652375" duration="4253000" />
+      <workItem from="1713370585270" duration="8630000" />
+      <workItem from="1713426005764" duration="14450000" />
     </task>
     <servers />
   </component>

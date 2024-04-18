@@ -10,11 +10,28 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_svg: ^2.0.9
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
-
+#Почему-то работает только Residential, не подскажете почему?
 flutter:
   uses-material-design: true
+  fonts:
+    - family: SeasonChange
+      fonts:
+        - asset: assets/fonts/SeasonChange.otf
+    - family: Residential
+      fonts:
+        - asset: assets/fonts/Residential.otf
+    - family: HealthyFood
+      fonts:
+        - asset: assets/fonts/HealthyFood.otf
+  assets:
+    - assets/avatar.jpeg
+    - assets/curved_arrow.svg
+    - assets/about_me.svg
+    - assets/ball.svg
+    - assets/development.svg

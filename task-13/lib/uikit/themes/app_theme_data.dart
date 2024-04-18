@@ -10,7 +10,7 @@ abstract class AppThemeData {
       scaffoldBackgroundColor: Colors.white,
       extensions: [_textScheme],
       brightness: Brightness.light,
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         elevation: 0,
         color: Colors.white,
       ));

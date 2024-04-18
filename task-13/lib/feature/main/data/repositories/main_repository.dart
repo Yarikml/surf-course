@@ -1,14 +1,14 @@
 import 'package:surf_flutter_courses_template/feature/main/data/datasources/mock_datasource.dart';
 import 'package:surf_flutter_courses_template/feature/main/model/color_entity/color_entity.dart';
 
-abstract class MainRepository {
+abstract interface class IMainRepository {
   Future<List<ColorEntity>> getColors();
 }
 
-class MainRepositoryImpl implements MainRepository {
+class MainRepository implements IMainRepository {
   final MockDatasource mockDatasource;
 
-  MainRepositoryImpl({
+  MainRepository({
     required this.mockDatasource,
   });
 

@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:provider/provider.dart';
-import 'package:surf_flutter_courses_template/core/extensions.dart';
 import 'package:surf_flutter_courses_template/feature/main/data/datasources/mock_datasource.dart';
 import 'package:surf_flutter_courses_template/feature/main/data/repositories/main_repository.dart';
 import 'package:surf_flutter_courses_template/feature/main/model/color_entity/color_entity.dart';
-import 'package:surf_flutter_courses_template/feature/main/state_manager/buffer_notifier.dart';
-import 'package:surf_flutter_courses_template/feature/main/widgets/color_box_item.dart';
+import 'package:surf_flutter_courses_template/feature/main/widgets/color_box_grid.dart';
+import 'package:surf_flutter_courses_template/feature/main/widgets/error_placeholder.dart';
+import 'package:surf_flutter_courses_template/feature/main/widgets/loading_placeholder.dart';
 import 'package:surf_flutter_courses_template/uikit/text/app_text_scheme.dart';
 
 class MainPage extends StatefulWidget {
@@ -17,59 +15,19 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  late final AppLifecycleListener _listener;
+  final IMainRepository mainRepository =
+      MainRepository(mockDatasource: MockDatasource());
 
-  @override
-  void dispose() {
-    // Do not forget to dispose the listener
-    _listener.dispose();
+  Future<List<ColorEntity>>? _data;
 
-    super.dispose();
-  }
-
-  final MainRepository mainRepository =
-      MainRepositoryImpl(mockDatasource: MockDatasourceImpl());
-
-  late final Future<List<ColorEntity>> colors;
-
-  void onAddValueToBuffer(String value) async {
-    await Clipboard.setData(
-      ClipboardData(text: value),
-    );
-    if (context.mounted) {
-      context.read<BufferNotifier>().setBufferText(value);
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          width: 173,
-          padding: EdgeInsets.all(24),
-          behavior: SnackBarBehavior.floating,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(
-              Radius.circular(16),
-            ),
-          ),
-          content: Text('Hex скопирован'),
-        ),
-      );
-    }
+  Future<void> _loadColors() async {
+    _data = mainRepository.getColors();
   }
 
   @override
   void initState() {
-    colors = mainRepository.getColors();
     super.initState();
-    // Initialize the AppLifecycleListener class and pass callbacks
-    _listener = AppLifecycleListener(
-      onResume: () async {
-        final clipboardData = await Clipboard.getData(Clipboard.kTextPlain);
-        if (context.mounted) {
-          final bufferedValue = context.read<BufferNotifier>().value;
-          if (clipboardData != null && clipboardData.text != bufferedValue) {
-            context.read<BufferNotifier>().setBufferText(clipboardData.text);
-          }
-        }
-      },
-    );
+    _loadColors();
   }
 
   @override
@@ -93,30 +51,20 @@ class _MainPageState extends State<MainPage> {
               ),
             ),
             FutureBuilder(
-              future: colors,
-              builder: (BuildContext context,
-                      AsyncSnapshot<List<ColorEntity>> snapshot) =>
-                  SliverPadding(
-                padding: const EdgeInsets.all(16),
-                sliver: snapshot.data != null
-                    ? SliverGrid.builder(
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                          mainAxisExtent: 140,
-                          crossAxisCount: 3,
-                          mainAxisSpacing: 40,
-                          crossAxisSpacing: 22,
-                        ),
-                        itemBuilder: (context, index) => ColorBoxItem(
-                          color: snapshot.data!.filledColors[index],
-                          onAddColorToBuffer: onAddValueToBuffer,
-                        ),
-                        itemCount: snapshot.data!.filledColors.length,
-                      )
-                    : SliverToBoxAdapter(
-                        child: Container(),
-                      ),
-              ),
+              future: _data,
+              builder: (
+                BuildContext context,
+                AsyncSnapshot<List<ColorEntity>> snapshot,
+              ) {
+                if (snapshot.connectionState == ConnectionState.done) {
+                  if (snapshot.hasError) {
+                    return ErrorPlaceholder();
+                  } else if (snapshot.hasData) {
+                    return ColorBoxGrid(colors: snapshot.data!);
+                  }
+                }
+                return const LoadingPlaceholder();
+              },
             ),
           ],
         ),

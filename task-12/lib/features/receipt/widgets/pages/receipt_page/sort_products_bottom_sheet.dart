@@ -23,8 +23,8 @@ class _SortProductsBottomSheetState extends State<SortProductsBottomSheet> {
 
   @override
   void initState() {
-    currentSortSubType = widget.currentSortSubType;
     super.initState();
+    currentSortSubType = widget.currentSortSubType;
   }
 
   void onSortTypeChanged(SortSubType? value) {

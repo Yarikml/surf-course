@@ -67,11 +67,11 @@ class _ReceiptSummaryState extends State<ReceiptSummary> {
               children: [
                 Text(
                   getSuitProductTitle(widget.products.length),
-                  style: Theme.of(context).extension<AppTextTheme>()!.regular12,
+                  style:  AppTextTheme.of(context).regular12,
                 ),
                 Text(
                   receiptCalculator.pricesSummary.toFormattedCurrency(),
-                  style: Theme.of(context).extension<AppTextTheme>()!.bold12,
+                  style:  AppTextTheme.of(context).bold12,
                 ),
               ],
             ),
@@ -109,11 +109,11 @@ class _ReceiptSummaryState extends State<ReceiptSummary> {
               children: [
                 Text(
                   AppStrings.finallyPrice,
-                  style: Theme.of(context).extension<AppTextTheme>()!.bold16,
+                  style:  AppTextTheme.of(context).bold16,
                 ),
                 Text(
                   receiptCalculator.priceSummaryWithSale.toFormattedCurrency(),
-                  style: Theme.of(context).extension<AppTextTheme>()!.bold16,
+                  style:  AppTextTheme.of(context).bold16,
                 ),
               ],
             ),

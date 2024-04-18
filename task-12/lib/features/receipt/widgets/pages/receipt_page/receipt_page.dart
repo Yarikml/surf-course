@@ -79,8 +79,7 @@ class _ReceiptPageState extends State<ReceiptPage> {
                     children: [
                       Text(
                         AppStrings.productList,
-                        style:
-                            Theme.of(context).extension<AppTextTheme>()!.bold18,
+                        style: AppTextTheme.of(context).bold18,
                       ),
                       InkWell(
                         onTap: () async {
@@ -110,16 +109,12 @@ class _ReceiptPageState extends State<ReceiptPage> {
                               padding: const EdgeInsets.all(4),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(6),
-                                color: Theme.of(context)
-                                    .extension<AppColorScheme>()!
-                                    .onBackground,
+                                color: AppColorScheme.of(context).onBackground,
                               ),
                               child: Icon(
                                 Icons.sort,
                                 size: 24,
-                                color: Theme.of(context)
-                                    .extension<AppColorScheme>()!
-                                    .secondary,
+                                color: AppColorScheme.of(context).secondary,
                               ),
                             ),
                             currentSortSubType != SortSubType.idle

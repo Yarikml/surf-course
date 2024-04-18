@@ -14,4 +14,5 @@ Future<void> run() async {
 Future<void> _runApp() async {
   runApp(const App());
 }
-final ReceiptRepository receiptRepository = ReceiptRepositoryImpl();
+
+final IReceiptRepository receiptRepository = ReceiptRepository();

@@ -2,14 +2,14 @@ import 'package:surf_flutter_courses_template/assets/mock/product_list_mock.dart
 import 'package:surf_flutter_courses_template/features/receipt/model/receipt_entity.dart';
 
 /// Абстракция для репозитория
-abstract class ReceiptRepository {
+abstract interface class IReceiptRepository {
   Future<ReceiptEntity> getReceipt({
     required final int id,
   });
 }
 
 ///Реализация репозитория для получения чека
-class ReceiptRepositoryImpl implements ReceiptRepository {
+class ReceiptRepository implements IReceiptRepository {
   @override
   Future<ReceiptEntity> getReceipt({
     required final int id,

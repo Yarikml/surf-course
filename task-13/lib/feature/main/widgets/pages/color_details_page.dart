@@ -32,7 +32,7 @@ class ColorDetailsPage extends StatelessWidget {
           SliverAppBar(
             pinned: true,
             elevation: 0,
-            expandedHeight: 406,
+            expandedHeight: (MediaQuery.sizeOf(context).height * 50) / 100,
             collapsedHeight: 56,
             backgroundColor: color.toColor,
           ),

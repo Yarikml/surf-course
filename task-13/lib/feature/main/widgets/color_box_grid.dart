@@ -40,19 +40,27 @@ class _ColorBoxGridState extends State<ColorBoxGrid> {
   Widget build(BuildContext context) {
     return SliverPadding(
       padding: const EdgeInsets.all(16),
-      sliver: SliverGrid.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          mainAxisExtent: 140,
-          crossAxisCount: 3,
-          mainAxisSpacing: 40,
-          crossAxisSpacing: 22,
-        ),
-        itemBuilder: (context, index) => ColorBoxItem(
-          color: widget.colors.filledColors[index],
-          onAddValueToBuffer: onAddValueToBuffer,
-        ),
-        itemCount: widget.colors.filledColors.length,
-      ),
+      sliver: widget.colors.isNotEmpty
+          ? SliverGrid.builder(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                mainAxisExtent: 140,
+                crossAxisCount: 3,
+                mainAxisSpacing: 40,
+                crossAxisSpacing: 22,
+              ),
+              itemBuilder: (context, index) => ColorBoxItem(
+                color: widget.colors.filledColors[index],
+                onAddValueToBuffer: onAddValueToBuffer,
+              ),
+              itemCount: widget.colors.filledColors.length,
+            )
+          : SliverToBoxAdapter(
+              child: Center(
+                child: Text(
+                  AppLocalizations.of(context)!.noData,
+                ),
+              ),
+            ),
     );
   }
 

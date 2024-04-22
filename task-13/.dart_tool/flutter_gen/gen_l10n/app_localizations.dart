@@ -126,6 +126,18 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Hex скопирован'**
   String get snackBarTextHexCopied;
+
+  /// No description provided for @error.
+  ///
+  /// In ru, this message translates to:
+  /// **'Ошибка'**
+  String get error;
+
+  /// No description provided for @noData.
+  ///
+  /// In ru, this message translates to:
+  /// **'Нет данных'**
+  String get noData;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

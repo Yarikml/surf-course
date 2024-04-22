@@ -4,5 +4,7 @@
   "red": "Red",
   "green": "Green",
   "blue": "Blue",
-  "snackBarTextHexCopied": "Hex скопирован"
+  "snackBarTextHexCopied": "Hex скопирован",
+  "error": "Ошибка",
+  "noData": "Нет данных"
 }

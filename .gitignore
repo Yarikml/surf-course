@@ -87,3 +87,5 @@ tools/bricks/**/hooks/build
 tools/bricks/**/*.dill
 
  task-13/.dart_tool/
+ task-14/.dart_tool/
+ task-14/build/

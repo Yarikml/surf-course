@@ -5,8 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd00ac66-15ae-412a-88ea-db86c7fa98cf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/assets/docs/result.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/assets/icons/copy_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/l10n.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/assets/mocks/colors_mock.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/assets/resources/resources.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/assets/resources/svg_icons.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/assets/text/app_text_scheme.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/assets/text/app_text_style.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/assets/themes/app_theme_data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/feature/app/app.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/feature/main/data/datasources/mock_datasource.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/feature/main/data/repositories/main_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/feature/main/model/color_entity/color_entity.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/feature/main/model/color_entity/color_entity.g.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/feature/main/state_manager/buffer_notifier.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/l10n/app_ru.arb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/runner.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/ios/Flutter/AppFrameworkInfo.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/ios/Flutter/Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/ios/Flutter/Debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/ios/Flutter/Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/ios/Flutter/Release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/ios/Runner/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/macos/Flutter/Flutter-Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/macos/Flutter/Flutter-Debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/macos/Flutter/Flutter-Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/macos/Flutter/Flutter-Release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +59,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "task-14",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "/Users/yaroslav/Desktop/surf-course/task-14",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -41,6 +72,21 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-14" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-14" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="task-14" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/task-14/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -49,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716226227061</updated>
-      <workItem from="1716226228532" duration="584000" />
+      <workItem from="1716226228532" duration="3383000" />
     </task>
     <servers />
   </component>

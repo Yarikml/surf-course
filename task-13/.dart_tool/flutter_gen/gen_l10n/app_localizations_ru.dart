@@ -21,4 +21,10 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get snackBarTextHexCopied => 'Hex скопирован';
+
+  @override
+  String get error => 'Ошибка';
+
+  @override
+  String get noData => 'Нет данных';
 }

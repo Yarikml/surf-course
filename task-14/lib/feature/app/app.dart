@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'package:surf_flutter_courses_template/assets/themes/app_theme_data.dart';
+import 'package:surf_flutter_courses_template/feature/main/widgets/pages/profile_page.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -10,13 +11,15 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: AppThemeData.lightTheme,
+      theme: AppThemeData.greenLightTheme,
+      darkTheme: AppThemeData.greenDarkTheme,
+      themeMode: ThemeMode.light,
 
       /// Localization.
       locale: _localizations.firstOrNull,
       localizationsDelegates: _localizationsDelegates,
       supportedLocales: _localizations,
-      home: Container(),
+      home: ProfilePage(),
     );
   }
 }

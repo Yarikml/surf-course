@@ -29,3 +29,4 @@ flutter:
   generate: true # Add this line
   assets:
     - assets/icons/
+    - assets/images/

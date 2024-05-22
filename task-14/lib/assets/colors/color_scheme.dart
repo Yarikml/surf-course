@@ -21,24 +21,32 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
 
   final Color outlinedButtonForegroundColor;
 
+  final Color barrierColor;
+
+  final Color photoFilter;
+
   /// Base color theme version.
-  const AppColorScheme.greenLight()
+  AppColorScheme.greenLight()
       : primary = GreenColorPaletteLight.alienArmpit,
         scaffoldBackground = GreenColorPaletteLight.white,
-        onBackground = GreenColorPaletteLight.white,
+        onBackground = GreenColorPaletteLight.lotion,
         elevatedButtonBackgroundColor = GreenColorPaletteLight.hanPurple,
         elevatedButtonForegroundColor = GreenColorPaletteLight.white,
         outlinedButtonBackgroundColor = GreenColorPaletteLight.coralRed,
-        outlinedButtonForegroundColor = GreenColorPaletteLight.coralRed;
+        outlinedButtonForegroundColor = GreenColorPaletteLight.coralRed,
+        barrierColor = GreenColorPaletteLight.raisinBlack.withOpacity(0.6),
+        photoFilter = GreenColorPaletteLight.raisinBlack.withOpacity(0.4);
 
-  const AppColorScheme.greenDark()
+  AppColorScheme.greenDark()
       : primary = GreenColorPaletteDark.alienArmpit,
         scaffoldBackground = GreenColorPaletteDark.black,
-        onBackground = GreenColorPaletteDark.sonicSilver,
+        onBackground = GreenColorPaletteDark.raisinBlack,
         elevatedButtonBackgroundColor = GreenColorPaletteDark.hanPurple,
         elevatedButtonForegroundColor = GreenColorPaletteDark.white,
         outlinedButtonBackgroundColor = GreenColorPaletteDark.coralRed,
-        outlinedButtonForegroundColor = GreenColorPaletteDark.coralRed;
+        outlinedButtonForegroundColor = GreenColorPaletteDark.coralRed,
+        barrierColor = GreenColorPaletteDark.black.withOpacity(0.6),
+        photoFilter = GreenColorPaletteDark.black.withOpacity(0.4);
 
   ///Для чего тут приватный конструктор?
   const AppColorScheme._({
@@ -49,6 +57,8 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
     required this.elevatedButtonForegroundColor,
     required this.outlinedButtonBackgroundColor,
     required this.outlinedButtonForegroundColor,
+    required this.barrierColor,
+    required this.photoFilter,
   });
 
   @override
@@ -60,6 +70,8 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
     Color? elevatedButtonForegroundColor,
     Color? outlinedButtonBackgroundColor,
     Color? outlinedButtonForegroundColor,
+    Color? barrierColor,
+    Color? photoFilter,
   }) {
     return AppColorScheme._(
       primary: primary ?? this.primary,
@@ -73,6 +85,8 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
           outlinedButtonBackgroundColor ?? this.outlinedButtonBackgroundColor,
       outlinedButtonForegroundColor:
           outlinedButtonForegroundColor ?? this.outlinedButtonForegroundColor,
+      barrierColor: barrierColor ?? this.barrierColor,
+      photoFilter: photoFilter ?? this.photoFilter,
     );
   }
 
@@ -86,18 +100,21 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
     }
 
     return AppColorScheme._(
-        primary: Color.lerp(primary, other.primary, t)!,
-        scaffoldBackground:
-            Color.lerp(scaffoldBackground, other.scaffoldBackground, t)!,
-        onBackground: Color.lerp(onBackground, other.onBackground, t)!,
-        elevatedButtonBackgroundColor: Color.lerp(elevatedButtonBackgroundColor,
-            other.elevatedButtonBackgroundColor, t)!,
-        elevatedButtonForegroundColor: Color.lerp(elevatedButtonForegroundColor,
-            other.elevatedButtonForegroundColor, t)!,
-        outlinedButtonBackgroundColor: Color.lerp(outlinedButtonBackgroundColor,
-            other.outlinedButtonBackgroundColor, t)!,
-        outlinedButtonForegroundColor: Color.lerp(outlinedButtonForegroundColor,
-            other.outlinedButtonForegroundColor, t)!);
+      primary: Color.lerp(primary, other.primary, t)!,
+      scaffoldBackground:
+          Color.lerp(scaffoldBackground, other.scaffoldBackground, t)!,
+      onBackground: Color.lerp(onBackground, other.onBackground, t)!,
+      elevatedButtonBackgroundColor: Color.lerp(elevatedButtonBackgroundColor,
+          other.elevatedButtonBackgroundColor, t)!,
+      elevatedButtonForegroundColor: Color.lerp(elevatedButtonForegroundColor,
+          other.elevatedButtonForegroundColor, t)!,
+      outlinedButtonBackgroundColor: Color.lerp(outlinedButtonBackgroundColor,
+          other.outlinedButtonBackgroundColor, t)!,
+      outlinedButtonForegroundColor: Color.lerp(outlinedButtonForegroundColor,
+          other.outlinedButtonForegroundColor, t)!,
+      barrierColor: Color.lerp(barrierColor, other.barrierColor, t)!,
+      photoFilter: Color.lerp(photoFilter, other.photoFilter, t)!,
+    );
   }
 
   /// Returns [AppColorScheme] from [context].

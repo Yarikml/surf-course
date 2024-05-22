@@ -13,13 +13,13 @@ class App extends StatelessWidget {
     return MaterialApp(
       theme: AppThemeData.greenLightTheme,
       darkTheme: AppThemeData.greenDarkTheme,
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
 
       /// Localization.
       locale: _localizations.firstOrNull,
       localizationsDelegates: _localizationsDelegates,
       supportedLocales: _localizations,
-      home: ProfilePage(),
+      home: const ProfilePage(),
     );
   }
 }

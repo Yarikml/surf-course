@@ -9,9 +9,26 @@ abstract class AppThemeData {
   static final greenLightTheme = ThemeData(
     scaffoldBackgroundColor: _greenLightColorScheme.scaffoldBackground,
     appBarTheme: AppBarTheme(
+      titleTextStyle: _greenTextSchemeLight.bold18,
+      iconTheme: IconThemeData(
+        color: _greenLightColorScheme.primary,
+      ),
       backgroundColor: _greenLightColorScheme.scaffoldBackground,
     ),
-    extensions: [_greenLightColorScheme, _textScheme],
+    iconTheme: IconThemeData(
+      color: _greenLightColorScheme.primary,
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        minimumSize: const Size.fromHeight(48),
+        foregroundColor: _greenLightColorScheme.outlinedButtonForegroundColor,
+        textStyle: _greenTextSchemeLight.regular16Error,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
+      ),
+    ),
+    extensions: [_greenLightColorScheme, _greenTextSchemeLight],
     brightness: Brightness.light,
   );
 
@@ -19,13 +36,31 @@ abstract class AppThemeData {
   static final greenDarkTheme = ThemeData(
     scaffoldBackgroundColor: _greenDarkColorScheme.scaffoldBackground,
     appBarTheme: AppBarTheme(
+      titleTextStyle: _greenTextSchemeDark.bold18,
+      iconTheme: IconThemeData(
+        color: _greenDarkColorScheme.primary,
+      ),
       backgroundColor: _greenDarkColorScheme.scaffoldBackground,
     ),
-    extensions: [_greenDarkColorScheme, _textScheme],
-    brightness: Brightness.dark,
+    iconTheme: IconThemeData(
+      color: _greenDarkColorScheme.primary,
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        minimumSize: const Size.fromHeight(48),
+        foregroundColor: _greenDarkColorScheme.outlinedButtonForegroundColor,
+        textStyle: _greenTextSchemeDark.regular16Error,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
+      ),
+    ),
+    extensions: [_greenDarkColorScheme, _greenTextSchemeDark],
   );
 
-  static const _greenLightColorScheme = AppColorScheme.greenLight();
-  static const _greenDarkColorScheme = AppColorScheme.greenDark();
-  static final _textScheme = AppTextScheme.base();
+  static  final AppColorScheme _greenLightColorScheme = AppColorScheme.greenLight();
+  static  final AppColorScheme _greenDarkColorScheme = AppColorScheme.greenDark();
+
+  static final _greenTextSchemeLight = AppTextScheme.greenLight();
+  static final _greenTextSchemeDark = AppTextScheme.greenDark();
 }

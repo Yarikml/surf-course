@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd00ac66-15ae-412a-88ea-db86c7fa98cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task-14/assets/images/first_place.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-14/assets/images/person.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-14/assets/images/second_place.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-14/assets/images/third_place.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-14/lib/assets/resources/images.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-14/lib/feature/main/widgets/info_field_item.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/feature/main/widgets/cupertino_radio_tile.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/feature/main/widgets/pages/theme_settings_bottom_sheet.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/lib/assets/colors/color_pallete.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/assets/colors/color_pallete.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-14/lib/assets/colors/color_scheme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/assets/colors/color_scheme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-14/lib/assets/resources/resources.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/assets/resources/resources.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-14/lib/assets/text/app_text_scheme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/assets/text/app_text_scheme.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-14/lib/assets/text/app_text_style.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/assets/text/app_text_style.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-14/lib/assets/themes/app_theme_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/assets/themes/app_theme_data.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-14/lib/feature/app/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/feature/app/app.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-14/lib/feature/main/widgets/pages/profile_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/feature/main/widgets/pages/profile_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-14/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/lib/feature/main/widgets/info_field_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/feature/main/widgets/info_field_item.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,27 +39,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "task-14",
-    "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "/Users/yaroslav/Desktop/surf-course/task-14/lib/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;task-14&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/Desktop/surf-course/task-14/lib/feature/main/widgets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-14/lib/feature/main/widgets" />
       <recent name="$PROJECT_DIR$/task-14/lib/assets" />
       <recent name="$PROJECT_DIR$/task-14" />
     </key>
@@ -89,7 +85,8 @@
       <option name="presentableId" value="Default" />
       <updated>1716226227061</updated>
       <workItem from="1716226228532" duration="6786000" />
-      <workItem from="1716318809125" duration="20539000" />
+      <workItem from="1716318809125" duration="25127000" />
+      <workItem from="1716448638351" duration="10155000" />
     </task>
     <servers />
   </component>

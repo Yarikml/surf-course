@@ -79,3 +79,75 @@ abstract class GreenColorPaletteDark {
   /// https://www.color-name.com/hex/FF392A
   static const Color coralRed = Color(0xFFFF392A);
 }
+
+
+abstract class PurpleColorPaletteLight {
+  /// Yankees Blue
+  ///
+  /// https://www.color-name.com/hex/242439
+  static const Color yankeesBlue = Color(0xFF242439);
+
+  /// White
+  ///
+  /// https://www.color-name.com/hex/FFFFFF
+  static const Color white = Colors.white;
+
+  /// Black
+  ///
+  /// https://www.color-name.com/hex/000000
+  static const Color black = Colors.black;
+
+  /// Ultramarine Blue
+  ///
+  /// https://www.color-name.com/hex/5261EB
+  static const Color ultramarineBlue = Color(0xFF5261EB);
+
+  /// Coral Red
+  ///
+  /// https://www.color-name.com/hex/FF392A
+  static const Color coralRed = Color(0xFFFF392A);
+
+  /// Space Cadet
+  ///
+  /// https://www.color-name.com/hex/252849
+  static const Color spaceCadet = Color(0xFF252849);
+}
+
+abstract class PurpleColorPaletteDark {
+  /// Yankees Blue
+  ///
+  /// https://www.color-name.com/hex/242439
+  static const Color yankeesBlue = Color(0xFF242439);
+
+  /// White
+  ///
+  /// https://www.color-name.com/hex/FFFFFF
+  static const Color white = Colors.white;
+
+  /// Black
+  ///
+  /// https://www.color-name.com/hex/000000
+  static const Color black = Colors.black;
+
+  /// Ultramarine Blue
+  ///
+  /// https://www.color-name.com/hex/5261EB
+  static const Color ultramarineBlue = Color(0xFF5261EB);
+
+  /// Coral Red
+  ///
+  /// https://www.color-name.com/hex/FF392A
+  static const Color coralRed = Color(0xFFFF392A);
+
+  /// Space Cadet
+  ///
+  /// https://www.color-name.com/hex/252849
+  static const Color spaceCadet = Color(0xFF252849);
+
+  /// Charcoal
+  ///
+  /// https://www.color-name.com/hex/384057
+  static const Color charcoal = Color(0xFF384057);
+
+
+}

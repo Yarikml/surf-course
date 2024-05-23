@@ -10,6 +10,7 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
   final TextStyle regular14Label;
   final TextStyle regular14Accent;
   final TextStyle regular16Error;
+  final TextStyle regular16;
   final TextStyle bold18;
 
   const AppTextScheme._({
@@ -18,6 +19,7 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
     required this.regular14Label,
     required this.regular14Accent,
     required this.regular16Error,
+    required this.regular16,
     required this.bold18,
   });
 
@@ -28,6 +30,7 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
         regular14Label = GreenTextStyleLight.regular14Label,
         regular14Accent = GreenTextStyleLight.regular14Accent,
         regular16Error = GreenTextStyleLight.regular16Error,
+        regular16 = GreenTextStyleLight.regular16,
         bold18 = GreenTextStyleLight.bold18;
   AppTextScheme.greenDark()
       : regular12 = GreenTextStyleDark.regular12,
@@ -35,7 +38,26 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
         regular14Label = GreenTextStyleDark.regular14Label,
         regular14Accent = GreenTextStyleDark.regular14Accent,
         regular16Error = GreenTextStyleDark.regular16Error,
+        regular16 = GreenTextStyleDark.regular16,
         bold18 = GreenTextStyleDark.bold18;
+
+  AppTextScheme.purpleLight()
+      : regular12 = PurpleTextStyleLight.regular12,
+        regular14 = PurpleTextStyleLight.regular14,
+        regular14Label = PurpleTextStyleLight.regular14Label,
+        regular14Accent = PurpleTextStyleLight.regular14Accent,
+        regular16Error = PurpleTextStyleLight.regular16Error,
+        regular16 = PurpleTextStyleLight.regular16,
+        bold18 = PurpleTextStyleLight.bold18;
+
+  AppTextScheme.purpleDark()
+      : regular12 = PurpleTextStyleDark.regular12,
+        regular14 = PurpleTextStyleDark.regular14,
+        regular14Label = PurpleTextStyleDark.regular14Label,
+        regular14Accent = PurpleTextStyleDark.regular14Accent,
+        regular16Error = PurpleTextStyleDark.regular16Error,
+        regular16 = PurpleTextStyleDark.regular16,
+        bold18 = PurpleTextStyleDark.bold18;
 
   @override
   ThemeExtension<AppTextScheme> lerp(
@@ -53,6 +75,7 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
       regular14Accent:
           TextStyle.lerp(regular14Accent, other.regular14Accent, t)!,
       regular16Error: TextStyle.lerp(regular16Error, other.regular16Error, t)!,
+      regular16: TextStyle.lerp(regular16, other.regular16, t)!,
       bold18: TextStyle.lerp(bold18, other.bold18, t)!,
     );
   }
@@ -71,6 +94,7 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
     TextStyle? regular14Label,
     TextStyle? regular14Accent,
     TextStyle? regular16Error,
+    TextStyle? regular16,
     TextStyle? bold18,
   }) {
     return AppTextScheme._(
@@ -79,6 +103,7 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
       regular14Label: regular14Label ?? this.regular14Label,
       regular14Accent: regular14Accent ?? this.regular14Accent,
       regular16Error: regular16Error ?? this.regular16Error,
+      regular16: regular16 ?? this.regular16,
       bold18: bold18 ?? this.bold18,
     );
   }

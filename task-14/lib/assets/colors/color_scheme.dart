@@ -13,6 +13,8 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
 
   final Color onBackground;
 
+  final Color bottomSheetBackground;
+
   final Color elevatedButtonBackgroundColor;
 
   final Color elevatedButtonForegroundColor;
@@ -30,6 +32,7 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
       : primary = GreenColorPaletteLight.alienArmpit,
         scaffoldBackground = GreenColorPaletteLight.white,
         onBackground = GreenColorPaletteLight.lotion,
+        bottomSheetBackground = GreenColorPaletteLight.white,
         elevatedButtonBackgroundColor = GreenColorPaletteLight.hanPurple,
         elevatedButtonForegroundColor = GreenColorPaletteLight.white,
         outlinedButtonBackgroundColor = GreenColorPaletteLight.coralRed,
@@ -41,6 +44,7 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
       : primary = GreenColorPaletteDark.alienArmpit,
         scaffoldBackground = GreenColorPaletteDark.black,
         onBackground = GreenColorPaletteDark.raisinBlack,
+        bottomSheetBackground = GreenColorPaletteDark.raisinBlack,
         elevatedButtonBackgroundColor = GreenColorPaletteDark.hanPurple,
         elevatedButtonForegroundColor = GreenColorPaletteDark.white,
         outlinedButtonBackgroundColor = GreenColorPaletteDark.coralRed,
@@ -48,11 +52,36 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
         barrierColor = GreenColorPaletteDark.black.withOpacity(0.6),
         photoFilter = GreenColorPaletteDark.black.withOpacity(0.4);
 
+  AppColorScheme.purpleLight()
+      : primary = PurpleColorPaletteLight.ultramarineBlue,
+        scaffoldBackground = PurpleColorPaletteLight.white,
+        onBackground = PurpleColorPaletteLight.white,
+        bottomSheetBackground = PurpleColorPaletteLight.white,
+        elevatedButtonBackgroundColor = PurpleColorPaletteLight.ultramarineBlue,
+        elevatedButtonForegroundColor = PurpleColorPaletteLight.white,
+        outlinedButtonBackgroundColor = PurpleColorPaletteLight.coralRed,
+        outlinedButtonForegroundColor = PurpleColorPaletteLight.coralRed,
+        barrierColor = PurpleColorPaletteLight.yankeesBlue.withOpacity(0.6),
+        photoFilter = PurpleColorPaletteLight.spaceCadet.withOpacity(0.4);
+
+  AppColorScheme.purpleDark()
+      : primary = PurpleColorPaletteDark.ultramarineBlue,
+        scaffoldBackground = PurpleColorPaletteDark.yankeesBlue,
+        onBackground = PurpleColorPaletteDark.charcoal,
+        bottomSheetBackground = PurpleColorPaletteDark.charcoal,
+        elevatedButtonBackgroundColor = PurpleColorPaletteDark.ultramarineBlue,
+        elevatedButtonForegroundColor = PurpleColorPaletteDark.white,
+        outlinedButtonBackgroundColor = PurpleColorPaletteDark.coralRed,
+        outlinedButtonForegroundColor = PurpleColorPaletteDark.coralRed,
+        barrierColor = PurpleColorPaletteDark.yankeesBlue.withOpacity(0.6),
+        photoFilter = PurpleColorPaletteDark.spaceCadet.withOpacity(0.4);
+
   ///Для чего тут приватный конструктор?
   const AppColorScheme._({
     required this.primary,
     required this.scaffoldBackground,
     required this.onBackground,
+    required this.bottomSheetBackground,
     required this.elevatedButtonBackgroundColor,
     required this.elevatedButtonForegroundColor,
     required this.outlinedButtonBackgroundColor,
@@ -66,6 +95,7 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
     Color? primary,
     Color? scaffoldBackground,
     Color? onBackground,
+    Color? bottomSheetBackground,
     Color? elevatedButtonBackgroundColor,
     Color? elevatedButtonForegroundColor,
     Color? outlinedButtonBackgroundColor,
@@ -77,6 +107,8 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
       primary: primary ?? this.primary,
       scaffoldBackground: scaffoldBackground ?? this.scaffoldBackground,
       onBackground: onBackground ?? this.onBackground,
+      bottomSheetBackground:
+          bottomSheetBackground ?? this.bottomSheetBackground,
       elevatedButtonBackgroundColor:
           elevatedButtonBackgroundColor ?? this.elevatedButtonBackgroundColor,
       elevatedButtonForegroundColor:
@@ -104,6 +136,8 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
       scaffoldBackground:
           Color.lerp(scaffoldBackground, other.scaffoldBackground, t)!,
       onBackground: Color.lerp(onBackground, other.onBackground, t)!,
+      bottomSheetBackground:
+          Color.lerp(bottomSheetBackground, other.bottomSheetBackground, t)!,
       elevatedButtonBackgroundColor: Color.lerp(elevatedButtonBackgroundColor,
           other.elevatedButtonBackgroundColor, t)!,
       elevatedButtonForegroundColor: Color.lerp(elevatedButtonForegroundColor,

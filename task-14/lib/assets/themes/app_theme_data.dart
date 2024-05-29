@@ -21,6 +21,17 @@ abstract class AppThemeData {
     iconTheme: IconThemeData(
       color: _greenLightColorScheme.primary,
     ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        minimumSize: const Size.fromHeight(48),
+        foregroundColor: _greenLightColorScheme.elevatedButtonForegroundColor,
+        backgroundColor: _greenLightColorScheme.elevatedButtonBackgroundColor,
+        textStyle: _purpleTextSchemeLight.regular16Error,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
+      ),
+    ),
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
         minimumSize: const Size.fromHeight(48),
@@ -50,6 +61,17 @@ abstract class AppThemeData {
     ),
     iconTheme: IconThemeData(
       color: _greenDarkColorScheme.primary,
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        minimumSize: const Size.fromHeight(48),
+        foregroundColor: _greenDarkColorScheme.elevatedButtonForegroundColor,
+        backgroundColor: _greenDarkColorScheme.elevatedButtonBackgroundColor,
+        textStyle: _purpleTextSchemeDark.regular16Error,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
+      ),
     ),
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
@@ -89,6 +111,17 @@ abstract class AppThemeData {
         ),
       ),
     ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        minimumSize: const Size.fromHeight(48),
+        foregroundColor: _purpleLightColorScheme.elevatedButtonForegroundColor,
+        backgroundColor: _purpleLightColorScheme.elevatedButtonBackgroundColor,
+        textStyle: _purpleTextSchemeLight.regular16Error,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
+      ),
+    ),
     extensions: [_purpleLightColorScheme, _purpleTextSchemeLight],
     brightness: Brightness.light,
   );
@@ -118,9 +151,29 @@ abstract class AppThemeData {
         ),
       ),
     ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        minimumSize: const Size.fromHeight(48),
+        foregroundColor: _purpleDarkColorScheme.elevatedButtonForegroundColor,
+        backgroundColor: _purpleDarkColorScheme.elevatedButtonBackgroundColor,
+        textStyle: _purpleTextSchemeDark.regular16Error,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
+      ),
+    ),
     extensions: [_purpleDarkColorScheme, _purpleTextSchemeDark],
     brightness: Brightness.light,
   );
+
+  static final List<AppColorScheme> lightThemes = [
+    _greenLightColorScheme,
+    _purpleLightColorScheme,
+  ];
+  static final List<AppColorScheme> darkThemes = [
+    _greenDarkColorScheme,
+    _purpleDarkColorScheme,
+  ];
 
   static final AppColorScheme _greenLightColorScheme =
       AppColorScheme.greenLight();

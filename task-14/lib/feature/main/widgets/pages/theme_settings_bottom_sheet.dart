@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/themes/app_theme_data.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/cupertino_radio_tile.dart';
+import 'package:surf_flutter_courses_template/feature/main/widgets/scheme_selector.dart';
 
 class ThemeSettingsBottomSheet extends StatefulWidget {
   const ThemeSettingsBottomSheet({super.key});
@@ -24,6 +25,7 @@ class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
     return Padding(
       padding: const EdgeInsets.all(20),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
             padding: const EdgeInsets.only(bottom: 8.0),
@@ -60,7 +62,8 @@ class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
           ElevatedButton(
             onPressed: () {},
             child: Text('Готово'),
-          )
+          ),
+          SchemeSelector(),
         ],
       ),
     );

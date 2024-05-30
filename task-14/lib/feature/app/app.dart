@@ -3,23 +3,37 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'package:surf_flutter_courses_template/assets/themes/app_theme_data.dart';
+import 'package:surf_flutter_courses_template/feature/main/di/theme_inherited.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/pages/profile_page.dart';
+import 'package:surf_flutter_courses_template/feature/main/widgets/theme_builder.dart';
+
+import '../main/state_manager/theme_controller.dart';
 
 class App extends StatelessWidget {
-  const App({super.key});
+  const App({
+    super.key,
+    required this.themeController,
+  });
+
+  final ThemeController themeController;
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: AppThemeData.greenLightTheme,
-      darkTheme: AppThemeData.greenDarkTheme,
-      themeMode: ThemeMode.dark,
+    return ThemeInherited(
+      themeController: themeController,
+      child: ThemeBuilder(
+        builder: (_, themeMode) => MaterialApp(
+          theme: AppThemeData.greenLightTheme,
+          darkTheme: AppThemeData.greenDarkTheme,
+          themeMode: themeMode,
 
-      /// Localization.
-      locale: _localizations.firstOrNull,
-      localizationsDelegates: _localizationsDelegates,
-      supportedLocales: _localizations,
-      home: const ProfilePage(),
+          /// Localization.
+          locale: _localizations.firstOrNull,
+          localizationsDelegates: _localizationsDelegates,
+          supportedLocales: _localizations,
+          home: const ProfilePage(),
+        ),
+      ),
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/themes/app_theme_data.dart';
+import 'package:surf_flutter_courses_template/feature/main/di/theme_inherited.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/cupertino_radio_tile.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/scheme_selector.dart';
 
@@ -43,21 +44,27 @@ class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
           ),
           CupertinoRadioTile(
             value: ThemeMode.system,
-            groupValue: 'groupValue',
+            groupValue: ThemeInherited.of(context).themeMode.value,
             label: 'Системная',
-            onChanged: (value) {},
+            onChanged: (value) {
+              ThemeInherited.of(context).setThemeMode(ThemeMode.system);
+            },
           ),
           CupertinoRadioTile(
-            value: ThemeMode.system,
-            groupValue: 'groupValue',
+            value: ThemeMode.light,
+            groupValue: ThemeInherited.of(context).themeMode.value,
             label: 'Светлая',
-            onChanged: (value) {},
+            onChanged: (value) {
+              ThemeInherited.of(context).setThemeMode(ThemeMode.light);
+            },
           ),
           CupertinoRadioTile(
-            value: ThemeMode.system,
-            groupValue: 'groupValue',
+            value: ThemeMode.dark,
+            groupValue: ThemeInherited.of(context).themeMode.value,
             label: 'Темная',
-            onChanged: (value) {},
+            onChanged: (value) {
+              ThemeInherited.of(context).setThemeMode(ThemeMode.dark);
+            },
           ),
           ElevatedButton(
             onPressed: () {},

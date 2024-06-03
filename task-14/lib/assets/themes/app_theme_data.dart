@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 
 import '../colors/color_scheme.dart';
@@ -190,4 +191,14 @@ abstract class AppThemeData {
 
   static final _purpleTextSchemeLight = AppTextScheme.purpleLight();
   static final _purpleTextSchemeDark = AppTextScheme.purpleDark();
+}
+*/
+
+import 'package:flutter/material.dart';
+import 'package:surf_flutter_courses_template/assets/themes/green_app_theme_data.dart';
+import 'package:surf_flutter_courses_template/assets/themes/purple_app_theme_data.dart';
+
+abstract class AppThemeData {
+   ThemeData get light;
+   ThemeData get dark;
 }

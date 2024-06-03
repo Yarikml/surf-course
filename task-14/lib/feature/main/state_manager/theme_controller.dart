@@ -1,5 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:surf_flutter_courses_template/assets/themes/app_theme_data.dart';
+import 'package:surf_flutter_courses_template/assets/themes/green_app_theme_data.dart';
+import 'package:surf_flutter_courses_template/assets/themes/purple_app_theme_data.dart';
 import 'package:surf_flutter_courses_template/feature/main/data/repositories/theme_repository.dart';
 
 class ThemeController {
@@ -10,10 +13,24 @@ class ThemeController {
   }) : _themeRepository = themeRepository;
 
   late final ValueNotifier<ThemeMode> _themeMode = ValueNotifier<ThemeMode>(
-      ThemeMode.system // _themeRepository.getThemeMode() ?? ThemeMode.system,
+      ThemeMode.light // _themeRepository.getThemeMode() ?? ThemeMode.system,
       );
+  late final ValueNotifier<AppThemeData> _themeData =
+      ValueNotifier<AppThemeData>(
+    _greenAppTheme, // _themeRepository.getThemeMode() ?? ThemeMode.system,
+  );
+
+  final _greenAppTheme = GreenAppThemeData();
+  final _purpleAppTheme = PurpleAppThemeData();
 
   ValueListenable<ThemeMode> get themeMode => _themeMode;
+
+  ValueListenable<AppThemeData> get themeData => _themeData;
+
+  List<AppThemeData> get appThemes => [
+        _greenAppTheme,
+        _purpleAppTheme,
+      ];
 
   Future<void> setThemeMode(ThemeMode newThemeMode) async {
     if (newThemeMode == _themeMode.value) return;
@@ -21,10 +38,9 @@ class ThemeController {
     _themeMode.value = newThemeMode;
   }
 
-  Future<void> switchThemeMode() async {
-    final newThemeMode =
-        _themeMode.value != ThemeMode.light ? ThemeMode.light : ThemeMode.dark;
-    //   await _themeRepository.setThemeMode(newThemeMode);
-    _themeMode.value = newThemeMode;
+  Future<void> setThemeData(AppThemeData newThemeData) async {
+    if (newThemeData == _themeData.value) return;
+    //  await _themeRepository.setThemeMode(newThemeMode);
+    _themeData.value = newThemeData;
   }
 }

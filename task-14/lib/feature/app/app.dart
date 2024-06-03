@@ -22,11 +22,10 @@ class App extends StatelessWidget {
     return ThemeInherited(
       themeController: themeController,
       child: ThemeBuilder(
-        builder: (_, themeMode) => MaterialApp(
-          theme: AppThemeData.greenLightTheme,
-          darkTheme: AppThemeData.greenDarkTheme,
+        builder: (_, themeMode, themeData) => MaterialApp(
+          theme: themeData.light,
+          darkTheme: themeData.dark,
           themeMode: themeMode,
-
           /// Localization.
           locale: _localizations.firstOrNull,
           localizationsDelegates: _localizationsDelegates,

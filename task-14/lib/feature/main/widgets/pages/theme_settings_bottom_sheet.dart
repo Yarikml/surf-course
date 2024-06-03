@@ -14,13 +14,6 @@ class ThemeSettingsBottomSheet extends StatefulWidget {
 }
 
 class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
-  final darkThemes = <ThemeData>[
-    AppThemeData.greenDarkTheme,
-  ];
-  final lightThemes = <ThemeData>[
-    AppThemeData.greenLightTheme,
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Padding(

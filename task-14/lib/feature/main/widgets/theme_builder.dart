@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
+import '../../../assets/themes/app_theme_data.dart';
 import '../di/theme_inherited.dart';
 
 typedef ThemeWidgetBuilder = Widget Function(
   BuildContext context,
   ThemeMode themeMode,
+  AppThemeData themeData,
 );
 
 class ThemeBuilder extends StatefulWidget {
@@ -22,17 +24,22 @@ class ThemeBuilder extends StatefulWidget {
 class _ThemeBuilderState extends State<ThemeBuilder> {
   @override
   Widget build(BuildContext context) {
-    return ValueListenableBuilder<ThemeMode>(
-      valueListenable: ThemeInherited.of(context).themeMode,
-      builder: (
-        builderContext,
-        themeMode,
-        _,
-      ) =>
-          widget.builder(
-        builderContext,
-        themeMode,
-      ),
-    );
+    return ValueListenableBuilder<AppThemeData>(
+        valueListenable: ThemeInherited.of(context).themeData,
+        builder: (builderContext, themeData, _) {
+          return ValueListenableBuilder<ThemeMode>(
+            valueListenable: ThemeInherited.of(context).themeMode,
+            builder: (
+              builderContext,
+              themeMode,
+              _,
+            ) =>
+                widget.builder(
+              builderContext,
+              themeMode,
+              themeData,
+            ),
+          );
+        });
   }
 }

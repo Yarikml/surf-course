@@ -16,7 +16,8 @@ class ThemeSettingsBottomSheet extends StatefulWidget {
 class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Container(
+      height: 380,
       padding: const EdgeInsets.all(20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,6 +52,11 @@ class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
               ThemeInherited.of(context).setThemeMode(ThemeMode.light);
             },
           ),
+          Visibility(
+            visible:
+                ThemeInherited.of(context).themeMode.value == ThemeMode.light,
+            child: SchemeSelector(),
+          ),
           CupertinoRadioTile(
             value: ThemeMode.dark,
             groupValue: ThemeInherited.of(context).themeMode.value,
@@ -59,11 +65,16 @@ class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
               ThemeInherited.of(context).setThemeMode(ThemeMode.dark);
             },
           ),
+          Visibility(
+            visible:
+                ThemeInherited.of(context).themeMode.value == ThemeMode.dark,
+            child: SchemeSelector(),
+          ),
+          Spacer(),
           ElevatedButton(
             onPressed: () {},
             child: Text('Готово'),
           ),
-          SchemeSelector(),
         ],
       ),
     );

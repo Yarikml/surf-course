@@ -9,6 +9,7 @@ class GreenAppThemeData implements AppThemeData {
   /// Light green theme configuration.
   @override
   final light = ThemeData(
+    primaryColor: _greenLightColorScheme.primary,
     scaffoldBackgroundColor: _greenLightColorScheme.scaffoldBackground,
     bottomSheetTheme: BottomSheetThemeData(
       backgroundColor: _greenLightColorScheme.bottomSheetBackground,
@@ -51,6 +52,7 @@ class GreenAppThemeData implements AppThemeData {
   /// Dark green theme configuration.
   @override
   final dark = ThemeData(
+    primaryColor: _greenDarkColorScheme.primary,
     scaffoldBackgroundColor: _greenDarkColorScheme.scaffoldBackground,
     bottomSheetTheme: BottomSheetThemeData(
       backgroundColor: _greenDarkColorScheme.bottomSheetBackground,
@@ -96,4 +98,7 @@ class GreenAppThemeData implements AppThemeData {
 
   static final _greenTextSchemeLight = AppTextScheme.greenLight();
   static final _greenTextSchemeDark = AppTextScheme.greenDark();
+
+  @override
+  final name = 'green';
 }

@@ -6,6 +6,8 @@ import 'app_text_style.dart';
 /// App text style scheme.
 class AppTextScheme extends ThemeExtension<AppTextScheme> {
   final TextStyle regular12;
+  final TextStyle regular12AccentSubtitle;
+  final TextStyle regular12Subtitle;
   final TextStyle regular14;
   final TextStyle regular14Label;
   final TextStyle regular14Accent;
@@ -15,6 +17,8 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
 
   const AppTextScheme._({
     required this.regular12,
+    required this.regular12AccentSubtitle,
+    required this.regular12Subtitle,
     required this.regular14,
     required this.regular14Label,
     required this.regular14Accent,
@@ -26,6 +30,8 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
   /// Base app text theme.
   AppTextScheme.greenLight()
       : regular12 = GreenTextStyleLight.regular12,
+        regular12AccentSubtitle = GreenTextStyleLight.regular12AccentSubtitle,
+        regular12Subtitle = GreenTextStyleLight.regular12Subtitle,
         regular14 = GreenTextStyleLight.regular14,
         regular14Label = GreenTextStyleLight.regular14Label,
         regular14Accent = GreenTextStyleLight.regular14Accent,
@@ -34,6 +40,8 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
         bold18 = GreenTextStyleLight.bold18;
   AppTextScheme.greenDark()
       : regular12 = GreenTextStyleDark.regular12,
+        regular12AccentSubtitle = GreenTextStyleDark.regular12AccentSubtitle,
+        regular12Subtitle = GreenTextStyleDark.regular12Subtitle,
         regular14 = GreenTextStyleDark.regular14,
         regular14Label = GreenTextStyleDark.regular14Label,
         regular14Accent = GreenTextStyleDark.regular14Accent,
@@ -43,6 +51,8 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
 
   AppTextScheme.purpleLight()
       : regular12 = PurpleTextStyleLight.regular12,
+        regular12AccentSubtitle = PurpleTextStyleLight.regular12AccentSubtitle,
+        regular12Subtitle = PurpleTextStyleLight.regular12Subtitle,
         regular14 = PurpleTextStyleLight.regular14,
         regular14Label = PurpleTextStyleLight.regular14Label,
         regular14Accent = PurpleTextStyleLight.regular14Accent,
@@ -52,6 +62,8 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
 
   AppTextScheme.purpleDark()
       : regular12 = PurpleTextStyleDark.regular12,
+        regular12AccentSubtitle = PurpleTextStyleDark.regular12AccentSubtitle,
+        regular12Subtitle = PurpleTextStyleDark.regular12Subtitle,
         regular14 = PurpleTextStyleDark.regular14,
         regular14Label = PurpleTextStyleDark.regular14Label,
         regular14Accent = PurpleTextStyleDark.regular14Accent,
@@ -70,6 +82,10 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
 
     return AppTextScheme._(
       regular12: TextStyle.lerp(regular12, other.regular12, t)!,
+      regular12AccentSubtitle: TextStyle.lerp(
+          regular12AccentSubtitle, other.regular12AccentSubtitle, t)!,
+      regular12Subtitle:
+          TextStyle.lerp(regular12Subtitle, other.regular12Subtitle, t)!,
       regular14: TextStyle.lerp(regular14, other.regular14, t)!,
       regular14Label: TextStyle.lerp(regular14Label, other.regular14Label, t)!,
       regular14Accent:
@@ -90,6 +106,8 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
   @override
   AppTextScheme copyWith({
     TextStyle? regular12,
+    TextStyle? regular12AccentSubtitle,
+    TextStyle? regular12Subtitle,
     TextStyle? regular14,
     TextStyle? regular14Label,
     TextStyle? regular14Accent,
@@ -99,6 +117,9 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
   }) {
     return AppTextScheme._(
       regular12: regular12 ?? this.regular12,
+      regular12AccentSubtitle:
+          regular12AccentSubtitle ?? this.regular12AccentSubtitle,
+      regular12Subtitle: regular12Subtitle ?? this.regular12Subtitle,
       regular14: regular14 ?? this.regular14,
       regular14Label: regular14Label ?? this.regular14Label,
       regular14Accent: regular14Accent ?? this.regular14Accent,

@@ -8,6 +8,7 @@ import '../text/app_text_scheme.dart';
 class PurpleAppThemeData implements AppThemeData {
   @override
   final light = ThemeData(
+    primaryColor: _purpleLightColorScheme.primary,
     scaffoldBackgroundColor: _purpleLightColorScheme.scaffoldBackground,
     bottomSheetTheme: BottomSheetThemeData(
       backgroundColor: _purpleLightColorScheme.bottomSheetBackground,
@@ -49,6 +50,7 @@ class PurpleAppThemeData implements AppThemeData {
 
   @override
   final dark = ThemeData(
+    primaryColor: _purpleDarkColorScheme.primary,
     scaffoldBackgroundColor: _purpleDarkColorScheme.scaffoldBackground,
     bottomSheetTheme: BottomSheetThemeData(
       backgroundColor: _purpleDarkColorScheme.bottomSheetBackground,
@@ -95,4 +97,7 @@ class PurpleAppThemeData implements AppThemeData {
 
   static final _purpleTextSchemeLight = AppTextScheme.purpleLight();
   static final _purpleTextSchemeDark = AppTextScheme.purpleDark();
+
+  @override
+  final name = 'purple';
 }

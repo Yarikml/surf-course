@@ -8,6 +8,16 @@ abstract class GreenTextStyleLight {
     fontWeight: FontWeight.w400,
     color: Colors.white,
   );
+  static const regular12AccentSubtitle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    color: Color(0xFF222222),
+  );
+  static const regular12Subtitle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    color: Color(0xFF77767B),
+  );
   static const regular14Label = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w400,
@@ -45,6 +55,16 @@ abstract class GreenTextStyleDark {
     fontSize: 12,
     fontWeight: FontWeight.w400,
     color: Colors.white,
+  );
+  static const regular12AccentSubtitle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    color: Colors.white,
+  );
+  static const regular12Subtitle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    color: Color(0xFF77767B),
   );
   static const regular14Label = TextStyle(
     fontSize: 14,
@@ -84,6 +104,16 @@ abstract class PurpleTextStyleLight {
     fontWeight: FontWeight.w400,
     color: Colors.white,
   );
+  static const regular12AccentSubtitle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    color: Color(0xFF222222),
+  );
+  static const regular12Subtitle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    color: Color(0xFF7B8EBE),
+  );
   static const regular14Label = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w400,
@@ -102,7 +132,7 @@ abstract class PurpleTextStyleLight {
   static const regular16 = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w400,
-    color: Colors.white,
+    color: Color(0xFF222222),
   );
   static const bold18 = TextStyle(
     fontSize: 18,
@@ -121,6 +151,16 @@ abstract class PurpleTextStyleDark {
     fontSize: 12,
     fontWeight: FontWeight.w400,
     color: Colors.white,
+  );
+  static const regular12AccentSubtitle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    color: Colors.white,
+  );
+  static const regular12Subtitle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    color: Color(0xFF7B8EBE),
   );
   static const regular14Label = TextStyle(
     fontSize: 14,

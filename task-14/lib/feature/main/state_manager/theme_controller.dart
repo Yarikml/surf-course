@@ -13,12 +13,11 @@ class ThemeController {
   }) : _themeRepository = themeRepository;
 
   late final ValueNotifier<ThemeMode> _themeMode = ValueNotifier<ThemeMode>(
-      ThemeMode.light // _themeRepository.getThemeMode() ?? ThemeMode.system,
-      );
+    _themeRepository.getThemeMode() ?? ThemeMode.system,
+  );
   late final ValueNotifier<AppThemeData> _themeData =
       ValueNotifier<AppThemeData>(
-    _greenAppTheme, // _themeRepository.getThemeMode() ?? ThemeMode.system,
-  );
+          _themeRepository.getThemeData() ?? _greenAppTheme);
 
   final _greenAppTheme = GreenAppThemeData();
   final _purpleAppTheme = PurpleAppThemeData();
@@ -34,13 +33,13 @@ class ThemeController {
 
   Future<void> setThemeMode(ThemeMode newThemeMode) async {
     if (newThemeMode == _themeMode.value) return;
-    //  await _themeRepository.setThemeMode(newThemeMode);
+    await _themeRepository.setThemeMode(themeMode: newThemeMode);
     _themeMode.value = newThemeMode;
   }
 
   Future<void> setThemeData(AppThemeData newThemeData) async {
     if (newThemeData == _themeData.value) return;
-    //  await _themeRepository.setThemeMode(newThemeMode);
+    await _themeRepository.setThemeData(themeData: newThemeData);
     _themeData.value = newThemeData;
   }
 }

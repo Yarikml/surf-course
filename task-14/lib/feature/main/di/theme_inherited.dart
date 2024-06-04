@@ -24,7 +24,7 @@ class ThemeInherited extends InheritedWidget {
   }
 
   @override
-  bool updateShouldNotify(ThemeInherited old) {
+  bool updateShouldNotify(ThemeInherited oldWidget) {
     return false;
   }
 }

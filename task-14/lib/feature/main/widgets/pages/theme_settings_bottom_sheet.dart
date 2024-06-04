@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
-import 'package:surf_flutter_courses_template/assets/themes/app_theme_data.dart';
 import 'package:surf_flutter_courses_template/feature/main/di/theme_inherited.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/cupertino_radio_tile.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/scheme_selector.dart';
@@ -16,6 +15,7 @@ class ThemeSettingsBottomSheet extends StatefulWidget {
 class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
   @override
   Widget build(BuildContext context) {
+    final themeInherited = ThemeInherited.of(context);
     return Container(
       height: 380,
       padding: const EdgeInsets.all(20),
@@ -23,7 +23,7 @@ class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.only(bottom: 8.0),
+            padding: const EdgeInsets.only(bottom: 8),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -41,44 +41,44 @@ class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
           ),
           CupertinoRadioTile(
             value: ThemeMode.system,
-            groupValue: ThemeInherited.of(context).themeMode.value,
+            groupValue: themeInherited.themeMode.value,
             label: 'Системная',
             onChanged: (value) {
-              ThemeInherited.of(context).setThemeMode(ThemeMode.system);
+              themeInherited.setThemeMode(ThemeMode.system);
             },
           ),
           CupertinoRadioTile(
             value: ThemeMode.light,
-            groupValue: ThemeInherited.of(context).themeMode.value,
+            groupValue: themeInherited.themeMode.value,
             label: 'Светлая',
             onChanged: (value) {
-              ThemeInherited.of(context).setThemeMode(ThemeMode.light);
+              themeInherited.setThemeMode(ThemeMode.light);
             },
           ),
           Visibility(
             visible:
-                ThemeInherited.of(context).themeMode.value == ThemeMode.light,
-            child: SchemeSelector(),
+                themeInherited.themeMode.value == ThemeMode.light,
+            child: const SchemeSelector(),
           ),
           CupertinoRadioTile(
             value: ThemeMode.dark,
-            groupValue: ThemeInherited.of(context).themeMode.value,
+            groupValue: themeInherited.themeMode.value,
             label: 'Темная',
             onChanged: (value) {
-              ThemeInherited.of(context).setThemeMode(ThemeMode.dark);
+              themeInherited.setThemeMode(ThemeMode.dark);
             },
           ),
           Visibility(
             visible:
-                ThemeInherited.of(context).themeMode.value == ThemeMode.dark,
-            child: SchemeSelector(),
+                themeInherited.themeMode.value == ThemeMode.dark,
+            child: const SchemeSelector(),
           ),
-          Spacer(),
+          const Spacer(),
           ElevatedButton(
             onPressed: () {
               Navigator.of(context).pop();
             },
-            child: Text('Готово'),
+            child: const Text('Готово'),
           ),
         ],
       ),

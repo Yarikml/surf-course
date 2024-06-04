@@ -4,13 +4,11 @@ import 'package:surf_flutter_courses_template/assets/themes/app_theme_data.dart'
 import '../colors/color_scheme.dart';
 import '../text/app_text_scheme.dart';
 
-/// Class of the app themes data.
 class OrangeAppThemeData implements AppThemeData {
-  /// Light green theme configuration.
+  /// Light orange theme configuration.
   @override
   final light = ThemeData(
     fontFamily: 'SF-Pro-Display',
-
     primaryColor: _orangeLightColorScheme.primary,
     scaffoldBackgroundColor: _orangeLightColorScheme.scaffoldBackground,
     highlightColor: _orangeLightColorScheme.schemeSecondPreviewColor,
@@ -54,11 +52,10 @@ class OrangeAppThemeData implements AppThemeData {
     brightness: Brightness.light,
   );
 
-  /// Dark green theme configuration.
+  /// Dark orange theme configuration.
   @override
   final dark = ThemeData(
     fontFamily: 'SF-Pro-Display',
-
     primaryColor: _orangeDarkColorScheme.primary,
     scaffoldBackgroundColor: _orangeDarkColorScheme.scaffoldBackground,
     highlightColor: _orangeDarkColorScheme.schemeSecondPreviewColor,

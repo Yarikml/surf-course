@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-///Набор цетов приложения
+///App color pallets
 abstract class GreenColorPaletteLight {
   /// Han Purple
   ///

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+///Base class for app theme
 abstract class AppThemeData {
   ThemeData get light;
   AppThemeDataName get name;

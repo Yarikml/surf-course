@@ -4,8 +4,7 @@ import 'package:surf_flutter_courses_template/assets/themes/app_theme_data.dart'
 import 'package:surf_flutter_courses_template/assets/themes/green_app_theme_data.dart';
 import 'package:surf_flutter_courses_template/assets/themes/purple_app_theme_data.dart';
 import 'package:surf_flutter_courses_template/feature/main/data/repositories/theme_repository.dart';
-
-import '../../../assets/themes/orange_app_theme_data.dart';
+import 'package:surf_flutter_courses_template/assets/themes/orange_app_theme_data.dart';
 
 class ThemeController {
   final IThemeRepository _themeRepository;

@@ -3,14 +3,15 @@ import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/info_field_item.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/pages/theme_settings_bottom_sheet.dart';
-
-import '../../../../assets/resources/resources.dart';
+import 'package:surf_flutter_courses_template/assets/resources/resources.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = AppTextScheme.of(context);
+    final colorScheme = AppColorScheme.of(context);
     return Scaffold(
       appBar: AppBar(
         leading: const BackButton(),
@@ -20,7 +21,7 @@ class ProfilePage extends StatelessWidget {
             padding: const EdgeInsets.only(right: 20),
             child: Text(
               'Сохранить',
-              style: AppTextScheme.of(context).regular14Accent,
+              style: textTheme.regular14Accent,
             ),
           ),
         ],
@@ -46,7 +47,7 @@ class ProfilePage extends StatelessWidget {
                       alignment: Alignment.center,
                       child: Text(
                         'Edit',
-                        style: AppTextScheme.of(context).regular12,
+                        style: textTheme.regular12,
                       ),
                     ),
                   ),
@@ -57,7 +58,7 @@ class ProfilePage extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 12),
               child: Text(
                 'Мои награды',
-                style: AppTextScheme.of(context).regular14Label,
+                style: textTheme.regular14Label,
               ),
             ),
             Padding(
@@ -113,7 +114,7 @@ class ProfilePage extends StatelessWidget {
               hasArrow: true,
               onTap: () {
                 showModalBottomSheet(
-                  barrierColor: AppColorScheme.of(context).barrierColor,
+                  barrierColor: colorScheme.barrierColor,
                   context: context,
                   builder: (context) => const ThemeSettingsBottomSheet(),
                 );
@@ -124,9 +125,8 @@ class ProfilePage extends StatelessWidget {
               onPressed: () {},
               style: OutlinedButton.styleFrom(
                 side: BorderSide(
-                  width: 1.0,
-                  color:
-                      AppColorScheme.of(context).outlinedButtonBackgroundColor,
+                  width: 1,
+                  color: colorScheme.outlinedButtonBackgroundColor,
                 ),
               ),
               child: const Text('Log out'),

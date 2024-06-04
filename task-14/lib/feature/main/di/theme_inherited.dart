@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../state_manager/theme_controller.dart';
+import 'package:surf_flutter_courses_template/feature/main/state_manager/theme_controller.dart';
 
 class ThemeInherited extends InheritedWidget {
   const ThemeInherited({

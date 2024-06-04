@@ -22,11 +22,11 @@ class CupertinoRadioTile<T> extends StatelessWidget {
     return GestureDetector(
       onTap: () => onChanged(value),
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 8.0),
+        padding: const EdgeInsets.symmetric(vertical: 8),
         child: Row(
           children: [
             Padding(
-              padding: const EdgeInsets.only(right: 16.0),
+              padding: const EdgeInsets.only(right: 16),
               child: CupertinoRadio<T>(
                 activeColor: AppColorScheme.of(context).primary,
                 value: value,

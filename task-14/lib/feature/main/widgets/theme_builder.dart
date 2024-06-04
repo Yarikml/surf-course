@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../../../assets/themes/app_theme_data.dart';
-import '../di/theme_inherited.dart';
+import 'package:surf_flutter_courses_template/assets/themes/app_theme_data.dart';
+import 'package:surf_flutter_courses_template/feature/main/di/theme_inherited.dart';
 
 typedef ThemeWidgetBuilder = Widget Function(
   BuildContext context,

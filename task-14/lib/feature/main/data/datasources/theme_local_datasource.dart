@@ -2,8 +2,7 @@ import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:surf_flutter_courses_template/assets/themes/app_theme_data.dart';
-import 'package:surf_flutter_courses_template/assets/themes/green_app_theme_data.dart';
-import 'package:surf_flutter_courses_template/assets/themes/purple_app_theme_data.dart';
+
 
 abstract interface class IThemeLocalDatasource {
   Future<void> setThemeMode({

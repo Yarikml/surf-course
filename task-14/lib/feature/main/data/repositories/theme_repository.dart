@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/feature/main/data/datasources/theme_local_datasource.dart';
-import 'package:surf_flutter_courses_template/feature/main/model/color_entity/color_entity.dart';
+import 'package:surf_flutter_courses_template/assets/themes/app_theme_data.dart';
 
-import '../../../../assets/themes/app_theme_data.dart';
-
-///Mock repository
 abstract interface class IThemeRepository {
   Future<void> setThemeMode({
     required final ThemeMode themeMode,

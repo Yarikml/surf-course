@@ -13,8 +13,10 @@ class SchemeSelector extends StatefulWidget {
 class _SchemeSelectorState extends State<SchemeSelector> {
   @override
   Widget build(BuildContext context) {
+    final themeInherited = ThemeInherited.of(context);
+    final textScheme = AppTextScheme.of(context);
     return Padding(
-      padding: const EdgeInsets.only(top: 8.0),
+      padding: const EdgeInsets.only(top: 8),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -22,132 +24,117 @@ class _SchemeSelectorState extends State<SchemeSelector> {
             padding: const EdgeInsets.only(bottom: 16),
             child: Text(
               'Цветовая схема',
-              style: AppTextScheme.of(context).regular14Label,
+              style: textScheme.regular14Label,
             ),
           ),
           SizedBox(
             height: 64,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              itemCount: ThemeInherited.of(context).appThemes.length,
-              itemBuilder: (context, index) => GestureDetector(
-                onTap: () {
-                  ThemeInherited.of(context).setThemeData(
-                      ThemeInherited.of(context).appThemes[index]);
-                },
-                child: Container(
-                  padding: EdgeInsets.all(10),
-                  margin: EdgeInsets.only(right: 6),
-                  width: 103,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(6),
-                    border: Border.all(
-                        color: ThemeInherited.of(context).appThemes[index] ==
-                                ThemeInherited.of(context).themeData.value
-                            ? Theme.of(context).primaryColor
-                            : Colors.transparent),
-                    color: AppColorScheme.of(context).schemeButtonBg,
-                  ),
-                  child: Column(
-                    children: [
-                      Container(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Column(
-                              children: [
-                                Container(
-                                  margin: EdgeInsets.all(1),
-                                  width: 8,
-                                  height: 8,
-                                  decoration: BoxDecoration(
-                                    color: Theme.of(context).brightness ==
-                                            Brightness.light
-                                        ? ThemeInherited.of(context)
-                                            .appThemes[index]
-                                            .light
-                                            .highlightColor
-                                        : ThemeInherited.of(context)
-                                            .appThemes[index]
-                                            .dark
-                                            .highlightColor,
-                                    borderRadius: BorderRadius.circular(16),
+              itemCount: themeInherited.appThemes.length,
+              itemBuilder: (context, index) {
+                final currentTheme = themeInherited.appThemes[index];
+
+                return GestureDetector(
+                  onTap: () {
+                    themeInherited.setThemeData(currentTheme);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    margin: const EdgeInsets.only(right: 6),
+                    width: 103,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(6),
+                      border: Border.all(
+                          color: currentTheme == themeInherited.themeData.value
+                              ? Theme.of(context).primaryColor
+                              : Colors.transparent),
+                      color: AppColorScheme.of(context).schemeButtonBg,
+                    ),
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    margin: const EdgeInsets.all(1),
+                                    width: 8,
+                                    height: 8,
+                                    decoration: BoxDecoration(
+                                      color: Theme.of(context).brightness ==
+                                              Brightness.light
+                                          ? themeInherited.appThemes[index]
+                                              .light.highlightColor
+                                          : themeInherited.appThemes[index].dark
+                                              .highlightColor,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
                                   ),
-                                ),
-                                Container(
-                                  margin: EdgeInsets.all(1),
-                                  width: 8,
-                                  height: 8,
-                                  decoration: BoxDecoration(
-                                    color: Theme.of(context).brightness ==
-                                            Brightness.light
-                                        ? ThemeInherited.of(context)
-                                            .appThemes[index]
-                                            .light
-                                            .focusColor
-                                        : ThemeInherited.of(context)
-                                            .appThemes[index]
-                                            .dark
-                                            .focusColor,
-                                    borderRadius: BorderRadius.circular(16),
+                                  Container(
+                                    margin: const EdgeInsets.all(1),
+                                    width: 8,
+                                    height: 8,
+                                    decoration: BoxDecoration(
+                                      color: Theme.of(context).brightness ==
+                                              Brightness.light
+                                          ? themeInherited
+                                              .appThemes[index].light.focusColor
+                                          : themeInherited
+                                              .appThemes[index].dark.focusColor,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
                                   ),
-                                ),
-                              ],
-                            ),
-                            Column(
-                              children: [
-                                Container(
-                                  margin: EdgeInsets.all(1),
-                                  width: 8,
-                                  height: 8,
-                                  decoration: BoxDecoration(
-                                    color: Theme.of(context).brightness ==
-                                            Brightness.light
-                                        ? ThemeInherited.of(context)
-                                            .appThemes[index]
-                                            .light
-                                            .primaryColor
-                                        : ThemeInherited.of(context)
-                                            .appThemes[index]
-                                            .dark
-                                            .primaryColor,
-                                    borderRadius: BorderRadius.circular(16),
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  Container(
+                                    margin: const EdgeInsets.all(1),
+                                    width: 8,
+                                    height: 8,
+                                    decoration: BoxDecoration(
+                                      color: Theme.of(context).brightness ==
+                                              Brightness.light
+                                          ? themeInherited.appThemes[index]
+                                              .light.primaryColor
+                                          : themeInherited.appThemes[index].dark
+                                              .primaryColor,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
                                   ),
-                                ),
-                                Container(
-                                  margin: EdgeInsets.all(1),
-                                  width: 8,
-                                  height: 8,
-                                  decoration: BoxDecoration(
-                                    color: Theme.of(context).brightness ==
-                                            Brightness.light
-                                        ? ThemeInherited.of(context)
-                                            .appThemes[index]
-                                            .light
-                                            .hintColor
-                                        : ThemeInherited.of(context)
-                                            .appThemes[index]
-                                            .dark
-                                            .hintColor,
-                                    borderRadius: BorderRadius.circular(16),
+                                  Container(
+                                    margin: const EdgeInsets.all(1),
+                                    width: 8,
+                                    height: 8,
+                                    decoration: BoxDecoration(
+                                      color: Theme.of(context).brightness ==
+                                              Brightness.light
+                                          ? themeInherited
+                                              .appThemes[index].light.hintColor
+                                          : themeInherited
+                                              .appThemes[index].dark.hintColor,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
                                   ),
-                                ),
-                              ],
-                            ),
-                          ],
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      Text(
-                        'Схема ${index + 1}',
-                        style: ThemeInherited.of(context).appThemes[index] ==
-                                ThemeInherited.of(context).themeData.value
-                            ? AppTextScheme.of(context).regular12AccentSubtitle
-                            : AppTextScheme.of(context).regular12Subtitle,
-                      )
-                    ],
+                        Text(
+                          'Схема ${index + 1}',
+                          style: currentTheme == themeInherited.themeData.value
+                              ? textScheme.regular12AccentSubtitle
+                              : textScheme.regular12Subtitle,
+                        )
+                      ],
+                    ),
                   ),
-                ),
-              ),
+                );
+              },
             ),
           )
         ],

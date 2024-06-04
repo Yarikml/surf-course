@@ -4,8 +4,8 @@ import 'package:surf_flutter_courses_template/assets/themes/app_theme_data.dart'
 import '../colors/color_scheme.dart';
 import '../text/app_text_scheme.dart';
 
-/// Class of the app themes data.
 class PurpleAppThemeData implements AppThemeData {
+  /// Light purple theme configuration.
   @override
   final light = ThemeData(
     fontFamily: 'SF-Pro-Display',
@@ -52,6 +52,7 @@ class PurpleAppThemeData implements AppThemeData {
     brightness: Brightness.light,
   );
 
+  /// Dark purple theme configuration.
   @override
   final dark = ThemeData(
     fontFamily: 'SF-Pro-Display',

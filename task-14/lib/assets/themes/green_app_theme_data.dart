@@ -4,7 +4,6 @@ import 'package:surf_flutter_courses_template/assets/themes/app_theme_data.dart'
 import '../colors/color_scheme.dart';
 import '../text/app_text_scheme.dart';
 
-/// Class of the app themes data.
 class GreenAppThemeData implements AppThemeData {
   /// Light green theme configuration.
   @override

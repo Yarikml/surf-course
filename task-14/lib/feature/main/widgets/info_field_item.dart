@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:surf_flutter_courses_template/feature/main/widgets/pages/theme_settings_bottom_sheet.dart';
-
-import '../../../assets/colors/color_scheme.dart';
-import '../../../assets/text/app_text_scheme.dart';
+import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
+import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 
 class InfoFieldItem extends StatelessWidget {
   const InfoFieldItem({

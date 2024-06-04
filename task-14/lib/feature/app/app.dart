@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-
-import 'package:surf_flutter_courses_template/assets/themes/app_theme_data.dart';
 import 'package:surf_flutter_courses_template/feature/main/di/theme_inherited.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/pages/profile_page.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/theme_builder.dart';
-
-import '../main/state_manager/theme_controller.dart';
+import 'package:surf_flutter_courses_template/feature/main/state_manager/theme_controller.dart';
 
 class App extends StatelessWidget {
   const App({

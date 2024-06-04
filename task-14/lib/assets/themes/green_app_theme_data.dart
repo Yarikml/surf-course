@@ -11,6 +11,9 @@ class GreenAppThemeData implements AppThemeData {
   final light = ThemeData(
     primaryColor: _greenLightColorScheme.primary,
     scaffoldBackgroundColor: _greenLightColorScheme.scaffoldBackground,
+    highlightColor: _greenLightColorScheme.schemeSecondPreviewColor,
+    focusColor: _greenLightColorScheme.schemeThirdPreviewColor,
+    hintColor: _greenLightColorScheme.schemeFourthPreviewColor,
     bottomSheetTheme: BottomSheetThemeData(
       backgroundColor: _greenLightColorScheme.bottomSheetBackground,
     ),
@@ -54,6 +57,9 @@ class GreenAppThemeData implements AppThemeData {
   final dark = ThemeData(
     primaryColor: _greenDarkColorScheme.primary,
     scaffoldBackgroundColor: _greenDarkColorScheme.scaffoldBackground,
+    highlightColor: _greenDarkColorScheme.schemeSecondPreviewColor,
+    focusColor: _greenDarkColorScheme.schemeThirdPreviewColor,
+    hintColor: _greenDarkColorScheme.schemeFourthPreviewColor,
     bottomSheetTheme: BottomSheetThemeData(
       backgroundColor: _greenDarkColorScheme.bottomSheetBackground,
     ),

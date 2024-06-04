@@ -66,11 +66,11 @@ class _SchemeSelectorState extends State<SchemeSelector> {
                                         ? ThemeInherited.of(context)
                                             .appThemes[index]
                                             .light
-                                            .primaryColor
+                                            .highlightColor
                                         : ThemeInherited.of(context)
                                             .appThemes[index]
                                             .dark
-                                            .primaryColor,
+                                            .highlightColor,
                                     borderRadius: BorderRadius.circular(16),
                                   ),
                                 ),
@@ -84,11 +84,11 @@ class _SchemeSelectorState extends State<SchemeSelector> {
                                         ? ThemeInherited.of(context)
                                             .appThemes[index]
                                             .light
-                                            .primaryColor
+                                            .focusColor
                                         : ThemeInherited.of(context)
                                             .appThemes[index]
                                             .dark
-                                            .primaryColor,
+                                            .focusColor,
                                     borderRadius: BorderRadius.circular(16),
                                   ),
                                 ),
@@ -124,11 +124,11 @@ class _SchemeSelectorState extends State<SchemeSelector> {
                                         ? ThemeInherited.of(context)
                                             .appThemes[index]
                                             .light
-                                            .primaryColor
+                                            .hintColor
                                         : ThemeInherited.of(context)
                                             .appThemes[index]
                                             .dark
-                                            .primaryColor,
+                                            .hintColor,
                                     borderRadius: BorderRadius.circular(16),
                                   ),
                                 ),

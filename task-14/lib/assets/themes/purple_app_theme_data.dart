@@ -10,6 +10,9 @@ class PurpleAppThemeData implements AppThemeData {
   final light = ThemeData(
     primaryColor: _purpleLightColorScheme.primary,
     scaffoldBackgroundColor: _purpleLightColorScheme.scaffoldBackground,
+    highlightColor: _purpleLightColorScheme.schemeSecondPreviewColor,
+    focusColor: _purpleLightColorScheme.schemeThirdPreviewColor,
+    hintColor: _purpleLightColorScheme.schemeFourthPreviewColor,
     bottomSheetTheme: BottomSheetThemeData(
       backgroundColor: _purpleLightColorScheme.bottomSheetBackground,
     ),
@@ -52,6 +55,9 @@ class PurpleAppThemeData implements AppThemeData {
   final dark = ThemeData(
     primaryColor: _purpleDarkColorScheme.primary,
     scaffoldBackgroundColor: _purpleDarkColorScheme.scaffoldBackground,
+    highlightColor: _purpleDarkColorScheme.schemeSecondPreviewColor,
+    focusColor: _purpleDarkColorScheme.schemeThirdPreviewColor,
+    hintColor: _purpleDarkColorScheme.schemeFourthPreviewColor,
     bottomSheetTheme: BottomSheetThemeData(
       backgroundColor: _purpleDarkColorScheme.bottomSheetBackground,
     ),

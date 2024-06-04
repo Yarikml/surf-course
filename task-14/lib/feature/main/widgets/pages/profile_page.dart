@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/info_field_item.dart';
+import 'package:surf_flutter_courses_template/feature/main/widgets/pages/theme_settings_bottom_sheet.dart';
 
 import '../../../../assets/resources/resources.dart';
 
@@ -106,10 +107,17 @@ class ProfilePage extends StatelessWidget {
               label: 'Позиция',
               hasArrow: true,
             ),
-            const InfoFieldItem(
+            InfoFieldItem(
               text: 'Тема оформления',
               label: 'Системная',
               hasArrow: true,
+              onTap: () {
+                showModalBottomSheet(
+                  barrierColor: AppColorScheme.of(context).barrierColor,
+                  context: context,
+                  builder: (context) => const ThemeSettingsBottomSheet(),
+                );
+              },
             ),
             const Spacer(),
             OutlinedButton(

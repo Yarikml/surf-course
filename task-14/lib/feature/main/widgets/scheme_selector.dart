@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
-
-import '../../../assets/text/app_text_scheme.dart';
-import '../../../assets/themes/app_theme_data.dart';
-import '../di/theme_inherited.dart';
+import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
+import 'package:surf_flutter_courses_template/feature/main/di/theme_inherited.dart';
 
 class SchemeSelector extends StatefulWidget {
   const SchemeSelector({super.key});
@@ -140,7 +138,7 @@ class _SchemeSelectorState extends State<SchemeSelector> {
                         ),
                       ),
                       Text(
-                        'Схема $index',
+                        'Схема ${index + 1}',
                         style: ThemeInherited.of(context).appThemes[index] ==
                                 ThemeInherited.of(context).themeData.value
                             ? AppTextScheme.of(context).regular12AccentSubtitle

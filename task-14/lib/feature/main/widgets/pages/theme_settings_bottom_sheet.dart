@@ -32,7 +32,10 @@ class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
                   'Тема оформления',
                   style: AppTextScheme.of(context).bold18,
                 ),
-                const Icon(Icons.close),
+                GestureDetector(
+                  onTap: () => Navigator.of(context).pop(),
+                  child: const Icon(Icons.close),
+                ),
               ],
             ),
           ),
@@ -72,7 +75,9 @@ class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
           ),
           Spacer(),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
             child: Text('Готово'),
           ),
         ],

@@ -100,5 +100,5 @@ class GreenAppThemeData implements AppThemeData {
   static final _greenTextSchemeDark = AppTextScheme.greenDark();
 
   @override
-  final name = 'green';
+  final name = AppThemeDataName.green;
 }

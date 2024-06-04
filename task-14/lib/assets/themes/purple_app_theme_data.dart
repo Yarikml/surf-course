@@ -99,5 +99,5 @@ class PurpleAppThemeData implements AppThemeData {
   static final _purpleTextSchemeDark = AppTextScheme.purpleDark();
 
   @override
-  final name = 'purple';
+  final name = AppThemeDataName.purple;
 }

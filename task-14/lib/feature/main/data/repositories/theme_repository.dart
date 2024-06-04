@@ -13,10 +13,10 @@ abstract interface class IThemeRepository {
   ThemeMode? getThemeMode();
 
   Future<void> setThemeData({
-    required final AppThemeData themeData,
+    required final AppThemeDataName themeDataName,
   });
 
-  AppThemeData? getThemeData();
+  AppThemeDataName? getThemeData();
 }
 
 class ThemeRepository implements IThemeRepository {
@@ -27,9 +27,9 @@ class ThemeRepository implements IThemeRepository {
   });
 
   @override
-  AppThemeData? getThemeData()  {
+  AppThemeDataName? getThemeData() {
     try {
-      final theme =  themeLocalDatasource.getThemeData();
+      final theme = themeLocalDatasource.getThemeData();
       return theme;
     } catch (_, __) {
       rethrow;
@@ -37,9 +37,9 @@ class ThemeRepository implements IThemeRepository {
   }
 
   @override
-  ThemeMode? getThemeMode()  {
+  ThemeMode? getThemeMode() {
     try {
-      final mode =  themeLocalDatasource.getThemeMode();
+      final mode = themeLocalDatasource.getThemeMode();
       return mode;
     } catch (_, __) {
       rethrow;
@@ -48,10 +48,10 @@ class ThemeRepository implements IThemeRepository {
 
   @override
   Future<void> setThemeData({
-    required AppThemeData themeData,
+    required AppThemeDataName themeDataName,
   }) async {
     try {
-      await themeLocalDatasource.setThemeData(themeData: themeData);
+      await themeLocalDatasource.setThemeData(themeDataName: themeDataName);
     } catch (_, __) {
       rethrow;
     }

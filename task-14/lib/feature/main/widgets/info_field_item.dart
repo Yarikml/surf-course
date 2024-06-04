@@ -8,6 +8,7 @@ class InfoFieldItem extends StatelessWidget {
   const InfoFieldItem({
     super.key,
     this.hasArrow = false,
+    this.onTap,
     required this.text,
     required this.label,
   });
@@ -15,17 +16,12 @@ class InfoFieldItem extends StatelessWidget {
   final bool hasArrow;
   final String label;
   final String text;
+  final Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        showModalBottomSheet(
-          barrierColor: AppColorScheme.of(context).barrierColor,
-          context: context,
-          builder: (context) => const ThemeSettingsBottomSheet(),
-        );
-      },
+      onTap: onTap,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
         margin: const EdgeInsets.only(bottom: 8),

@@ -13,10 +13,10 @@ abstract interface class IThemeLocalDatasource {
   ThemeMode? getThemeMode();
 
   Future<void> setThemeData({
-    required final AppThemeData themeData,
+    required final AppThemeDataName themeDataName,
   });
 
-  AppThemeData? getThemeData();
+  AppThemeDataName? getThemeData();
 }
 
 class ThemeLocalDatasource implements IThemeLocalDatasource {
@@ -27,13 +27,15 @@ class ThemeLocalDatasource implements IThemeLocalDatasource {
   final SharedPreferences prefs;
 
   @override
-  AppThemeData? getThemeData() {
+  AppThemeDataName? getThemeData() {
     try {
       final storedName = prefs.getString(
         ThemeStorageKeys.appTheme.key,
       );
       if (storedName?.isEmpty ?? true) return null;
-      return getThemeDataByName(storedName: storedName!);
+      return AppThemeDataName.values.firstWhereOrNull(
+        (themeDataName) => themeDataName.name == storedName,
+      );
     } catch (error, stackTrace) {
       Error.throwWithStackTrace(error, stackTrace);
     }
@@ -56,12 +58,12 @@ class ThemeLocalDatasource implements IThemeLocalDatasource {
 
   @override
   Future<void> setThemeData({
-    required AppThemeData themeData,
+    required AppThemeDataName themeDataName,
   }) async {
     try {
       await prefs.setString(
         ThemeStorageKeys.appTheme.key,
-        themeData.name,
+        themeDataName.name,
       );
     } catch (error, stackTrace) {
       Error.throwWithStackTrace(error, stackTrace);
@@ -78,7 +80,7 @@ class ThemeLocalDatasource implements IThemeLocalDatasource {
       Error.throwWithStackTrace(error, stackTrace);
     }
   }
-
+/*
   AppThemeData getThemeDataByName({
     required final String storedName,
   }) {
@@ -89,7 +91,7 @@ class ThemeLocalDatasource implements IThemeLocalDatasource {
       'purple' => purpleTheme,
       String() => greenTheme,
     };
-  }
+  }*/
 }
 
 enum ThemeStorageKeys {

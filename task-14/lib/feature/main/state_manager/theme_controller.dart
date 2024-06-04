@@ -46,6 +46,9 @@ class ThemeController {
   Future<void> setThemeMode(ThemeMode newThemeMode) async {
     if (newThemeMode == _themeMode.value) return;
     await _themeRepository.setThemeMode(themeMode: newThemeMode);
+    if (newThemeMode == ThemeMode.system) {
+      setThemeData(appThemes.first);
+    }
     _themeMode.value = newThemeMode;
   }
 

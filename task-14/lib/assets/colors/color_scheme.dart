@@ -100,7 +100,38 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
         barrierColor = PurpleColorPaletteDark.yankeesBlue.withOpacity(0.6),
         photoFilter = PurpleColorPaletteDark.spaceCadet.withOpacity(0.4);
 
-  ///Для чего тут приватный конструктор?
+  AppColorScheme.orangeLight()
+      : primary = OrangeColorPaletteLight.heatWave,
+        scaffoldBackground = OrangeColorPaletteLight.floralWhite,
+        schemeButtonBg = OrangeColorPaletteLight.cultured,
+        onBackground = OrangeColorPaletteLight.white,
+        bottomSheetBackground = OrangeColorPaletteLight.white,
+        elevatedButtonBackgroundColor = OrangeColorPaletteLight.heatWave,
+        elevatedButtonForegroundColor = OrangeColorPaletteLight.white,
+        outlinedButtonBackgroundColor = OrangeColorPaletteLight.coralRed,
+        outlinedButtonForegroundColor = OrangeColorPaletteLight.coralRed,
+        schemeSecondPreviewColor = OrangeColorPaletteLight.paleTaupe,
+        schemeThirdPreviewColor = OrangeColorPaletteLight.white,
+        schemeFourthPreviewColor = OrangeColorPaletteLight.sonicSilver,
+        barrierColor = OrangeColorPaletteLight.blackCoffee.withOpacity(0.6),
+        photoFilter = OrangeColorPaletteLight.blackCoffee.withOpacity(0.4);
+
+  AppColorScheme.orangeDark()
+      : primary = OrangeColorPaletteDark.heatWave,
+        scaffoldBackground = OrangeColorPaletteDark.raisinBlack,
+        schemeButtonBg = OrangeColorPaletteDark.darkPuce,
+        onBackground = OrangeColorPaletteDark.blackCoffee,
+        bottomSheetBackground = OrangeColorPaletteDark.darkJungleGreen,
+        elevatedButtonBackgroundColor = OrangeColorPaletteDark.heatWave,
+        elevatedButtonForegroundColor = OrangeColorPaletteDark.white,
+        outlinedButtonBackgroundColor = OrangeColorPaletteDark.coralRed,
+        outlinedButtonForegroundColor = OrangeColorPaletteDark.coralRed,
+        schemeSecondPreviewColor = OrangeColorPaletteDark.paleTaupe,
+        schemeThirdPreviewColor = OrangeColorPaletteDark.white,
+        schemeFourthPreviewColor = OrangeColorPaletteDark.sonicSilver,
+        barrierColor = OrangeColorPaletteDark.eerieBlack.withOpacity(0.8),
+        photoFilter = OrangeColorPaletteDark.blackCoffee.withOpacity(0.4);
+
   const AppColorScheme._({
     required this.primary,
     required this.scaffoldBackground,

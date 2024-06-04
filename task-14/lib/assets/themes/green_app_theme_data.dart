@@ -9,6 +9,7 @@ class GreenAppThemeData implements AppThemeData {
   /// Light green theme configuration.
   @override
   final light = ThemeData(
+    fontFamily: 'SF-Pro-Display',
     primaryColor: _greenLightColorScheme.primary,
     scaffoldBackgroundColor: _greenLightColorScheme.scaffoldBackground,
     highlightColor: _greenLightColorScheme.schemeSecondPreviewColor,
@@ -55,6 +56,7 @@ class GreenAppThemeData implements AppThemeData {
   /// Dark green theme configuration.
   @override
   final dark = ThemeData(
+    fontFamily: 'SF-Pro-Display',
     primaryColor: _greenDarkColorScheme.primary,
     scaffoldBackgroundColor: _greenDarkColorScheme.scaffoldBackground,
     highlightColor: _greenDarkColorScheme.schemeSecondPreviewColor,

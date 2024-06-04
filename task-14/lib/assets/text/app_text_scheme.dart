@@ -71,6 +71,28 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
         regular16 = PurpleTextStyleDark.regular16,
         bold18 = PurpleTextStyleDark.bold18;
 
+  AppTextScheme.orangeLight()
+      : regular12 = OrangeTextStyleLight.regular12,
+        regular12AccentSubtitle = OrangeTextStyleLight.regular12AccentSubtitle,
+        regular12Subtitle = OrangeTextStyleLight.regular12Subtitle,
+        regular14 = OrangeTextStyleLight.regular14,
+        regular14Label = OrangeTextStyleLight.regular14Label,
+        regular14Accent = OrangeTextStyleLight.regular14Accent,
+        regular16Error = OrangeTextStyleLight.regular16Error,
+        regular16 = OrangeTextStyleLight.regular16,
+        bold18 = OrangeTextStyleLight.bold18;
+
+  AppTextScheme.orangeDark()
+      : regular12 = OrangeTextStyleDark.regular12,
+        regular12AccentSubtitle = OrangeTextStyleDark.regular12AccentSubtitle,
+        regular12Subtitle = OrangeTextStyleDark.regular12Subtitle,
+        regular14 = OrangeTextStyleDark.regular14,
+        regular14Label = OrangeTextStyleDark.regular14Label,
+        regular14Accent = OrangeTextStyleDark.regular14Accent,
+        regular16Error = OrangeTextStyleDark.regular16Error,
+        regular16 = OrangeTextStyleDark.regular16,
+        bold18 = OrangeTextStyleDark.bold18;
+
   @override
   ThemeExtension<AppTextScheme> lerp(
     ThemeExtension<AppTextScheme>? other,

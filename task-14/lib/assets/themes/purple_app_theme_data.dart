@@ -8,6 +8,7 @@ import '../text/app_text_scheme.dart';
 class PurpleAppThemeData implements AppThemeData {
   @override
   final light = ThemeData(
+    fontFamily: 'SF-Pro-Display',
     primaryColor: _purpleLightColorScheme.primary,
     scaffoldBackgroundColor: _purpleLightColorScheme.scaffoldBackground,
     highlightColor: _purpleLightColorScheme.schemeSecondPreviewColor,
@@ -53,6 +54,7 @@ class PurpleAppThemeData implements AppThemeData {
 
   @override
   final dark = ThemeData(
+    fontFamily: 'SF-Pro-Display',
     primaryColor: _purpleDarkColorScheme.primary,
     scaffoldBackgroundColor: _purpleDarkColorScheme.scaffoldBackground,
     highlightColor: _purpleDarkColorScheme.schemeSecondPreviewColor,

@@ -27,8 +27,14 @@ dev_dependencies:
   json_annotation: ^4.8.1
 
 flutter:
+  fonts:
+    - family: SF-Pro-Display
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-Regular.otf
+        - asset: assets/fonts/SF-Pro-Display-Bold.otf
   uses-material-design: true
   generate: true # Add this line
   assets:
     - assets/icons/
     - assets/images/
+    - assets/fonts/

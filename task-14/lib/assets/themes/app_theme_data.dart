@@ -9,4 +9,5 @@ abstract class AppThemeData {
 enum AppThemeDataName {
   green,
   purple,
+  orange,
 }

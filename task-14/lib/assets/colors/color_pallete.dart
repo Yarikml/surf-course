@@ -188,3 +188,112 @@ abstract class PurpleColorPaletteDark {
   /// https://www.color-name.com/hex/77767B
   static const Color sonicSilver = Color(0xFF77767B);
 }
+
+abstract class OrangeColorPaletteLight {
+  ///  Raisin Black
+  ///
+  /// https://www.color-name.com/hex/262020
+  static const Color raisinBlack = Color(0xFF262020);
+
+  /// White
+  ///
+  /// https://www.color-name.com/hex/FFFFFF
+  static const Color white = Colors.white;
+
+  /// Black
+  ///
+  /// https://www.color-name.com/hex/000000
+  static const Color black = Colors.black;
+
+  /// Pale Taupe
+  ///
+  /// https://www.color-name.com/hex/BE937B
+  static const Color paleTaupe = Color(0xFFBE937B);
+
+  /// Heat Wave
+  ///
+  /// https://www.color-name.com/hex/FF7A00
+  static const Color heatWave = Color(0xFFFF7A00);
+
+  /// Coral Red
+  ///
+  /// https://www.color-name.com/hex/FF392A
+  static const Color coralRed = Color(0xFFFF392A);
+
+  /// Black Coffee
+  ///
+  /// https://www.color-name.com/hex/3C322F
+  static const Color blackCoffee = Color(0xFF3C322F);
+
+  /// Sonic Silver
+  ///
+  /// https://www.color-name.com/hex/77767B
+  static const Color sonicSilver = Color(0xFF77767B);
+
+  /// Floral White
+  ///
+  /// https://www.color-name.com/hex/FCF8F4
+  static const Color floralWhite = Color(0xFFFCF8F4);
+
+  /// Cultured
+  ///
+  /// https://www.color-name.com/hex/FAF8F7
+  static const Color cultured = Color(0xFFFAF8F7);
+}
+
+abstract class OrangeColorPaletteDark {
+  ///  Raisin Black
+  ///
+  /// https://www.color-name.com/hex/262020
+  static const Color raisinBlack = Color(0xFF262020);
+
+  /// White
+  ///
+  /// https://www.color-name.com/hex/FFFFFF
+  static const Color white = Colors.white;
+
+  /// Black
+  ///
+  /// https://www.color-name.com/hex/000000
+  static const Color black = Colors.black;
+
+  /// Pale Taupe
+  ///
+  /// https://www.color-name.com/hex/BE937B
+  static const Color paleTaupe = Color(0xFFBE937B);
+
+  /// Heat Wave
+  ///
+  /// https://www.color-name.com/hex/FF7A00
+  static const Color heatWave = Color(0xFFFF7A00);
+
+  /// Coral Red
+  ///
+  /// https://www.color-name.com/hex/FF392A
+  static const Color coralRed = Color(0xFFFF392A);
+
+  /// Black Coffee
+  ///
+  /// https://www.color-name.com/hex/3C322F
+  static const Color blackCoffee = Color(0xFF3C322F);
+
+  /// Sonic Silver
+  ///
+  /// https://www.color-name.com/hex/77767B
+  static const Color sonicSilver = Color(0xFF77767B);
+
+  /// Dark Puce
+  ///
+  /// https://www.color-name.com/hex/4A3F3B
+  static const Color darkPuce = Color(0xFF4A3F3B);
+
+  /// Dark Jungle Green
+  ///
+  /// https://www.color-name.com/hex/1D1F20
+  static const Color darkJungleGreen = Color(0xFF3B322F);
+
+  /// Eerie Black
+  ///
+  /// https://www.color-name.com/hex/201B1A
+  static const Color eerieBlack = Color(0xFF201B1A);
+}

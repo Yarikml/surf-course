@@ -3,6 +3,8 @@ import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 import 'package:surf_flutter_courses_template/feature/main/di/theme_inherited.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/cupertino_radio_tile.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/scheme_selector.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:surf_flutter_courses_template/utils/extensions/theme_mode_x.dart';
 
 class ThemeSettingsBottomSheet extends StatefulWidget {
   const ThemeSettingsBottomSheet({super.key});
@@ -16,6 +18,7 @@ class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
   @override
   Widget build(BuildContext context) {
     final themeInherited = ThemeInherited.of(context);
+    final localization = AppLocalizations.of(context)!;
     return Container(
       height: 380,
       padding: const EdgeInsets.all(20),
@@ -29,7 +32,7 @@ class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  'Тема оформления',
+                  localization.profilePageThemeLabel,
                   style: AppTextScheme.of(context).bold18,
                 ),
                 GestureDetector(
@@ -42,7 +45,7 @@ class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
           CupertinoRadioTile(
             value: ThemeMode.system,
             groupValue: themeInherited.themeMode.value,
-            label: 'Системная',
+            label: ThemeMode.system.label,
             onChanged: (value) {
               themeInherited.setThemeMode(ThemeMode.system);
             },
@@ -50,27 +53,25 @@ class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
           CupertinoRadioTile(
             value: ThemeMode.light,
             groupValue: themeInherited.themeMode.value,
-            label: 'Светлая',
+            label: ThemeMode.light.label,
             onChanged: (value) {
               themeInherited.setThemeMode(ThemeMode.light);
             },
           ),
           Visibility(
-            visible:
-                themeInherited.themeMode.value == ThemeMode.light,
+            visible: themeInherited.themeMode.value == ThemeMode.light,
             child: const SchemeSelector(),
           ),
           CupertinoRadioTile(
             value: ThemeMode.dark,
             groupValue: themeInherited.themeMode.value,
-            label: 'Темная',
+            label: ThemeMode.dark.label,
             onChanged: (value) {
               themeInherited.setThemeMode(ThemeMode.dark);
             },
           ),
           Visibility(
-            visible:
-                themeInherited.themeMode.value == ThemeMode.dark,
+            visible: themeInherited.themeMode.value == ThemeMode.dark,
             child: const SchemeSelector(),
           ),
           const Spacer(),
@@ -78,7 +79,7 @@ class _ThemeSettingsBottomSheetState extends State<ThemeSettingsBottomSheet> {
             onPressed: () {
               Navigator.of(context).pop();
             },
-            child: const Text('Готово'),
+            child: Text(localization.done),
           ),
         ],
       ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 import 'package:surf_flutter_courses_template/feature/main/di/theme_inherited.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class SchemeSelector extends StatefulWidget {
   const SchemeSelector({super.key});
@@ -15,6 +16,7 @@ class _SchemeSelectorState extends State<SchemeSelector> {
   Widget build(BuildContext context) {
     final themeInherited = ThemeInherited.of(context);
     final textScheme = AppTextScheme.of(context);
+    final localization = AppLocalizations.of(context)!;
     return Padding(
       padding: const EdgeInsets.only(top: 8),
       child: Column(
@@ -23,7 +25,7 @@ class _SchemeSelectorState extends State<SchemeSelector> {
           Padding(
             padding: const EdgeInsets.only(bottom: 16),
             child: Text(
-              'Цветовая схема',
+              localization.colorSchemeLabel,
               style: textScheme.regular14Label,
             ),
           ),
@@ -125,7 +127,7 @@ class _SchemeSelectorState extends State<SchemeSelector> {
                           ),
                         ),
                         Text(
-                          'Схема ${index + 1}',
+                          localization.schemeNumber(index + 1),
                           style: currentTheme == themeInherited.themeData.value
                               ? textScheme.regular12AccentSubtitle
                               : textScheme.regular12Subtitle,

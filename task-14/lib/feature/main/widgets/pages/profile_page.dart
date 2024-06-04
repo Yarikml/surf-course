@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
+import 'package:surf_flutter_courses_template/feature/main/di/theme_inherited.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/info_field_item.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/pages/theme_settings_bottom_sheet.dart';
 import 'package:surf_flutter_courses_template/assets/resources/resources.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:surf_flutter_courses_template/utils/extensions/theme_mode_x.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -12,15 +15,16 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final textTheme = AppTextScheme.of(context);
     final colorScheme = AppColorScheme.of(context);
+    final localization = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         leading: const BackButton(),
-        title: const Text('Профиль'),
+        title: Text(localization.profilePageAppBar),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 20),
             child: Text(
-              'Сохранить',
+              localization.save,
               style: textTheme.regular14Accent,
             ),
           ),
@@ -46,7 +50,7 @@ class ProfilePage extends StatelessWidget {
                       ),
                       alignment: Alignment.center,
                       child: Text(
-                        'Edit',
+                        localization.edit,
                         style: textTheme.regular12,
                       ),
                     ),
@@ -57,7 +61,7 @@ class ProfilePage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(bottom: 12),
               child: Text(
-                'Мои награды',
+                localization.profilePageMyRegards,
                 style: textTheme.regular14Label,
               ),
             ),
@@ -86,31 +90,31 @@ class ProfilePage extends StatelessWidget {
                 ],
               ),
             ),
-            const InfoFieldItem(
+            InfoFieldItem(
               text: 'Маркус Хассельборг',
-              label: 'Имя',
+              label: localization.profilePageNameLabel,
             ),
-            const InfoFieldItem(
+            InfoFieldItem(
               text: 'MarkusHSS@gmail.com',
-              label: 'Email',
+              label: localization.profilePageEmailLabel,
             ),
-            const InfoFieldItem(
+            InfoFieldItem(
               text: '03.03.1986',
-              label: 'Дата рождения',
+              label: localization.profilePageDateLabel,
             ),
-            const InfoFieldItem(
+            InfoFieldItem(
               text: 'Сборная Швеции',
-              label: 'Команда',
-              hasArrow: true,
-            ),
-            const InfoFieldItem(
-              text: 'Скип',
-              label: 'Позиция',
+              label: localization.profilePageTeamLabel,
               hasArrow: true,
             ),
             InfoFieldItem(
-              text: 'Тема оформления',
-              label: 'Системная',
+              text: 'Скип',
+              label: localization.profilePagePositionLabel,
+              hasArrow: true,
+            ),
+            InfoFieldItem(
+              text: ThemeInherited.of(context).themeMode.value.label,
+              label: localization.profilePageThemeLabel,
               hasArrow: true,
               onTap: () {
                 showModalBottomSheet(
@@ -129,7 +133,7 @@ class ProfilePage extends StatelessWidget {
                   color: colorScheme.outlinedButtonBackgroundColor,
                 ),
               ),
-              child: const Text('Log out'),
+              child: Text(localization.logOut),
             ),
           ],
         ),

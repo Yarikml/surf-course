@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd00ac66-15ae-412a-88ea-db86c7fa98cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task-15/lib/assets/mocks/photos_mock.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-15/lib/feature/main/data/datasources/mock_datasource.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-15/lib/feature/main/data/repositories/main_repository.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-15/lib/feature/main/model/photo_entity.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/photos_grid.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/pages/photo_item.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/ios/Flutter/AppFrameworkInfo.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/ios/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/ios/Runner/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/l10n.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/task-15/lib/assets/themes/app_theme_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/assets/themes/app_theme_data.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/lib/feature/app/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/feature/app/app.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/pages/main_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/lib/l10n/app_ru.arb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/lib/runner.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/runner.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/photos_grid.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/photos_grid.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

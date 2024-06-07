@@ -8,6 +8,7 @@ abstract class AppThemeData {
   static final lightTheme = ThemeData(
     scaffoldBackgroundColor: Colors.white,
     appBarTheme: const AppBarTheme(
+      surfaceTintColor: Colors.white,
       centerTitle: true,
       backgroundColor: Colors.white,
     ),

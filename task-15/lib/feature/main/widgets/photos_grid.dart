@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:surf_flutter_courses_template/feature/main/model/photo_entity.dart';
-import 'package:surf_flutter_courses_template/feature/main/widgets/pages/photo_item.dart';
+import 'package:surf_flutter_courses_template/feature/main/widgets/photo_item.dart';
 
 class PhotosGrid extends StatelessWidget {
   const PhotosGrid({
@@ -23,7 +23,8 @@ class PhotosGrid extends StatelessWidget {
       ),
       itemCount: photos.length,
       itemBuilder: (BuildContext context, int index) => PhotoItem(
-        url: photos[index].url,
+        photos: photos,
+        index: index,
       ),
     );
   }

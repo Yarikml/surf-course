@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd00ac66-15ae-412a-88ea-db86c7fa98cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/pages/photo_item.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/pages/photos_list_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/lib/assets/themes/app_theme_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/assets/themes/app_theme_data.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/lib/assets/mocks/photos_mock.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/assets/mocks/photos_mock.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/pages/photo_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/photo_item.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/photos_grid.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/photos_grid.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +64,7 @@
       <recent name="$PROJECT_DIR$/task-15/lib/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-15/lib/feature/main/widgets" />
       <recent name="$PROJECT_DIR$/task-15/assets/images/3.0x" />
       <recent name="$PROJECT_DIR$/task-15/assets/images/2.0x" />
       <recent name="$PROJECT_DIR$/task-15/assets/images" />

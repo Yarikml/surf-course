@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:surf_flutter_courses_template/assets/resources/resources.dart';
+import 'package:surf_flutter_courses_template/feature/main/model/photo_entity.dart';
+import 'package:surf_flutter_courses_template/feature/main/widgets/photos_grid.dart';
 
+import 'package:surf_flutter_courses_template/runner.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -9,8 +13,44 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+  Future<List<PhotoEntity>>? _data;
+
+  Future<void> _loadColors() async {
+    _data = mainRepository.getPhotos();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _loadColors();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Image.asset(Images.logo),
+      ),
+      body: FutureBuilder(
+        future: _data,
+        builder: (
+          BuildContext context,
+          AsyncSnapshot<List<PhotoEntity>> snapshot,
+        ) {
+          if (snapshot.connectionState == ConnectionState.done) {
+            if (snapshot.hasError) {
+              return const Center(
+                child: Text('Ошибка'),
+              );
+            } else if (snapshot.hasData) {
+              return PhotosGrid(photos: snapshot.data!);
+            }
+          }
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
+        },
+      ),
+    );
   }
 }

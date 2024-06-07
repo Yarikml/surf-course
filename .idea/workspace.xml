@@ -5,17 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd00ac66-15ae-412a-88ea-db86c7fa98cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task-15/assets/images/2.0x/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-15/assets/images/3.0x/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-15/assets/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/lib/assets/resources/resources.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/assets/resources/resources.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/lib/assets/resources/svg_icons.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/assets/resources/images.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-15/lib/assets/mocks/photos_mock.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-15/lib/feature/main/data/datasources/mock_datasource.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-15/lib/feature/main/data/repositories/main_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-15/lib/feature/main/model/photo_entity.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/photos_grid.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/ios/Flutter/AppFrameworkInfo.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/ios/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/ios/Runner/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/l10n.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/lib/assets/themes/app_theme_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/assets/themes/app_theme_data.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/lib/feature/app/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/feature/app/app.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/pages/main_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/lib/l10n/app_ru.arb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/lib/runner.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/runner.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -40,7 +60,8 @@
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "task-15",
-    "last_opened_file_path": "/Users/yaroslav/Desktop/surf-course/task-15/lib/assets",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "/Users/yaroslav/Desktop/surf-course/task-15/lib/feature/main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,6 +74,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-15/lib/feature/main" />
       <recent name="$PROJECT_DIR$/task-15/lib/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -60,6 +82,12 @@
       <recent name="$PROJECT_DIR$/task-15/assets/images/2.0x" />
       <recent name="$PROJECT_DIR$/task-15/assets/images" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="task-15" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/task-15/lib/main.dart" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

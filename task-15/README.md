@@ -2,9 +2,7 @@
 
 ## Description
 
-
 ## How to
-
 
 ## Demo
 

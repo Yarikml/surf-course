@@ -1,8 +1,13 @@
+import 'dart:developer';
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
+import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
+import 'package:surf_flutter_courses_template/assets/text/app_text_style.dart';
 
 import 'package:surf_flutter_courses_template/feature/main/model/photo_entity.dart';
 
-class PhotosListPage extends StatelessWidget {
+class PhotosListPage extends StatefulWidget {
   const PhotosListPage({
     super.key,
     required this.photos,
@@ -13,10 +18,112 @@ class PhotosListPage extends StatelessWidget {
   final int initialIndex;
 
   @override
+  State<PhotosListPage> createState() => _PhotosListPageState();
+}
+
+class _PhotosListPageState extends State<PhotosListPage> {
+  late final PageController _controller;
+  late double currentPage;
+  final double _scaleFactor = 0.8;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _controller = PageController(
+      initialPage: widget.initialIndex,
+      viewportFraction: 0.8,
+    )..addListener(() {
+        log(_controller.offset.toString());
+        setState(() {
+          currentPage = _controller.page!;
+        });
+      });
+
+    currentPage = widget.initialIndex.toDouble();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Hero(
-      tag: photos[initialIndex].url,
-      child: Image.network(photos[initialIndex].url),
+    final heightPageView =
+        MediaQuery.sizeOf(context).height - kToolbarHeight - 112;
+    return Scaffold(
+      appBar: AppBar(
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 20),
+            child: RichText(
+              text: TextSpan(
+                text: (currentPage + 1).toStringAsFixed(0),
+                style: AppTextScheme.of(context).bold18Accent,
+                children: [
+                  TextSpan(
+                    text: '/${widget.photos.length}',
+                    style: AppTextScheme.of(context).bold18,
+                  )
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.only(top: 40, bottom: 72),
+          child: PageView.builder(
+            itemCount: widget.photos.length,
+            controller: _controller,
+            itemBuilder: (context, index) {
+              Matrix4 matrix = Matrix4.identity();
+              var scale = 0.8;
+
+              if (index == currentPage.floor() ||
+                  index == currentPage.floor() + 1 ||
+                  index == currentPage.floor() - 1) {
+                scale = 1 - (currentPage - index).abs() * (1 - _scaleFactor);
+              }
+
+              var transform = heightPageView * (1 - scale) / 2;
+              matrix = Matrix4.diagonal3Values(1, scale, 1)
+                ..setTranslationRaw(0, transform, 0);
+              return Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                child: AspectRatio(
+                  aspectRatio: 1 / 2,
+                  child: Transform(
+                    transform: matrix,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(16),
+                      child: index == widget.initialIndex
+                          ? Hero(
+                              tag: widget.photos[index].url,
+                              child: ImageFiltered(
+                                imageFilter: index != currentPage
+                                    ? ImageFilter.blur(sigmaX: 3.0, sigmaY: 3.0)
+                                    : ImageFilter.blur(sigmaX: 0, sigmaY: 0),
+                                child: Image.network(
+                                  widget.photos[index].url,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            )
+                          : ImageFiltered(
+                              imageFilter: index != currentPage
+                                  ? ImageFilter.blur(sigmaX: 3.0, sigmaY: 3.0)
+                                  : ImageFilter.blur(sigmaX: 0, sigmaY: 0),
+                              child: Image.network(
+                                widget.photos[index].url,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                    ),
+                  ),
+                ),
+              );
+            },
+          ),
+        ),
+      ),
     );
   }
 }

@@ -22,6 +22,11 @@ dev_dependencies:
 
 
 flutter:
+  fonts:
+    - family: SF-Pro-Display
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-Bold.otf
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/fonts/

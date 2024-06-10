@@ -3,28 +3,15 @@ import 'package:intl/intl.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 import 'package:surf_flutter_courses_template/feature/main/di/theme_inherited.dart';
-import 'package:surf_flutter_courses_template/feature/main/model/user_entity.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/info_field_item.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/pages/theme_settings_bottom_sheet.dart';
 import 'package:surf_flutter_courses_template/assets/resources/resources.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:surf_flutter_courses_template/utils/extensions/theme_mode_x.dart';
+import 'package:surf_flutter_courses_template/assets/mock/user_mock.dart';
 
-class ProfilePage extends StatefulWidget {
+class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
-
-  @override
-  State<ProfilePage> createState() => _ProfilePageState();
-}
-
-class _ProfilePageState extends State<ProfilePage> {
-  final user = UserEntity(
-    name: 'Маркус Хассельборг',
-    email: 'MarkusHSS@gmail.com',
-    birthday: DateTime(1986, 03, 03),
-    team: 'Сборная Швеции',
-    position: 'Скип',
-  );
 
   @override
   Widget build(BuildContext context) {

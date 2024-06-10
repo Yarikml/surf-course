@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd00ac66-15ae-412a-88ea-db86c7fa98cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task-14/lib/feature/main/widgets/scheme_selector.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-14/lib/assets/mock/user_mock.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-14/lib/assets/colors/color_pallete.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/assets/colors/color_pallete.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-14/lib/assets/colors/color_scheme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/assets/colors/color_scheme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-14/lib/assets/themes/app_theme_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/assets/themes/app_theme_data.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-14/lib/feature/app/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/feature/app/app.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-14/lib/feature/main/widgets/pages/profile_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/feature/main/widgets/pages/profile_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-14/lib/feature/main/widgets/pages/theme_settings_bottom_sheet.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-14/lib/feature/main/widgets/pages/theme_settings_bottom_sheet.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="task-15" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -87,6 +90,7 @@
       <workItem from="1716833711810" duration="12081000" />
       <workItem from="1716932084126" duration="4831000" />
       <workItem from="1717010836115" duration="2860000" />
+      <workItem from="1718015723868" duration="1041000" />
     </task>
     <servers />
   </component>

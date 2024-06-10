@@ -23,6 +23,7 @@ class App extends StatelessWidget {
           theme: themeData.light,
           darkTheme: themeData.dark,
           themeMode: themeMode,
+
           /// Localization.
           locale: _localizations.firstOrNull,
           localizationsDelegates: _localizationsDelegates,

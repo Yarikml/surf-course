@@ -34,7 +34,6 @@ class _PhotosListPageState extends State<PhotosListPage> {
       initialPage: widget.initialIndex,
       viewportFraction: 0.8,
     )..addListener(() {
-        log(_controller.offset.toString());
         setState(() {
           currentPage = _controller.page!;
         });
@@ -97,25 +96,40 @@ class _PhotosListPageState extends State<PhotosListPage> {
                       child: index == widget.initialIndex
                           ? Hero(
                               tag: widget.photos[index].url,
-                              child: ImageFiltered(
-                                imageFilter: index != currentPage
-                                    ? ImageFilter.blur(sigmaX: 3.0, sigmaY: 3.0)
-                                    : ImageFilter.blur(sigmaX: 0, sigmaY: 0),
-                                child: Image.network(
-                                  widget.photos[index].url,
-                                  fit: BoxFit.cover,
+                              child: TweenAnimationBuilder<double>(
+                                duration: const Duration(milliseconds: 200),
+                                tween: Tween<double>(
+                                  begin: 0,
+                                  end: index != currentPage ? 3 : 0,
                                 ),
+                                builder: (context, value, _) {
+                                  return ImageFiltered(
+                                    imageFilter: ImageFilter.blur(
+                                        sigmaX: value, sigmaY: value),
+                                    child: Image.network(
+                                      widget.photos[index].url,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  );
+                                },
                               ),
                             )
-                          : ImageFiltered(
-                              imageFilter: index != currentPage
-                                  ? ImageFilter.blur(sigmaX: 3.0, sigmaY: 3.0)
-                                  : ImageFilter.blur(sigmaX: 0, sigmaY: 0),
-                              child: Image.network(
-                                widget.photos[index].url,
-                                fit: BoxFit.cover,
+                          : TweenAnimationBuilder<double>(
+                              duration: const Duration(milliseconds: 200),
+                              tween: Tween<double>(
+                                begin: 0,
+                                end: index != currentPage ? 3 : 0,
                               ),
-                            ),
+                              builder: (context, value, _) {
+                                return ImageFiltered(
+                                  imageFilter: ImageFilter.blur(
+                                      sigmaX: value, sigmaY: value),
+                                  child: Image.network(
+                                    widget.photos[index].url,
+                                    fit: BoxFit.cover,
+                                  ),
+                                );
+                              }),
                     ),
                   ),
                 ),

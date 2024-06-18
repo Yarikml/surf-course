@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../assets/text/app_text_scheme.dart';
+import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 
 class PhotoListAppbar extends StatelessWidget implements PreferredSizeWidget {
   const PhotoListAppbar({

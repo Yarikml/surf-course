@@ -1,14 +1,7 @@
-import 'dart:developer';
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
-import 'package:surf_flutter_courses_template/assets/text/app_text_style.dart';
-
 import 'package:surf_flutter_courses_template/feature/main/model/photo_entity.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/photo_list_appbar.dart';
-
-import '../full_screen_photo_item.dart';
+import 'package:surf_flutter_courses_template/feature/main/widgets/full_screen_photo_item.dart';
 
 class PhotosListPage extends StatefulWidget {
   const PhotosListPage({

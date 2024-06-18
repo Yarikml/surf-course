@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/resources/resources.dart';
 import 'package:surf_flutter_courses_template/feature/main/model/photo_entity.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/photos_grid.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:surf_flutter_courses_template/runner.dart';
 
 class MainPage extends StatefulWidget {
@@ -39,8 +39,8 @@ class _MainPageState extends State<MainPage> {
         ) {
           if (snapshot.connectionState == ConnectionState.done) {
             if (snapshot.hasError) {
-              return const Center(
-                child: Text('Ошибка'),
+              return Center(
+                child: Text(AppLocalizations.of(context)!.error),
               );
             } else if (snapshot.hasData) {
               return PhotosGrid(photos: snapshot.data!);

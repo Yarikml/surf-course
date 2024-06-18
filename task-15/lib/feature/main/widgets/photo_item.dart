@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/feature/main/widgets/pages/photos_list_page.dart';
-
-import '../model/photo_entity.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:surf_flutter_courses_template/feature/main/model/photo_entity.dart';
 
 class PhotoItem extends StatelessWidget {
   const PhotoItem({
@@ -43,8 +43,8 @@ class PhotoItem extends StatelessWidget {
                 ),
               );
             },
-            errorBuilder: (_, error, stackTracTrace) => const Center(
-              child: Text('Ошибка'),
+            errorBuilder: (_, error, stackTracTrace) => Center(
+              child: Text(AppLocalizations.of(context)!.error),
             ),
           ),
         ),

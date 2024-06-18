@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/feature/main/model/photo_entity.dart';
@@ -17,6 +18,7 @@ class FullScreenPhotoItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final localization = AppLocalizations.of(context)!;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8),
       child: AspectRatio(
@@ -45,8 +47,8 @@ class FullScreenPhotoItem extends StatelessWidget {
                           ),
                         );
                       },
-                      errorBuilder: (_, error, stackTracTrace) => const Center(
-                        child: Text('Ошибка'),
+                      errorBuilder: (_, error, stackTracTrace) => Center(
+                        child: Text(localization.error),
                       ),
                     ),
                   ),
@@ -73,8 +75,8 @@ class FullScreenPhotoItem extends StatelessWidget {
                         ),
                       );
                     },
-                    errorBuilder: (_, error, stackTracTrace) => const Center(
-                      child: Text('Ошибка'),
+                    errorBuilder: (_, error, stackTracTrace) => Center(
+                      child: Text(localization.error),
                     ),
                   ),
                 ),

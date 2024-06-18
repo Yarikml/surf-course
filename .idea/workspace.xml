@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd00ac66-15ae-412a-88ea-db86c7fa98cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/full_screen_photo_item.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/photo_list_appbar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-15/l10n.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-15/lib/l10n/app_ru.arb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/lib/feature/app/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/feature/app/app.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/full_screen_photo_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/full_screen_photo_item.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/pages/main_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/pages/photos_list_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/pages/photos_list_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/photo_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/photo_item.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/photos_grid.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/photos_grid.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,27 +45,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;task-15&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/Desktop/surf-course/task-15/lib/feature/main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "task-15",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "/Users/yaroslav/Desktop/surf-course/task-15/lib",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-15/lib" />
+      <recent name="$PROJECT_DIR$/task-15" />
       <recent name="$PROJECT_DIR$/task-15/lib/feature/main" />
       <recent name="$PROJECT_DIR$/task-15/lib/assets" />
     </key>
@@ -88,7 +96,7 @@
       <workItem from="1716226228532" duration="584000" />
       <workItem from="1718481687973" duration="5105000" />
       <workItem from="1718518703403" duration="416000" />
-      <workItem from="1718685374012" duration="18461000" />
+      <workItem from="1718685374012" duration="21207000" />
     </task>
     <servers />
   </component>

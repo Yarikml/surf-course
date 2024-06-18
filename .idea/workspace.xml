@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd00ac66-15ae-412a-88ea-db86c7fa98cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/full_screen_photo_item.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/photo_list_appbar.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/pages/photos_list_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/pages/photos_list_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/photo_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/feature/main/widgets/photo_item.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +88,7 @@
       <workItem from="1716226228532" duration="584000" />
       <workItem from="1718481687973" duration="5105000" />
       <workItem from="1718518703403" duration="416000" />
-      <workItem from="1718685374012" duration="8981000" />
+      <workItem from="1718685374012" duration="18461000" />
     </task>
     <servers />
   </component>

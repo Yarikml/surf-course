@@ -25,6 +25,7 @@ class _PhotosListPageState extends State<PhotosListPage> {
   late final PageController _controller;
   late double currentPage;
   final double _scaleFactor = 0.8;
+  final double _fadeFactor = 20;
 
   @override
   void initState() {
@@ -75,12 +76,14 @@ class _PhotosListPageState extends State<PhotosListPage> {
             itemBuilder: (context, index) {
               Matrix4 matrix = Matrix4.identity();
               var scale = 0.8;
+              var fade = 0.0;
 
               if (index == currentPage.floor() ||
                   index == currentPage.floor() + 1 ||
                   index == currentPage.floor() - 1) {
                 scale = 1 - (currentPage - index).abs() * (1 - _scaleFactor);
               }
+              fade = 1 - (currentPage - index).abs() * (1 - _fadeFactor);
 
               var transform = heightPageView * (1 - scale) / 2;
               matrix = Matrix4.diagonal3Values(1, scale, 1)
@@ -96,40 +99,27 @@ class _PhotosListPageState extends State<PhotosListPage> {
                       child: index == widget.initialIndex
                           ? Hero(
                               tag: widget.photos[index].url,
-                              child: TweenAnimationBuilder<double>(
-                                duration: const Duration(milliseconds: 200),
-                                tween: Tween<double>(
-                                  begin: 0,
-                                  end: index != currentPage ? 3 : 0,
+                              child: ImageFiltered(
+                                imageFilter: ImageFilter.blur(
+                                  sigmaX: fade,
+                                  sigmaY: fade,
                                 ),
-                                builder: (context, value, _) {
-                                  return ImageFiltered(
-                                    imageFilter: ImageFilter.blur(
-                                        sigmaX: value, sigmaY: value),
-                                    child: Image.network(
-                                      widget.photos[index].url,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  );
-                                },
+                                child: Image.network(
+                                  widget.photos[index].url,
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             )
-                          : TweenAnimationBuilder<double>(
-                              duration: const Duration(milliseconds: 200),
-                              tween: Tween<double>(
-                                begin: 0,
-                                end: index != currentPage ? 3 : 0,
+                          : ImageFiltered(
+                              imageFilter: ImageFilter.blur(
+                                sigmaX: fade,
+                                sigmaY: fade,
                               ),
-                              builder: (context, value, _) {
-                                return ImageFiltered(
-                                  imageFilter: ImageFilter.blur(
-                                      sigmaX: value, sigmaY: value),
-                                  child: Image.network(
-                                    widget.photos[index].url,
-                                    fit: BoxFit.cover,
-                                  ),
-                                );
-                              }),
+                              child: Image.network(
+                                widget.photos[index].url,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                     ),
                   ),
                 ),

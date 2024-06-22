@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cd00ac66-15ae-412a-88ea-db86c7fa98cf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-15/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/lib/assets/resources/images.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/assets/resources/images.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,41 +36,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "task-15",
-    "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "/Users/yaroslav/Desktop/surf-course/task-15/lib",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;task-15&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/Desktop/surf-course/task-15/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-15/assets" />
       <recent name="$PROJECT_DIR$/task-15/lib" />
       <recent name="$PROJECT_DIR$/task-15" />
       <recent name="$PROJECT_DIR$/task-15/lib/feature/main" />
       <recent name="$PROJECT_DIR$/task-15/lib/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-15/assets/docs" />
       <recent name="$PROJECT_DIR$/task-15/assets/fonts" />
       <recent name="$PROJECT_DIR$/task-15/lib/feature/main/widgets" />
       <recent name="$PROJECT_DIR$/task-15/assets/images/3.0x" />
       <recent name="$PROJECT_DIR$/task-15/assets/images/2.0x" />
-      <recent name="$PROJECT_DIR$/task-15/assets/images" />
     </key>
   </component>
   <component name="RunManager">
@@ -90,7 +91,9 @@
       <workItem from="1716226228532" duration="584000" />
       <workItem from="1718481687973" duration="5105000" />
       <workItem from="1718518703403" duration="416000" />
-      <workItem from="1718685374012" duration="22007000" />
+      <workItem from="1718685374012" duration="23697000" />
+      <workItem from="1718895896983" duration="597000" />
+      <workItem from="1719061484312" duration="371000" />
     </task>
     <servers />
   </component>

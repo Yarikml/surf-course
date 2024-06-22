@@ -7,14 +7,18 @@ import 'app_text_style.dart';
 class AppTextScheme extends ThemeExtension<AppTextScheme> {
   /// Text style with a size of 30/34.
   /// Use headings.
-  final TextStyle bold30;
+  final TextStyle bold18;
+  final TextStyle bold18Accent;
 
   const AppTextScheme._({
-    required this.bold30,
+    required this.bold18,
+    required this.bold18Accent,
   });
 
   /// Base app text theme.
-  AppTextScheme.base() : bold30 = AppTextStyle.bold30.value;
+  AppTextScheme.base()
+      : bold18 = AppTextStyle.bold18.value,
+        bold18Accent = AppTextStyle.bold18Accent.value;
 
   @override
   ThemeExtension<AppTextScheme> lerp(
@@ -26,7 +30,8 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
     }
 
     return AppTextScheme._(
-      bold30: TextStyle.lerp(bold30, other.bold30, t)!,
+      bold18: TextStyle.lerp(bold18, other.bold18, t)!,
+      bold18Accent: TextStyle.lerp(bold18Accent, other.bold18Accent, t)!,
     );
   }
 
@@ -39,12 +44,12 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
   /// @nodoc.
   @override
   AppTextScheme copyWith({
-    TextStyle? regular12,
-    TextStyle? regular16,
-    TextStyle? bold30,
+    TextStyle? bold18,
+    TextStyle? bold18Accent,
   }) {
     return AppTextScheme._(
-      bold30: bold30 ?? this.bold30,
+      bold18: bold18 ?? this.bold18,
+      bold18Accent: bold18Accent ?? this.bold18Accent,
     );
   }
 }

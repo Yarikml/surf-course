@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd00ac66-15ae-412a-88ea-db86c7fa98cf" name="Changes" comment="" />
+    <list default="true" id="cd00ac66-15ae-412a-88ea-db86c7fa98cf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-15/lib/assets/resources/images.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-15/lib/assets/resources/images.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="task-15" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,14 +42,17 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;task-14&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;task-15&quot;,
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/Desktop/surf-course/task-14/lib/feature/main/widgets&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/Desktop/surf-course/task-15/assets&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -54,19 +60,23 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/task-14/lib/feature/main/widgets" />
-      <recent name="$PROJECT_DIR$/task-14/lib/assets" />
-      <recent name="$PROJECT_DIR$/task-14" />
+      <recent name="$PROJECT_DIR$/task-15/assets" />
+      <recent name="$PROJECT_DIR$/task-15/lib" />
+      <recent name="$PROJECT_DIR$/task-15" />
+      <recent name="$PROJECT_DIR$/task-15/lib/feature/main" />
+      <recent name="$PROJECT_DIR$/task-15/lib/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/task-14/assets/images" />
-      <recent name="$PROJECT_DIR$/task-14" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/task-15/assets/docs" />
+      <recent name="$PROJECT_DIR$/task-15/assets/fonts" />
+      <recent name="$PROJECT_DIR$/task-15/lib/feature/main/widgets" />
+      <recent name="$PROJECT_DIR$/task-15/assets/images/3.0x" />
+      <recent name="$PROJECT_DIR$/task-15/assets/images/2.0x" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="task-14" type="FlutterRunConfigurationType" factoryName="Flutter">
-      <option name="filePath" value="$PROJECT_DIR$/task-14/lib/main.dart" />
+    <configuration name="task-15" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/task-15/lib/main.dart" />
       <method v="2" />
     </configuration>
   </component>
@@ -78,17 +88,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716226227061</updated>
-      <workItem from="1716226228532" duration="6786000" />
-      <workItem from="1716318809125" duration="25127000" />
-      <workItem from="1716448638351" duration="11137000" />
-      <workItem from="1716833711810" duration="12081000" />
-      <workItem from="1716932084126" duration="4831000" />
-      <workItem from="1717010836115" duration="2860000" />
-      <workItem from="1718015723868" duration="1420000" />
+      <workItem from="1716226228532" duration="584000" />
+      <workItem from="1718481687973" duration="5105000" />
+      <workItem from="1718518703403" duration="416000" />
+      <workItem from="1718685374012" duration="23697000" />
+      <workItem from="1718895896983" duration="597000" />
+      <workItem from="1719061484312" duration="371000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/task-15/lib/assets/text/app_text_scheme.dart</url>
+          <line>10</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

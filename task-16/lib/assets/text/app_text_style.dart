@@ -1,21 +1,14 @@
 import 'package:flutter/material.dart';
 
-const _double18 = 18.0;
+const _double16 = 16.0;
 
 /// App text style.
 enum AppTextStyle {
-  bold18Accent(
+  regular16(
     TextStyle(
-      fontSize: _double18,
-      fontWeight: FontWeight.bold,
-      color: Color(0xFF222222),
-    ),
-  ),
-  bold18(
-    TextStyle(
-      fontSize: _double18,
-      fontWeight: FontWeight.bold,
-      color: Color(0xFFBFBFBF),
+      fontSize: _double16,
+      fontWeight: FontWeight.w400,
+      color: Color(0xFF727272),
     ),
   );
 

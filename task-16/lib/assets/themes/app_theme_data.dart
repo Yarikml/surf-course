@@ -7,6 +7,7 @@ import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 abstract class AppThemeData {
   static final lightTheme = ThemeData(
     fontFamily: 'SF-Pro-Display',
+    textTheme: const TextTheme().apply(bodyColor: Color(0xFF727272)),
     scaffoldBackgroundColor: Colors.white,
     appBarTheme: const AppBarTheme(
       surfaceTintColor: Colors.white,

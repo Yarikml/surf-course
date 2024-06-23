@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 
 import 'package:surf_flutter_courses_template/assets/resources/resources.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 import 'package:surf_flutter_courses_template/feature/main/di/reply_inherited.dart';
-import 'package:surf_flutter_courses_template/feature/main/model/reply_entity/reply_entity.dart';
 import 'package:surf_flutter_courses_template/feature/main/state_manager/reply_controller.dart';
-import 'package:surf_flutter_courses_template/runner.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -23,16 +22,14 @@ class _MainPageState extends State<MainPage> {
       valueListenable: ReplyInherited.of(context).replyState,
       builder: (context, state, _) => Scaffold(
         body: Container(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color(0xFF100C2C),
-                Color(0xFF000002),
+                AppColorScheme.of(context).scaffoldGradientStart,
+                AppColorScheme.of(context).scaffoldGradientEnd,
               ],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              stops: [0.0, 1.0],
-              tileMode: TileMode.clamp,
             ),
           ),
           child: Stack(
@@ -55,7 +52,7 @@ class _MainPageState extends State<MainPage> {
                 ),
               ),
               AnimatedSwitcher(
-                duration: Duration(milliseconds: 300),
+                duration: const Duration(milliseconds: 300),
                 child: state == ReplyState.loading
                     ? const Center(
                         child: CircularProgressIndicator(),
@@ -68,12 +65,30 @@ class _MainPageState extends State<MainPage> {
                             child: Center(
                               child: Text(
                                 ReplyInherited.of(context).reply.value!.reading,
+                                style: AppTextScheme.of(context)
+                                    .regular56
+                                    .copyWith(
+                                      color: AppColorScheme.of(context)
+                                          .accentedTextColor,
+                                    ),
+                                textAlign: TextAlign.center,
                               ),
                             ),
                           )
-                        : Center(
-                            child: Text('Error'),
-                          ),
+                        : state == ReplyState.error
+                            ? Center(
+                                child: Text(
+                                  'Error. Try again',
+                                  style: AppTextScheme.of(context)
+                                      .regular56
+                                      .copyWith(
+                                        color: AppColorScheme.of(context)
+                                            .errorTextColor,
+                                      ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              )
+                            : Container(),
               ),
               Positioned(
                 bottom: 80,
@@ -88,10 +103,13 @@ class _MainPageState extends State<MainPage> {
                         opacity: scale == 1 ? 1 : 0.05,
                         duration: Duration(seconds: 1),
                         child: Text(
-                          'Нажмите на шар или потря',
+                          'Нажмите на шар или потрясите телефон',
                           textAlign: TextAlign.center,
                           maxLines: 2,
-                          style: AppTextScheme.of(context).regular16,
+                          style: AppTextScheme.of(context).regular16.copyWith(
+                                color:
+                                    AppColorScheme.of(context).regulaTextColor,
+                              ),
                         ),
                       ),
                     ),

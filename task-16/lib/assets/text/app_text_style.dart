@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 const _double16 = 16.0;
+const _double56 = 56.0;
 
 /// App text style.
 enum AppTextStyle {
@@ -8,7 +9,12 @@ enum AppTextStyle {
     TextStyle(
       fontSize: _double16,
       fontWeight: FontWeight.w400,
-      color: Color(0xFF727272),
+    ),
+  ),
+  regular56(
+    TextStyle(
+      fontSize: _double56,
+      fontWeight: FontWeight.w400,
     ),
   );
 

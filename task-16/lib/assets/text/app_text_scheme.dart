@@ -5,16 +5,19 @@ import 'app_text_style.dart';
 
 /// App text style scheme.
 class AppTextScheme extends ThemeExtension<AppTextScheme> {
-  /// Text style with a size of 30/34.
-  /// Use headings.
   final TextStyle regular16;
+
+  final TextStyle regular56;
 
   const AppTextScheme._({
     required this.regular16,
+    required this.regular56,
   });
 
   /// Base app text theme.
-  AppTextScheme.base() : regular16 = AppTextStyle.regular16.value;
+  AppTextScheme.base()
+      : regular16 = AppTextStyle.regular16.value,
+        regular56 = AppTextStyle.regular56.value;
 
   @override
   ThemeExtension<AppTextScheme> lerp(
@@ -27,6 +30,7 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
 
     return AppTextScheme._(
       regular16: TextStyle.lerp(regular16, other.regular16, t)!,
+      regular56: TextStyle.lerp(regular56, other.regular56, t)!,
     );
   }
 
@@ -40,9 +44,11 @@ class AppTextScheme extends ThemeExtension<AppTextScheme> {
   @override
   AppTextScheme copyWith({
     TextStyle? regular16,
+    TextStyle? regular56,
   }) {
     return AppTextScheme._(
       regular16: regular16 ?? this.regular16,
+      regular56: regular56 ?? this.regular56,
     );
   }
 }

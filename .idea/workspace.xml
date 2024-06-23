@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e9fbf9a-c925-4b7d-a9a5-5661cf1437f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task-16/lib/feature/main/di/reply_inherited.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-16/lib/feature/main/state_manager/reply_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-16/lib/assets/colors/color_pallete.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-16/lib/assets/colors/color_scheme.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-16/lib/feature/app/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-16/lib/feature/app/app.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-16/lib/feature/main/model/reply_entity/reply_entity.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-16/lib/feature/main/model/reply_entity/reply_entity.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-16/lib/feature/main/model/reply_entity/reply_entity.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-16/lib/feature/main/model/reply_entity/reply_entity.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-16/lib/assets/text/app_text_scheme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-16/lib/assets/text/app_text_scheme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-16/lib/assets/text/app_text_style.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-16/lib/assets/text/app_text_style.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-16/lib/assets/themes/app_theme_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-16/lib/assets/themes/app_theme_data.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-16/lib/feature/main/widgets/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-16/lib/feature/main/widgets/pages/main_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-16/lib/runner.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-16/lib/runner.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,27 +41,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;task-16&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/Desktop/surf-course/task-16&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "task-16",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "/Users/yaroslav/Desktop/surf-course/task-16/lib/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-16/lib/assets" />
       <recent name="$PROJECT_DIR$/task-16" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -87,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719064552475</updated>
       <workItem from="1719064554220" duration="20030000" />
-      <workItem from="1719177641576" duration="2066000" />
+      <workItem from="1719177641576" duration="4937000" />
     </task>
     <servers />
   </component>

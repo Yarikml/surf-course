@@ -4,10 +4,10 @@ part 'reply_entity.g.dart';
 
 @JsonSerializable()
 class ReplyEntity {
-  final String text;
+  final String reading;
 
   ReplyEntity({
-    required this.text,
+    required this.reading,
   });
 
   factory ReplyEntity.fromJson(Map<String, dynamic> json) =>

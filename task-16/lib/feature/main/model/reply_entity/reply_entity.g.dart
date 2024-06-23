@@ -7,10 +7,10 @@ part of 'reply_entity.dart';
 // **************************************************************************
 
 ReplyEntity _$ReplyEntityFromJson(Map<String, dynamic> json) => ReplyEntity(
-      text: json['text'] as String,
+      reading: json['reading'] as String,
     );
 
 Map<String, dynamic> _$ReplyEntityToJson(ReplyEntity instance) =>
     <String, dynamic>{
-      'text': instance.text,
+      'reading': instance.reading,
     };

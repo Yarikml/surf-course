@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -18,5 +19,7 @@ Future<void> _runApp() async {
 }
 
 final IMainRepository mainRepository = MainRepository(
-  mainRemoteDatasource: MainRemoteDatasource(),
+  mainRemoteDatasource: MainRemoteDatasource(
+    client: Dio(),
+  ),
 );

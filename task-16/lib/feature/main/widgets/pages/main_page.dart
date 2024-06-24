@@ -1,5 +1,6 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
-import 'package:shake/shake.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 import 'package:surf_flutter_courses_template/feature/main/di/reply_inherited.dart';
@@ -10,6 +11,8 @@ import 'package:surf_flutter_courses_template/feature/main/widgets/loading_place
 import 'package:surf_flutter_courses_template/feature/main/widgets/ball_reply.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
+import 'package:surf_flutter_courses_template/feature/utils/shake_detector.dart';
+
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
 
@@ -19,6 +22,30 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   double scale = 1;
+  late final ShakeDetector shakeDetector;
+
+  @override
+  void initState() {
+    super.initState();
+    shakeDetector = ShakeDetector.autoStart(
+      onPhoneShake: () {
+        startAnimation();
+      },
+    );
+  }
+
+  @override
+  void dispose() {
+    shakeDetector.stopListening();
+    super.dispose();
+  }
+
+  void startAnimation() {
+    setState(() {
+      scale = scale == 1 ? 3 : 1;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final colorScheme = AppColorScheme.of(context);
@@ -45,11 +72,7 @@ class _MainPageState extends State<MainPage> {
             children: [
               MagicBall(
                 scale: scale,
-                onBallTap: () {
-                  setState(() {
-                    scale = scale == 1 ? 3 : 1;
-                  });
-                },
+                onBallTap: startAnimation,
               ),
               AnimatedSwitcher(
                 duration: const Duration(milliseconds: 300),

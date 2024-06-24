@@ -30,10 +30,7 @@ class ReplyController {
 
   Future<void> getReply() async {
     try {
-      log('message');
       _replyState.value = ReplyState.loading;
-      await Future.delayed(Duration(seconds: 2));
-
       final reply = await _mainRepository.getReply();
       _reply.value = reply;
       _replyState.value = ReplyState.success;

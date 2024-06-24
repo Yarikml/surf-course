@@ -1,4 +1,4 @@
 {
-  "error": "Ошибка",
-  "noItems": "Нет фото"
+  "error": "Error. Try again",
+  "tapOnBall": "Нажмите на шар или потрясите телефон"
 }

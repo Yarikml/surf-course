@@ -1,4 +1,3 @@
-
 import 'dart:async';
 import 'dart:math';
 
@@ -30,15 +29,6 @@ class ShakeDetector {
   /// StreamSubscription for Accelerometer events
   StreamSubscription? streamSubscription;
 
-  /// This constructor waits until [startListening] is called
-  ShakeDetector.waitForStart({
-    required this.onPhoneShake,
-    this.shakeThresholdGravity = 2.7,
-    this.shakeSlopTimeMS = 500,
-    this.shakeCountResetTime = 3000,
-    this.minimumShakeCount = 1,
-  });
-
   /// This constructor automatically calls [startListening] and starts detection and callbacks.
   ShakeDetector.autoStart({
     required this.onPhoneShake,
@@ -53,7 +43,7 @@ class ShakeDetector {
   /// Starts listening to accelerometer events
   void startListening() {
     streamSubscription = accelerometerEvents.listen(
-          (AccelerometerEvent event) {
+      (AccelerometerEvent event) {
         double x = event.x;
         double y = event.y;
         double z = event.z;

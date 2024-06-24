@@ -30,6 +30,7 @@ class ReplyController {
 
   Future<void> getReply() async {
     try {
+      if (_replyState.value == ReplyState.loading) return;
       _replyState.value = ReplyState.loading;
       final reply = await _mainRepository.getReply();
       _reply.value = reply;
@@ -37,5 +38,10 @@ class ReplyController {
     } catch (_, __) {
       _replyState.value = ReplyState.error;
     }
+  }
+
+  Future<void> resetReply() async {
+    _replyState.value = ReplyState.idle;
+    _reply.value = null;
   }
 }

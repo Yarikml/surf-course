@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
@@ -28,9 +26,7 @@ class _MainPageState extends State<MainPage> {
   void initState() {
     super.initState();
     shakeDetector = ShakeDetector.autoStart(
-      onPhoneShake: () {
-        startAnimation();
-      },
+      onPhoneShake: onPhoneShake,
     );
   }
 
@@ -38,6 +34,19 @@ class _MainPageState extends State<MainPage> {
   void dispose() {
     shakeDetector.stopListening();
     super.dispose();
+  }
+
+  void onPhoneShake() {
+    if (scale == 3) {
+      final replyInherited = ReplyInherited.of(context);
+      if (replyInherited.replyState.value != ReplyState.loading) {
+        replyInherited.getReply();
+      }
+    } else {
+      setState(() {
+        scale = 3;
+      });
+    }
   }
 
   void startAnimation() {
@@ -72,14 +81,24 @@ class _MainPageState extends State<MainPage> {
             children: [
               MagicBall(
                 scale: scale,
-                onBallTap: startAnimation,
+                onBallTap: state != ReplyState.loading ? startAnimation : null,
+                onAnimationFinished: () {
+                  if (scale == 3) {
+                    replyInherited.getReply();
+                  }
+                },
               ),
               AnimatedSwitcher(
                 duration: const Duration(milliseconds: 300),
                 child: state == ReplyState.loading
                     ? const LoadingPlaceholder()
                     : state == ReplyState.success
-                        ? const BallReply()
+                        ? BallReply(
+                            onAnimationReset: () {
+                              startAnimation();
+                              replyInherited.resetReply();
+                            },
+                          )
                         : state == ReplyState.error
                             ? const ErrorPlaceholder()
                             : Container(),

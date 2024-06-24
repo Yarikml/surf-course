@@ -1,9 +1,9 @@
 # Description of your result
-Photo gallery with detailed photo preview
+Magic ball with the predictions
 ## Description
-Create photo grid from mock resources. Create Hero transition to details page with scale and blur animation for page view.
+Create layout from figma. Add animations to the ball. Add data layer with controller for requesting reply. Add shake gesture service for detecting gestures.
 ## How to
-cd task-15
+cd task-16
 
 dart bin/main.dart
 ## Demo

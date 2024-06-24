@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-import '../../../assets/resources/animations.dart';
+import 'package:surf_flutter_courses_template/assets/resources/animations.dart';
 
 class LoadingPlaceholder extends StatelessWidget {
   const LoadingPlaceholder({super.key});

@@ -1,6 +1,5 @@
 import 'package:surf_flutter_courses_template/feature/main/data/datasources/main_remote_datasource.dart';
-
-import '../../model/reply_entity/reply_entity.dart';
+import 'package:surf_flutter_courses_template/feature/main/entity/reply_entity/reply_entity.dart';
 
 abstract interface class IMainRepository {
   Future<ReplyEntity> getReply();

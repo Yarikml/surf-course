@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:surf_flutter_courses_template/feature/main/model/reply_entity/reply_entity.dart';
+import 'package:surf_flutter_courses_template/feature/main/entity/reply_entity/reply_entity.dart';
 
 abstract interface class IMainRemoteDatasource {
   Future<ReplyEntity> getReply();

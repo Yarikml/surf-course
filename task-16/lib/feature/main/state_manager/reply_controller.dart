@@ -1,8 +1,7 @@
-import 'dart:developer';
 
 import 'package:flutter/foundation.dart';
 import 'package:surf_flutter_courses_template/feature/main/data/repositories/main_repository.dart';
-import 'package:surf_flutter_courses_template/feature/main/model/reply_entity/reply_entity.dart';
+import 'package:surf_flutter_courses_template/feature/main/entity/reply_entity/reply_entity.dart';
 
 enum ReplyState {
   idle,

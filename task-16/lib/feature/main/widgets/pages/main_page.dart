@@ -26,7 +26,7 @@ class _MainPageState extends State<MainPage> {
   void initState() {
     super.initState();
     shakeDetector = ShakeDetector.autoStart(
-      onPhoneShake: onPhoneShake,
+      onPhoneShake: _onPhoneShake,
     );
   }
 
@@ -36,7 +36,7 @@ class _MainPageState extends State<MainPage> {
     super.dispose();
   }
 
-  void onPhoneShake() {
+  void _onPhoneShake() {
     if (scale == 3) {
       final replyInherited = ReplyInherited.of(context);
       if (replyInherited.replyState.value != ReplyState.loading) {
@@ -49,7 +49,7 @@ class _MainPageState extends State<MainPage> {
     }
   }
 
-  void startAnimation() {
+  void _startAnimation() {
     setState(() {
       scale = scale == 1 ? 3 : 1;
     });
@@ -81,7 +81,7 @@ class _MainPageState extends State<MainPage> {
             children: [
               MagicBall(
                 scale: scale,
-                onBallTap: state != ReplyState.loading ? startAnimation : null,
+                onBallTap: state != ReplyState.loading ? _startAnimation : null,
                 onAnimationFinished: () {
                   if (scale == 3) {
                     replyInherited.getReply();
@@ -95,7 +95,7 @@ class _MainPageState extends State<MainPage> {
                     : state == ReplyState.success
                         ? BallReply(
                             onAnimationReset: () {
-                              startAnimation();
+                              _startAnimation();
                               replyInherited.resetReply();
                             },
                           )

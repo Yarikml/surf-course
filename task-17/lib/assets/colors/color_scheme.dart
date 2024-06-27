@@ -4,47 +4,33 @@ import 'package:surf_flutter_courses_template/assets/colors/color_pallete.dart';
 /// App color schemes
 @immutable
 class AppColorScheme extends ThemeExtension<AppColorScheme> {
-  final Color regulaTextColor;
+  final Color scaffoldBackground;
 
-  final Color accentedTextColor;
+  final Color onScaffoldBackground;
 
-  final Color errorTextColor;
-
-  final Color scaffoldGradientStart;
-
-  final Color scaffoldGradientEnd;
+  final Color primary;
 
   /// Base color theme version.
-  const AppColorScheme.dark()
-      : regulaTextColor = ColorPalette.nickel,
-        accentedTextColor = ColorPalette.white,
-        scaffoldGradientStart = ColorPalette.eerieBlack,
-        scaffoldGradientEnd = ColorPalette.black,
-        errorTextColor = ColorPalette.coralRed;
+  const AppColorScheme.light()
+      : scaffoldBackground = ColorPalette.brightGray,
+        primary = ColorPalette.tulip,
+        onScaffoldBackground = ColorPalette.white;
 
   const AppColorScheme._({
-    required this.regulaTextColor,
-    required this.accentedTextColor,
-    required this.errorTextColor,
-    required this.scaffoldGradientStart,
-    required this.scaffoldGradientEnd,
+    required this.scaffoldBackground,
+    required this.onScaffoldBackground,
+    required this.primary,
   });
 
   @override
   ThemeExtension<AppColorScheme> copyWith({
-    Color? regulaTextColor,
-    Color? accentedTextColor,
-    Color? errorTextColor,
-    Color? scaffoldGradientStart,
-    Color? scaffoldGradientEnd,
+    Color? scaffoldBackground,
+    Color? onScaffoldBackground,
   }) {
     return AppColorScheme._(
-      regulaTextColor: regulaTextColor ?? this.regulaTextColor,
-      accentedTextColor: accentedTextColor ?? this.accentedTextColor,
-      errorTextColor: errorTextColor ?? this.errorTextColor,
-      scaffoldGradientStart:
-          scaffoldGradientStart ?? this.scaffoldGradientStart,
-      scaffoldGradientEnd: scaffoldGradientEnd ?? this.scaffoldGradientEnd,
+      scaffoldBackground: scaffoldBackground ?? this.scaffoldBackground,
+      onScaffoldBackground: onScaffoldBackground ?? this.onScaffoldBackground,
+      primary: primary ?? this.primary,
     );
   }
 
@@ -58,14 +44,11 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
     }
 
     return AppColorScheme._(
-      regulaTextColor: Color.lerp(regulaTextColor, other.regulaTextColor, t)!,
-      accentedTextColor:
-          Color.lerp(accentedTextColor, other.accentedTextColor, t)!,
-      errorTextColor: Color.lerp(errorTextColor, other.errorTextColor, t)!,
-      scaffoldGradientStart:
-          Color.lerp(scaffoldGradientStart, other.scaffoldGradientStart, t)!,
-      scaffoldGradientEnd:
-          Color.lerp(scaffoldGradientEnd, other.scaffoldGradientEnd, t)!,
+      scaffoldBackground:
+          Color.lerp(scaffoldBackground, other.scaffoldBackground, t)!,
+      onScaffoldBackground:
+          Color.lerp(onScaffoldBackground, other.onScaffoldBackground, t)!,
+      primary: Color.lerp(primary, other.primary, t)!,
     );
   }
 

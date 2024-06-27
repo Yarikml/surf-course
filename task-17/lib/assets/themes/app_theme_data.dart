@@ -8,15 +8,15 @@ abstract class AppThemeData {
   static final lightTheme = ThemeData(
     fontFamily: 'SF-Pro-Display',
     textTheme: const TextTheme(),
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: _lightPalette.scaffoldBackground,
     appBarTheme: const AppBarTheme(
       surfaceTintColor: Colors.white,
       centerTitle: true,
       backgroundColor: Colors.white,
     ),
-    extensions: [_textScheme, _darkPalette],
+    extensions: [_textScheme, _lightPalette],
   );
 
   static final _textScheme = AppTextScheme.base();
-  static const _darkPalette = AppColorScheme.dark();
+  static const _lightPalette = AppColorScheme.light();
 }

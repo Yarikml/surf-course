@@ -7,23 +7,13 @@ abstract class ColorPalette {
   /// https://www.color-name.com/hex/FFFFFF
   static const Color white = Color(0xFFFFFFFF);
 
-  /// Nickel
+  /// Bright Gray
   ///
-  /// https://www.color-name.com/hex/727272
-  static const Color nickel = Color(0xFF727272);
+  /// https://www.color-name.com/hex/EAECEB
+  static const Color brightGray = Color(0xFFEAECEB);
 
-  /// Coral Red
+  /// Tulip
   ///
-  /// https://www.color-name.com/hex/FF4040
-  static const Color coralRed = Color(0xFFFF4040);
-
-  /// Eerie Black
-  ///
-  /// https://www.color-name.com/hex/100C2C
-  static const Color eerieBlack = Color(0xFF100C2C);
-
-  /// Black
-  ///
-  /// https://www.color-name.com/hex/000002
-  static const Color black = Color(0xFF000002);
+  /// https://www.color-name.com/hex/FF8087
+  static const Color tulip = Color(0xFFFF8087);
 }

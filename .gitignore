@@ -93,3 +93,5 @@ tools/bricks/**/*.dill
  task-15/build/
  task-16/.dart_tool/
  task-16/build/
+ task-17/.dart_tool/
+ task-17/build/

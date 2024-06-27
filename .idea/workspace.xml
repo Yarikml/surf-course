@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e9fbf9a-c925-4b7d-a9a5-5661cf1437f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task-16/lib/assets/colors/color_pallete.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-16/lib/assets/colors/color_scheme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-16/lib/assets/text/app_text_scheme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-16/lib/assets/text/app_text_scheme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-16/lib/assets/text/app_text_style.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-16/lib/assets/text/app_text_style.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-16/lib/assets/themes/app_theme_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-16/lib/assets/themes/app_theme_data.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-16/lib/feature/main/widgets/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-16/lib/feature/main/widgets/pages/main_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="task-16" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "task-16",
+    "git-widget-placeholder": "main",
     "io.flutter.reload.alreadyRun": "true",
     "last_opened_file_path": "/Users/yaroslav/Desktop/surf-course/task-16/lib/assets",
     "node.js.detected.package.eslint": "true",

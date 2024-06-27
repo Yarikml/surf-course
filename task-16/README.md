@@ -1,23 +1,11 @@
 # Description of your result
-
-You can describe your results in any language that is convenient for you, not just English.
-
+Magic ball with the predictions
 ## Description
-
-[Describe what you have done]
-
+Create layout from figma. Add animations to the ball. Add data layer with controller for requesting reply. Add shake gesture service for detecting gestures.
 ## How to
+cd task-16
 
-[Describe how to run your application if there are any issues]
-
-## Problems
-
-[Describe the problems you encountered]
-
-## More
-
-[Here you can brag about what you managed to implement or do something beyond the task]
-
+dart bin/main.dart
 ## Demo
 
-[Leave links to screencasts/screenshots here, you can use a GitHub repository or a separate cloud service]
+![result.gif](assets/docs/result.gif)

@@ -16,4 +16,14 @@ abstract class ColorPalette {
   ///
   /// https://www.color-name.com/hex/FF8087
   static const Color tulip = Color(0xFFFF8087);
+
+  /// Outer Space
+  ///
+  /// https://www.color-name.com/hex/414657
+  static const Color outerSpace = Color(0xFF414657);
+
+  /// Crayola
+  ///
+  /// https://www.color-name.com/hex/AFB2BC
+  static const Color crayola = Color(0xFFAFB2BC);
 }

@@ -17,8 +17,9 @@ class PetTypeList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       height: 76,
+      margin: const EdgeInsets.symmetric(vertical: 32),
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
         itemCount: PetType.values.length,

@@ -25,7 +25,7 @@ flutter:
   fonts:
     - family: SF-Pro-Display
       fonts:
-        - asset: assets/fonts/SF-Pro-Display-Bold.otf
+        - asset: assets/fonts/SFPRODISPLAYREGULAR.OTF
   uses-material-design: true
   generate: true # Add this line
 

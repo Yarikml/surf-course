@@ -10,27 +10,40 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
 
   final Color primary;
 
+  final Color regularTextColor;
+
+  final Color labelTextColor;
+
   /// Base color theme version.
   const AppColorScheme.light()
       : scaffoldBackground = ColorPalette.brightGray,
         primary = ColorPalette.tulip,
+        regularTextColor = ColorPalette.outerSpace,
+        labelTextColor = ColorPalette.crayola,
         onScaffoldBackground = ColorPalette.white;
 
   const AppColorScheme._({
     required this.scaffoldBackground,
     required this.onScaffoldBackground,
     required this.primary,
+    required this.regularTextColor,
+    required this.labelTextColor,
   });
 
   @override
   ThemeExtension<AppColorScheme> copyWith({
     Color? scaffoldBackground,
     Color? onScaffoldBackground,
+    Color? primary,
+    Color? regularTextColor,
+    Color? labelTextColor,
   }) {
     return AppColorScheme._(
       scaffoldBackground: scaffoldBackground ?? this.scaffoldBackground,
       onScaffoldBackground: onScaffoldBackground ?? this.onScaffoldBackground,
       primary: primary ?? this.primary,
+      regularTextColor: regularTextColor ?? this.regularTextColor,
+      labelTextColor: labelTextColor ?? this.labelTextColor,
     );
   }
 
@@ -49,6 +62,9 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
       onScaffoldBackground:
           Color.lerp(onScaffoldBackground, other.onScaffoldBackground, t)!,
       primary: Color.lerp(primary, other.primary, t)!,
+      regularTextColor:
+          Color.lerp(regularTextColor, other.regularTextColor, t)!,
+      labelTextColor: Color.lerp(labelTextColor, other.labelTextColor, t)!,
     );
   }
 

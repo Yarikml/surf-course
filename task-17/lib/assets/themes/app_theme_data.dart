@@ -14,7 +14,44 @@ abstract class AppThemeData {
       centerTitle: true,
       backgroundColor: Colors.white,
     ),
-    extensions: [_textScheme, _lightPalette],
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: _lightPalette.onScaffoldBackground,
+      labelStyle: _textScheme.regular16.copyWith(
+        color: _lightPalette.labelTextColor,
+      ),
+      floatingLabelStyle: _textScheme.regular12.copyWith(
+        color: _lightPalette.labelTextColor,
+      ),
+      floatingLabelAlignment: FloatingLabelAlignment.start,
+      contentPadding: EdgeInsets.all(16),
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide.none,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide.none,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      errorBorder: OutlineInputBorder(
+        borderSide: BorderSide.none,
+        borderRadius: BorderRadius.circular(12),
+      ),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+        ),
+        backgroundColor: _lightPalette.primary,
+        textStyle: _textScheme.semiBold18,
+        foregroundColor: _lightPalette.onScaffoldBackground,
+      ),
+    ),
+    extensions: [
+      _textScheme,
+      _lightPalette,
+    ],
   );
 
   static final _textScheme = AppTextScheme.base();

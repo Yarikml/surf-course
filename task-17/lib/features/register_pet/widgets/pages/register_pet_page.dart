@@ -3,6 +3,7 @@ import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_style.dart';
 import 'package:surf_flutter_courses_template/features/register_pet/widgets/custom_checkbox.dart';
+import 'package:surf_flutter_courses_template/features/register_pet/widgets/ill_list.dart';
 import 'package:surf_flutter_courses_template/features/register_pet/widgets/pet_type_list.dart';
 import 'package:surf_flutter_courses_template/utils/enums/ill_type.dart';
 import 'package:surf_flutter_courses_template/utils/enums/pet_type.dart';
@@ -37,7 +38,15 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
             ),
             Padding(
               padding: const EdgeInsets.only(bottom: 16),
-              child: TextField(
+              child: TextFormField(
+                validator: (String? value) {
+                  if (value == null ||
+                      value.trim().length < 3 ||
+                      value.trim().length > 20) {
+                    return 'Укажите имя питомца от 3 до 20 символов';
+                  }
+                  return null;
+                },
                 style: AppTextScheme.of(context).regular16,
                 decoration: InputDecoration(
                   isDense: true,
@@ -47,7 +56,7 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
             ),
             Padding(
               padding: const EdgeInsets.only(bottom: 16),
-              child: TextField(
+              child: TextFormField(
                 style: AppTextScheme.of(context).regular16,
                 decoration: InputDecoration(
                   isDense: true,
@@ -57,7 +66,19 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
             ),
             Padding(
               padding: const EdgeInsets.only(bottom: 16),
-              child: TextField(
+              child: TextFormField(
+                keyboardType: TextInputType.number,
+                validator: (String? value) {
+                  if (value == null) {
+                    return 'Укажите вес, больше 0 кг';
+                  } else {
+                    final intValue = int.tryParse(value.trim());
+                    if (intValue != null && intValue < 0) {
+                      return 'Укажите вес, больше 0 кг';
+                    }
+                  }
+                  return null;
+                },
                 style: AppTextScheme.of(context).regular16,
                 decoration: InputDecoration(
                   isDense: true,
@@ -67,7 +88,18 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
             ),
             Padding(
               padding: const EdgeInsets.only(bottom: 16),
-              child: TextField(
+              child: TextFormField(
+                validator: (String? value) {
+                  if (value == null) {
+                    return 'Укажите вес, больше 0 кг';
+                  } else {
+                    final intValue = int.tryParse(value.trim());
+                    if (intValue != null && intValue < 0) {
+                      return 'Укажите вес, больше 0 кг';
+                    }
+                  }
+                  return null;
+                },
                 style: AppTextScheme.of(context).regular16,
                 decoration: InputDecoration(
                   isDense: true,
@@ -75,29 +107,25 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
                 ),
               ),
             ),
-            Text(
-              'Сделаны прививки от:',
-              style: AppTextScheme.of(context).semiBold24,
+            AnimatedSwitcher(
+              duration: const Duration(milliseconds: 300),
+              child: petType == PetType.dog || petType == PetType.cat
+                  ? IllList(
+                      currentIllType: illType,
+                      onChange: (bool value, IllType type) {
+                        if (illType == type && !value) {
+                          setState(() {
+                            illType = null;
+                          });
+                        } else {
+                          setState(() {
+                            illType = type;
+                          });
+                        }
+                      },
+                    )
+                  : Container(),
             ),
-            ...IllType.values
-                .map(
-                  (item) => CustomCheckbox(
-                    isChecked: illType == item,
-                    label: item.name,
-                    onChange: (bool value) {
-                      if (illType == item && !value) {
-                        setState(() {
-                          illType = null;
-                        });
-                      } else {
-                        setState(() {
-                          illType = item;
-                        });
-                      }
-                    },
-                  ),
-                )
-                .toList(),
             ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(

@@ -26,4 +26,9 @@ abstract class ColorPalette {
   ///
   /// https://www.color-name.com/hex/AFB2BC
   static const Color crayola = Color(0xFFAFB2BC);
+
+  /// Orange-Red
+  ///
+  /// https://www.color-name.com/hex/FD4C56
+  static const Color orangeRed = Color(0xFFFD4C56);
 }

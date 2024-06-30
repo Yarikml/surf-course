@@ -14,12 +14,15 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
 
   final Color labelTextColor;
 
+  final Color error;
+
   /// Base color theme version.
   const AppColorScheme.light()
       : scaffoldBackground = ColorPalette.brightGray,
         primary = ColorPalette.tulip,
         regularTextColor = ColorPalette.outerSpace,
         labelTextColor = ColorPalette.crayola,
+        error = ColorPalette.orangeRed,
         onScaffoldBackground = ColorPalette.white;
 
   const AppColorScheme._({
@@ -28,6 +31,7 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
     required this.primary,
     required this.regularTextColor,
     required this.labelTextColor,
+    required this.error,
   });
 
   @override
@@ -37,6 +41,7 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
     Color? primary,
     Color? regularTextColor,
     Color? labelTextColor,
+    Color? error,
   }) {
     return AppColorScheme._(
       scaffoldBackground: scaffoldBackground ?? this.scaffoldBackground,
@@ -44,6 +49,7 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
       primary: primary ?? this.primary,
       regularTextColor: regularTextColor ?? this.regularTextColor,
       labelTextColor: labelTextColor ?? this.labelTextColor,
+      error: error ?? this.error,
     );
   }
 
@@ -65,6 +71,7 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
       regularTextColor:
           Color.lerp(regularTextColor, other.regularTextColor, t)!,
       labelTextColor: Color.lerp(labelTextColor, other.labelTextColor, t)!,
+      error: Color.lerp(error, other.error, t)!,
     );
   }
 

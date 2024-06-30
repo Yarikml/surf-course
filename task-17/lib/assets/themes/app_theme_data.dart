@@ -15,8 +15,6 @@ abstract class AppThemeData {
       backgroundColor: Colors.white,
     ),
     inputDecorationTheme: InputDecorationTheme(
-      filled: true,
-      fillColor: _lightPalette.onScaffoldBackground,
       labelStyle: _textScheme.regular16.copyWith(
         color: _lightPalette.labelTextColor,
       ),
@@ -25,18 +23,9 @@ abstract class AppThemeData {
       ),
       floatingLabelAlignment: FloatingLabelAlignment.start,
       contentPadding: EdgeInsets.all(16),
-      enabledBorder: OutlineInputBorder(
-        borderSide: BorderSide.none,
-        borderRadius: BorderRadius.circular(12),
-      ),
-      focusedBorder: OutlineInputBorder(
-        borderSide: BorderSide.none,
-        borderRadius: BorderRadius.circular(12),
-      ),
-      errorBorder: OutlineInputBorder(
-        borderSide: BorderSide.none,
-        borderRadius: BorderRadius.circular(12),
-      ),
+      enabledBorder: InputBorder.none,
+      focusedBorder: InputBorder.none,
+      errorBorder: InputBorder.none,
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(

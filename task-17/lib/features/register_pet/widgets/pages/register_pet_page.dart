@@ -30,6 +30,8 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
   final _weightController = TextEditingController();
   final _mailController = TextEditingController();
   final _dateOfBirthController = TextEditingController();
+
+
   final _illController = TextEditingController();
   late final nameValidator = NameValidator(_nameController);
   late final weightValidator = WeightValidator(_weightController);
@@ -113,7 +115,12 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
               child: Stack(
                 children: [
                   ListView(
-                    padding: const EdgeInsets.all(16),
+                    padding: const EdgeInsets.only(
+                      left: 16,
+                      right: 16,
+                      top: 16,
+                      bottom: 72,
+                    ),
                     children: [
                       PetTypeList(
                         currentType: petType,
@@ -123,7 +130,7 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
                       ValidatableTextField(
                         validator: nameValidator,
                         controller: _nameController,
-                        label: 'Имя питомца',
+                        label: context.localization.petName,
                         onValidateForm: _validateForm,
                         readOnly: state == RegisterPetState.loading,
                       ),
@@ -140,21 +147,22 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
                             : null,
                         validator: dateOfBirthValidator,
                         controller: _dateOfBirthController,
-                        label: 'День рождения питомца',
+                        label: context.localization.petBirthday,
                         onValidateForm: _validateForm,
                         readOnly: true,
                       ),
                       ValidatableTextField(
                         validator: weightValidator,
                         controller: _weightController,
-                        label: 'Вес, кг',
+                        keyboardType: TextInputType.number,
+                        label: context.localization.petWeight,
                         onValidateForm: _validateForm,
                         readOnly: state == RegisterPetState.loading,
                       ),
                       ValidatableTextField(
                         validator: mailValidator,
                         controller: _mailController,
-                        label: 'Почта хозяина',
+                        label: context.localization.hostMail,
                         onValidateForm: _validateForm,
                         readOnly: state == RegisterPetState.loading,
                       ),
@@ -181,9 +189,9 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
                                       : null,
                                   validator: illDateValidator,
                                   controller: _illController,
-                                  label: 'Дата последней прививки',
+                                  label: context.localization.petLastVaccine,
                                   onValidateForm: _validateForm,
-                                  readOnly: state == RegisterPetState.loading,
+                                  readOnly: true,
                                 ),
                                 isGroupEnabled:
                                     state != RegisterPetState.loading,
@@ -193,7 +201,7 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
                     ],
                   ),
                   Positioned(
-                    bottom: 0,
+                    bottom: 16,
                     left: 16,
                     right: 16,
                     child: ValueListenableBuilder(
@@ -212,7 +220,7 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
                             minimumSize: const Size.fromHeight(56),
                           ),
                           child: state != RegisterPetState.loading
-                              ? const Text('Отправить')
+                              ? Text(context.localization.send)
                               : CircularProgressIndicator(
                                   color:
                                       context.colorScheme.onScaffoldBackground,

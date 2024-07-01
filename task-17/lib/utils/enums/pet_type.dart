@@ -6,7 +6,7 @@ enum PetType {
     iconPath: SvgIcons.dog,
   ),
   cat(
-    name: 'Кошка',
+    name: 'Кот',
     iconPath: SvgIcons.cat,
   ),
   parrot(

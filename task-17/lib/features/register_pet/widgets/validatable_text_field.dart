@@ -9,11 +9,12 @@ class ValidatableTextField extends StatefulWidget {
     required this.validator,
     required this.controller,
     required this.onValidateForm,
-    this.validationStrategy = ValidationStrategy.onUnFocus,
     required this.label,
+    required this.readOnly,
     this.margin,
     this.onTap,
-    required this.readOnly,
+    this.validationStrategy = ValidationStrategy.onUnFocus,
+    this.keyboardType = TextInputType.text,
   });
 
   final FieldValidator validator;
@@ -21,6 +22,7 @@ class ValidatableTextField extends StatefulWidget {
   final ValidationStrategy? validationStrategy;
   final VoidCallback onValidateForm;
   final EdgeInsets? margin;
+  final TextInputType? keyboardType;
   final bool readOnly;
   final String label;
   final VoidCallback? onTap;
@@ -84,6 +86,7 @@ class _ValidatableTextFieldState extends State<ValidatableTextField> {
                 focusNode: _focusNode,
                 readOnly: widget.readOnly,
                 onTap: widget.onTap,
+                keyboardType: widget.keyboardType,
                 cursorHeight: 18,
                 style: context.textScheme.regular16.copyWith(
                   color: error != null ? context.colorScheme.error : null,

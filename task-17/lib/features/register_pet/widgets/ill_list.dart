@@ -29,7 +29,7 @@ class IllList extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(bottom: 8.0),
           child: Text(
-            'Сделаны прививки от:',
+            context.localization.vaccineFrom,
             style: context.textScheme.semiBold24,
           ),
         ),

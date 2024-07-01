@@ -21,7 +21,6 @@ abstract class AppThemeData {
       floatingLabelStyle: _textScheme.regular12.copyWith(
         color: _lightPalette.labelTextColor,
       ),
-
       floatingLabelAlignment: FloatingLabelAlignment.start,
       contentPadding: EdgeInsets.all(16),
       enabledBorder: InputBorder.none,
@@ -36,6 +35,8 @@ abstract class AppThemeData {
         backgroundColor: _lightPalette.primary,
         textStyle: _textScheme.semiBold18,
         foregroundColor: _lightPalette.onScaffoldBackground,
+        disabledBackgroundColor: _lightPalette.disabledColor,
+        disabledForegroundColor: _lightPalette.onDisabledColor,
       ),
     ),
     extensions: [

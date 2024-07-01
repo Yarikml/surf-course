@@ -1,5 +1,5 @@
 enum IllType {
-  rabies(name: 'бешенство'),
+  rabies(name: 'бешенства'),
   covid(name: 'ковид'),
   malaria(name: 'малярия');
 

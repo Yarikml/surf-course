@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../../../assets/text/app_text_scheme.dart';
-import '../../../utils/enums/ill_type.dart';
+import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
+import 'package:surf_flutter_courses_template/utils/enums/ill_type.dart';
 import 'custom_checkbox.dart';
 
 typedef IllChangeCallback = Function(bool, IllType);

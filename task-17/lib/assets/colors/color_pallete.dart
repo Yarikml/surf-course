@@ -12,6 +12,11 @@ abstract class ColorPalette {
   /// https://www.color-name.com/hex/EAECEB
   static const Color brightGray = Color(0xFFEAECEB);
 
+  /// Light Gray
+  ///
+  /// https://www.color-name.com/hex/D3D5D8
+  static const Color lightGray = Color(0xFFD3D5D8);
+
   /// Tulip
   ///
   /// https://www.color-name.com/hex/FF8087

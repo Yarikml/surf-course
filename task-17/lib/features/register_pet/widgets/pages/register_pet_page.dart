@@ -1,10 +1,4 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
-import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
-import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
-import 'package:surf_flutter_courses_template/assets/text/app_text_style.dart';
-import 'package:surf_flutter_courses_template/features/register_pet/widgets/custom_checkbox.dart';
 import 'package:surf_flutter_courses_template/features/register_pet/widgets/ill_list.dart';
 import 'package:surf_flutter_courses_template/features/register_pet/widgets/pet_type_list.dart';
 import 'package:surf_flutter_courses_template/features/register_pet/widgets/validatable_text_field.dart';
@@ -52,13 +46,12 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
   void _changePetType(PetType type) {
     setState(() {
       petType = type;
-      if (petType == PetType.parrot || petType == PetType.hamster) {
-        if (fields.contains(illDateValidator)) {
-          fields.remove(illDateValidator);
-          illType = null;
-          _illController.clear();
-          _validateForm();
-        }
+      if ((petType == PetType.parrot || petType == PetType.hamster) &&
+          fields.contains(illDateValidator)) {
+        fields.remove(illDateValidator);
+        illType = null;
+        _illController.clear();
+        _validateForm();
       }
     });
   }
@@ -85,6 +78,19 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
     isFormValid.value = fields.every((field) => field.valid);
   }
 
+  Future<DateTime?> _showDatePicker(BuildContext context) async {
+    final result = await showDatePicker(
+      context: context,
+      firstDate: DateTime.now().subtract(
+        const Duration(
+          days: 5000,
+        ),
+      ),
+      lastDate: DateTime.now(),
+    );
+    return result;
+  }
+
   @override
   void dispose() {
     for (final field in fields) {
@@ -101,7 +107,7 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
         child: Stack(
           children: [
             ListView(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               children: [
                 PetTypeList(
                   currentType: petType,
@@ -116,15 +122,7 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
                 ValidatableTextField(
                   validationStrategy: ValidationStrategy.onChange,
                   onTap: () async {
-                    final result = await showDatePicker(
-                      context: context,
-                      firstDate: DateTime.now().subtract(
-                        Duration(
-                          days: 5000,
-                        ),
-                      ),
-                      lastDate: DateTime.now(),
-                    );
+                    final result = await _showDatePicker(context);
                     if (result != null) {
                       _dateOfBirthController.text = result.toFormattedString;
                     }
@@ -157,15 +155,7 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
                             margin: const EdgeInsets.only(top: 8),
                             validationStrategy: ValidationStrategy.onChange,
                             onTap: () async {
-                              final result = await showDatePicker(
-                                context: context,
-                                firstDate: DateTime.now().subtract(
-                                  const Duration(
-                                    days: 5000,
-                                  ),
-                                ),
-                                lastDate: DateTime.now(),
-                              );
+                              final result = await _showDatePicker(context);
                               if (result != null) {
                                 _illController.text = result.toFormattedString;
                               }
@@ -186,12 +176,15 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
               right: 16,
               child: ValueListenableBuilder(
                 valueListenable: isFormValid,
-                builder: (_, isValid, __) => ElevatedButton(
-                  onPressed: isValid ? () {} : null,
-                  style: ElevatedButton.styleFrom(
-                    minimumSize: Size.fromHeight(56),
+                builder: (_, isValid, __) => AnimatedSwitcher(
+                  duration: const Duration(milliseconds: 300),
+                  child: ElevatedButton(
+                    onPressed: isValid ? () {} : null,
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: const Size.fromHeight(56),
+                    ),
+                    child: const Text('Отправить'),
                   ),
-                  child: const Text('Отправить'),
                 ),
               ),
             ),

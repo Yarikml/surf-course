@@ -23,6 +23,7 @@ class CustomCheckbox extends StatefulWidget {
 
 class _CustomCheckboxState extends State<CustomCheckbox> {
   bool value = false;
+
   @override
   Widget build(BuildContext context) {
     return Padding(

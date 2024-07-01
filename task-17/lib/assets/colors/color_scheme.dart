@@ -16,6 +16,10 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
 
   final Color error;
 
+  final Color disabledColor;
+
+  final Color onDisabledColor;
+
   /// Base color theme version.
   const AppColorScheme.light()
       : scaffoldBackground = ColorPalette.brightGray,
@@ -23,6 +27,8 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
         regularTextColor = ColorPalette.outerSpace,
         labelTextColor = ColorPalette.crayola,
         error = ColorPalette.orangeRed,
+        disabledColor = ColorPalette.lightGray,
+        onDisabledColor = ColorPalette.brightGray,
         onScaffoldBackground = ColorPalette.white;
 
   const AppColorScheme._({
@@ -32,6 +38,8 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
     required this.regularTextColor,
     required this.labelTextColor,
     required this.error,
+    required this.disabledColor,
+    required this.onDisabledColor,
   });
 
   @override
@@ -42,6 +50,8 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
     Color? regularTextColor,
     Color? labelTextColor,
     Color? error,
+    Color? disabledColor,
+    Color? onDisabledColor,
   }) {
     return AppColorScheme._(
       scaffoldBackground: scaffoldBackground ?? this.scaffoldBackground,
@@ -50,6 +60,8 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
       regularTextColor: regularTextColor ?? this.regularTextColor,
       labelTextColor: labelTextColor ?? this.labelTextColor,
       error: error ?? this.error,
+      disabledColor: disabledColor ?? this.disabledColor,
+      onDisabledColor: onDisabledColor ?? this.onDisabledColor,
     );
   }
 
@@ -72,6 +84,8 @@ class AppColorScheme extends ThemeExtension<AppColorScheme> {
           Color.lerp(regularTextColor, other.regularTextColor, t)!,
       labelTextColor: Color.lerp(labelTextColor, other.labelTextColor, t)!,
       error: Color.lerp(error, other.error, t)!,
+      disabledColor: Color.lerp(disabledColor, other.disabledColor, t)!,
+      onDisabledColor: Color.lerp(onDisabledColor, other.onDisabledColor, t)!,
     );
   }
 

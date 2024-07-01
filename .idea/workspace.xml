@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ab01a32-cd7c-4845-abd0-c6ca0e246b50" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/di/register_pet_inherited.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/state_manager/register_pet_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/pages/pet_type_item.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/features/app/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/app/app.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/runner.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/runner.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/utils/validators/weight_validator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/utils/validators/weight_validator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/custom_checkbox.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/custom_checkbox.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/ill_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/ill_list.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/pages/register_pet_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/pages/register_pet_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/pet_type_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/pet_type_list.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/validatable_text_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/validatable_text_field.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +104,7 @@
       <workItem from="1719721801307" duration="9925000" />
       <workItem from="1719769897171" duration="84000" />
       <workItem from="1719769998222" duration="20625000" />
-      <workItem from="1719824023068" duration="21370000" />
+      <workItem from="1719824023068" duration="23863000" />
     </task>
     <servers />
   </component>

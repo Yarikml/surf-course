@@ -10,9 +10,11 @@ class CustomCheckbox extends StatefulWidget {
     required this.label,
     required this.onChange,
     required this.fieldBuilder,
+    required this.isEnabled,
   });
 
   final bool isChecked;
+  final bool isEnabled;
   final String label;
   final Function(bool) onChange;
   final TextFieldBuilder fieldBuilder;
@@ -31,12 +33,14 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
       child: Column(
         children: [
           GestureDetector(
-            onTap: () {
-              setState(() {
-                value = !value;
-              });
-              widget.onChange(value);
-            },
+            onTap: widget.isEnabled
+                ? () {
+                    setState(() {
+                      value = !value;
+                    });
+                    widget.onChange(value);
+                  }
+                : null,
             child: Row(
               children: [
                 Container(
@@ -46,7 +50,9 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(6),
                     color: widget.isChecked
-                        ? AppColorScheme.of(context).primary
+                        ? widget.isEnabled
+                            ? AppColorScheme.of(context).primary
+                            : AppColorScheme.of(context).disabledColor
                         : AppColorScheme.of(context).onScaffoldBackground,
                   ),
                   child: widget.isChecked

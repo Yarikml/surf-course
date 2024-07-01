@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
+import 'package:surf_flutter_courses_template/features/register_pet/di/register_pet_inherited.dart';
+import 'package:surf_flutter_courses_template/features/register_pet/state_manager/register_pet_controller.dart';
 import 'package:surf_flutter_courses_template/features/register_pet/widgets/ill_list.dart';
 import 'package:surf_flutter_courses_template/features/register_pet/widgets/pet_type_list.dart';
 import 'package:surf_flutter_courses_template/features/register_pet/widgets/validatable_text_field.dart';
@@ -103,94 +106,125 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Stack(
-          children: [
-            ListView(
-              padding: const EdgeInsets.all(16),
-              children: [
-                PetTypeList(
-                  currentType: petType,
-                  onPetTypeChange: _changePetType,
-                ),
-                ValidatableTextField(
-                  validator: nameValidator,
-                  controller: _nameController,
-                  label: 'Имя питомца',
-                  onValidateForm: _validateForm,
-                ),
-                ValidatableTextField(
-                  validationStrategy: ValidationStrategy.onChange,
-                  onTap: () async {
-                    final result = await _showDatePicker(context);
-                    if (result != null) {
-                      _dateOfBirthController.text = result.toFormattedString;
-                    }
-                  },
-                  validator: dateOfBirthValidator,
-                  controller: _dateOfBirthController,
-                  label: 'День рождения питомца',
-                  onValidateForm: _validateForm,
-                ),
-                ValidatableTextField(
-                  validator: weightValidator,
-                  controller: _weightController,
-                  label: 'Вес, кг',
-                  onValidateForm: _validateForm,
-                ),
-                ValidatableTextField(
-                  validator: mailValidator,
-                  controller: _mailController,
-                  label: 'Почта хозяина',
-                  onValidateForm: _validateForm,
-                ),
-                AnimatedSwitcher(
-                  duration: const Duration(milliseconds: 300),
-                  child: petType == PetType.dog || petType == PetType.cat
-                      ? IllList(
-                          currentIllType: illType,
-                          onChange: _changeIllType,
-                          fieldBuilder: (BuildContext context) =>
-                              ValidatableTextField(
-                            margin: const EdgeInsets.only(top: 8),
-                            validationStrategy: ValidationStrategy.onChange,
-                            onTap: () async {
-                              final result = await _showDatePicker(context);
-                              if (result != null) {
-                                _illController.text = result.toFormattedString;
+      body: ValueListenableBuilder(
+          valueListenable: RegisterPetInherited.of(context).registerState,
+          builder: (_, state, __) {
+            return SafeArea(
+              child: Stack(
+                children: [
+                  ListView(
+                    padding: const EdgeInsets.all(16),
+                    children: [
+                      PetTypeList(
+                        currentType: petType,
+                        onPetTypeChange: _changePetType,
+                        isGroupEnabled: state != RegisterPetState.loading,
+                      ),
+                      ValidatableTextField(
+                        validator: nameValidator,
+                        controller: _nameController,
+                        label: 'Имя питомца',
+                        onValidateForm: _validateForm,
+                        readOnly: state == RegisterPetState.loading,
+                      ),
+                      ValidatableTextField(
+                        validationStrategy: ValidationStrategy.onChange,
+                        onTap: state != RegisterPetState.loading
+                            ? () async {
+                                final result = await _showDatePicker(context);
+                                if (result != null) {
+                                  _dateOfBirthController.text =
+                                      result.toFormattedString;
+                                }
                               }
-                            },
-                            validator: illDateValidator,
-                            controller: _illController,
-                            label: 'Дата последней прививки',
-                            onValidateForm: _validateForm,
-                          ),
-                        )
-                      : Container(),
-                ),
-              ],
-            ),
-            Positioned(
-              bottom: 0,
-              left: 16,
-              right: 16,
-              child: ValueListenableBuilder(
-                valueListenable: isFormValid,
-                builder: (_, isValid, __) => AnimatedSwitcher(
-                  duration: const Duration(milliseconds: 300),
-                  child: ElevatedButton(
-                    onPressed: isValid ? () {} : null,
-                    style: ElevatedButton.styleFrom(
-                      minimumSize: const Size.fromHeight(56),
-                    ),
-                    child: const Text('Отправить'),
+                            : null,
+                        validator: dateOfBirthValidator,
+                        controller: _dateOfBirthController,
+                        label: 'День рождения питомца',
+                        onValidateForm: _validateForm,
+                        readOnly: true,
+                      ),
+                      ValidatableTextField(
+                        validator: weightValidator,
+                        controller: _weightController,
+                        label: 'Вес, кг',
+                        onValidateForm: _validateForm,
+                        readOnly: state == RegisterPetState.loading,
+                      ),
+                      ValidatableTextField(
+                        validator: mailValidator,
+                        controller: _mailController,
+                        label: 'Почта хозяина',
+                        onValidateForm: _validateForm,
+                        readOnly: state == RegisterPetState.loading,
+                      ),
+                      AnimatedSwitcher(
+                        duration: const Duration(milliseconds: 300),
+                        child: petType == PetType.dog || petType == PetType.cat
+                            ? IllList(
+                                currentIllType: illType,
+                                onChange: _changeIllType,
+                                fieldBuilder: (BuildContext context) =>
+                                    ValidatableTextField(
+                                  margin: const EdgeInsets.only(top: 8),
+                                  validationStrategy:
+                                      ValidationStrategy.onChange,
+                                  onTap: state != RegisterPetState.loading
+                                      ? () async {
+                                          final result =
+                                              await _showDatePicker(context);
+                                          if (result != null) {
+                                            _illController.text =
+                                                result.toFormattedString;
+                                          }
+                                        }
+                                      : null,
+                                  validator: illDateValidator,
+                                  controller: _illController,
+                                  label: 'Дата последней прививки',
+                                  onValidateForm: _validateForm,
+                                  readOnly: state == RegisterPetState.loading,
+                                ),
+                                isGroupEnabled:
+                                    state != RegisterPetState.loading,
+                              )
+                            : Container(),
+                      ),
+                    ],
                   ),
-                ),
+                  Positioned(
+                    bottom: 0,
+                    left: 16,
+                    right: 16,
+                    child: ValueListenableBuilder(
+                      valueListenable: isFormValid,
+                      builder: (_, isValid, __) => AnimatedSwitcher(
+                        duration: const Duration(milliseconds: 300),
+                        child: ElevatedButton(
+                          onPressed:
+                              isValid && state != RegisterPetState.loading
+                                  ? () {
+                                      RegisterPetInherited.of(context)
+                                          .registerPet();
+                                    }
+                                  : null,
+                          style: ElevatedButton.styleFrom(
+                            minimumSize: const Size.fromHeight(56),
+                          ),
+                          child: state != RegisterPetState.loading
+                              ? const Text('Отправить')
+                              : CircularProgressIndicator(
+                                  color: AppColorScheme.of(context)
+                                      .onScaffoldBackground,
+                                ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
-            ),
-          ],
-        ),
-      ),
+            );
+          }),
     );
   }
 }

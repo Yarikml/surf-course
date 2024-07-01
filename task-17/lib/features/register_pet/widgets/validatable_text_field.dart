@@ -14,6 +14,7 @@ class ValidatableTextField extends StatefulWidget {
     required this.label,
     this.margin,
     this.onTap,
+    required this.readOnly,
   });
 
   final FieldValidator validator;
@@ -21,6 +22,7 @@ class ValidatableTextField extends StatefulWidget {
   final ValidationStrategy? validationStrategy;
   final VoidCallback onValidateForm;
   final EdgeInsets? margin;
+  final bool readOnly;
   final String label;
   final VoidCallback? onTap;
 
@@ -81,7 +83,7 @@ class _ValidatableTextFieldState extends State<ValidatableTextField> {
               child: TextField(
                 controller: widget.controller,
                 focusNode: _focusNode,
-                readOnly: widget.onTap != null ? true : false,
+                readOnly: widget.readOnly,
                 onTap: widget.onTap,
                 cursorHeight: 18,
                 style: AppTextScheme.of(context).regular16.copyWith(

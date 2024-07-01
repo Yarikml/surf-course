@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
+import 'package:surf_flutter_courses_template/features/register_pet/state_manager/register_pet_controller.dart';
 import 'package:surf_flutter_courses_template/utils/enums/ill_type.dart';
 import 'custom_checkbox.dart';
 
@@ -12,11 +13,13 @@ class IllList extends StatelessWidget {
     required this.currentIllType,
     required this.onChange,
     required this.fieldBuilder,
+    required this.isGroupEnabled,
   });
 
   final IllType? currentIllType;
   final IllChangeCallback onChange;
   final TextFieldBuilder fieldBuilder;
+  final bool isGroupEnabled;
 
   @override
   Widget build(BuildContext context) {
@@ -39,6 +42,7 @@ class IllList extends StatelessWidget {
                   onChange(value, item);
                 },
                 fieldBuilder: fieldBuilder,
+                isEnabled: isGroupEnabled,
               ),
             )
             .toList()

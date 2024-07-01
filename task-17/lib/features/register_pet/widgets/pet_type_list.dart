@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
+import 'package:surf_flutter_courses_template/features/register_pet/widgets/pages/pet_type_item.dart';
 import 'package:surf_flutter_courses_template/utils/enums/pet_type.dart';
 
 typedef PetTypeChangeCallback = Function(PetType);
@@ -10,9 +9,11 @@ class PetTypeList extends StatelessWidget {
     super.key,
     required this.currentType,
     required this.onPetTypeChange,
+    required this.isGroupEnabled,
   });
 
   final PetType currentType;
+  final bool isGroupEnabled;
   final PetTypeChangeCallback onPetTypeChange;
 
   @override
@@ -30,30 +31,11 @@ class PetTypeList extends StatelessWidget {
         ),
         itemBuilder: (context, index) {
           final isSelected = PetType.values[index] == currentType;
-          return AnimatedSwitcher(
-            duration: const Duration(milliseconds: 300),
-            child: GestureDetector(
-              onTap: () => onPetTypeChange(PetType.values[index]),
-              child: Column(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: isSelected
-                          ? AppColorScheme.of(context).primary
-                          : AppColorScheme.of(context).onScaffoldBackground,
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                    padding: const EdgeInsets.all(20),
-                    margin: const EdgeInsets.only(bottom: 8),
-                    child: SvgPicture.asset(
-                      PetType.values[index].iconPath,
-                      color: isSelected ? Colors.white : null,
-                    ),
-                  ),
-                  Text(PetType.values[index].name),
-                ],
-              ),
-            ),
+          return PetTypeItem(
+            isSelected: isSelected,
+            isEnabled: isGroupEnabled,
+            onPetTypeChange: onPetTypeChange,
+            type: PetType.values[index],
           );
         },
       ),

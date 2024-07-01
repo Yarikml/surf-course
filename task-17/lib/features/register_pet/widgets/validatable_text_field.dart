@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
-import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 import 'package:surf_flutter_courses_template/utils/enums/validation_strategy.dart';
+import 'package:surf_flutter_courses_template/utils/extensions/build_context_x.dart';
 import 'package:surf_flutter_courses_template/utils/validators/field_validator.dart';
 
 class ValidatableTextField extends StatefulWidget {
@@ -77,7 +76,7 @@ class _ValidatableTextFieldState extends State<ValidatableTextField> {
             Container(
               height: 56,
               decoration: BoxDecoration(
-                color: AppColorScheme.of(context).onScaffoldBackground,
+                color: context.colorScheme.onScaffoldBackground,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: TextField(
@@ -86,11 +85,9 @@ class _ValidatableTextFieldState extends State<ValidatableTextField> {
                 readOnly: widget.readOnly,
                 onTap: widget.onTap,
                 cursorHeight: 18,
-                style: AppTextScheme.of(context).regular16.copyWith(
-                      color: error != null
-                          ? AppColorScheme.of(context).error
-                          : null,
-                    ),
+                style: context.textScheme.regular16.copyWith(
+                  color: error != null ? context.colorScheme.error : null,
+                ),
                 decoration: InputDecoration(
                   contentPadding: const EdgeInsets.symmetric(
                     horizontal: 16,
@@ -105,9 +102,9 @@ class _ValidatableTextFieldState extends State<ValidatableTextField> {
                     padding: const EdgeInsets.only(top: 8),
                     child: Text(
                       error,
-                      style: AppTextScheme.of(context).regular12.copyWith(
-                            color: AppColorScheme.of(context).error,
-                          ),
+                      style: context.textScheme.regular12.copyWith(
+                        color: context.colorScheme.error,
+                      ),
                     ),
                   )
                 : Container(),

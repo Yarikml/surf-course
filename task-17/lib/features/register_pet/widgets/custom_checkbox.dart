@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
-import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 import 'package:surf_flutter_courses_template/features/register_pet/widgets/ill_list.dart';
+import 'package:surf_flutter_courses_template/utils/extensions/build_context_x.dart';
 
 class CustomCheckbox extends StatefulWidget {
   const CustomCheckbox({
@@ -51,23 +50,22 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
                     borderRadius: BorderRadius.circular(6),
                     color: widget.isChecked
                         ? widget.isEnabled
-                            ? AppColorScheme.of(context).primary
-                            : AppColorScheme.of(context).disabledColor
-                        : AppColorScheme.of(context).onScaffoldBackground,
+                            ? context.colorScheme.primary
+                            : context.colorScheme.disabledColor
+                        : context.colorScheme.onScaffoldBackground,
                   ),
                   child: widget.isChecked
                       ? Icon(
                           Icons.check,
                           size: 15,
                           weight: 20,
-                          color:
-                              AppColorScheme.of(context).onScaffoldBackground,
+                          color: context.colorScheme.onScaffoldBackground,
                         )
                       : null,
                 ),
                 Text(
                   widget.label,
-                  style: AppTextScheme.of(context).regular16,
+                  style: context.textScheme.regular16,
                 ),
               ],
             ),

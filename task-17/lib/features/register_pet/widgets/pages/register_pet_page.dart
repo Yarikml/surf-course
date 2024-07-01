@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/features/register_pet/di/register_pet_inherited.dart';
 import 'package:surf_flutter_courses_template/features/register_pet/state_manager/register_pet_controller.dart';
 import 'package:surf_flutter_courses_template/features/register_pet/widgets/ill_list.dart';
@@ -8,6 +7,7 @@ import 'package:surf_flutter_courses_template/features/register_pet/widgets/vali
 import 'package:surf_flutter_courses_template/utils/enums/ill_type.dart';
 import 'package:surf_flutter_courses_template/utils/enums/pet_type.dart';
 import 'package:surf_flutter_courses_template/utils/enums/validation_strategy.dart';
+import 'package:surf_flutter_courses_template/utils/extensions/build_context_x.dart';
 import 'package:surf_flutter_courses_template/utils/extensions/date_time_x.dart';
 import 'package:surf_flutter_courses_template/utils/validators/date_validator.dart';
 import 'package:surf_flutter_courses_template/utils/validators/email_validator.dart';
@@ -214,8 +214,8 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
                           child: state != RegisterPetState.loading
                               ? const Text('Отправить')
                               : CircularProgressIndicator(
-                                  color: AppColorScheme.of(context)
-                                      .onScaffoldBackground,
+                                  color:
+                                      context.colorScheme.onScaffoldBackground,
                                 ),
                         ),
                       ),

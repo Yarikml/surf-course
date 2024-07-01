@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
-import 'package:surf_flutter_courses_template/features/register_pet/state_manager/register_pet_controller.dart';
 import 'package:surf_flutter_courses_template/utils/enums/ill_type.dart';
+import 'package:surf_flutter_courses_template/utils/extensions/build_context_x.dart';
 import 'custom_checkbox.dart';
 
 typedef IllChangeCallback = Function(bool, IllType);
@@ -30,7 +30,7 @@ class IllList extends StatelessWidget {
           padding: const EdgeInsets.only(bottom: 8.0),
           child: Text(
             'Сделаны прививки от:',
-            style: AppTextScheme.of(context).semiBold24,
+            style: context.textScheme.semiBold24,
           ),
         ),
         ...IllType.values

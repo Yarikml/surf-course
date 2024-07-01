@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:surf_flutter_courses_template/features/register_pet/widgets/pages/pet_type_item.dart';
+import 'package:surf_flutter_courses_template/features/register_pet/widgets/pet_type_item.dart';
 import 'package:surf_flutter_courses_template/utils/enums/pet_type.dart';
 
 typedef PetTypeChangeCallback = Function(PetType);
@@ -20,7 +20,7 @@ class PetTypeList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 100,
-      margin: const EdgeInsets.only(bottom: 33),
+      margin: const EdgeInsets.only(bottom: 30),
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
         itemCount: PetType.values.length,

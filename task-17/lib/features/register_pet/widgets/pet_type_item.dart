@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
 import 'package:surf_flutter_courses_template/features/register_pet/widgets/pet_type_list.dart';
 import 'package:surf_flutter_courses_template/utils/enums/pet_type.dart';
-
-import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
+import 'package:surf_flutter_courses_template/utils/extensions/build_context_x.dart';
 
 class PetTypeItem extends StatelessWidget {
   const PetTypeItem({
@@ -32,9 +30,9 @@ class PetTypeItem extends StatelessWidget {
               decoration: BoxDecoration(
                 color: isSelected
                     ? isEnabled
-                        ? AppColorScheme.of(context).primary
-                        : AppColorScheme.of(context).disabledColor
-                    : AppColorScheme.of(context).onScaffoldBackground,
+                        ? context.colorScheme.primary
+                        : context.colorScheme.disabledColor
+                    : context.colorScheme.onScaffoldBackground,
                 borderRadius: BorderRadius.circular(16),
               ),
               padding: const EdgeInsets.all(20),
@@ -42,11 +40,14 @@ class PetTypeItem extends StatelessWidget {
               child: SvgPicture.asset(
                 type.iconPath,
                 color: isSelected
-                    ? AppColorScheme.of(context).onScaffoldBackground
+                    ? context.colorScheme.onScaffoldBackground
                     : null,
               ),
             ),
-            Text(type.name),
+            Text(
+              type.name,
+              style: context.textScheme.regular12,
+            ),
           ],
         ),
       ),

@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
+import 'package:surf_flutter_courses_template/utils/enums/validation_strategy.dart';
 import 'package:surf_flutter_courses_template/utils/validators/field_validator.dart';
 
 class ValidatableTextField extends StatefulWidget {
@@ -10,39 +11,57 @@ class ValidatableTextField extends StatefulWidget {
     super.key,
     required this.validator,
     required this.controller,
+    required this.onValidateForm,
+    this.validationStrategy = ValidationStrategy.onUnFocus,
     required this.label,
     this.margin,
+    this.onTap,
   });
 
   final FieldValidator validator;
   final TextEditingController controller;
+  final ValidationStrategy? validationStrategy;
+  final VoidCallback onValidateForm;
   final EdgeInsets? margin;
   final String label;
+  final VoidCallback? onTap;
 
   @override
   State<ValidatableTextField> createState() => _ValidatableTextFieldState();
 }
 
 class _ValidatableTextFieldState extends State<ValidatableTextField> {
-  late final _focusNode = FocusNode();
+  final _focusNode = FocusNode();
 
   @override
   void initState() {
     super.initState();
-    _focusNode.addListener(onFocusChange);
+    if (widget.validationStrategy == ValidationStrategy.onUnFocus) {
+      _focusNode.addListener(_onFocusChange);
+    } else {
+      widget.controller.addListener(_onChange);
+    }
   }
 
   @override
   void dispose() {
+    _focusNode.removeListener(_onFocusChange);
     _focusNode.dispose();
     super.dispose();
   }
 
-  void onFocusChange() {
+  void _onFocusChange() {
     if (!_focusNode.hasFocus) {
-      widget.validator();
+      widget.validator.validate();
+      widget.onValidateForm();
     }
-    ;
+  }
+
+  void _onChange() {
+    if (widget.controller.text.isNotEmpty) {
+      widget.validator.validate();
+      widget.onValidateForm();
+    }
   }
 
   @override
@@ -63,6 +82,8 @@ class _ValidatableTextFieldState extends State<ValidatableTextField> {
               child: TextField(
                 controller: widget.controller,
                 focusNode: _focusNode,
+                readOnly: widget.onTap != null ? true : false,
+                onTap: widget.onTap,
                 cursorHeight: 18,
                 style: AppTextScheme.of(context).regular16.copyWith(
                       color: error != null
@@ -70,6 +91,10 @@ class _ValidatableTextFieldState extends State<ValidatableTextField> {
                           : null,
                     ),
                 decoration: InputDecoration(
+                  contentPadding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 14,
+                  ),
                   labelText: widget.label,
                 ),
               ),

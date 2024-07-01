@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ab01a32-cd7c-4845-abd0-c6ca0e246b50" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/validatable_text_field.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-17/lib/utils/enums/validation_strategy.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-17/lib/utils/extensions/date_time_x.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-17/lib/utils/validators/date_validator.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/assets/colors/color_pallete.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/assets/colors/color_pallete.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/assets/colors/color_scheme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/assets/colors/color_scheme.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-17/lib/assets/themes/app_theme_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/assets/themes/app_theme_data.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/pages/register_pet_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/pages/register_pet_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/validatable_text_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/validatable_text_field.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/utils/validators/email_validator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/utils/validators/email_validator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/utils/validators/field_validator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/utils/validators/field_validator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/utils/validators/name_validator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/utils/validators/name_validator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/utils/validators/weight_validator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/utils/validators/weight_validator.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +102,8 @@
       <workItem from="1719517733036" duration="6947000" />
       <workItem from="1719721801307" duration="9925000" />
       <workItem from="1719769897171" duration="84000" />
-      <workItem from="1719769998222" duration="9903000" />
+      <workItem from="1719769998222" duration="20625000" />
+      <workItem from="1719824023068" duration="10233000" />
     </task>
     <servers />
   </component>

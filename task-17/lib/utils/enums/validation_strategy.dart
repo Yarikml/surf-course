@@ -1,0 +1,4 @@
+enum ValidationStrategy {
+  onUnFocus,
+  onChange,
+}

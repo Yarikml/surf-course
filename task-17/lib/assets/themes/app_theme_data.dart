@@ -21,6 +21,7 @@ abstract class AppThemeData {
       floatingLabelStyle: _textScheme.regular12.copyWith(
         color: _lightPalette.labelTextColor,
       ),
+
       floatingLabelAlignment: FloatingLabelAlignment.start,
       contentPadding: EdgeInsets.all(16),
       enabledBorder: InputBorder.none,

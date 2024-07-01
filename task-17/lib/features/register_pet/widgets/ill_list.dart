@@ -5,25 +5,31 @@ import '../../../utils/enums/ill_type.dart';
 import 'custom_checkbox.dart';
 
 typedef IllChangeCallback = Function(bool, IllType);
+typedef TextFieldBuilder = Widget Function(BuildContext);
 
 class IllList extends StatelessWidget {
   const IllList({
     super.key,
     required this.currentIllType,
     required this.onChange,
+    required this.fieldBuilder,
   });
 
   final IllType? currentIllType;
   final IllChangeCallback onChange;
+  final TextFieldBuilder fieldBuilder;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(
-          'Сделаны прививки от:',
-          style: AppTextScheme.of(context).semiBold24,
+        Padding(
+          padding: const EdgeInsets.only(bottom: 8.0),
+          child: Text(
+            'Сделаны прививки от:',
+            style: AppTextScheme.of(context).semiBold24,
+          ),
         ),
         ...IllType.values
             .map(
@@ -33,6 +39,7 @@ class IllList extends StatelessWidget {
                 onChange: (bool value) {
                   onChange(value, item);
                 },
+                fieldBuilder: fieldBuilder,
               ),
             )
             .toList()

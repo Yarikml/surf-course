@@ -18,15 +18,15 @@ class PetTypeList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 76,
-      margin: const EdgeInsets.symmetric(vertical: 32),
+      height: 100,
+      margin: const EdgeInsets.only(bottom: 33),
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
         itemCount: PetType.values.length,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 4,
           crossAxisSpacing: 18,
-          childAspectRatio: 1,
+          childAspectRatio: 0.7,
         ),
         itemBuilder: (context, index) {
           final isSelected = PetType.values[index] == currentType;
@@ -34,18 +34,24 @@ class PetTypeList extends StatelessWidget {
             duration: const Duration(milliseconds: 300),
             child: GestureDetector(
               onTap: () => onPetTypeChange(PetType.values[index]),
-              child: Container(
-                decoration: BoxDecoration(
-                  color: isSelected
-                      ? AppColorScheme.of(context).primary
-                      : AppColorScheme.of(context).onScaffoldBackground,
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                padding: const EdgeInsets.all(20),
-                child: SvgPicture.asset(
-                  PetType.values[index].iconPath,
-                  color: isSelected ? Colors.white : null,
-                ),
+              child: Column(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: isSelected
+                          ? AppColorScheme.of(context).primary
+                          : AppColorScheme.of(context).onScaffoldBackground,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    padding: const EdgeInsets.all(20),
+                    margin: const EdgeInsets.only(bottom: 8),
+                    child: SvgPicture.asset(
+                      PetType.values[index].iconPath,
+                      color: isSelected ? Colors.white : null,
+                    ),
+                  ),
+                  Text(PetType.values[index].name),
+                ],
               ),
             ),
           );

@@ -1,7 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/assets/colors/color_scheme.dart';
 import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
+import 'package:surf_flutter_courses_template/features/register_pet/widgets/ill_list.dart';
 
 class CustomCheckbox extends StatefulWidget {
   const CustomCheckbox({
@@ -9,11 +9,13 @@ class CustomCheckbox extends StatefulWidget {
     required this.isChecked,
     required this.label,
     required this.onChange,
+    required this.fieldBuilder,
   });
 
   final bool isChecked;
   final String label;
   final Function(bool) onChange;
+  final TextFieldBuilder fieldBuilder;
 
   @override
   State<CustomCheckbox> createState() => _CustomCheckboxState();
@@ -64,19 +66,9 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
             ),
           ),
           AnimatedSwitcher(
-            duration: Duration(milliseconds: 200),
-            child: widget.isChecked
-                ? Padding(
-                    padding: const EdgeInsets.only(top: 8),
-                    child: TextField(
-                      style: AppTextScheme.of(context).regular16,
-                      decoration: InputDecoration(
-                        isDense: true,
-                        label: Text('Дата последней прививки'),
-                      ),
-                    ),
-                  )
-                : Container(),
+            duration: const Duration(milliseconds: 200),
+            child:
+                widget.isChecked ? widget.fieldBuilder(context) : Container(),
           ),
         ],
       ),

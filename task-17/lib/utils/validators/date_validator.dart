@@ -7,11 +7,7 @@ import 'package:surf_flutter_courses_template/utils/validators/field_validator.d
 class DateValidator extends FieldValidator<TextEditingValue> {
   DateValidator(
     super.dataSource,
-    this.isRequired,
   );
-
-  @override
-  final bool isRequired;
 
   @override
   String? getValidationError(TextEditingValue? value) {

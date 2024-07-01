@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ab01a32-cd7c-4845-abd0-c6ca0e246b50" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/di/register_pet_inherited.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/state_manager/register_pet_controller.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/assets/colors/color_pallete.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/assets/colors/color_pallete.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/assets/colors/color_scheme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/assets/colors/color_scheme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/assets/themes/app_theme_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/assets/themes/app_theme_data.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/custom_checkbox.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/custom_checkbox.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/ill_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/ill_list.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/pages/register_pet_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/pages/register_pet_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/validatable_text_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/validatable_text_field.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/utils/enums/ill_type.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/utils/enums/ill_type.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/utils/validators/date_validator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/utils/validators/date_validator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/features/app/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/app/app.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/runner.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/runner.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/utils/validators/weight_validator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/utils/validators/weight_validator.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,25 +47,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Flutter.task-17.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#16 on task-17&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Flutter.task-17.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "#16 on task-17",
+    "io.flutter.reload.alreadyRun": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/yaroslav/Desktop/surf-course/task-17/lib/features/register_pet",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-17/lib/features/register_pet" />
+      <recent name="$PROJECT_DIR$/task-17/lib/features/register_pet/state_manager" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/task-17/assets/fonts" />
       <recent name="$PROJECT_DIR$/task-17/lib/utils/enums" />
@@ -102,7 +103,7 @@
       <workItem from="1719721801307" duration="9925000" />
       <workItem from="1719769897171" duration="84000" />
       <workItem from="1719769998222" duration="20625000" />
-      <workItem from="1719824023068" duration="20008000" />
+      <workItem from="1719824023068" duration="21370000" />
     </task>
     <servers />
   </component>

@@ -72,7 +72,7 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
                     color: widget.isChecked
                         ? widget.isEnabled
                             ? context.colorScheme.primary
-                            : context.colorScheme.disabledColor
+                            : context.colorScheme.primary.withOpacity(0.5)
                         : context.colorScheme.onScaffoldBackground,
                   ),
                   child: widget.isChecked

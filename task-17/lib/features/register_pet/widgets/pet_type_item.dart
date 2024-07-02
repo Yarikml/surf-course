@@ -31,7 +31,7 @@ class PetTypeItem extends StatelessWidget {
                 color: isSelected
                     ? isEnabled
                         ? context.colorScheme.primary
-                        : context.colorScheme.disabledColor
+                        : context.colorScheme.primary.withOpacity(0.5)
                     : context.colorScheme.onScaffoldBackground,
                 borderRadius: BorderRadius.circular(16),
               ),

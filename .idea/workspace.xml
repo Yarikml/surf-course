@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ab01a32-cd7c-4845-abd0-c6ca0e246b50" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/task-17/lib/utils/enums/validatable_text_field_type.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/assets/fonts/SF-Pro-Display-Bold.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/assets/resources/images.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/custom_checkbox.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/custom_checkbox.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/ill_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/ill_list.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/pages/register_pet_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/pages/register_pet_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/validatable_text_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/validatable_text_field.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/l10n/app_ru.arb" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/l10n/app_ru.arb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/utils/enums/pet_type.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/utils/enums/pet_type.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +103,7 @@
       <workItem from="1719721801307" duration="9925000" />
       <workItem from="1719769897171" duration="84000" />
       <workItem from="1719769998222" duration="20625000" />
-      <workItem from="1719824023068" duration="27998000" />
+      <workItem from="1719824023068" duration="36010000" />
     </task>
     <servers />
   </component>

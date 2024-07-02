@@ -1,25 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:surf_flutter_courses_template/assets/text/app_text_scheme.dart';
 import 'package:surf_flutter_courses_template/utils/enums/ill_type.dart';
 import 'package:surf_flutter_courses_template/utils/extensions/build_context_x.dart';
 import 'custom_checkbox.dart';
 
 typedef IllChangeCallback = Function(bool, IllType);
-typedef TextFieldBuilder = Widget Function(BuildContext);
 
 class IllList extends StatelessWidget {
   const IllList({
     super.key,
-    required this.currentIllType,
+    required this.illVaccines,
     required this.onChange,
-    required this.fieldBuilder,
     required this.isGroupEnabled,
+    required this.getIllVaccineValidatorByType,
+    required this.getIllVaccineControllerByType,
+    required this.onValidate,
   });
 
-  final IllType? currentIllType;
+  final List<IllType> illVaccines;
   final IllChangeCallback onChange;
-  final TextFieldBuilder fieldBuilder;
   final bool isGroupEnabled;
+  final Function(IllType) getIllVaccineValidatorByType;
+  final Function(IllType) getIllVaccineControllerByType;
+  final VoidCallback onValidate;
 
   @override
   Widget build(BuildContext context) {
@@ -36,13 +38,15 @@ class IllList extends StatelessWidget {
         ...IllType.values
             .map(
               (item) => CustomCheckbox(
-                isChecked: currentIllType == item,
+                isChecked: illVaccines.contains(item),
                 label: item.name,
                 onChange: (bool value) {
                   onChange(value, item);
                 },
-                fieldBuilder: fieldBuilder,
                 isEnabled: isGroupEnabled,
+                controller: getIllVaccineControllerByType(item),
+                validator: getIllVaccineValidatorByType(item),
+                onValidate: onValidate,
               ),
             )
             .toList()

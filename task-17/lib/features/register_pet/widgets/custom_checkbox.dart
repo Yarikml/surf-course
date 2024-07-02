@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:surf_flutter_courses_template/features/register_pet/widgets/ill_list.dart';
+import 'package:surf_flutter_courses_template/features/register_pet/widgets/validatable_text_field.dart';
 import 'package:surf_flutter_courses_template/utils/extensions/build_context_x.dart';
+import 'package:surf_flutter_courses_template/utils/extensions/date_time_x.dart';
+import 'package:surf_flutter_courses_template/utils/validators/field_validator.dart';
+
+import 'package:surf_flutter_courses_template/utils/enums/validation_strategy.dart';
 
 class CustomCheckbox extends StatefulWidget {
   const CustomCheckbox({
@@ -8,15 +12,19 @@ class CustomCheckbox extends StatefulWidget {
     required this.isChecked,
     required this.label,
     required this.onChange,
-    required this.fieldBuilder,
     required this.isEnabled,
+    required this.controller,
+    required this.validator,
+    required this.onValidate,
   });
 
   final bool isChecked;
   final bool isEnabled;
   final String label;
+  final TextEditingController controller;
+  final FieldValidator validator;
   final Function(bool) onChange;
-  final TextFieldBuilder fieldBuilder;
+  final VoidCallback onValidate;
 
   @override
   State<CustomCheckbox> createState() => _CustomCheckboxState();
@@ -24,6 +32,19 @@ class CustomCheckbox extends StatefulWidget {
 
 class _CustomCheckboxState extends State<CustomCheckbox> {
   bool value = false;
+
+  Future<DateTime?> _showDatePicker(BuildContext context) async {
+    final result = await showDatePicker(
+      context: context,
+      firstDate: DateTime.now().subtract(
+        const Duration(
+          days: 5000,
+        ),
+      ),
+      lastDate: DateTime.now(),
+    );
+    return result;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -72,8 +93,25 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
           ),
           AnimatedSwitcher(
             duration: const Duration(milliseconds: 200),
-            child:
-                widget.isChecked ? widget.fieldBuilder(context) : Container(),
+            child: widget.isChecked
+                ? ValidatableTextField(
+                    margin: const EdgeInsets.only(top: 8),
+                    validationStrategy: ValidationStrategy.onChange,
+                    onTap: widget.isEnabled
+                        ? () async {
+                            final result = await _showDatePicker(context);
+                            if (result != null) {
+                              widget.controller.text = result.toFormattedString;
+                            }
+                          }
+                        : null,
+                    validator: widget.validator,
+                    controller: widget.controller,
+                    label: context.localization.petLastVaccine,
+                    onValidateForm: widget.onValidate,
+                    readOnly: true,
+                  )
+                : Container(),
           ),
         ],
       ),

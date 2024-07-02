@@ -24,20 +24,28 @@ class RegisterPetPage extends StatefulWidget {
 
 class _RegisterPetPageState extends State<RegisterPetPage> {
   PetType petType = PetType.dog;
-  IllType? illType;
+  final illVaccines = <IllType>[];
 
   final _nameController = TextEditingController();
   final _weightController = TextEditingController();
   final _mailController = TextEditingController();
   final _dateOfBirthController = TextEditingController();
 
+  final _illVaccineRabiesController = TextEditingController();
+  final _illVaccineCovidController = TextEditingController();
+  final _illVaccineMalariaController = TextEditingController();
 
-  final _illController = TextEditingController();
   late final nameValidator = NameValidator(_nameController);
   late final weightValidator = WeightValidator(_weightController);
   late final mailValidator = EmailValidator(_mailController);
   late final dateOfBirthValidator = DateValidator(_dateOfBirthController);
-  late final illDateValidator = DateValidator(_illController);
+
+  late final _illVaccineRabiesValidator =
+      DateValidator(_illVaccineRabiesController);
+  late final _illVaccineCovidValidator =
+      DateValidator(_illVaccineCovidController);
+  late final _illVaccineMalariaValidator =
+      DateValidator(_illVaccineMalariaController);
 
   final ValueNotifier isFormValid = ValueNotifier(false);
 
@@ -48,31 +56,51 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
     dateOfBirthValidator,
   ];
 
+  FieldValidator getIllVaccineValidatorByType(IllType type) => switch (type) {
+        IllType.rabies => _illVaccineRabiesValidator,
+        IllType.covid => _illVaccineCovidValidator,
+        IllType.malaria => _illVaccineMalariaValidator,
+      };
+
+  TextEditingController getIllVaccineControllerByType(IllType type) =>
+      switch (type) {
+        IllType.rabies => _illVaccineRabiesController,
+        IllType.covid => _illVaccineCovidController,
+        IllType.malaria => _illVaccineMalariaController,
+      };
+
   void _changePetType(PetType type) {
     setState(() {
       petType = type;
-      if ((petType == PetType.parrot || petType == PetType.hamster) &&
-          fields.contains(illDateValidator)) {
-        fields.remove(illDateValidator);
-        illType = null;
-        _illController.clear();
+      if (petType == PetType.parrot || petType == PetType.hamster) {
+        for (var illType in IllType.values) {
+          final validator = getIllVaccineValidatorByType(illType);
+          final controller = getIllVaccineControllerByType(illType);
+          if (fields.contains(validator)) {
+            fields.remove(_illVaccineRabiesValidator);
+            controller.clear();
+          }
+        }
         _validateForm();
+        illVaccines.clear();
       }
     });
   }
 
   void _changeIllType(bool value, IllType type) {
-    if (illType == type && !value) {
+    final validator = getIllVaccineValidatorByType(type);
+    final controller = getIllVaccineControllerByType(type);
+    if (!value && illVaccines.contains(type)) {
       setState(() {
-        illType = null;
-        fields.remove(illDateValidator);
-        _illController.clear();
+        illVaccines.remove(type);
+        fields.remove(validator);
+        controller.clear();
       });
     } else {
       setState(() {
-        illType = type;
-        if (!fields.contains(illDateValidator)) {
-          fields.add(illDateValidator);
+        illVaccines.add(type);
+        if (!fields.contains(validator)) {
+          fields.add(validator);
         }
       });
     }
@@ -170,31 +198,15 @@ class _RegisterPetPageState extends State<RegisterPetPage> {
                         duration: const Duration(milliseconds: 300),
                         child: petType == PetType.dog || petType == PetType.cat
                             ? IllList(
-                                currentIllType: illType,
+                                illVaccines: illVaccines,
                                 onChange: _changeIllType,
-                                fieldBuilder: (BuildContext context) =>
-                                    ValidatableTextField(
-                                  margin: const EdgeInsets.only(top: 8),
-                                  validationStrategy:
-                                      ValidationStrategy.onChange,
-                                  onTap: state != RegisterPetState.loading
-                                      ? () async {
-                                          final result =
-                                              await _showDatePicker(context);
-                                          if (result != null) {
-                                            _illController.text =
-                                                result.toFormattedString;
-                                          }
-                                        }
-                                      : null,
-                                  validator: illDateValidator,
-                                  controller: _illController,
-                                  label: context.localization.petLastVaccine,
-                                  onValidateForm: _validateForm,
-                                  readOnly: true,
-                                ),
                                 isGroupEnabled:
                                     state != RegisterPetState.loading,
+                                getIllVaccineValidatorByType:
+                                    getIllVaccineValidatorByType,
+                                getIllVaccineControllerByType:
+                                    getIllVaccineControllerByType,
+                                onValidate: _validateForm,
                               )
                             : Container(),
                       ),

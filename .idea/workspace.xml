@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ab01a32-cd7c-4845-abd0-c6ca0e246b50" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task-17/lib/utils/enums/validatable_text_field_type.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/custom_checkbox.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/custom_checkbox.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/assets/docs/result.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/assets/text/app_text_scheme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/assets/text/app_text_scheme.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/ill_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/ill_list.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/pages/register_pet_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/pages/register_pet_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/lib/utils/enums/validatable_text_field_type.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/macos/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/macos/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-17/macos/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/macos/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +75,7 @@
       <recent name="$PROJECT_DIR$/task-17/lib/features/register_pet/state_manager" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task-17/assets/docs" />
       <recent name="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets" />
       <recent name="$PROJECT_DIR$/task-17/assets/fonts" />
       <recent name="$PROJECT_DIR$/task-17/lib/utils/enums" />
@@ -103,7 +108,7 @@
       <workItem from="1719721801307" duration="9925000" />
       <workItem from="1719769897171" duration="84000" />
       <workItem from="1719769998222" duration="20625000" />
-      <workItem from="1719824023068" duration="36010000" />
+      <workItem from="1719824023068" duration="37035000" />
     </task>
     <servers />
   </component>

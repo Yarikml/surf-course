@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ab01a32-cd7c-4845-abd0-c6ca0e246b50" name="Changes" comment="">
+    <list default="true" id="3e9fbf9a-c925-4b7d-a9a5-5661cf1437f2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/assets/docs/result.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/assets/text/app_text_scheme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/assets/text/app_text_scheme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/ill_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets/ill_list.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/lib/utils/enums/validatable_text_field_type.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/macos/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/macos/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-17/macos/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/task-17/macos/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,102 +21,72 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="task-16" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Yarikml&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:Yarikml/surf-course.git&quot;,
-    &quot;accountId&quot;: &quot;07574ab5-39ad-4b37-a05b-e9e419a34b8d&quot;
-  }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
-}</component>
-  <component name="ProjectId" id="2iTbtoPzXegDNKfz2bSAC81jCS0" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2iEnM5iKgeL6F9U5JGGXlmKlZnQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Flutter.task-17.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "#16 on task-17",
-    "io.flutter.reload.alreadyRun": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/yaroslav/Desktop/surf-course/task-17/lib/features/register_pet",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yaroslav/Desktop/surf-course/task-16/lib/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/task-17/lib/features/register_pet" />
-      <recent name="$PROJECT_DIR$/task-17/lib/features/register_pet/state_manager" />
+      <recent name="$PROJECT_DIR$/task-16/lib/assets" />
+      <recent name="$PROJECT_DIR$/task-16" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/task-17/assets/docs" />
-      <recent name="$PROJECT_DIR$/task-17/lib/features/register_pet/widgets" />
-      <recent name="$PROJECT_DIR$/task-17/assets/fonts" />
-      <recent name="$PROJECT_DIR$/task-17/lib/utils/enums" />
-      <recent name="$PROJECT_DIR$/task-17/assets/icons" />
+      <recent name="$PROJECT_DIR$/task-16/lib/feature/main" />
+      <recent name="$PROJECT_DIR$/task-16/assets/images/3.0x" />
+      <recent name="$PROJECT_DIR$/task-16/assets/images/2.0x" />
+      <recent name="$PROJECT_DIR$/task-16/assets/images" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="task-17" type="FlutterRunConfigurationType" factoryName="Flutter">
-      <option name="filePath" value="$PROJECT_DIR$/task-17/lib/main.dart" />
+    <configuration name="task-16" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/task-16/lib/main.dart" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8ab01a32-cd7c-4845-abd0-c6ca0e246b50" name="Changes" comment="" />
-      <created>1719517731895</created>
+      <changelist id="3e9fbf9a-c925-4b7d-a9a5-5661cf1437f2" name="Changes" comment="" />
+      <created>1719064552475</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1719517731895</updated>
-      <workItem from="1719517733036" duration="6947000" />
-      <workItem from="1719721801307" duration="9925000" />
-      <workItem from="1719769897171" duration="84000" />
-      <workItem from="1719769998222" duration="20625000" />
-      <workItem from="1719824023068" duration="37035000" />
+      <updated>1719064552475</updated>
+      <workItem from="1719064554220" duration="20030000" />
+      <workItem from="1719177641576" duration="4937000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
